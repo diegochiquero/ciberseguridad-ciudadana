@@ -1,7 +1,7 @@
-book_filename: "manual-de-privacidad-y-seguridad-en-internet"
+book_filename: "guía ciberseguridad consciente"
 output_dir: "docs"
-edit: https://github.com/diegochiquero/manual-de-privacidad-y-seguridad-en-internet/edit/master/%s
-view: https://github.com/diegochiquero/manual-de-privacidad-y-seguridad-en-internet/blob/master/%s
+edit: https://github.com/diegochiquero/ciberseguridad-consciente/edit/master/%s
+view: https://github.com/diegochiquero/ciberseguridad-consciente/blob/master/%s
 language:
   ui:
     chapter_name: "Unidad "
