@@ -8,10 +8,10 @@ bookdown::gitbook:
     toc:
       collapse: none
       before: |
-        <li><a href="./">Guía ciberseguridad consciente</a></li>
+        <li><a href="./">Guía ciberseguridad ciudadana</a></li>
       after: |
         <li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
-    edit: https://github.com/diegochiquero/ciberseguridad-consciente/edit/master/%s
+    edit: https://github.com/diegochiquero/ciberseguridad-ciudadana/edit/master/%s
     sharing:
       github: yes
       facebook: yes

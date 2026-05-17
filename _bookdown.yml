@@ -1,7 +1,7 @@
-book_filename: "guia-ciberseguridad-consciente"
+book_filename: "guia-ciberseguridad-ciudadana"
 output_dir: "docs"
-edit: https://github.com/diegochiquero/ciberseguridad-consciente/edit/master/%s
-view: https://github.com/diegochiquero/ciberseguridad-consciente/blob/master/%s
+edit: https://github.com/diegochiquero/ciberseguridad-ciudadana/edit/master/%s
+view: https://github.com/diegochiquero/ciberseguridad-ciudadana/blob/master/%s
 language:
   ui:
     chapter_name: "Unidad "
