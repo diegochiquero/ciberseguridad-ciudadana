@@ -1,5 +1,5 @@
 --- 
-title: "Ciberseguridad consciente"
+title: "Ciberseguridad ciudadana"
 author: "Diego Chiquero Mena"
 date: "`r format(Sys.Date(), '%d %B %Y')`"
 geometry:
@@ -20,9 +20,9 @@ link-citations: yes
 linkcolor: blue
 ontsize: 11pt
 fontfamily: bookman
-github-repo: diegochiquero/ciberseguridad-consciente
-description: "Guía de lectura recomendado para conecer los ciberdelitos a los que nos exponemos y cómo evitarlos."
-keywords: "seguridad,privacidad, ciberdelitos, ciberdelincuentes,internet"
+github-repo: diegochiquero/ciberseguridad-ciudadana
+description: "Guía de lectura recomendado para conecer los ciberdelitos a los que nos exponemos y cómo evitarlos en un entorno cada vez más dominado por la Inteligencia artificial."
+keywords: "seguridad, privacidad, ciberdelitos, ciberdelincuentes, ciberseguridad ciudadana, internet, inteligencia artificial"
 cover-image: images/cover.png
 ---
 ```{r setup, include=FALSE}
@@ -50,7 +50,7 @@ También encontrarás a lo largo de la guía, multitud de enlaces que te llevar�
 
 Si quieres contribuir y ayudar a  nutrir de más contenido de valor esta guía, por favor, no lo dudes y ponte en contacto conmigo, estaré encantado que colaboremos. Encontrarás mis datos de contacto en el siguiente apartado *sobre el autor*.
 
-Esta guía está disponible en el repositorio Github: [diegochiquero/ciberseguridad-consciente](https://github.com/diegochiquero/ciberseguridad-consciente). Y ha sido escrito en [R-Markdown](http://rmarkdown.rstudio.com) empleando el paquete [`bookdown`](https://bookdown.org/) cuya guia encontrarás en [@R-bookdown].
+Esta guía está disponible en el repositorio Github: [diegochiquero/ciberseguridad-ciudadana](https://github.com/diegochiquero/ciberseguridad-ciudadana). Y ha sido escrito en [R-Markdown](http://rmarkdown.rstudio.com) empleando el paquete [`bookdown`](https://bookdown.org/) cuya guia encontrarás en [@R-bookdown].
 
 Esta obra está bajo la [licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.es).  
 

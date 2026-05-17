@@ -1,8 +1,8 @@
-## Guía ciberseguridad consciente 📖
+## Guía ciberseguridad ciudadana 📖
 
 Esta guía aglutina de manera filtrada y tamizada una amplia y detallada parte del conocimiento e información de relevancia que puedes encontrar en la web sobre privacidad y seguridad en internet, de forma ordenada y estructura. Dispone de bibliografía 📚.
 
-Recoge las diferencias entre los conceptos de privacidad 🔒 y seguridad 🛡️ en internet 🌍, así como la gestión de éstos.
+Recoge las diferencias entre los conceptos de privacidad 🔒 y seguridad 🛡️ en internet 🌍, así como la gestión de éstos, sin dejar de lado las circunstacias asociadas a este nuevo entorno donde la Inteligencia artificial cada vez toma mayor protagonismo.
 
 Un Listado detallado de la mayores amenzas 👹.
 
@@ -10,7 +10,7 @@ Se abordan otros conceptos relacionados con los ciberdelitos 💀, la huella dig
 
 Dispone de multitud de enlaces 🔗 a más información ampliada sobre las temáticas, así como una extensa lista de recursos y herramientas 🧰. 
 
->Léelo online 👀 <a href="https://diegochiquero.github.io/ciberseguridad-consciente/" target="_blank">Guía ciberseguridad consciente</a> o descárgalo en formato PDF 📃 o formato ePub para libro electrónico 📔, desde la barra de opciones superior. 
+>Léelo online 👀 <a href="https://diegochiquero.github.io/ciberseguridad-ciudadana/" target="_blank">Guía ciberseguridad ciudadana</a> o descárgalo en formato PDF 📃 o formato ePub para libro electrónico 📔, desde la barra de opciones superior. 
 
 Si quieres contribuir y ayudar a nutrir de más contenido de valor esta guía, por favor, no lo dudes y ponte en contacto conmigo, estaré encantado que colaboremos 👩‍💻 👨‍💻.
 
