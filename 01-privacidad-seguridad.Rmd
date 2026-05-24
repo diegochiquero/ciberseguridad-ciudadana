@@ -24,13 +24,17 @@ La ciberseguridad ciudadana se centra en protegerte, cuidando tu información y 
 
 ## Privacidad 
 
-La privacidad es aquello que se lleva a cabo en un ámbito reservado; en Internet podría entenderse como el  control que ejercemos sobre nuestra información  para limitar la cantidad de personas autorizadas a verla, así como la cantidad de contenido expuesto. Esto incluye datos personales, fotografías, documentos, etc. 
+Antes de abordar la privacidad en el ámbito digital, vamos a conceptualizarla en el mundo analógico, para ponernos en contexto; por lo tanto la privacidad es aquello que se lleva a cabo en un ámbito reservado.
+
+Este concepto llevado al terreno digital, se entiende como el derecho y la capacidad que tienes como usuario de la red a tener el control sobre tu información, para limitar la cantidad de personas autorizadas a verla, así como la cantidad de contenido expuesto. Esto incluye datos personales, fotografías, documentos, etc. 
+
+Pero también, la gestión del control que terceras partes hacen detus datos personales. Terceras partes como las propias redes sociales y entidades corporativas que usan esa información para venderte productos o servicios e influir sobre la toma de decisiones y hábitos. 
 
 Internet es una herramienta que nos permite la interacción entre dos o más personas. Siendo ejemplo de los anteriores sitios como Facebook y Twitter, Redes Sociales en donde las personas pueden compartir públicamente opiniones, noticias, sentimientos, ideas, fotografías, videos, etc. Por ello es necesario considerar que Internet es un espacio abierto al mundo, por lo tanto, cualquier acción que se haga va a tener un impacto global y permanente. Por ejemplo, imagina una publicación de la cual puedas arrepentirte (como una fotografía u opinión) no solo podrá ser vista por millones de usuarios, sino que también será prácticamente imposible de borrar completamente de la red .
 
-También puede resultar peligroso publicar datos que puedan identificarte, como la dirección, teléfonos, lugar de estudio o trabajo, días de vacaciones, etc. Esto puede resultar todavía más complicado si posees una gran lista de amigos a los que no conoces  personalmente. 
+También puede resultar peligroso publicar datos que puedan identificarte, como la dirección, teléfonos, lugar de estudio o trabajo, días de vacaciones, etc. Esto puede resultar todavía más complicado si posees una gran lista de amigos a los que no conoces personalmente.
 
-Por todo lo que se ha mencionado en éstas últimas líneas, es de suma importancia que antes de publicar algo, pienses en las consecuencias que puede conllevar divulgar información sensible en sitios públicos y de los cuales no siempre se tiene un control directo [@privacidad].
+Por todo lo que se ha mencionado en estas últimas líneas, es de suma importancia ser muy celoso del contenido que publicas y antes de publicar algo, pienses en las consecuencias que puede conllevar divulgar información sensible en sitios públicos y de los cuales no siempre se tiene un control directo. [@privacidad].
 
 ## Seguridad
 
