@@ -22,8 +22,7 @@ privacidad
 seguridad
 rgpd-reglamento-general-de-protección-de-datos
 aviso-legal-política-de-privacidad-y-política-de-cookies
-derechos-arco
-derechos-pol
+derechos-de-protección-de-datos
 gestión-de-la-privacidad
 gestionar-la-privacidad
 datos-personales-sensibles

@@ -52,8 +52,6 @@ Por lo tanto, hoy en día la seguridad depende de factores tan importantes, como
 
 Entre los riesgos más habituales se encuentran el robo de datos personales o bancarios, los virus informáticos, el phishing, el spam o la suplantación de identidad. Además, el uso de inteligencia artificial por parte de ciberdelincuentes ha hecho que muchas estafas sean más creíbles y difíciles de detectar, por ejemplo mediante mensajes personalizados, voces sintéticas o vídeos manipulados. Como verás más adelante, los riesgos en internet evolucionan constantemente y requieren una actitud crítica y preventiva.
 
-
-
 ## RGPD (Reglamento general de protección de datos)
 
 El Reglamento General de Protección de Datos (RGPD) es la normativa de la Unión Europea destinada a proteger los datos personales y la privacidad de las personas. Establece las reglas que deben cumplir empresas, organizaciones, administraciones públicas y otras entidades cuando recopilan, almacenan o utilizan información que permite identificarte directa o indirectamente [@WIKI-rgpd].
@@ -75,42 +73,52 @@ Antes de proporcionar información personal a una aplicación o servicio basado 
 
 ## Aviso legal, política de privacidad y política de cookies
 
-Si una web va a realizar transacciones comerciales de la naturaleza que sea, va a gestionar datos de usuarios o hacer uso de cookies, ha de tener a disposición del usuario las políticas que más abajo se detallan. Todas estas políticas están recogidas en el RGPD del apartado anterior. Sin embargo, para documentarlo con terminología más cotidiana, en este apartado nos hemos apoyado en la sección de derecho digital de la compañía IONOS by 1&1 en su división IONOS Guía Digital.
+Si una página web realiza actividades comerciales, gestiona datos personales de usuarios o utiliza cookies y tecnologías similares, debe poner a disposición de los usuarios una serie de documentos informativos que expliquen de forma clara sus obligaciones legales y el tratamiento de la información personal. Estas obligaciones derivan principalmente del Reglamento General de Protección de Datos (RGPD) [@RGPD], la Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD) [@LOPDGDD] y la Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE).
 
-- Aviso Legal: Se trata de un documento donde se recogen tanto el cumplimiento por parte de la entidad o empresa, conforme a las leyes vigentes en el desarrollo de su actividad, así como los datos referentes a los administradores de la misma.
+Para facilitar su comprensión, en este apartado se utilizan conceptos y terminología de uso habitual en el ámbito digital.
 
-  Todo proyecto de base digital u online con ánimo de lucro, ya sea a través de modelos de patrocinio, publicitarios o compra-venta  de productos o servicios, requieren de un aviso legal visiblemente expuesto y a disposición de todos los usuarios. Este requerimiento está recogido en la legislación española en la Ley 34/2002 de Servicios de la Sociedad de la Información y el Comercio Electrónico [@IONOS-legal].
+* Aviso legal: Es el documento que identifica a la persona, empresa u organización responsable del sitio web y recoge la información necesaria para cumplir con la legislación vigente aplicable a su actividad.
 
-- Política de privacidad: El reglamento general de Protección de Datos de carácter personal, establece que cualquier página web que incluya un formulario de carácter personal que deban rellenar los usuarios, que incluya un correo de contacto o utilice las redes sociales desde las cuales se puede obtener información de los usuarios, está obligada a disponer de una política de privacidad [@IONOS-privacidad].
+  Los proyectos digitales con actividad económica, ya sea mediante publicidad, patrocinio, venta de productos o prestación de servicios, deben mostrar un aviso legal accesible para los usuarios. Esta obligación está recogida en la Ley 34/2002 de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE) [@IONOS-legal].
 
-  La política de privacidad se creó con la finalidad de proteger y preservar los derechos del espacio privado de las personas. 
+* Política de privacidad: El Reglamento General de Protección de Datos establece que las organizaciones deben informar de forma clara sobre la recogida y el tratamiento de los datos personales. Esto incluye, entre otros casos, formularios de contacto, registros de usuarios, suscripciones, comunicaciones comerciales o servicios que recopilen información identificable de las personas [@IONOS-privacidad].
 
-- Política de cookies: Una cookie es una pequeña información enviada por un sitio web y almacenado en el navegador del usuario, de manera que el sitio web puede consultar la actividad previa del navegador. Su propósito principal es identificar al usuario almacenando su historial de actividad en un sitio web específico, de manera que se le pueda ofrecer el contenido más apropiado según sus hábitos [@IONOS-cookies].
+  La política de privacidad tiene como finalidad informar sobre qué datos se recopilan, con qué propósito se utilizan, durante cuánto tiempo se conservan y qué derechos puede ejercer cada persona respecto a su información.
 
-  Toda web que haga uso de cookies está obligada ponerlo en conocimiento de los usuarios y a solicitar su aceptación.
+  Además, cada vez es más frecuente que los servicios digitales incorporen sistemas de inteligencia artificial, como asistentes virtuales, chatbots o motores de recomendación. Cuando estas tecnologías utilizan datos personales, la política de privacidad debe informar adecuadamente sobre dicho tratamiento y las finalidades para las que se emplea la información.
+
+* Política de cookies: Una cookie es un pequeño archivo que una página web almacena en tu navegador para recordar determinada información sobre tu visita o sobre tus preferencias de navegación [@IONOS-cookies].
+
+  Las cookies pueden utilizarse para mantener sesiones abiertas, recordar configuraciones, medir audiencias, personalizar contenidos o mostrar publicidad adaptada a los intereses del usuario.
+
+  Cuando una página web utiliza cookies no esenciales para el funcionamiento básico del servicio, debe informar de ello y solicitar el consentimiento de forma previa. Además, debes poder rechazarlas con la misma facilidad con la que puedes aceptarlas.
+
+  Aunque la normativa europea ha reforzado los derechos de los usuarios en este ámbito, todavía es posible encontrar sitios web que utilizan diseños confusos o interfaces que dificultan el rechazo de determinadas cookies. Por ello, conviene revisar las opciones de configuración disponibles antes de aceptar tecnologías de seguimiento [@AEPD-cookies].
   
-  Con respecto a la legislación de la Unión Europea sobre el consentimiento de las cookies debes saber que dicha ley dicta que los usuarios de internet deben tener la opción de poder rechazarlas, sin que por ello éste se vea perjudicado en su navegación. Esto nos lleva a señalar que el problema está en que la mayoría de los sitios web no lo cumplen. Normalmente tú como usuario en una mayor parte de las veces solo te vas a encontrar con  la opción de aceptar todas las cookies o rechazarlas, en otros casos con otra opción más confusa y compleja de manejar la configuración de estás. Y en la inmensa mayoría de las ocasiones no te vas a encontrar con esa alternativa que te brinda la ley de poder rechazarlas [@GEN-rechazar-cookies].
-  
-## Derechos ARCO
+## Derechos de protección de datos 
 
-Los derechos ARCO  (Acceso, Rectificación, Cancelación y Oposición), están regulados por la Ley Orgánica de Protección de Datos y Garantía de los Derechos Digitales (LOPDGDD).
+La normativa europea de protección de datos, compuesta principalmente por el Reglamento General de Protección de Datos (RGPD) [@RGPD] y la Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD) [@LOPDGDD], reconoce una serie de derechos que te permiten mantener el control sobre tu información personal y decidir cómo puede ser utilizada por empresas, organizaciones y administraciones públicas [@AEPD-derechos].
 
-- Derecho al acceso: Te da derecho a conocer el uso que la entidad o responsable de tus datos está haciendo de ellos.
+Tradicionalmente estos derechos se agrupaban bajo las siglas ARCO (Acceso, Rectificación, Cancelación y Oposición) [@arco] y, posteriormente, POL (Portabilidad, Olvido o Supresión y Limitación del tratamiento) [@pol]	. Sin embargo, la normativa actual reconoce un conjunto más amplio de derechos, por lo que actualmente suele hablarse de derechos de protección de datos.
 
-- Derecho a la rectificación: Te da derecho a solicitar la rectificación de tus datos.
+Actualmente puedes ejercer los siguientes derechos:
 
-- Derecho a la cancelación: Te da derecho a solicitar la supresión de los datos que resulten inadecuados o excesivos.
+* Derecho de acceso: Te permite conocer si una entidad está tratando tus datos personales y obtener información sobre qué datos posee, cómo los utiliza, durante cuánto tiempo los conservará y con quién puede compartirlos.
 
-- Derecho a la oposición: Te da derecho a oponerte al tratamiento de sus datos personales o el cese de éstos.
+* Derecho de rectificación: Te permite solicitar la corrección de datos inexactos, erróneos o incompletos.
 
-Para poder ejercer estos derechos solo basta con solicitarlo a la parte responsable de tus datos, aportando fotocopia del DNI o documento equivalente, la petición que se solicita, la dirección a efectos de notificaciones y los documentos que acreditan la petición que se formula [@arco].
+* Derecho de supresión: Te permite solicitar la eliminación de tus datos personales cuando ya no sean necesarios para la finalidad con la que fueron recopilados, cuando retires tu consentimiento o cuando concurran otras circunstancias previstas en la normativa. En determinados contextos digitales también se conoce como derecho al olvido.
 
-## Derechos POL
+* Derecho de oposición: Te permite solicitar que una entidad deje de tratar tus datos personales en determinadas situaciones previstas por la ley.
 
-Los derechos POL (Portabilidad, Olvido o supresión y limitación del tratamiento), están regulados por el Reglamento General de Protección de Datos (RGPD) [@pol].
+* Derecho a la limitación del tratamiento: Te permite solicitar que tus datos sean conservados, pero que su utilización quede restringida temporalmente en determinadas circunstancias.
 
-- Derecho a la portabilidad de los datos: Te da el derecho de solicitar al responsable de tus datos el traspaso de éstos a otra entidad o responsable. Un ejemplo claro es la conocida portabilidad en el mundo de la telefonía que hacen que tus datos puedas ser cedidos de una compañía a otra.
+* Derecho a la portabilidad: Te permite recibir tus datos personales en un formato estructurado, de uso común y lectura mecánica, así como solicitar su transmisión a otro proveedor cuando sea técnicamente posible.
 
-- Derecho al olvido o supresión: Se trata de un mecanismo jurídico que te da derecho a solicitar al responsable de tus datos la supresión o eliminación de estos, pero con un enfoque más estrecho con el ámbito digital. Desde el servicio ofrecido por [AEPD](https://www.aepd.es/es/areas-de-actuacion/internet-y-redes-sociales/derecho-al-olvido) puedes acceder a los enlaces donde solicitar el derecho al olvido en [Google](https://www.google.com/webmasters/tools/legal-removal-request?complaint_type=rtbf&visit_id=637490694757326412-3626204680&hl=es&rd=1), [Bing](https://www.bing.com/webmaster/tools/eu-privacy-request), [Yahoo](https://es.ayuda.yahoo.com/kb/Solicitud-para-bloquear-resultados-de-b%C3%BAsqueda-en-Yahoo-Search-Recursos-para-Residentes-Europeos-sln28252.html?guccounter=1&guce_referrer=aHR0cHM6Ly93d3cuYWVwZC5lcy8&guce_referrer_sig=AQAAAIRquvv_VPnIiAOniwOvZi_iVodzBg6yn2C0sGApxESxJWBR6RMqeNq89qO01lmI0UdIKSr3ivLxST8cTDrgIMQRF9FIda60jZQ16f8q85f-eqLvvviA02B_fephtV40QIGV7aQ8Uw0M7f_poDUONOrmeKQzbahKvnuKZCoBDBFQ), aunque desde estos últimos enlaces ya puedes acceder directamente.
+* Derecho a no ser objeto de decisiones automatizadas: Te protege frente a decisiones tomadas exclusivamente mediante procesos automatizados, incluida la elaboración de perfiles, cuando estas puedan producir efectos jurídicos o afectar significativamente a tu persona.
 
-- Limitación del tratamiento: Permite que cualquier persona tenga derecho a exigir a la entidad responsable la limitación del tratamiento de sus datos personales.
+Estos derechos adquieren una importancia especial en el contexto actual, donde cada vez más organizaciones utilizan sistemas de inteligencia artificial para analizar información, elaborar perfiles de comportamiento o automatizar determinadas decisiones. Aunque intervengan sistemas de IA, sigues teniendo derecho a conocer cómo se utilizan tus datos personales, solicitar explicaciones cuando proceda y ejercer los derechos reconocidos por la normativa vigente.
+
+Para ejercer cualquiera de estos derechos debes dirigirte al responsable del tratamiento de los datos utilizando los canales habilitados para ello. La entidad podrá solicitar información que permita verificar tu identidad con el fin de evitar accesos, modificaciones o eliminaciones no autorizadas de datos personales. Si consideras que tu solicitud no ha sido atendida adecuadamente, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) [@AEPD].
+
+
