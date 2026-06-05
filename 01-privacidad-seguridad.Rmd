@@ -95,7 +95,7 @@ Para facilitar su comprensión, en este apartado se utilizan conceptos y termino
 
   Aunque la normativa europea ha reforzado los derechos de los usuarios en este ámbito, todavía es posible encontrar sitios web que utilizan diseños confusos o interfaces que dificultan el rechazo de determinadas cookies. Por ello, conviene revisar las opciones de configuración disponibles antes de aceptar tecnologías de seguimiento [@AEPD-cookies].
   
-## Derechos de protección de datos 
+## Derechos de protección de datos - ARSOPOL
 
 La normativa europea de protección de datos, compuesta principalmente por el Reglamento General de Protección de Datos (RGPD) [@RGPD] y la Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD) [@LOPDGDD], reconoce una serie de derechos que te permiten mantener el control sobre tu información personal y decidir cómo puede ser utilizada por empresas, organizaciones y administraciones públicas [@AEPD-derechos].
 
@@ -103,19 +103,19 @@ Tradicionalmente estos derechos se agrupaban bajo las siglas ARCO (Acceso, Recti
 
 Actualmente puedes ejercer los siguientes derechos:
 
-* Derecho de acceso: Te permite conocer si una entidad está tratando tus datos personales y obtener información sobre qué datos posee, cómo los utiliza, durante cuánto tiempo los conservará y con quién puede compartirlos.
+- Derecho de Acceso: Te permite conocer si una entidad está tratando tus datos personales y obtener información sobre qué datos posee, cómo los utiliza, durante cuánto tiempo los conservará y con quién puede compartirlos.
 
-* Derecho de rectificación: Te permite solicitar la corrección de datos inexactos, erróneos o incompletos.
+- Derecho de Rectificación: Te permite solicitar la corrección de datos inexactos, erróneos o incompletos.
 
-* Derecho de supresión: Te permite solicitar la eliminación de tus datos personales cuando ya no sean necesarios para la finalidad con la que fueron recopilados, cuando retires tu consentimiento o cuando concurran otras circunstancias previstas en la normativa. En determinados contextos digitales también se conoce como derecho al olvido.
+- Derecho de Supresión: Te permite solicitar la eliminación de tus datos personales cuando ya no sean necesarios para la finalidad con la que fueron recopilados, cuando retires tu consentimiento o cuando concurran otras circunstancias previstas en la normativa. En determinados contextos digitales también se conoce como derecho al olvido.
 
-* Derecho de oposición: Te permite solicitar que una entidad deje de tratar tus datos personales en determinadas situaciones previstas por la ley.
+- Derecho de Oposición: Te permite solicitar que una entidad deje de tratar tus datos personales en determinadas situaciones previstas por la ley.
 
-* Derecho a la limitación del tratamiento: Te permite solicitar que tus datos sean conservados, pero que su utilización quede restringida temporalmente en determinadas circunstancias.
+- Derecho a la Portabilidad: Te permite recibir tus datos personales en un formato estructurado, de uso común y lectura mecánica, así como solicitar su transmisión a otro proveedor cuando sea técnicamente posible.
 
-* Derecho a la portabilidad: Te permite recibir tus datos personales en un formato estructurado, de uso común y lectura mecánica, así como solicitar su transmisión a otro proveedor cuando sea técnicamente posible.
+- Derecho a no ser Objeto de decisiones automatizadas: Te protege frente a decisiones tomadas exclusivamente mediante procesos automatizados, incluida la elaboración de perfiles, cuando estas puedan producir efectos jurídicos o afectar significativamente a tu persona.
 
-* Derecho a no ser objeto de decisiones automatizadas: Te protege frente a decisiones tomadas exclusivamente mediante procesos automatizados, incluida la elaboración de perfiles, cuando estas puedan producir efectos jurídicos o afectar significativamente a tu persona.
+- Derecho a la Limitación del tratamiento: Te permite solicitar que tus datos sean conservados, pero que su utilización quede restringida temporalmente en determinadas circunstancias.
 
 Estos derechos adquieren una importancia especial en el contexto actual, donde cada vez más organizaciones utilizan sistemas de inteligencia artificial para analizar información, elaborar perfiles de comportamiento o automatizar determinadas decisiones. Aunque intervengan sistemas de IA, sigues teniendo derecho a conocer cómo se utilizan tus datos personales, solicitar explicaciones cuando proceda y ejercer los derechos reconocidos por la normativa vigente.
 
