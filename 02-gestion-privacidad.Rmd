@@ -19,11 +19,17 @@ Estos datos personales reciben una protección especial por parte de la normativ
 Entrando en un terreno más específico. los datos sensibles son aquellos que, de difundirse indebidamente podrían afectar la esfera más íntima del ser humano. Entre ellos se encuentran:
 
 - El origen racial o étnico.
+
 - Los datos relativos a la salud.
+
 - Los datos genéticos y biométricos utilizados para identificar a una persona.
+
 - Las creencias religiosas o filosóficas.
+
 - Las opiniones políticas.
+
 - La afiliación sindical.
+
 - Los datos relativos a la vida sexual o la orientación sexual.
 
 La protección de estos datos es especialmente importante porque una divulgación indebida puede afectar a la intimidad, la dignidad, la seguridad o los derechos fundamentales de las personas.
