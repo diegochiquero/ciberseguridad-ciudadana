@@ -210,13 +210,18 @@ knitr::include_graphics('images/ajuste-permisos.png')
 
 Aunque estos permisos son los más importantes cuando navegas por internet, si te fijas en la  figura 2.4 verás que no son los únicos  y que entre éstos se encuentran los de notificaciones o los de ventanas emergentes entre otros.
 
-La otra forma es más sencilla e incluso te permite cambiar los permisos directamente desde el navegador sin tener que ir al menú de opciones y esto lo tienes haciendo click en el candado de la barra de direcciones. Se trata del mismo candado que nos acredita que estamos ante una web segura. Puedes verlo en la siguiente imagen.
+La gestión de estos permisos puede realizarse desde la configuración del navegador. Aunque la ubicación exacta de las opciones puede variar según la versión utilizada, normalmente se encuentran en los apartados de Privacidad y seguridad o Configuración de sitios. Desde allí podrás revisar y modificar el acceso a la cámara, el micrófono, la ubicación, las notificaciones y otros elementos del dispositivo.
 
+También es posible consultar y modificar los permisos de una página web concreta directamente desde la barra de direcciones del navegador. Al seleccionar el icono situado junto a la dirección web (candado u otro símbolo equivalente según el navegador), podrás comprobar qué permisos tiene concedidos ese sitio y modificarlos si lo consideras necesario.
+
+Recuerda que el icono del candado únicamente indica que la comunicación con la página web está cifrada mediante HTTPS. No garantiza por sí solo que el sitio sea legítimo ni que todo su contenido sea seguro, por lo que siempre debes mantener una actitud crítica ante cualquier solicitud de información o permiso.
 ```{r, echo=FALSE, out.width='75%', fig.align='center', fig.cap='Ajustes permisos cámara, micrófono y ubicación desde el candado de la barra de direcciones.'}
 knitr::include_graphics('images/ajuste-permisos-desde-navegador.png')
 ```
 
-Para concluir, no debes olvidar que con las aplicaciones móviles sucede lo mismo, y que puedes gestionarlos de igual manera desde ajustes del dispositivo. Visita los siguientes enlaces dependiendo de tu smartphone, [cambiar los permisos de las aplicaciones en teléfonos Android](https://support.google.com/android/answer/9431959?hl=es) o [controlar el acceso a la información en las apps en el iPhone](https://support.apple.com/es-es/guide/iphone/iph251e92810/ios). En el siguiente enlace, [permisos aplicaciones  móviles](https://www.osi.es/sites/default/files/docs/c5-eg-permisos-apps-riesgos.pdf) encontrarás una tabla con los permisos y los riesgos que entrañan.
+Tampoco debes olvidar que con las aplicaciones móviles sucede lo mismo, y que puedes gestionarlos de igual manera desde ajustes del dispositivo. Visita los siguientes enlaces dependiendo de tu smartphone, [cambiar los permisos de las aplicaciones en teléfonos Android](https://support.google.com/android/answer/9431959?hl=es) o [controlar el acceso a la información en las apps en el iPhone](https://support.apple.com/es-es/guide/iphone/iph251e92810/ios). En el siguiente enlace, [permisos aplicaciones  móviles](https://www.osi.es/sites/default/files/docs/c5-eg-permisos-apps-riesgos.pdf) encontrarás una tabla con los permisos y los riesgos que entrañan. Es recomendable revisarlos periódicamente y eliminar aquellos que ya no sean necesarios, aplicando el principio de conceder únicamente los permisos mínimos indispensables para cada aplicación.
+
+En la actualidad, muchas aplicaciones incorporan funciones basadas en inteligencia artificial que pueden requerir acceso a la cámara, el micrófono, las fotografías, los vídeos o la ubicación. Antes de conceder estos permisos, revisa si son realmente necesarios para el funcionamiento de la aplicación y evita otorgar acceso permanente cuando no sea imprescindible.
 
 ## La nube
 
