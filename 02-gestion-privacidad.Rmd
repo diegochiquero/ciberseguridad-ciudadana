@@ -114,13 +114,17 @@ Recuerda que la navegación privada es una herramienta útil para proteger tu pr
 
 ## VPN (Red privada virtual)
 
-Otra manera más de proteger tu privacidad, es hacer uso de una VPN (son las siglas de Virtual Private Network) [@AVAST-vpn].
-  
-Las VPN son una tecnología de red que permiten una extensión de tu conexión local o LAN, permitiendo conectar varios dispositivos como si se encontrasen físicamente en el mismo lugar. Entre sus ventajas está la de ofrecer una mayor privacidad al ocultar tu localización, pero también, y este el caso que nos compete, el que parezca que tu conexión esté realizándose en otro país concreto, con lo que uno se puede saltar censuras o acceder a contenidos de servicios locales. 
+Otra forma de reforzar tu privacidad en Internet es utilizar una VPN (siglas de Virtual Private Network o red privada virtual) [@XATAKA-vpn].
 
-Su principal particularidad es que se trata de una conexión segura y cifrada. Esto hace que no sea posible conocer la información que viaja en la petición que se realiza, así como tampoco la IP pública que identifica tu dispositivo, ya que la conexión se realiza a través de los muchos router VPN en diferentes ubicaciones.
+Una VPN crea una conexión cifrada entre tu dispositivo y un servidor gestionado por el proveedor de la VPN. De esta forma, tu proveedor de acceso a Internet o las personas conectadas a la misma red (por ejemplo, en una red Wi-Fi pública) tienen más dificultades para conocer qué información intercambias con los sitios web que visitas.
 
-Las VPN suelen ser aplicaciones o extensiones de terceros, aunque el navegador [OPERA](https://www.opera.com/es) lo trae por defecto. Lo único que tendrás que hacer es activarla desde sus opciones, y se creará una conexión cifrada entre tu dispositivo y un servidor VPN para esconder tu ubicación real.
+Además, los servicios de Internet verán la dirección IP del servidor VPN en lugar de la tuya, lo que puede ayudar a ocultar tu ubicación aproximada y permitir el acceso a contenidos o servicios disponibles únicamente en determinados países o regiones.
+
+Sin embargo, una VPN no proporciona anonimato total ni te protege frente a todas las amenazas. El proveedor de la VPN puede tener acceso a determinados datos de tu conexión, por lo que es importante elegir servicios de confianza, revisar sus políticas de privacidad y desconfiar de aplicaciones gratuitas de origen desconocido.
+
+Las VPN suelen ofrecerse mediante aplicaciones específicas para ordenadores y dispositivos móviles, aunque algunos navegadores incorporan funciones similares, como el navegador [OPERA](https://www.opera.com/es) que lo trae por defecto. Una vez activada, la VPN cifra el tráfico entre tu dispositivo y el servidor VPN, dificultando que terceros intercepten o supervisen tu actividad en la red.
+
+Recuerda que una VPN es un herramienta más como medida de privacidad, pero no sustituye las buenas prácticas de ciberseguridad. Aunque utilices una VPN, debes seguir prestando atención a posibles fraudes, correos electrónicos sospechosos, páginas web falsas, aplicaciones maliciosas o contenidos manipulados mediante inteligencia artificial, como mensajes automatizados o deepfakes utilizados para engañar a las personas.
 
 ## Cookies
 
