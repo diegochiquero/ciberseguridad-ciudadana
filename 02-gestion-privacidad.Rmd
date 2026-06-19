@@ -289,7 +289,7 @@ Con Cryptomator puedes crear diferentes bóvedas cifradas, protegidas mediante u
 
 Es importante que utilices una contraseña robusta y que la conserves de forma segura. Si la olvidas, recuperar el acceso a la información puede resultar imposible.
 
-Además del cifrado de archivos concretos, muchos sistemas operativos actuales incorporan opciones para cifrar completamente el dispositivo, lo que añade una capa adicional de protección frente a pérdidas, robos o accesos no autorizados. Pero esto es algo que veraś más adelante en el punto [3 Gestión de la seguridad en equipos físicos](#gestión-de-la-seguridad-en-equipos-físicos)
+Además del cifrado de archivos concretos, muchos sistemas operativos actuales incorporan opciones para cifrar completamente el dispositivo, lo que añade una capa adicional de protección frente a pérdidas, robos o accesos no autorizados. Pero esto es algo que veraś más adelante en la unidad [3 Gestión de la seguridad en equipos físicos](#gestión-de-la-seguridad-en-equipos-físicos).
 
 Otra práctica especialmente recomendable consiste en cifrar los archivos antes de almacenarlos en servicios de nube. De esta forma, aunque los datos se encuentren alojados en servidores de terceros, solo podrán ser leídos por quienes dispongan de la contraseña de descifrado.
 
