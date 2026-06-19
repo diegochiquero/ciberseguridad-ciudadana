@@ -41,7 +41,7 @@ gestionar-la-seguridad-en-los-equipos
 cuentas-de-usuario-en-equipos-locales-y-dispositivos-móviles
 router
 actualizaciones
-antivirus-antimalware-antispyware-y-firewall
+antivirus-antimalware-y-cortafuegos
 copias-de-seguridad
 cifrado-o-encriptado-de-unidades-de-almacenamiento
 gestión-de-la-seguridad-en-la-red

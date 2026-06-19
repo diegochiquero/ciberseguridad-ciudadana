@@ -46,60 +46,78 @@ Es también, recomendable bloquear la pantalla cuando te ausentes del equipo y c
 
 ## Router
 
-Un router es un dispositivo que proporciona conectividad a nivel de red. Su función principal consiste en enviar o encaminar paquetes de datos de una red a otra, es decir, interconectar subredes, entendiendo por subred un conjunto de máquinas IP que se pueden comunicar. Además de ser el dispositivo que nos proporciona un punto de acceso Wi-Fi
+El router es el dispositivo que proporciona conectividad entre tu red doméstica e Internet. Su función principal consiste en dirigir el tráfico de datos entre diferentes redes y, habitualmente, ofrecer acceso a la red inalámbrica (Wi-Fi) para tus dispositivos.
 
-Dispone de varios niveles de seguridad y estándares de cifrado, para que nadie pueda acceder a nuestra red y poder alcanzar cualquier dispositivo a través d la Wi-Fi. 
+Para proteger tu red Wi-Fi, los routers incorporan distintos estándares de seguridad y cifrado que impiden que personas no autorizadas accedan a la conexión o a los dispositivos conectados.
 
-Ordenados de menor a mayor grado de cifrado:
+Los principales estándares de seguridad Wi-Fi son:
 
-- [WEP](https://es.wikipedia.org/wiki/Wired_Equivalent_Privacy) (Wired Equivalent Privacy)
-- [WPA](https://es.wikipedia.org/wiki/Wi-Fi_Protected_Access) (Wi-Fi Protected Access)
-- [WPA2](https://es.wikipedia.org/wiki/WPA2) (Wi-Fi Protected Access 2)
-- [WPA3](https://es.wikipedia.org/wiki/WPA3) (Wi-Fi Protected Access 3)
+- [WEP](https://es.wikipedia.org/wiki/Wired_Equivalent_Privacy) (Wired Equivalent Privacy). Actualmente se considera inseguro y no debe utilizarse.
+- [WPA](https://es.wikipedia.org/wiki/Wi-Fi_Protected_Access) (Wi-Fi Protected Access). Ha quedado obsoleto y tampoco se recomienda.
+- [WPA2](https://es.wikipedia.org/wiki/WPA2) (Wi-Fi Protected Access 2). Sigue siendo seguro cuando se utiliza con cifrado AES y una contraseña robusta.
+- [WPA3](https://es.wikipedia.org/wiki/WPA3) (Wi-Fi Protected Access 3). Es el estándar más seguro actualmente disponible para redes domésticas y el que se recomienda utilizar siempre que sea compatible con tus dispositivos.
 
-Es importante que uses un  nivel de seguridad WPA2 como mínimo, con el que vas a poder establecer una contraseña de hasta 63 caracteres en lugar de los máximos 29 de la WEP.
+Si tu router lo permite, configura la red con WPA3. En caso contrario, utiliza WPA2 con una contraseña larga, única y difícil de adivinar.
 
-Para establecer una capa más de seguridad puedes realizar un [filtrado MAC](https://es.wikipedia.org/wiki/Filtrado_MAC) (Media Access Control). Un filtrado MAC consiste en la creación de una lista de dispositivos que tienen permiso para acceder al router, a pesar de que un tercero haya podido obtener la clave wifi.
+Es importante cambiar la contraseña Wi-Fi que viene configurada por defecto y utilizar una clave robusta. Cuanto más larga sea la contraseña, mayor será la dificultad para que pueda ser descubierta mediante ataques automatizados. Para una contraseña robusta pásate por la unidad [4 Gestión de la seguridad en la red](#gestión-de-la-seguridad-en-la-red).
 
-Es igualmente importante que cambies la clave que el router trae por defecto. Este enlace te llevará a un [generador de claves Wi-Fi](https://bandaancha.eu/generador-claves-wifi) donde podrás crear de forma automática una clave Wi-Fi segura y robusta. 
+También es recomendable modificar el nombre de la red Wi-Fi (SSID) que trae el router de fábrica. Evita utilizar datos personales o información que pueda revelar el operador, el modelo del equipo o la identidad del propietario de la red.
 
-De igual modo cambia la contraseña de acceso al router, para que solo tú puedas acceder a su configuración.
+De igual modo, cambia la contraseña de administración del router para impedir que terceros puedan acceder a su configuración. Utiliza una contraseña distinta de la empleada para la red Wi-Fi.
 
-También es una buena práctica cambiar el nombre que la Wi-Fi trae por defecto, esto despistará a aquellos que puedan tener una lista de claves de acceso de las diferentes operadoras que existen en el mercado.
+Otra medida recomendable es desactivar la función WPS (Wi-Fi Protected Setup) si no la utilizas. Esta característica facilita la conexión de nuevos dispositivos mediante un botón físico o un código PIN, pero ha presentado vulnerabilidades de seguridad en algunos modelos de router.
 
-Otro aspecto a tener en cuenta es deshabilitar la opción [WPS](https://es.wikipedia.org/wiki/Wi-Fi_Protected_Setup) (Wifi Protected Setup) en el router. Esta función te permite conectar el ordenador o dispositivo a la Wi-Fi del router sin tener que escribir la contraseña cuando eliges tu red Wi-Fi desde el dispositivo. Se trata de un botón físico que traen algunos router y que al pulsarlo conecta el dispositivo de forma automática. Esta funcionalidad es muy práctica, pero conlleva el riesgo de que cuando pulsas este botón estás abriendo la Wi-Fi, lo que significa que inhabilitas todas las medidas de seguridad que tengas configuradas para la conexión. Si decides deshabilitarla puedes hacerlo desde la configuración de tu router y normalmente vas a encontrarlo en los apartados Wireless o Network de la interfaz web [@XATAKA-wps]. 
+Mantén actualizado el firmware del router. Los fabricantes publican periódicamente actualizaciones que corrigen errores y vulnerabilidades de seguridad que podrían ser aprovechadas por atacantes.
 
-Para realizar cualquiera de las configuraciones propuestas en este apartado va a necesitar acceder a la interfaz de tu router y para ello, necesitarás saber la dirección IP de acceso. Esta te será facilitada por tu operador. 
+Si tu router dispone de una red de invitados, utilízala para conectar dispositivos de visitas o dispositivos inteligentes del hogar (IoT), como cámaras, asistentes de voz o enchufes inteligentes. De este modo reduces el impacto de una posible intrusión.
+
+También es aconsejable revisar periódicamente la lista de dispositivos conectados para detectar accesos no autorizados y desactivar la administración remota del router cuando no sea necesaria.
+
+Algunos routers permiten configurar filtros basados en direcciones [MAC](https://es.wikipedia.org/wiki/Filtrado_MAC) (Media Access Control) para autorizar únicamente determinados dispositivos. Aunque esta medida de filtrado MAC puede ayudar a gestionar los equipos conectados, no debe considerarse una protección de seguridad eficaz por sí sola, ya que estas direcciones pueden ser suplantadas.
+
+Para realizar cualquiera de estas configuraciones necesitarás acceder al panel de administración del router. La dirección de acceso suele encontrarse en una etiqueta situada en el propio dispositivo, en la documentación del fabricante o facilitada por tu operador de Internet.
 
 Visita el siguiente enlace para conocer las [principales configuraciones del router](https://www.incibe.es/ciudadania/formacion/infografias/principales-configuraciones-del-router).
 
 ## Actualizaciones
 
-Las actualizaciones de seguridad o parches son elaboradas por los desarrolladores y fabricantes de productos informáticos. Estos pueden tardar desde un día hasta meses para publicar un parche, en función del tipo de vulnerabilidad, dispositivos a los que afecte y otros criterios. Aunque también se realizan para mejoras de otras naturalezas, como, rendimiento, productividad, etc.
+Las actualizaciones son modificaciones que los fabricantes y desarrolladores publican para corregir errores, solucionar vulnerabilidades de seguridad, mejorar el funcionamiento de los dispositivos o incorporar nuevas características. Estas actualizaciones pueden afectar tanto al sistema operativo como a las aplicaciones, navegadores, antivirus o al firmware de determinados dispositivos.
 
-Tener actualizados los dispositivos es una medida más de seguridad. Para ello debes actualizarlos cada vez que el dispositivo lo solicita o en su defecto buscar una actualización disponible.
+Las actualizaciones de seguridad, también conocidas como parches, son correcciones desarrolladas por fabricantes y desarrolladores para solucionar vulnerabilidades, errores o problemas detectados en sistemas operativos, aplicaciones y otros componentes informáticos.
 
-Las actualizaciones no solo corresponden al Hardware (ordenadores, smartphones, etc.), sino que también han de ser realizados en el software (programas), navegadores, antivirus, etc.
+Además de corregir fallos de seguridad, las actualizaciones pueden incorporar nuevas funcionalidades, mejorar el rendimiento, aumentar la estabilidad del sistema, reforzar la privacidad o mejorar la compatibilidad con otros dispositivos y servicios.
 
-La principal función de las actualizaciones son las de mejorar tanto la funcionalidad como la seguridad de los dispositivos o software [@OSI-actualizaciones].
+Mantener tus dispositivos actualizados es una de las medidas de seguridad más importantes. Cuando un fabricante publica una actualización que corrige una vulnerabilidad, los ciberdelincuentes pueden intentar aprovechar ese fallo en aquellos equipos que todavía no han sido actualizados. Por este motivo, es recomendable instalar las actualizaciones tan pronto como estén disponibles.
 
-## Antivirus, antimalware, antispyware y firewall
+Siempre que sea posible, activa las actualizaciones automáticas. De esta forma recibirás las correcciones de seguridad sin necesidad de realizar ninguna acción manual.
 
-Aunque a priori pudiese parecer lo mismo, los antivirus, antimalware, antispyware y firewall, cumple funciones diferentes, pero con un mismo fin, mantener la seguridad de tus equipos. La mayoría de estos tipos de software los puedes encontrar en dos modalidades: gratuita y de pago [@software-seguridad].
+Las actualizaciones no afectan únicamente a los ordenadores y teléfonos móviles. También deben mantenerse actualizados los navegadores web, aplicaciones, antivirus, routers, televisores inteligentes, cámaras conectadas a Internet, asistentes de voz y cualquier otro dispositivo conectado a la red.
 
-- Antivirus: Es un programa que detecta la presencia de virus informáticos (software malicioso que altera el funcionamiento normal del ordenador sin que el usuario lo sepa o consienta) y los elimina o repara. Algunos ejemplos de antivirus son: [Avira](https://www.avira.com/es), [Avast](https://www.avast.com/es-es/index#pc), [AVG](https://www.avg.com/es-es/homepage#pc), [Virus Total](https://www.virustotal.com/gui/) (online), entre muchos más.
+En ocasiones pueden existir vulnerabilidades para las que todavía no se ha publicado una solución. Estas se conocen como vulnerabilidades de día cero (zero-day). Cuando el fabricante publica una corrección, instalarla rápidamente ayuda a reducir el riesgo de que el dispositivo pueda verse comprometido.
 
-- Firewall o cortafuegos: Es una parte de la red o el sistema que se realiza para bloquear accesos no autorizados y permitiendo los que sí lo están. Se pueden hacer por medio de software o hardware, y permiten una mayor protección a las redes, especialmente importante en empresas que cuentan con datos que han de ser bien protegidos. El [firewall](https://en.wikipedia.org/wiki/Windows_Firewall) más conocido es el Windows.
- 
-- Antispyware: Es un conjunto de herramientas que sirven para prevenir y eliminar Spywares (espías o programas que recopilan información del ordenador para transmitirla a otras personas sin el consentimiento ni conocimiento del propietario del ordenador). Algunos ejemplos de antispyware son: [SpyBot](https://www.safer-networking.org/), [SuperAntiSpyware](https://www.superantispyware.com/), [SpywareBlaster](https://www.brightfort.com/spywareblaster.html).
+La evolución de la inteligencia artificial está permitiendo a los fabricantes detectar y corregir problemas con mayor rapidez, pero también facilita que los atacantes automaticen la búsqueda y explotación de vulnerabilidades. Por ello, mantener todos los dispositivos y programas actualizados sigue siendo una de las medidas más eficaces para proteger tu información y tu privacidad.
 
-- Antimalware: Es un software encargado de eliminar el software malicioso (malicious-software, malware) del ordenador tras un minucioso análisis del sistema. Algunos ejemplos de antimalware son: [HiJackThis](https://www.infospyware.com/antimalware/hijackthis/), [Anti-malware](https://www.malwarebytes.com/).
+La principal función de las actualizaciones es mejorar la seguridad, la estabilidad y la funcionalidad de los sistemas y aplicaciones, contribuyendo a reducir los riesgos asociados al uso de las tecnologías digitales.
 
-Dependiendo de las necesidades pueden ser usados uno o varios, ya que son complementarios entre sí.
+## Antivirus, antimalware y cortafuegos
 
-Antes de decidir que herramientas de las anteriormente expuestas va a usar, puedes hacer una búsqueda e informarte sobre las opciones disponibles, ya que existen soluciones de todo tipo y para todos los gustos, gratuitas, de pago, para ordenadores, para smartphones. Desde la [Oficina de Seguridad del Internauta](https://www.osi.es) ponen a tu disposición este [listado de Antivirus gratuitos](https://www.osi.es/es/herramientas-gratuitas?herramienta_selec%5B0%5D=115), para que puedas elegir el que mejor se adapte a tus necesidades. Pero no olvides nunca de asegurarte muy bien que estás ante un producto legítimo y descargarlo siempre de la web oficial. 
+Existen diferentes herramientas de seguridad diseñadas para proteger tus dispositivos frente a amenazas informáticas. Aunque a menudo se utilizan como sinónimos, cumplen funciones distintas y complementarias. Actualmente muchas soluciones de seguridad integran varias de estas funciones en un único producto.
 
-Cabe destacar que Windows de un tiempo aquí ya trae de manera nativa su propio antivirus conocido como [Windows Defender](https://www.microsoft.com/es-es/windows/comprehensive-security).
+La mayoría de estas herramientas pueden encontrarse en versiones gratuitas y de pago, con diferentes niveles de protección y funcionalidades.
+
+- Antivirus y antimalware: Son programas diseñados para detectar, bloquear y eliminar software malicioso (malware), como virus, troyanos, ransomware, spyware o programas potencialmente no deseados. Las soluciones modernas combinan diferentes técnicas de detección para identificar tanto amenazas conocidas como comportamientos sospechosos que puedan indicar un ataque. Algunos de ellos [Avira](https://www.avira.com/es), [Avast](https://www.avast.com/es-es/index#pc), [AVG](https://www.avg.com/es-es/homepage#pc).
+
+- Firewall o cortafuegos: Es un mecanismo de seguridad que controla las comunicaciones entre tu dispositivo e Internet o entre diferentes redes. Su función es permitir o bloquear conexiones según unas reglas establecidas, evitando accesos no autorizados. Los principales sistemas operativos actuales incorporan cortafuegos integrados que proporcionan un nivel adecuado de protección para la mayoría de usuarios. El [firewall](https://en.wikipedia.org/wiki/Windows_Firewall) más conocido es el Windows.
+
+En la actualidad, muchas herramientas de seguridad incorporan tecnologías basadas en inteligencia artificial y aprendizaje automático para detectar amenazas nuevas o desconocidas. Sin embargo, los ciberdelincuentes también utilizan estas tecnologías para desarrollar ataques más sofisticados, por lo que ninguna solución de seguridad garantiza una protección absoluta.
+
+Antes de instalar cualquier herramienta de seguridad, infórmate sobre las opciones disponibles y descárgalas siempre desde la página web oficial del fabricante o desde tiendas de aplicaciones legítimas. Desconfía de los programas que prometen eliminar amenazas de forma milagrosa o que muestran alertas alarmistas para inducirte a instalarlos.
+
+Para la mayoría de usuarios domésticos, las soluciones de seguridad integradas en los sistemas operativos modernos ofrecen un nivel de protección adecuado siempre que se mantengan actualizadas.
+
+Cabe destacar que Windows incorpora de forma nativa Microsoft Defender Antivirus, una solución de seguridad que incluye protección frente a malware, análisis en tiempo real y otras funciones de seguridad integradas en el sistema operativo. Del mismo modo, los dispositivos de Apple incorporan mecanismos de protección integrados, como el control de aplicaciones, la protección frente a software malicioso y actualizaciones de seguridad distribuidas directamente por el fabricante.
+
+Además de las soluciones de seguridad instaladas en el dispositivo, existen herramientas online como [Virus Total](https://www.virustotal.com/gui/) que permiten analizar archivos y enlaces sospechosos antes de abrirlos.
 
 ## Copias de seguridad
 
