@@ -123,6 +123,8 @@ Además de las soluciones de seguridad instaladas en el dispositivo, existen her
 
 Una copia de seguridad o backup en informática es una copia de los datos originales que se realiza con el fin de disponer de un medio para recuperarlos en caso de su pérdida. Las copias de seguridad son útiles ante distintos eventos y usos, como por ejemplo, recuperar los sistemas informáticos o datos de una posible catástrofe informática, natural o intencionada, restaurar una pequeña cantidad de archivos que pueden haberse eliminado accidentalmente, corrompido o infectado por un virus informático u otras posibles causas [@WIKI-copias-seguridad].
 
+Actualmente las copias de seguridad son una de las medidas de protección más importantes frente al ransomware, un tipo de malware que puede cifrar tus archivos e impedirte acceder a ellos.
+
 Simplificando el sistema de copias de seguridad que en algunas ocasiones puede llegar a ser complejo, están los siguiente:
 	
 - Completas: Del sistema operativo completo, de esta forma al restaurar la copia, dispondremos de nuevo de toda la configuración a nivel de S.O., software instalado, carpetas y archivos. Para este cometido vamos a necesitar de programas de terceros, algunos de ellos con versiones gratuitas y de pago, ejemplo de estos son: [Acronis](https://www.acronis.com/), [AOMEI](https://www.aomeitech.com/), [EaseUS](https://www.easeus.com/). Aunque más abajo verás que también pueden hacerse nativamente.
@@ -135,7 +137,9 @@ Y las copias pueden ser mantenidas:
 
 - En la nube: Estos son servicios de terceros accesibles online, ejemplo de ello son: [BackBlaze](https://www.backblaze.com/home-1.html), [Carbonite](https://www.carbonite.com/), siendo estos especializados en backups. Pero si tus copias de seguridad se limitan a tus carpetas y archivos personales puedes usar un servicio en la nube, como [Google Drive](https://www.google.com/intl/en_in/drive/), [Onedrive](https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage) o [Dropbox](https://www.dropbox.com/). 
 
-Las copias de seguridad debes realizarlas con la frecuencia que sea necesaria para garantizar tu nivel de seguridad [@tipos-copia-seguridad].
+Debes tener en cuenta que la sincronización de archivos en servicios como OneDrive, Google Drive, Dropbox o iCloud no siempre equivale a una copia de seguridad. Si un archivo se elimina o resulta afectado por malware, el cambio puede sincronizarse automáticamente en todos los dispositivos. Por ello es recomendable disponer de copias independientes y, cuando sea posible, conservar versiones anteriores de los archivos.
+
+Y ten siempre presente que las copias de seguridad debes realizarlas con la frecuencia que sea necesaria para garantizar tu nivel de seguridad.
 
 Puedes crear una copia de seguridad de tu sistema operativo fácilmente ya que tanto Windows como Mac traen esta opción de forma nativa, solo necesitaras disponer de un dispositivo externo de almacenamiento en el que puedas guardar la copia con espacio de almacenamiento suficiente. Para Windows tienes la guía en el siguiente enlace de como [realizar y restaurar una copia de seguridad del PC](https://support.microsoft.com/es-es/windows/realizar-y-restaurar-una-copia-de-seguridad-del-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c), y para los dispositivos Apple la guía la encontrarás en [cómo hacer copias de seguridad en Mac](https://support.apple.com/es-es/mac-backup).
 
@@ -159,8 +163,6 @@ Software de diagnóstico y/o reparación de unidades de almacenamiento:
 
 - [HDDScan](https://hddscan.com/): Diagnóstico discos de HDD, SSD y memorias USB (pendrives).
 
-- [Check Flash](http://mikelab.kiev.ua/index_en.php?page=PROGRAMS/chkflsh_en): Diagnóstico de memorias USB (pendrives).
-
 Por otro lado, si has borrado accidentalmente información y tu copia de seguridad no está totalmente actualizada, quizá te interese saber que también existe software de recuperación de datos eliminados, siempre y cuando no haya pasado el suficiente tiempo para que la información eliminada haya sido reescrita. Recuerda que la información eliminada solo se produce de forma definitiva cuando se reescribe dicha información. 
 
 Aunque este último apunte no está estrechamente relacionado con la seguridad en equipos físicos, que es el tema que se trata en esta unidad, nunca está de más saber que tienes esta opción, para poder recuperar datos perdidos.
@@ -171,10 +173,7 @@ Para recuperar tu información dispones de software como:
 
 - [Wise Cleaner](https://www.wisecleaner.com/wise-data-recovery.html): PC.
 
-- [Videos y audios Recovery ](https://play.google.com/store/apps/details?id=com.mediarecovery.deletedvideorecovery.deletedaudiorecovery&hl=es): Smartphone.
-
-- [File Recovery](https://play.google.com/store/apps/details?id=com.file.recovery.data.recovery.deletedfilerecovery): Smartphone.
-
+- [Dumpster](https://play.google.com/store/apps/details?id=com.baloota.dumpster&hl=es): Smartphone.
 
 ## Cifrado o encriptado de unidades de almacenamiento
 
@@ -192,6 +191,14 @@ Existen varias herramientas en el mercado para este cometido como las detalladas
 
 - [Diskcryptor](https://diskcryptor.org/).
 
-- [Comodo Disk Encryption](https://www.comodo.com/home/internet-security/disk-encryption.php).
+Para aprovechar correctamente el cifrado:
 
-También tienes a tu disposición el siguiente enlace que te llevará a la revista digital [Computerhoy](https://computerhoy.com/tutoriales/tecnologia/como-cifrar-disco-duro-memoria-externa-nadie-pueda-acceder-ella-386434) donde te explican como encriptar tu ordenador Windows o Mac. 
+- Utiliza una contraseña robusta o un PIN seguro.
+
+- Activa la autenticación biométrica cuando esté disponible.
+
+- Conserva las claves de recuperación en un lugar seguro.
+
+- Mantén actualizado el sistema operativo.
+
+En una sociedad cada vez más digitalizada, donde almacenas fotografías, documentos, conversaciones y otra información personal en múltiples dispositivos, el cifrado es una de las medidas más eficaces para proteger tu privacidad y reducir el impacto de un acceso físico no autorizado.

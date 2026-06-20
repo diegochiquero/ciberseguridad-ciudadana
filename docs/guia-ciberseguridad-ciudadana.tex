@@ -100,7 +100,7 @@
 
 \title{Ciberseguridad ciudadana}
 \author{Diego Chiquero Mena}
-\date{19 junio 2026}
+\date{20 junio 2026}
 
 \begin{document}
 \maketitle
@@ -867,6 +867,8 @@ Además de las soluciones de seguridad instaladas en el dispositivo, existen her
 
 Una copia de seguridad o backup en informática es una copia de los datos originales que se realiza con el fin de disponer de un medio para recuperarlos en caso de su pérdida. Las copias de seguridad son útiles ante distintos eventos y usos, como por ejemplo, recuperar los sistemas informáticos o datos de una posible catástrofe informática, natural o intencionada, restaurar una pequeña cantidad de archivos que pueden haberse eliminado accidentalmente, corrompido o infectado por un virus informático u otras posibles causas \citep{WIKI-copias-seguridad}.
 
+Actualmente las copias de seguridad son una de las medidas de protección más importantes frente al ransomware, un tipo de malware que puede cifrar tus archivos e impedirte acceder a ellos.
+
 Simplificando el sistema de copias de seguridad que en algunas ocasiones puede llegar a ser complejo, están los siguiente:
 
 \begin{itemize}
@@ -885,7 +887,9 @@ Y las copias pueden ser mantenidas:
   En la nube: Estos son servicios de terceros accesibles online, ejemplo de ello son: \href{https://www.backblaze.com/home-1.html}{BackBlaze}, \href{https://www.carbonite.com/}{Carbonite}, siendo estos especializados en backups. Pero si tus copias de seguridad se limitan a tus carpetas y archivos personales puedes usar un servicio en la nube, como \href{https://www.google.com/intl/en_in/drive/}{Google Drive}, \href{https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage}{Onedrive} o \href{https://www.dropbox.com/}{Dropbox}.
 \end{itemize}
 
-Las copias de seguridad debes realizarlas con la frecuencia que sea necesaria para garantizar tu nivel de seguridad \citep{tipos-copia-seguridad}.
+Debes tener en cuenta que la sincronización de archivos en servicios como OneDrive, Google Drive, Dropbox o iCloud no siempre equivale a una copia de seguridad. Si un archivo se elimina o resulta afectado por malware, el cambio puede sincronizarse automáticamente en todos los dispositivos. Por ello es recomendable disponer de copias independientes y, cuando sea posible, conservar versiones anteriores de los archivos.
+
+Y ten siempre presente que las copias de seguridad debes realizarlas con la frecuencia que sea necesaria para garantizar tu nivel de seguridad.
 
 Puedes crear una copia de seguridad de tu sistema operativo fácilmente ya que tanto Windows como Mac traen esta opción de forma nativa, solo necesitaras disponer de un dispositivo externo de almacenamiento en el que puedas guardar la copia con espacio de almacenamiento suficiente. Para Windows tienes la guía en el siguiente enlace de como \href{https://support.microsoft.com/es-es/windows/realizar-y-restaurar-una-copia-de-seguridad-del-pc-ac359b36-7015-4694-de9a-c5eac1ce9d9c}{realizar y restaurar una copia de seguridad del PC}, y para los dispositivos Apple la guía la encontrarás en \href{https://support.apple.com/es-es/mac-backup}{cómo hacer copias de seguridad en Mac}.
 
@@ -913,8 +917,6 @@ Software de diagnóstico y/o reparación de unidades de almacenamiento:
   \href{https://www.hdsentinel.com/}{HdSentinel}: Diagnóstico y reparación de discos HDD.
 \item
   \href{https://hddscan.com/}{HDDScan}: Diagnóstico discos de HDD, SSD y memorias USB (pendrives).
-\item
-  \href{http://mikelab.kiev.ua/index_en.php?page=PROGRAMS/chkflsh_en}{Check Flash}: Diagnóstico de memorias USB (pendrives).
 \end{itemize}
 
 Por otro lado, si has borrado accidentalmente información y tu copia de seguridad no está totalmente actualizada, quizá te interese saber que también existe software de recuperación de datos eliminados, siempre y cuando no haya pasado el suficiente tiempo para que la información eliminada haya sido reescrita. Recuerda que la información eliminada solo se produce de forma definitiva cuando se reescribe dicha información.
@@ -929,9 +931,7 @@ Para recuperar tu información dispones de software como:
 \item
   \href{https://www.wisecleaner.com/wise-data-recovery.html}{Wise Cleaner}: PC.
 \item
-  \href{https://play.google.com/store/apps/details?id=com.mediarecovery.deletedvideorecovery.deletedaudiorecovery\&hl=es}{Videos y audios Recovery}: Smartphone.
-\item
-  \href{https://play.google.com/store/apps/details?id=com.file.recovery.data.recovery.deletedfilerecovery}{File Recovery}: Smartphone.
+  \href{https://play.google.com/store/apps/details?id=com.baloota.dumpster\&hl=es}{Dumpster}: Smartphone.
 \end{itemize}
 
 \hypertarget{cifrado-o-encriptado-de-unidades-de-almacenamiento}{%
@@ -952,11 +952,22 @@ Existen varias herramientas en el mercado para este cometido como las detalladas
   \href{https://www.veracrypt.fr}{Veracrypt}.
 \item
   \href{https://diskcryptor.org/}{Diskcryptor}.
-\item
-  \href{https://www.comodo.com/home/internet-security/disk-encryption.php}{Comodo Disk Encryption}.
 \end{itemize}
 
-También tienes a tu disposición el siguiente enlace que te llevará a la revista digital \href{https://computerhoy.com/tutoriales/tecnologia/como-cifrar-disco-duro-memoria-externa-nadie-pueda-acceder-ella-386434}{Computerhoy} donde te explican como encriptar tu ordenador Windows o Mac.
+Para aprovechar correctamente el cifrado:
+
+\begin{itemize}
+\item
+  Utiliza una contraseña robusta o un PIN seguro.
+\item
+  Activa la autenticación biométrica cuando esté disponible.
+\item
+  Conserva las claves de recuperación en un lugar seguro.
+\item
+  Mantén actualizado el sistema operativo.
+\end{itemize}
+
+En una sociedad cada vez más digitalizada, donde almacenas fotografías, documentos, conversaciones y otra información personal en múltiples dispositivos, el cifrado es una de las medidas más eficaces para proteger tu privacidad y reducir el impacto de un acceso físico no autorizado.
 
 \hypertarget{gestiuxf3n-de-la-seguridad-en-la-red}{%
 \chapter{Gestión de la seguridad en la red}\label{gestiuxf3n-de-la-seguridad-en-la-red}}
