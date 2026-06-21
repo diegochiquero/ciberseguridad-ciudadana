@@ -12,9 +12,9 @@ Internet es una gran red mundial formada por millones de redes interconectadas q
 
 Las redes pueden clasificarse, de forma general, en:
 
-- Redes públicas: accesibles por cualquier persona, como algunas redes Wi-Fi disponibles en cafeterías, aeropuertos o centros comerciales.
+-   Redes públicas: accesibles por cualquier persona, como algunas redes Wi-Fi disponibles en cafeterías, aeropuertos o centros comerciales.
 
-- Redes privadas: aquellas cuyo acceso está restringido a usuarios autorizados, como la red de tu hogar o la de una organización.
+-   Redes privadas: aquellas cuyo acceso está restringido a usuarios autorizados, como la red de tu hogar o la de una organización.
 
 La seguridad de una red no depende únicamente de la conexión a Internet. También es importante proteger los dispositivos conectados, mantenerlos actualizados y configurar adecuadamente los mecanismos de acceso.
 
@@ -24,175 +24,267 @@ En los próximos apartados conocerás las principales amenazas que pueden afecta
 
 ## Seguridad en las cuentas
 
-Prácticamente todo el mundo en menor o mayor medida dispone de cuentas de usuarios en todas sus aplicaciones o servicios en la red. De entre las más conocidas están la cuenta de [Google](https://myaccount.google.com/security) y la de [Microsoft](https://account.microsoft.com/security). En estos dos enlaces podrás ajustar la seguridad necesaria para poder hacer uso de ellas con más garantías. Además, recuerda que el resto de plataformas deben ofrecerte este servicio para que puedas configurar tu seguridad y dentro de lo posible estar más tranquilo.
+Prácticamente todo el mundo en menor o mayor medida dispone de cuentas de usuarios en todas sus aplicaciones o servicios en la red. De entre las más conocidas están la cuenta de [Google](https://myaccount.google.com/security) y la de [Microsoft](https://account.microsoft.com/security). En estos dos enlaces podrás ajustar la seguridad necesaria para poder hacer uso de ellas con más garantías.
+
+```{r, echo=FALSE, out.width='75%', fig.align='center', fig.cap='Algunos de los ajustes que puedes hacer de seguridad en google.'}
+knitr::include_graphics("images/google-security.png")
+```
+
+Además, recuerda que el resto de plataformas como Facebook, Linkedin, Instagram, X, Tiktok, etc. también ofrecen este tipo servicio para que puedas configurar tu seguridad y para sentirte más seguro.
 
 ## Contraseñas
 
-Una contraseña, clave o password es una forma de autentificación que utiliza información secreta para controlar el acceso hacia algún recurso. La contraseña debe mantenerse en secreto ante aquellos a quien no se le permite el acceso [@WIKI-password]. 
+Una contraseña, clave o password es un mecanismo de autenticación que permite verificar tu identidad para acceder a un servicio, aplicación o dispositivo. Su seguridad depende de que únicamente tú conozcas esa información. [@WIKI-password].
 
-Su utilidad consiste en que a aquellos que desean acceder a la información se les solicita una clave o contraseña, si conocen dicha contraseña se les concede el acceso y si no la conocen, se les niega el acceso a la información.
+Cuando accedes a un servicio, este te solicita una contraseña. Si la contraseña introducida coincide con la registrada, se concede el acceso; en caso contrario, se deniega.
 
-Estas deben ser lo más seguras posibles y para ello debes crearlas bajo las siguientes:
+La contraseña sigue siendo uno de los métodos de autenticación más utilizados, pero también uno de los principales objetivos de los ciberdelincuentes. Por ello, es importante crear contraseñas que sean difíciles de adivinar o descubrir mediante ataques automatizados.
 
-- Debes incluir números.
+Cambio de paradigma en la creación de contraseñas (De las reglas antiguas a las recomendaciones modernas del NIST)
 
-- Utiliza una combinación de letras mayúsculas y minúsculas.
+Durante muchos años se enseñó a crear contraseñas siguiendo reglas rígidas de:
 
-- Incluye caracteres especiales. Ejemplos: * ? ! @ # $ / () {} = . , ; : 
+-   Debes incluir números.
 
-- Una longitud mayor o igual a 8 caracteres.
+-   Utiliza una combinación de letras mayúsculas y minúsculas.
 
-- No debes incluir espacios en blanco.
+-   Incluye caracteres especiales. Ejemplos: \* ? ! \@ \# \$ / () {} = . , ; :
 
-Una modalidad de crear contraseñas robustas y fáciles de recordar es la siguiente [@OSI-contraseñas]:
+-   Una longitud mayor o igual a 8 caracteres.
 
-1. Elige una extensión de más de 8 caracteres. Ejemplo: Mi cuenta segura
+-   No debes incluir espacios en blanco.
 
-2. Pon la primera mayúscula y elimina los espacios en blanco. Ejemplo: MiCuentaSegura 
+Sin embargo, las guías modernas, especialmente el estándar NIST SP 800‑63B y su actualización SP 800‑63‑4, han demostrado que estas prácticas no aumentan la seguridad real y, en muchos casos, empeoran la experiencia del usuario.
 
-3. Cambia las letras por números. Ejemplo: M1Cu3nt4S3gur4
+A continuación se muestra cómo ha cambiado el enfoque:
 
-4. Añade caracteres especiales. Ejemplo: M1Cu3nt4S3gur4!
+Práctica antigua (obsoleta):
 
-5. Personaliza la clave para cada servicio. Toma las dos primeras letras del servicio, para el caso de Facebook son la F y la A y colocalas una delante y otra detrás. Ejemplo: FM1Cu3nt4S3gur4!A
+-   Obligar a incluir números, símbolos y mayúsculas.
 
-En la [Oficina de Seguridad del Internauta](https://www.osi.es/es) tienes toda una suit de recursos para crearte la mejor de las contraseñas posible. Accede desde este enlace [Contraseñas seguras](https://www.osi.es/es/campanas/contrasenas-seguras).
+-   Prohibir espacios en blanco.
 
-También es recomendable que la cambies cada cierto tiempo, al menos aquellas que sean de mayor importancia. Algunas de las razones de por qué debes cambiar la contraseña cada cierto tiempo son:
+-   Usar trucos mnemotécnicos como M1C0ntr4s3ñ4!
 
-- Puedes recibir un falso correo de sextorsión en el que simulan que tienen fotos o vídeos comprometidos, cuando en realidad no es así. Este escenario se vuelve más creíble cuando además va acompañado de una contraseña que llevas años sin cambiar.
+-   Crear contraseñas cortas pero "complejas".
 
-- Puede que tus contraseñas estén disponibles junto con otras miles en forma de packs en la Deep web al alcance del mejor postor. Aquí tienes una entrada del periódico digital el mundo llamada [Se filtran 8.400 millones de contraseñas, ¿qué debo hacer para saber que estoy a salvo?](https://www.elmundo.es/tecnologia/2021/06/08/60bf3b2a21efa0ae7f8b462e.html) donde podrás obtener mayor información al respecto.
+-   Cambiar la contraseña cada 30/60/90 días.
+
+Problemas de este enfoque:
+
+-   Los usuarios crean patrones predecibles (Casa2024!, Gato123?).
+
+-   Las transformaciones son fáciles de romper por herramientas automáticas.
+
+-   Las contraseñas se vuelven difíciles de recordar y se reutilizan más.
+
+-   La complejidad artificial no detiene ataques modernos.
+
+-   Los cambios periódicos generan fatiga y contraseñas más débiles.
+
+Práctica moderna (según NIST SP 800‑63B / SP 800‑63‑4):
+
+-   Priorizar la longitud sobre la complejidad.
+
+-   Permitir y fomentar frases largas (passphrases).
+
+-   Permitir espacios en blanco.
+
+-   Evitar reglas de composición obligatoria.
+
+-   Comprobar la contraseña contra listas de contraseñas filtradas o comunes.
+
+-   Cambiar la contraseña solo si hay indicios de compromiso.
+
+Ventajas del enfoque moderno:
+
+-   Las passphrases son más fáciles de recordar y mucho más difíciles de romper.
+
+-   La longitud aporta más entropía que cualquier símbolo obligatorio.
+
+-   Se reducen los patrones predecibles.
+
+-   Se mejora la usabilidad sin sacrificar seguridad.
+
+-   Se evita la fatiga del usuario y la reutilización de contraseñas.
+
+Ejemplo comparativo:
+
+Antes (obsoleto):
+
+-   M1Cu3nt4S3gur4!: Difícil de recordar, fácil de predecir, vulnerable a ataques offline.
+
+Ahora (recomendado):
+
+-   mi perro duerme en mi sofá azul: Mucho más larga, más resistente y más fácil de recordar.
+
+Fuente oficial: NIST (National Institute of Standards and Technology) de Estados Unidos, un organismo público que desarrolla estándares y guías técnicas ampliamente utilizados en todo el mundo. En ciberseguridad, NIST es una referencia clave porque publica las Digital Identity Guidelines, que establecen buenas prácticas modernas para contraseñas, autenticación y gestión de identidades. [@NIST]
+
+Por otro lado, actualmente, muchos servicios ofrecen claves de acceso (passkeys), una alternativa más segura que las contraseñas tradicionales. Cuando estén disponibles, es recomendable utilizarlas.
+
+Pero ¿En qué consisten las passkeys?
+
+Las passkeys son un método de autenticación moderno basado en criptografía de clave pública, que sustituye por completo a las contraseñas. En lugar de escribir una clave que puede ser robada, filtrada o adivinada, el dispositivo del usuario genera dos claves:
+
+-   Una clave pública, que se guarda en el servicio.
+
+-   Una clave privada, que nunca sale del dispositivo.
+
+Para iniciar sesión, el servicio envía un desafío que solo la clave privada puede firmar. El usuario se autentica con un gesto sencillo:
+
+-   Huella dactilar
+
+-   Reconocimiento facial
+
+-   PIN del dispositivo
+
+-   Patrón de desbloqueo
+
+La clave privada nunca se transmite, por lo que no puede ser robada en una filtración ni capturada por phishing.
+
+Ventajas de las passkeys:
+
+-   Resistentes al phishing: no se pueden engañar con webs falsas.
+
+-   No se pueden filtrar: no existe una contraseña que robar.
+
+-   No requieren recordar nada.
+
+-   No dependen de reglas de complejidad ni cambios periódicos.
+
+-   Funcionan en varios dispositivos mediante sincronización segura.
 
 A su vez también han de ser fáciles de recordar, pero debes de huir de patrones poco seguros y fáciles de adivinar. A continuación, algunos ejemplos de contraseñas que nunca debes utilizar:
 
-- Qwerty
+-   Qwerty
 
-- 1234
+-   1234
 
-- Asdfg
+-   Asdfg
 
-- Password
+-   Password
 
-- 11111 
+-   11111
 
-- Usar datos personales como la fecha de nacimiento, nombre mascota, etc.
+-   Usar datos personales como la fecha de nacimiento, nombre mascota, etc.
 
 En el siguiente enlace encontrarás una lista de las [contraseñas más comunes](https://nordpass.com/most-common-passwords-list/) que jamás deberías utilizar. Échale un vistazo por si alguna de esas se parece a la tuya.
 
-Algunas reglas y ejemplos para que las contraseñas sean fáciles de recordar los encontrarás en estos enlaces:
+Otras recomendaciones que debes tener siempre presente:
 
-- [Trucos para crear contraseñas seguras](https://www.pandasecurity.com/es/mediacenter/seguridad/10-trucos-para-crear-contrasenas-seguras/)
+-   No compartas tus contraseñas con nadie.
 
-- [Consejos para crear contraseñas seguras](https://www.genbeta.com/seguridad/especial-contrasenas-seguras-consejos-para-mejorar-la-seguridad-de-tus-contrasenas)
+-   No reutilices la misma contraseña en diferentes servicios.
 
-- [Cómo crear contraseñas con reglas mnemotécnicas](https://www.youtube.com/watch?v=dRSiu13_AUk)
+-   Evita introducir tus contraseñas en dispositivos públicos o no confiables.
 
-Otras recomendaciones que debes tener siempre presente son:
- 
-- No las compartas con nadie.
+-   Puedes usar el gestor de contraseñas integrado en tu navegador, siempre que tu dispositivo esté protegido con PIN, biometría o contraseña. Los navegadores modernos cifran las contraseñas y son una opción segura para la mayoría de usuarios.
 
-- No uses la misma contraseña en diferentes servicios.
+-   Siempre que sea posible, utiliza passkeys, que son más seguras y no pueden ser robadas mediante phishing.
 
-- No las almacenes en el navegador.
+-   Usa la [verificación en dos pasos](https://www.osi.es/es/actualidad/blog/2019/02/27/el-factor-de-autenticacion-doble-y-multiple) también conocida como autenticación doble.
 
-- Evita usarlas en dispositivos públicos.
+La forma más segura y práctica de gestionar tus contraseñas es utilizar un gestor de contraseñas. Estos servicios generan claves robustas, las almacenan cifradas y te permiten usarlas sin tener que recordarlas todas. Además, reducen el riesgo de reutilizar contraseñas o de guardarlas en lugares inseguros.
 
-- Usa la [verificación en dos pasos](https://www.osi.es/es/actualidad/blog/2019/02/27/el-factor-de-autenticacion-doble-y-multiple) también conocida como autenticación doble.
+Algunos gestores recomendados son:
 
-- Usar Security keys o llave de seguridad. Verás que son más adelante en esta misma unidad en el apartado de MFA (Multi-Factor Authentication)
+-   [Bitwarden](https://bitwarden.com/).
 
-- Usa gestores de contraseñas, a continuación tienes algunos de estos servicios:
+-   [LastPass](https://www.lastpass.com/es/).
 
-    - [Bitwarden](https://bitwarden.com/) 
-    - [LastPass](https://www.lastpass.com/es/) 
-    - [Google passwords](https://passwords.google.com/)
-    - [NordPass](https://nordpass.com/homepage/)
-    - [Dropbox passwords](https://www.dropbox.com/es_ES/features/security/passwords)
+-   [Google passwords](https://passwords.google.com/).
 
-Si quieres una lista más exhaustiva de estas plataformas gestoras de contraseñas, visita el siguiente enlace de la Oficina de Seguridad del Internauta de [gestores de contraseñas](https://www.osi.es/es/herramientas-gratuitas/categoria/privacidad-y-seguridad-de-datos/cifrado-de-datos-y-gestion-de-contrasenas).
+-   [NordPass](https://nordpass.com/homepage/).
 
-Para acabar con este apartado puedes comprobar la seguridad y robustez de tu contraseña, con los siguientes recursos online: 
+Los gestores de contraseñas modernos cifran tus claves localmente y solo se desbloquean con tu biometría, PIN o contraseña maestra, por lo que son una opción segura para la mayoría de usuarios.
 
-- [How Secure Is My Password](https://www.security.org/how-secure-is-my-password/)
+Puedes usar herramientas online para entender la robustez de una contraseña o passphrase, pero no introduzcas nunca tu contraseña real en estos sitios. Úsalos solo para probar ejemplos o variantes que no utilices en ningún servicio.
 
-- [Password Check](https://password.kaspersky.com/) 
+Algunos recursos útiles:
 
-- [Test contraseñas](https://www.ontek.net/test-contrasenas/)
+-   [How Secure Is My Password](https://www.security.org/how-secure-is-my-password/): Estima el tiempo necesario para romper una contraseña mediante ataques offline.
 
-- [¿Cuánto tarda un hacker en forzar tu contraseña?](https://www.hivesystems.io/blog/are-your-passwords-in-the-green)
+-   [Password Check](https://password.kaspersky.com/): Analiza patrones débiles y longitud.
 
-Por otro lado si eres de las personas que te gusta tener todo bajo control puedes usar este servicio de Google  llamado [Password Checkout](https://www.blog.google/technology/safety-security/google-password-checkup-cross-account-protection/) o estos otros llamados [Haveibeenpwned Passwords](https://haveibeenpwned.com/Passwords) y [¿Ha sido mi contraseña robada?](https://www.avast.com/hackcheck) para averiguar si alguna de tus contraseñas ha sido comprometida.
+-   [Test contraseñas](https://www.ontek.net/test-contrasenas/): Mide la fortaleza aproximada de una clave.
 
-Si quieres, también puedes usar un generador de contraseñas fuertes como el que te ofrece [F-secure](https://www.f-secure.com/en/home/free-tools/password-generator) o [Pinetools](https://pinetools.com/es/generador-contrasenas).
+-   [Hive Systems](https://www.hivesystems.io/blog/are-your-passwords-in-the-green): Muestra tablas actualizadas con tiempos estimados de crackeo según longitud y tipo de ataque.
 
-A modo de conclución, si tuviésemos que simplificar parte de lo anterior en tres puntos a tener siempre presente en la creación de contraseñas sería de la siguiente manera:
+Por otro lado si eres de las personas que te gusta tener todo bajo control puedes usar este servicio de Google llamado [Password Checkout](https://www.blog.google/technology/safety-security/google-password-checkup-cross-account-protection/) o estos otros llamados [Haveibeenpwned Passwords](https://haveibeenpwned.com/Passwords) para averiguar si alguna de tus contraseñas ha sido comprometida.
 
-- Deben ser secretas: por lo que no deben compartirse absolutamente con nadie.
+En un apartado como este donde se ha hablado de contraseñas desde sus diferentes ángulos no puede faltar entender cómo los ciberatacantes roban las contraseñas, aquí los 5 métodos más comunes:
 
-- Deben ser robustas: longitud mínima de ocho caracteres, que combine mayúsculas, minúsculas, números y símbolos.
+-   Phishing --- Te engañan con correos o webs falsas para que introduzcas tu contraseña.
 
-- Deben ser únicas: se deben utilizar contraseñas distintas en diversos sitios, por ejemplo la contraseña de usuario debería ser distinta de la del correo electrónico.
+-   Filtraciones de datos --- Contraseñas expuestas por brechas en servicios que luego se reutilizan en otros sitios.
 
-Y por último, si quieres conocer los 5 métodos más usados por los ciberdelincuentes para el robo de contraseñas échale un ojo la al siguiente enlace [Cómo hacen los hackers para robar la contraseña: los 5 métodos más usados](https://www.lavanguardia.com/andro4all/tecnologia/como-hacen-los-hackers-para-robar-la-contrasena-los-5-metodos-mas-usados)
+-   Fuerza bruta --- Prueban millones de combinaciones por segundo hasta acertar.
+
+-   Keyloggers --- Malware que registra lo que escribes en el teclado.
+
+-   Ingeniería social --- Manipulación psicológica para que reveles tu contraseña sin darte cuenta.
+
+A modo de conclusión, y para terminar, si tuviésemos que simplificar todo lo anterior en tres principios esenciales para crear contraseñas seguras, serían los siguientes:
+
+-   Deben ser secretas: no deben compartirse con nadie bajo ninguna circunstancia.
+
+-   Deben ser robustas: prioriza la longitud (idealmente 15 caracteres o más) y utiliza frases largas fáciles de recordar. No es necesario imponer reglas de complejidad (símbolos, números, mayúsculas), pero sí evitar patrones predecibles.
+
+-   Deben ser únicas: usa una contraseña distinta para cada servicio. Nunca reutilices la misma clave en varias cuentas.
 
 ## Protocolo https
 
-El Protocolo seguro de transferencia de hipertexto (en inglés: Hypertext Transfer Protocol Secure o HTTPS), es un protocolo de aplicación basado en el protocolo HTTP, destinado a la transferencia segura de datos de Hipertexto, es decir, es la versión segura de HTTP [@WIKI-https].
+El Protocolo Seguro de Transferencia de Hipertexto (en inglés, Hypertext Transfer Protocol Secure o HTTPS) es la versión segura del protocolo HTTP y se utiliza para proteger la comunicación entre el navegador y los sitios web [@WIKI-https].
 
-El sistema HTTPS utiliza un cifrado basado en la seguridad de textos SSL (Secure Sockets Layer) o su versión actualizada TLS (Transport Layer Security) para crear un canal cifrado.
+HTTPS emplea protocolos criptográficos TLS (Transport Layer Security) para crear una conexión cifrada entre el navegador y el servidor web. Gracias a este cifrado, la información intercambiada, como nombres de usuario, contraseñas, datos personales o información bancaria, viaja protegida frente a posibles interceptaciones por parte de terceros.
 
-De este modo se consigue que la información sensible como el usuario y la contraseña, no pueda ser usada por un atacante que haya conseguido interceptar la transferencia de datos de la conexión, ya que lo único que obtendrá será un flujo de datos cifrados que le resultará imposible de descifrar.
+De este modo, aunque un atacante consiguiera interceptar la comunicación, únicamente obtendría datos cifrados que no podría interpretar ni modificar fácilmente.
 
-Identificar si el protocolo https está activado en el navegador es muy sencillo, sólo debes fijarte en la parte superior izquierda de tu navegador. Si tu URL inicia con https: //, o bien, antes de la dirección se muestra un candado, estarás navegando con seguridad bajo el protocolo https.
+Identificar si un sitio web utiliza HTTPS es muy sencillo. Basta con comprobar que la dirección web comienza por `https://`. Además, los navegadores modernos muestran información sobre la seguridad de la conexión al pulsar sobre el icono de información o seguridad situado junto a la dirección web. Al acceder a esta información, el navegador muestra detalles sobre la conexión segura, el certificado digital utilizado, las cookies almacenadas y otros aspectos relacionados con la configuración y seguridad del sitio web.
 
-```{r, echo=FALSE, out.width='75%', fig.align='center', fig.cap='Protocolo https vs http.'}
-knitr::include_graphics("images/protocolo-https-http.jpg")
-```
+En este punto vamos a desmitificar la falsa sensación de confianza, que durante muchos años se ha divulgado en torno al candado en la barra de direcciones url del navegador. El candado hacía pensar que el contenido de la página era seguro. Lo cual no es cierto. Ya que los certificados de cifrado seguro los emiten terceros y los ciberestafadores pueden hacerse igualmente con uno. Sobre todo si se trata del certificado de dominio, que el único requisito es que la persona figure como contacto de administrador de dominio en el registro WHOIS de un nombre de dominio. Se trata del nivel más bajo de autenticación utilizado para validar certificados SSL.
 
-Si haces click en el candado, éste te mostrará que se trata de una conexión segura, así como el [tipo de certificado de seguridad](https://www.softrending.com/blog/hosting/tipos-diferencias-certificado-seguridad-ssl), cookies y la configuración del sitio web.
+Si quieres más información sobre los diferentes tipos de certificados lee el siguiente artículo [¿Cuál es la Diferencia Entre los Certificados SSL DV, OV y EV?](https://www.digicert.com/es/difference-between-dv-ov-and-ev-ssl-certificates)
+
+Además algunos navegadores eliminaron el icono del candado porque el protocolo HTTPS se ha convertido en el estándar predeterminado de internet, haciendo que un indicador de "sitio seguro" sea redundante [@CONFIDENCIAL-candado].
 
 En el enlace del Incibe [Qué hacer si el navegador nos dice que estamos intentando acceder a un sitio no seguro](https://www.incibe.es/ciudadania/blog/que-hacer-si-el-navegador-nos-dice-que-estamos-intentando-acceder-un-sitio-no) explican el aviso del navegador cuando nos advierte que se trata de un sitio no seguro, o lo que es lo mismo, que cuando el navegador se está refiriendo a que el sitio web tiene un protocolo "http: //" sin la "S" en lugar de "https: //" con la "S".
-
-IMPORTANTE: Tener el candado no garantiza que la web sea legítima. Ya que los certificados de cifrado seguro los emiten terceros y los ciberestafadores pueden hacerse igualmente con uno. Sobre todo si se trata del certificado de dominio, que el único requisito es que la persona figure como contacto de administrador de dominio en el registro WHOIS de un nombre de dominio. Se trata del nivel más bajo de autenticación utilizado para validar certificados SSL. Si quieres más información sobre este primer nivel de certificado y los dos siguientes que ofrecen mayores garantías de legitimidad, visita el siguiente enlace
-[¿Cuáles son los tipos de certificados SSL?](https://www.globalsign.com/es/centro-de-informacion-ssl/tipos-de-certificados-ssl) o este otro [Diferencias y tipos de certificados de seguridad SSL](https://www.softrending.com/blog/tipos-diferencias-certificado-seguridad-ssl).
 
 ## Compras y transacciones
 
 Para comprar por Internet debes tomar cuantas más precauciones mejor para evitar cualquier tipo de fraude. Los factores a tener en cuenta son los siguientes:
 
-- Evita sitios webs que no te inspiren confianza: Por ello solo debes compras a través de webs y aplicaciones oficiales. 
+-   Evita sitios webs que no te inspiren confianza: Por ello solo debes compras a través de webs y aplicaciones oficiales.
 
-- Busca valoraciones y opiniones: Para ello dispones de las reseñas de Google maps, así como también de plataformas como [Trust Pilot](https://es.trustpilot.com/), [Gowork](https://es.gowork.com/), [Esopiniones](https://esopiniones.com/), [Local guides connect](https://www.localguidesconnect.com/) o [TripAdvisor](https://www.tripadvisor.es/).
+-   Busca valoraciones y opiniones: Para ello dispones de las reseñas de Google maps, así como también de plataformas como [Trust Pilot](https://es.trustpilot.com/), [Gowork](https://es.gowork.com/), [Esopiniones](https://esopiniones.com/), [Local guides connect](https://www.localguidesconnect.com/) o [TripAdvisor](https://www.tripadvisor.es/).
 
--  Utiliza plataformas que identifican webs fraudulentas como [Fakeinet](https://fakeinet.com/),  [Desenmascarame](https://desenmascara.me/) o [Dnstwist](https://dnstwist.it/) que disponen de un listado de posibles tiendas falsas. 
+-   Utiliza plataformas que identifican webs fraudulentas como [Fakeinet](https://fakeinet.com/), [Desenmascarame](https://desenmascara.me/) o [Dnstwist](https://dnstwist.it/) que disponen de un listado de posibles tiendas falsas.
 
-- Usa plataformas que verifican si la web ha sido hackeada, como [Scamadviser](https://www.scamadviser.com/) o [Urlscan](https://urlscan.io/).
+-   Usa plataformas que verifican si la web ha sido hackeada, como [Scamadviser](https://www.scamadviser.com/) o [Urlscan](https://urlscan.io/).
 
-- Usa solo plataformas con protocolo HTTPS: Visto en el apartado anterior. Y recuerda que tener el candado no garantiza que la web sea legítima. Ya que los certificados de cifrado seguro los emiten terceros y los ciberestafadores pueden hacerse igualmente con uno.
+-   Usa solo plataformas con protocolo HTTPS: Visto en el apartado anterior. Y recuerda que tener el candado no garantiza que la web sea legítima. Ya que los certificados de cifrado seguro los emiten terceros y los ciberestafadores pueden hacerse igualmente con uno.
 
-- Utiliza navegación privada: Así evitarás que se registre el historial de navegación.
+-   Utiliza navegación privada: Así evitarás que se registre el historial de navegación.
 
-- Trata de usar pasarelas de pago: Evita en lo posible el uso de tarjetas de crédito y opta por una pasarela de pago, como puede ser [PayPal](https://www.paypal.com/es/home), te estarás garantizando la compra, además de disponer de protocolos de devolución del importe muy efectivos. 
+-   Trata de usar pasarelas de pago: Evita en lo posible el uso de tarjetas de crédito y opta por una pasarela de pago, como puede ser [PayPal](https://www.paypal.com/es/home), te estarás garantizando la compra, además de disponer de protocolos de devolución del importe muy efectivos.
 
-- En el caso de usar tarjeta de crédito usa siempre la misma o mejor aún utiliza tarjetas monedero o virtuales que facilitan los bancos con el fin de depositar solo en dinero con el que quieras hacer la compra.
+-   En el caso de usar tarjeta de crédito usa siempre la misma o mejor aún utiliza tarjetas monedero o virtuales que facilitan los bancos con el fin de depositar solo en dinero con el que quieras hacer la compra.
 
-- Haz comprobaciones adicionales: 
+-   Haz comprobaciones adicionales:
 
-    - Comprueba que la web está adherida a alguna plataforma de confianza online, como, por ejemplo, [Confianza Online](https://www.confianzaonline.es/). Se trata del único sello de calidad que cuenta con los reconocimientos de la Comisión Europea, el Instituto Nacional de Consumo o la Agencia Española de Protección de datos, además de estar respaldado por el Ministerio de Industria, Energía y Turismo. Y acredita que se cumple con los estándares de privacidad y protección de datos de los usuarios entre otros. También existe el [Certificado de comercio electrónico](https://www.aenor.com/certificacion/tecnologias-de-la-informacion/buenas-practicas-comercio-electronico) expedido por Aenor. 
+    -   Comprueba que la web está adherida a alguna plataforma de confianza online, como, por ejemplo, [Confianza Online](https://www.confianzaonline.es/). Se trata del único sello de calidad que cuenta con los reconocimientos de la Comisión Europea, el Instituto Nacional de Consumo o la Agencia Española de Protección de datos, además de estar respaldado por el Ministerio de Industria, Energía y Turismo. Y acredita que se cumple con los estándares de privacidad y protección de datos de los usuarios entre otros. También existe el [Certificado de comercio electrónico](https://www.aenor.com/certificacion/tecnologias-de-la-informacion/buenas-practicas-comercio-electronico) expedido por Aenor.
 
-    - Verifica que reciben análisis de seguridad periódicos realizados por plataformas como [McAfee Secure](https://www.mcafeesecure.com/certification).
+    -   Verifica que reciben análisis de seguridad periódicos realizados por plataformas como [McAfee Secure](https://www.mcafeesecure.com/certification).
 
-    - Asegúrate que disponen de certificados de autenticidad de la web y seguridad de las transacciones como los que ofrece [Norton secured](https://es.norton.com/internet-security) o [Comodo secure](https://www.comodo.com/home/internet-security/secure-shopping.php).
-    
-    - También existen plugins como [Historial de precios](https://chrome.google.com/webstore/detail/historial-de-precios/fdeopiliemdomncemeibjpmccgmnkfig?hl=es-419&authuser=0) o [Alitools shopping assistan](https://chrome.google.com/webstore/detail/alitools-shopping-assista/eenflijjbchafephdplkdmeenekabdfb?hl=es-419&authuser=0
-) que verifican si el precio del producto o servicio que deseas adquirir ha sido inflando por algún tipo de campaña publicitaria, como es el caso del Black Friday en los que suelen subir los precios para justificar su descuento. 
+    -   Asegúrate que disponen de certificados de autenticidad de la web y seguridad de las transacciones como los que ofrece [Norton secured](https://es.norton.com/internet-security) o [Comodo secure](https://www.comodo.com/home/internet-security/secure-shopping.php).
 
-    - En primera instancia desconfía de los productos o servicios a precios muy inferiores al real o con suculentos descuentos.
+    -   También existen plugins como [Historial de precios](https://chrome.google.com/webstore/detail/historial-de-precios/fdeopiliemdomncemeibjpmccgmnkfig?hl=es-419&authuser=0) o [Alitools shopping assistan](https://chrome.google.com/webstore/detail/alitools-shopping-assista/eenflijjbchafephdplkdmeenekabdfb?hl=es-419&authuser=0) que verifican si el precio del producto o servicio que deseas adquirir ha sido inflando por algún tipo de campaña publicitaria, como es el caso del Black Friday en los que suelen subir los precios para justificar su descuento.
 
-    - Verifica que las reseñas sean legítimas con plataformas como [Review Meta](https://reviewmeta.com/) y [Fake Spot](https://www.fakespot.com/). Si quieres saber más sobre las campañas de reseñas fraudulentas lee esta entrada sobre [reseñas falsas](https://www.genbeta.com/actualidad/asi-incentivaban-a-crear-resenas-falsas-proveedores-chinos-baneados-amazon).
-    
-    - Los sellos y certificados los encontrarás normalmente en la parte inferior de la web en forma de logos y debes hacer click en ellos para obtener más información sobre la entidad que los expide y la vigencia de éstos, ya que muchas webs fraudulentas utilizan sellos falsos.
+    -   En primera instancia desconfía de los productos o servicios a precios muy inferiores al real o con suculentos descuentos.
+
+    -   Verifica que las reseñas sean legítimas con plataformas como [Review Meta](https://reviewmeta.com/) y [Fake Spot](https://www.fakespot.com/). Si quieres saber más sobre las campañas de reseñas fraudulentas lee esta entrada sobre [reseñas falsas](https://www.genbeta.com/actualidad/asi-incentivaban-a-crear-resenas-falsas-proveedores-chinos-baneados-amazon).
+
+    -   Los sellos y certificados los encontrarás normalmente en la parte inferior de la web en forma de logos y debes hacer click en ellos para obtener más información sobre la entidad que los expide y la vigencia de éstos, ya que muchas webs fraudulentas utilizan sellos falsos.
 
 ```{r, echo=FALSE, out.width='75%', fig.align='center', fig.cap='Sellos y certificados de comercio online.'}
 knitr::include_graphics("images/sellos-de-confianza-online.jpg")
@@ -208,7 +300,7 @@ Uno de los peligros a los que más expuesto estás, es en el uso que haces de lo
 
 Es por ello que debes tener la precaución de no hacer transacciones de ningún tipo, ni enviar datos sensibles. Es decir, usarla solo en caso de no te quede otra opción o en caso de tener que hacer cualquier búsqueda de carácter trivial.
 
-Aun así, si usas una Wi-Fi pública estás expuesto entre otros ataques al conocido como Man-in-the-middle (Ataque de Intermediario en español), o el Packet sniffing. Si quieres más información al respecto visita el siguiente enlace [Tipos de pirateo que puedes sufrir en un Wifi  público](https://as.com/meristation/2020/02/04/betech/1580856719_548183.html)
+Aun así, si usas una Wi-Fi pública estás expuesto entre otros ataques al conocido como Man-in-the-middle (Ataque de Intermediario en español), o el Packet sniffing. Si quieres más información al respecto visita el siguiente enlace [Tipos de pirateo que puedes sufrir en un Wifi público](https://as.com/meristation/2020/02/04/betech/1580856719_548183.html)
 
 Es de suponer que si estas en casa con Wi-Fi propia, estas recomendaciones no son tan necesarias. Pero sí, que sería muy recomendable por tu parte, que tuvieses muy en cuenta las recomendaciones que tienes a tu disposición en el apartado de Router en este manual. Además, es conveniente que si no has establecido las capas de seguridad que se recomiendan en ese apartado, hagas una revisión de tu conexión Wi-Fi, por si tienes algún intruso y de ser así poder eliminarlo. Para ello tienes a tu disposición en el [blog de la Oficina de Seguridad de Internauta](https://www.osi.es/es/actualidad/blog) un recurso llamado [descubre y elimina a los intrusos de tu red wifi](https://www.osi.es/es/actualidad/blog/2019/09/25/descubre-y-elimina-los-intrusos-de-tu-red-wifi).
 
@@ -222,7 +314,7 @@ Existen una infinidad de plug-in de diferente naturaleza y para multitud de prop
 
 Estos pueden estar desarrollados por terceros con intenciones de controlar la información que manejamos en nuestro dispositivo. De ahí que deban proceder de fuentes fiables y que estén configurados para actualizaciones automáticas.
 
-Cada navegador dispone de repositorio de plug-ins o extensiones, que pueden ser consultados y desde donde los puedes instalar y comprobar su fiabilidad, así como consultar las valoraciones. 
+Cada navegador dispone de repositorio de plug-ins o extensiones, que pueden ser consultados y desde donde los puedes instalar y comprobar su fiabilidad, así como consultar las valoraciones.
 
 ```{r, echo=FALSE, out.width='75%', fig.align='center', fig.cap='Plugin traductor de Google seguido de otros plugin con diferentes funcionalidades.'}
 knitr::include_graphics("images/plugin-navegador.png")
@@ -242,7 +334,7 @@ Es una buena práctica huir de portales de terceros, ya que con los instaladores
 
 ## Cierre de sesiones
 
-Cuando hagas uso de algún servicio en internet, como por ejemplo, Facebook, Gmail o cualquier otro, lo primero que tienes que hacer es iniciar sesión con tus credenciales. 
+Cuando hagas uso de algún servicio en internet, como por ejemplo, Facebook, Gmail o cualquier otro, lo primero que tienes que hacer es iniciar sesión con tus credenciales.
 
 Si estas en tu dispositivo no pasaría nada si una vez abierta la sesión no la cierras después de haber usado el servicio, pero si por el contrario estas usando un dispositivo ajeno, el servicio quedaría abierto y tus datos expuestos.
 
@@ -256,32 +348,32 @@ Es por este motivo que cada vez más servicios están implementando lo que se co
 
 Como puedes ver, los dos pasos son:
 
-1. Usuario y contraseña: Que solo tú conoces.
-2. Notificación: Recibes un aviso en tu dispositivo.
+1.  Usuario y contraseña: Que solo tú conoces.
+2.  Notificación: Recibes un aviso en tu dispositivo.
 
 ```{r, echo=FALSE, out.width='75%', fig.align='center', fig.cap='Verificación en dos pasos.'}
 knitr::include_graphics("images/verificación-dos-pasos.jpg")
 ```
 
-Según la fuente que uses para informarte  puede ser que termines sin comprenderlo del todo, ya que algunos medios también entienden la verificación en dos pasos (2SV) como un 2FA (segundo factor de autenticación). La diferencia es tan sutil que a veces es difícil de discernir, pero podría entenderse si ves el 2SV como una notificación que recibes y que apruebas sin más y la 2FA como un código que has de introducir. No obstante si quieres más información, en este enlace sobre [verificación en dos pasos](https://www.osi.es/es/actualidad/blog/2017/01/17/verificacion-en-dos-pasos-que-es-y-como-me-puede-ayudar) encontrarás más detalles, además de enlaces hacia las distintas plataformas y redes sociales más populares para que puedas implementarlo.
+Según la fuente que uses para informarte puede ser que termines sin comprenderlo del todo, ya que algunos medios también entienden la verificación en dos pasos (2SV) como un 2FA (segundo factor de autenticación). La diferencia es tan sutil que a veces es difícil de discernir, pero podría entenderse si ves el 2SV como una notificación que recibes y que apruebas sin más y la 2FA como un código que has de introducir. No obstante si quieres más información, en este enlace sobre [verificación en dos pasos](https://www.osi.es/es/actualidad/blog/2017/01/17/verificacion-en-dos-pasos-que-es-y-como-me-puede-ayudar) encontrarás más detalles, además de enlaces hacia las distintas plataformas y redes sociales más populares para que puedas implementarlo.
 
 Es extremadamente recomendable que uses este sistema de verificación en la medida que puedas. Recuerda que de un modo u otro la mayoría de servicios y plataformas disponen de esta capa de seguridad. Normalmente las encontrarás en Ajustes y Seguridad.
 
 ## MFA (Multi-Factor Authentication) o Autenticación de Factores Múltiples
 
-La autenticación de factor múltiple es una forma eficaz de aumentar la protección de las cuentas de usuario contra las amenazas más comunes, como los ataques de phishing, apropiación de cuentas, etc. Y se trata un método de control de acceso informático, en el que a un usuario, se le concede acceso al sistema solo después de que presente dos o más pruebas o factores diferentes de que es quien dice ser. Estas pruebas pueden ser diversas, como una contraseña, clave secundaria rotativa, un certificado digital instalado en el equipo, un token físico, etc. entre otros y son éstos lo que se conocen como factores de autenticación [@WIKI-multiple-factor]. 
+La autenticación de factor múltiple es una forma eficaz de aumentar la protección de las cuentas de usuario contra las amenazas más comunes, como los ataques de phishing, apropiación de cuentas, etc. Y se trata un método de control de acceso informático, en el que a un usuario, se le concede acceso al sistema solo después de que presente dos o más pruebas o factores diferentes de que es quien dice ser. Estas pruebas pueden ser diversas, como una contraseña, clave secundaria rotativa, un certificado digital instalado en el equipo, un token físico, etc. entre otros y son éstos lo que se conocen como factores de autenticación [@WIKI-multiple-factor].
 
 Son tres los tipos de factores de autenticación:
 
-- Algo que sabes: Factor de conocimiento (contraseña, respuesta a una pregunta, un PIN).
+-   Algo que sabes: Factor de conocimiento (contraseña, respuesta a una pregunta, un PIN).
 
-- Algo que tienes: Factor de posesión (tarjeta, smartphone, token hardware como las Security keys).
+-   Algo que tienes: Factor de posesión (tarjeta, smartphone, token hardware como las Security keys).
 
-- Algo que eres: Factor biométrico (huellas dactilares, escaneos de retina, reconocimiento facial, reconocimiento de voz o el comportamiento de un usuario).
+-   Algo que eres: Factor biométrico (huellas dactilares, escaneos de retina, reconocimiento facial, reconocimiento de voz o el comportamiento de un usuario).
 
 Uno de los ejemplos de autenticación en dos factores más común es la acción que realizas cuando vas a sacar dinero de un cajero. Por un lado, metes la tarjeta (algo que tienes) y luego pones el PIN (algo que sabes). Esto es lo que se conoce como la autenticación en dos pasos o 2FA (segundo factor de autenticación) y que a veces tiende a confundirse con la verificación en dos pasos 2SV (Two Step Verification) que puedes verla en esta misma unidad.
 
-Otro ejemplo son los inicios de sesión en los que se necesita un código adicional que es gestionado a través de correo electrónico, SMS o llamadas telefónicas, como es el caso de algunas entidades bancarias, esto es lo que se conoce como OTP por sus siglas en inglés "One-Time Password" y en castellano "contraseña de uso único". Y  en otros supuestos, aunque la plataforma disponga de dicho servicio necesitarás una aplicación externa como [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=es-419) o [Microsoft authenticator](https://www.microsoft.com/es-es/account/authenticator) entre otras y que se trata de una App de autenticación en dos pasos, que te genera el código adicional, que ha de ser utilizado inmediatamente ya que éste expira con el tiemplo.
+Otro ejemplo son los inicios de sesión en los que se necesita un código adicional que es gestionado a través de correo electrónico, SMS o llamadas telefónicas, como es el caso de algunas entidades bancarias, esto es lo que se conoce como OTP por sus siglas en inglés "One-Time Password" y en castellano "contraseña de uso único". Y en otros supuestos, aunque la plataforma disponga de dicho servicio necesitarás una aplicación externa como [Google Authenticator](https://support.google.com/accounts/answer/1066447?co=GENIE.Platform%3DAndroid&hl=es-419) o [Microsoft authenticator](https://www.microsoft.com/es-es/account/authenticator) entre otras y que se trata de una App de autenticación en dos pasos, que te genera el código adicional, que ha de ser utilizado inmediatamente ya que éste expira con el tiemplo.
 
 También puedes hacer uso de autenticación de factores múltiples con lo que se conoce como Security Key o llave de seguridad. Se trata de un dispositivo hardware generalmente con conexión USB y necesitarás usar como segundo factor de autenticación una vez hayas introducido tu usuario y contraseña. En la publicación [las mejores llaves de seguridad usb](https://es.digitaltrends.com/computadoras/las-mejores-llaves-de-seguridad-usb/) encontrarás algunos de los más utilizados y recuerda siempre comprar en las plataformas oficiales o de confianza.
 
@@ -293,9 +385,9 @@ En la mayoría de los casos solo se combinan dos de estos tres factores, aunque 
 
 ## AntiBotnet
 
-Un Botnet es el nombre genérico para denominar a cualquier grupo de PCs infectados y controlados por un ciberdelincuente de forma remota. Generalmente se trata de un hacker o un grupo de ellos los que crean el botnet a través de un malware que infecta a una gran cantidad de equipos. Este grupo de equipos u ordenadores son los que forman parte del botnet, o también llamados “bots” o “zombies”. No existe un número mínimo de equipos para crear un botnet. Los botnets pequeños pueden incluir cientos de PCs infectados, mientras que los mayores utilizan millones de equipos [@INCI-botnet].
+Un Botnet es el nombre genérico para denominar a cualquier grupo de PCs infectados y controlados por un ciberdelincuente de forma remota. Generalmente se trata de un hacker o un grupo de ellos los que crean el botnet a través de un malware que infecta a una gran cantidad de equipos. Este grupo de equipos u ordenadores son los que forman parte del botnet, o también llamados "bots" o "zombies". No existe un número mínimo de equipos para crear un botnet. Los botnets pequeños pueden incluir cientos de PCs infectados, mientras que los mayores utilizan millones de equipos [@INCI-botnet].
 
-Para saber si estás siendo víctima de este tipo de ataque, existen [servicios antibotnet](https://www.incibe.es/ciudadania/herramientas/servicio-antibotnet/) que identifican si desde tu conexión a internet se  ha detectado algún incidente de seguridad relacionado u otras amenazas. Además en el siguiente enlace obtendrás una suite de rastreo y eliminación de Botnet [Servicio Antibotnet: Cleaners](https://www.incibe.es/ciudadania/servicio-antibotnet/cleaners).
+Para saber si estás siendo víctima de este tipo de ataque, existen [servicios antibotnet](https://www.incibe.es/ciudadania/herramientas/servicio-antibotnet/) que identifican si desde tu conexión a internet se ha detectado algún incidente de seguridad relacionado u otras amenazas. Además en el siguiente enlace obtendrás una suite de rastreo y eliminación de Botnet [Servicio Antibotnet: Cleaners](https://www.incibe.es/ciudadania/servicio-antibotnet/cleaners).
 
 ## Bluetooth
 
@@ -303,11 +395,11 @@ El Bluetooth es otro punto vulnerable en tu seguridad en la red. El Bluetooth, v
 
 Y sus principales amenazas son:
 
-- Bluejacking: envían spam a la víctima mediante notas, contactos, imágenes, etc. Puede resultar peligroso y convertirse en una denegación de servicio dirigida a un objetivo o espacio (por ejemplo, un bar).
+-   Bluejacking: envían spam a la víctima mediante notas, contactos, imágenes, etc. Puede resultar peligroso y convertirse en una denegación de servicio dirigida a un objetivo o espacio (por ejemplo, un bar).
 
-- Bluesnarfing: se beneficia de las vulnerabilidades más comunes para obtener datos confidenciales del dispositivo atacado.
+-   Bluesnarfing: se beneficia de las vulnerabilidades más comunes para obtener datos confidenciales del dispositivo atacado.
 
-- Bluebugging: aprovecha bugs (fallos de programación) para ejecutar comandos en el terminal y controlarlo.
+-   Bluebugging: aprovecha bugs (fallos de programación) para ejecutar comandos en el terminal y controlarlo.
 
 El riesgo que corres cuando tienes este servicio activado es que el dispositivo de un tercero acabe sincronizándose con el tuyo, con los riesgos expuestos. Para evitarlo, una vez hayas terminado, mantenlo desactivado.
 
@@ -319,15 +411,12 @@ El NFC, es una tecnología inalámbrica de corto alcance que permite conectar do
 
 Sus principales amenazas son:
 
-- Ejecución de programas maliciosos: ejecuta código en terminales Android simplemente acercando una etiqueta NFC al dispositivo.
+-   Ejecución de programas maliciosos: ejecuta código en terminales Android simplemente acercando una etiqueta NFC al dispositivo.
 
-- Pagos sin autorización: realiza compras por proximidad sin consentimiento (limitadas a un máximo de 20€).
+-   Pagos sin autorización: realiza compras por proximidad sin consentimiento (limitadas a un máximo de 20€).
 
-- Transmisión de datos sin cifrar: lee datos como el nombre, apellidos, el número de la tarjeta y, en algunos casos, las transacciones realizadas.
+-   Transmisión de datos sin cifrar: lee datos como el nombre, apellidos, el número de la tarjeta y, en algunos casos, las transacciones realizadas.
 
-- Copia de datos bancarios: con el empleo  de Lectores con comunicación inalámbrica NFC.
+-   Copia de datos bancarios: con el empleo de Lectores con comunicación inalámbrica NFC.
 
 El riesgo al que te expones si tienes este servicio activado es que el dispositivo de un tercero acabe sincronizándose con el tuyo, con los riesgos expuestos. Para evitarlo, una vez hayas terminado de usarlo, desactívalo. Otra opción es llevar un protector antirobo de tarjetas.
-
-
-
