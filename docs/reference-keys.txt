@@ -52,8 +52,8 @@ protocolo-https
 compras-y-transacciones
 wi-fi
 plugins-o-extensiones
-descargas
-cierre-de-sesiones
+descarga-segura-de-aplicaciones-y-programas
+cierre-de-sesiones-y-uso-de-dispositivos-ajenos
 sv-two-step-verification-o-verificación-en-dos-pasos
 mfa-multi-factor-authentication-o-autenticación-de-factores-múltiples
 antibotnet

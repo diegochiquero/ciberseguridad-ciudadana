@@ -266,11 +266,17 @@ Para comprar por Internet debes tomar cuantas más precauciones mejor para evita
 
 -   Utiliza navegación privada: Así evitarás que se registre el historial de navegación.
 
--   Trata de usar pasarelas de pago: Evita en lo posible el uso de tarjetas de crédito y opta por una pasarela de pago, como puede ser [PayPal](https://www.paypal.com/es/home), te estarás garantizando la compra, además de disponer de protocolos de devolución del importe muy efectivos.
+-   Trata de usar pasarelas de pago: Evita en lo posible el uso de tarjetas de crédito y opta por una pasarela de pago, como puede ser [PayPal](https://www.paypal.com/es/home), te estarás garantizando la compra, además de disponer de protocolos de devolución del importe muy efectivos. Otra posibilidad es utilizar métodos de pago que incorporen protección al comprador, como tarjetas con sistemas de reclamación o servicios de pago intermediarios. Evita realizar transferencias directas, pagos mediante criptomonedas o sistemas de pago instantáneo cuando no conozcas plenamente al vendedor, ya que recuperar el dinero suele ser mucho más difícil.
 
--   En el caso de usar tarjeta de crédito usa siempre la misma o mejor aún utiliza tarjetas monedero o virtuales que facilitan los bancos con el fin de depositar solo en dinero con el que quieras hacer la compra.
+-   En el caso de usar tarjeta de crédito usa siempre la misma o mejor aún utiliza tarjetas monedero o virtuales que facilitan los bancos con el fin de depositar solo en dinero con el que quieras hacer la compra y activa las notificaciones de operaciones de tu banco para detectar rápidamente cualquier cargo no autorizado.
+
+- Conserva los justificantes de compra, correos electrónicos y facturas hasta confirmar que has recibido el producto correctamente.
 
 -   Haz comprobaciones adicionales:
+
+    - Comprueba desde cuándo existe el dominio de la página web. Muchas tiendas fraudulentas utilizan dominios registrados hace pocos días o semanas.
+	
+    - Analiza la dirección web para detectar pequeñas modificaciones del nombre de una marca conocida (por ejemplo, letras cambiadas, caracteres especiales o dominios poco habituales).
 
     -   Comprueba que la web está adherida a alguna plataforma de confianza online, como, por ejemplo, [Confianza Online](https://www.confianzaonline.es/). Se trata del único sello de calidad que cuenta con los reconocimientos de la Comisión Europea, el Instituto Nacional de Consumo o la Agencia Española de Protección de datos, además de estar respaldado por el Ministerio de Industria, Energía y Turismo. Y acredita que se cumple con los estándares de privacidad y protección de datos de los usuarios entre otros. También existe el [Certificado de comercio electrónico](https://www.aenor.com/certificacion/tecnologias-de-la-informacion/buenas-practicas-comercio-electronico) expedido por Aenor.
 
@@ -282,7 +288,7 @@ Para comprar por Internet debes tomar cuantas más precauciones mejor para evita
 
     -   En primera instancia desconfía de los productos o servicios a precios muy inferiores al real o con suculentos descuentos.
 
-    -   Verifica que las reseñas sean legítimas con plataformas como [Review Meta](https://reviewmeta.com/) y [Fake Spot](https://www.fakespot.com/). Si quieres saber más sobre las campañas de reseñas fraudulentas lee esta entrada sobre [reseñas falsas](https://www.genbeta.com/actualidad/asi-incentivaban-a-crear-resenas-falsas-proveedores-chinos-baneados-amazon).
+    -   Verifica que las reseñas sean legítimas con plataformas como [Amazon Review Checker](https://www.ratebud.ai/). Si quieres saber más sobre las campañas de reseñas fraudulentas lee esta entrada sobre [reseñas falsas](https://www.genbeta.com/actualidad/asi-incentivaban-a-crear-resenas-falsas-proveedores-chinos-baneados-amazon).
 
     -   Los sellos y certificados los encontrarás normalmente en la parte inferior de la web en forma de logos y debes hacer click en ellos para obtener más información sobre la entidad que los expide y la vigencia de éstos, ya que muchas webs fraudulentas utilizan sellos falsos.
 
@@ -291,6 +297,8 @@ knitr::include_graphics("images/sellos-de-confianza-online.jpg")
 ```
 
 Tienes disponible más información sobre compras online en [Compra segura en internet (Guía práctica)](https://www.aepd.es/sites/default/files/2019-09/guia-compra-segura-digital-web.pdf) y también dispones de esta entrada de [cómo detectar fraudes y análisis de una web falsa](https://www.osi.es/es/actualidad/blog/2018/08/08/detectando-fraudes-analisis-de-una-web-de-venta-falsa).
+
+Por último ten siempre presente que, la inteligencia artificial ha facilitado la creación de tiendas fraudulentas con diseños muy profesionales, fotografías realistas, textos sin errores ortográficos e incluso asistentes virtuales capaces de responder automáticamente a tus preguntas. Por ello, no bases tu confianza únicamente en el aspecto visual de la página; verifica siempre la identidad del comercio mediante varios indicadores antes de realizar cualquier pago.
 
 ## Wi-Fi
 
@@ -302,43 +310,78 @@ Es por ello que debes tener la precaución de no hacer transacciones de ningún 
 
 Aun así, si usas una Wi-Fi pública estás expuesto entre otros ataques al conocido como Man-in-the-middle (Ataque de Intermediario en español), o el Packet sniffing. Si quieres más información al respecto visita el siguiente enlace [Tipos de pirateo que puedes sufrir en un Wifi público](https://as.com/meristation/2020/02/04/betech/1580856719_548183.html)
 
-Es de suponer que si estas en casa con Wi-Fi propia, estas recomendaciones no son tan necesarias. Pero sí, que sería muy recomendable por tu parte, que tuvieses muy en cuenta las recomendaciones que tienes a tu disposición en el apartado de Router en este manual. Además, es conveniente que si no has establecido las capas de seguridad que se recomiendan en ese apartado, hagas una revisión de tu conexión Wi-Fi, por si tienes algún intruso y de ser así poder eliminarlo. Para ello tienes a tu disposición en el [blog de la Oficina de Seguridad de Internauta](https://www.osi.es/es/actualidad/blog) un recurso llamado [descubre y elimina a los intrusos de tu red wifi](https://www.osi.es/es/actualidad/blog/2019/09/25/descubre-y-elimina-los-intrusos-de-tu-red-wifi).
+Es de suponer que si estas en casa con Wi-Fi propia, estas recomendaciones no son tan necesarias. Pero sí, que sería muy recomendable por tu parte, que tuvieses muy en cuenta las recomendaciones que tienes a tu disposición en el apartado de Router en este manual. Además, es conveniente que si no has establecido las capas de seguridad que se recomiendan en ese apartado, hagas una revisión de tu conexión Wi-Fi, por si tienes algún intruso y de ser así poder eliminarlo. Para ello tienes a tu disposición en la web del Incibe un recurso llamado [descubre y elimina a los intrusos de tu red wifi](https://www.osi.es/es/actualidad/blog/2019/09/25/descubre-y-elimina-los-intrusos-de-tu-red-wifi).
 
 Lo más recomendable es que siempre que puedas navegues con cable en lugar de Wi-Fi.
 
 ## Plugins o extensiones
 
-En informática, un complemento o plugin es una aplicación (o programa informático) que se relaciona con otra para agregarle una función nueva y generalmente muy específica. Esta aplicación adicional es ejecutada por la aplicación principal e interactúan por medio de la interfaz de programación de aplicaciones. Complemento y plug-in se diferencian en que los complementos son desarrollados por empresas reconocidas y tienen certificado de seguridad y los plug-in pueden ser desarrollados por cualquiera [@IONOS-plugin].
+Las extensiones, también conocidas como extensiones o plugins, son pequeños programas que amplían las funcionalidades de una aplicación. En el caso de los navegadores web, permiten añadir nuevas características como bloquear publicidad, traducir páginas, gestionar contraseñas, comprobar la ortografía o mejorar la privacidad durante la navegación. Un ejemplo de estos es el archiconocido [adBlock](https://getadblock.com/), cuya función es la eliminar esos molestos anuncios de algunos portales webs.
 
-Existen una infinidad de plug-in de diferente naturaleza y para multitud de propósitos. En esta ocasión nos vamos a centrar en los usados por los navegadores, un ejemplo de estos es el archiconocido [adBlock](https://getadblock.com/), cuya función es la eliminar esos molestos anuncios de algunos portales webs.
 
-Estos pueden estar desarrollados por terceros con intenciones de controlar la información que manejamos en nuestro dispositivo. De ahí que deban proceder de fuentes fiables y que estén configurados para actualizaciones automáticas.
+Aunque resultan muy útiles, también pueden representar un riesgo para tu privacidad y seguridad. Muchas extensiones necesitan acceder al contenido de las páginas que visitas, por lo que una extensión maliciosa o comprometida podría recopilar información sobre tu actividad, modificar el contenido de las páginas web o mostrar publicidad no deseada.
 
-Cada navegador dispone de repositorio de plug-ins o extensiones, que pueden ser consultados y desde donde los puedes instalar y comprobar su fiabilidad, así como consultar las valoraciones.
+Para reducir estos riesgos sigue estas recomendaciones:
+
+- Instala únicamente las extensiones que realmente necesites. Cuantas menos tengas instaladas, menor será la superficie de exposición de tu navegador.
+
+- Descarga las extensiones únicamente desde el repositorio oficial de tu navegador. Aunque estos repositorios realizan controles de seguridad, ninguna revisión garantiza por completo que una extensión sea segura.
+
+- Comprueba quién es el desarrollador de la extensión, el número de instalaciones, las valoraciones de otros usuarios y la fecha de la última actualización. Una extensión abandonada o que lleva mucho tiempo sin actualizarse puede presentar vulnerabilidades.
+
+- Revisa los permisos que solicita antes de instalarla. Desconfía si una extensión solicita acceso a información que no necesita para realizar su función. Por ejemplo, una extensión para cambiar el aspecto del navegador difícilmente necesitará acceder a todas las páginas que visitas.
+
+- Mantén activadas las actualizaciones automáticas para recibir las correcciones de seguridad publicadas por sus desarrolladores.
+
+ Revisa periódicamente las extensiones instaladas y elimina aquellas que ya no utilices.
+
+Actualmente, la inteligencia artificial también está siendo utilizada por los ciberdelincuentes para crear extensiones fraudulentas con descripciones muy convincentes, generar reseñas falsas o copiar la apariencia de extensiones legítimas. Por ello, no bases tu confianza únicamente en las valoraciones o en el aspecto profesional de la página de descarga; verifica siempre el desarrollador y los permisos que solicita la extensión.
+
+Algunos ejemplos de extensiones ampliamente utilizadas son los bloqueadores de publicidad, los gestores de contraseñas, los traductores automáticos, los correctores ortográficos o las herramientas para comprobar el historial de precios durante las compras por Internet. Instálalas siempre desde las tiendas oficiales de tu navegador y únicamente cuando procedan de desarrolladores de confianza.
 
 ```{r, echo=FALSE, out.width='75%', fig.align='center', fig.cap='Plugin traductor de Google seguido de otros plugin con diferentes funcionalidades.'}
 knitr::include_graphics("images/plugin-navegador.png")
 ```
 
-Si quieres ampliar tu conocimiento y saber más de plugins y extensiones pásate por el [blog de la Oficina de Seguridad de Internauta](https://www.osi.es/es/actualidad/blog) y lee esta entrada sobre [extensiones: Superpoderes para los navegadores](https://www.osi.es/es/actualidad/blog/2019/11/20/extensiones-superpoderes-para-los-navegadores).
+Si quieres ampliar tus conocimientos sobre las extensiones o plugins de los navegadores, puedes consultar la web de Incibe y su publicación [extensiones: Superpoderes para los navegadores](https://www.osi.es/es/actualidad/blog/2019/11/20/extensiones-superpoderes-para-los-navegadores).
 
-## Descargas
+## Descarga segura de aplicaciones y programas
 
-Debes de tener muy en cuenta que las aplicaciones o programas deben ser descargadas desde sus sitios oficiales, y no desde otros. Es importante tener siempre presente que, incluso en ocasiones ni si quiera los antivirus reconocen algunas aplicaciones o programas que pudieran contener alguna vulnerabilidad, algún virus o gusano que afecte tu ordenador.
+Siempre que necesites instalar una aplicación o un programa, descárgalo desde la página web oficial del desarrollador o desde la tienda oficial de tu sistema operativo (como Microsoft Store, App Store o Google Play, según el dispositivo que utilices). Evita descargar software desde páginas de terceros, ya que pueden distribuir versiones modificadas, desactualizadas o que incorporen programas no deseados e incluso código malicioso. 
 
-Existen también multitud de webs que en apariencia, ofrecen programas muy mediáticos o de mucha popularidad y que pueden haber sido previamente infectados con algún tipo de código malicioso mediante la modificación o alteración del mismo. Por ello, lo más aconsejable es que descargues las aplicaciones desde las webs oficiales [@software-alterado].
+Aunque los antivirus constituyen una importante capa de protección, no son capaces de detectar todas las amenazas. Los ciberdelincuentes desarrollan continuamente nuevas técnicas para evitar su detección, por lo que no debes confiar únicamente en que un antivirus identificará cualquier archivo malicioso.
 
-Dentro de todos los tipos de archivos que pueden contener malware, uno de los más comunes es el .EXE. Incluso a la hora de descargar archivos de este tipo nuestro antivirus puede saltar, aunque no se trate de una amenaza e incluso cuando quieras mandar un EXE por e-mail tampoco está permitido, por cuestiones de seguridad. Es todo un clásico, ya que se trata de un archivo ejecutable que podría instalar software malicioso en nuestro sistema. Hay que tener mucho ojo siempre que gestiones un archivo de este tipo [@RZ-exe].
+Algunos portales de descarga ofrecen programas muy populares, pero sustituyen el instalador original por otro propio que puede incluir publicidad, software no deseado o aplicaciones adicionales que se instalan si no prestas atención durante el proceso. 
 
-Es una buena práctica huir de portales de terceros, ya que con los instaladores muchos de ellos descargan malware y molestas toolbars.
+Presta especial atención a los archivos ejecutables, como los que tienen extensión .exe en Windows, ya que son los encargados de instalar o ejecutar programas. Aunque la mayoría son completamente legítimos, también son el formato más utilizado para distribuir malware [@RZ-exe]. Antes de ejecutarlos:
 
-## Cierre de sesiones
+- Comprueba que proceden de una fuente oficial.
 
-Cuando hagas uso de algún servicio en internet, como por ejemplo, Facebook, Gmail o cualquier otro, lo primero que tienes que hacer es iniciar sesión con tus credenciales.
+- Verifica que el nombre del archivo coincide con el programa que deseas instalar.
 
-Si estas en tu dispositivo no pasaría nada si una vez abierta la sesión no la cierras después de haber usado el servicio, pero si por el contrario estas usando un dispositivo ajeno, el servicio quedaría abierto y tus datos expuestos.
+- Analiza el archivo con tu solución de seguridad si tienes cualquier duda.
 
-Por la razón antes expuesta, es importante que no dejes ninguna sesión abierta.
+- Desconfía si el archivo te llega por correo electrónico, mensajería instantánea o redes sociales sin haberlo solicitado previamente.
+
+También debes prestar atención durante el proceso de instalación. Lee cada pantalla del asistente y rechaza la instalación de programas adicionales, cambios en el navegador.
+
+La inteligencia artificial también está siendo utilizada para crear páginas de descarga falsas prácticamente idénticas a las originales, generar campañas de phishing que suplantan a los desarrolladores de software o distribuir instaladores acompañados de instrucciones muy convincentes. Antes de descargar cualquier programa, comprueba que la dirección web corresponde realmente al sitio oficial y no te fíes únicamente del aspecto profesional de la página o de los resultados patrocinados de los buscadores.
+
+Como norma general, si tienes dudas sobre el origen de un programa, es preferible no instalarlo hasta haber verificado su autenticidad. Unos minutos de comprobación pueden evitar la instalación de malware y la pérdida de información personal.
+
+## Cierre de sesiones y uso de dispositivos ajenos
+
+Cuando utilizas cualquier servicio en internet, como tu correo electrónico, redes sociales o plataformas bancarias, el primer paso para proteger tu información es iniciar sesión con tus credenciales.
+
+Si estás utilizando tu propio móvil u ordenador, mantener la sesión iniciada es cómodo y seguro, siempre y cuando tu dispositivo esté protegido con un PIN, contraseña o huella dactilar. Sin embargo, la regla cambia por completo si utilizas un dispositivo ajeno o público (como el de un amigo, una oficina o una biblioteca). En estos casos, si olvidas cerrar la sesión, tus datos personales, mensajes y cuentas quedarán totalmente expuestos a la siguiente persona que use ese equipo.
+
+Para evitar riesgos innecesarios, adopta estos dos hábitos esenciales de seguridad moderna:
+
+- Usa siempre el Modo Incógnito: Cuando vayas a iniciar sesión en un dispositivo que no es tuyo, abre una ventana de navegación privada. La gran ventaja es que, en cuanto cierras esa ventana, el navegador destruye automáticamente tus contraseñas, cookies e historial, impidiendo que nadie pueda entrar a tus cuentas.
+
+- Cierra sesión de forma remota si te despistas: Si te vas de un lugar y te asalta la duda de si dejaste tu cuenta abierta, no entres en pánico. Hoy en día, plataformas como Google, Microsoft o Meta (Facebook/Instagram) incluyen una sección de seguridad llamada "Dispositivos activos" o "Dónde has iniciado sesión" en los ajustes de tu cuenta. Desde allí, puedes pulsar un botón desde tu propio móvil para cerrar la sesión a distancia en cualquier otro equipo al instante.
+
+Recuerda: Tu privacidad digital depende de dónde dejas tus llaves. No dejes nunca tus cuentas abiertas en territorio desconocido.
 
 ## 2SV (Two Step Verification) o Verificación en Dos Pasos
 
