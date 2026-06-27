@@ -335,3 +335,30 @@ En casos en los que el dispositivo haya almacenado información extremadamente s
 
 Si quieres más recomendaciones sobre como actuar en este supuesto, te recomiendo que leas la siguiente entrada [¿Sabías que 2 de cada 5 dispositivos vendidos contienen información personal?](https://www.osi.es/es/actualidad/blog/2019/10/09/sabias-que-2-de-cada-5-dispositivos-vendidos-contienen-informacion).
 
+## Inteligencia Artificial y privacidad
+
+La irrupción de las herramientas de Inteligencia Artificial (IA) generativa, como los chats inteligentes, asistentes de búsqueda o creadores de contenido, ha cambiado las reglas de juego de la privacidad. A diferencia del software tradicional, estos sistemas se "alimentan" y entrenan continuamente con la información que introducimos en ellos mediante prompts. Esto significa que cualquier dato personal, documento laboral o fotografía que compartamos con una IA puede pasar a formar parte de su base de conocimiento global, con el riesgo de ser expuesto a terceros en futuras respuestas.
+
+Para interactuar con estas tecnologías de forma responsable y proteger nuestra identidad digital, es imprescindible adoptar las siguientes medidas:
+
+- Desactivar el entrenamiento, historial o usa conversación temporal: Se debe revisar a fondo la configuración de la cuenta en la plataforma de IA para activar las opciones que impiden que las conversaciones se almacenen en sus servidores o se utilicen para entrenar a sus futuros modelos de lenguaje.
+
+- Anonimización de datos (prompts limpios): Antes de enviar cualquier texto a una IA, se debe eliminar todo dato identificativo. Si se necesita resumir un documento o redactar un correo, es necesario sustituir los nombres reales, direcciones, teléfonos o datos fiscales por términos genéricos (como "Persona A" o "Empresa X").
+
+- Cuidado con el contenido multimedia y biométrico: Evitar subir fotografías personales, archivos de voz o vídeos a herramientas de IA de dudosa procedencia para modificar rostros o clonar voces, ya que se están entregando patrones de identidad únicos a servidores externos con políticas de retención de datos ambiguas.
+
+- Alternativas locales: Siempre que sea posible, se debe priorizar el uso de modelos de IA que se ejecuten de manera local en el propio dispositivo (sin enviar datos a la nube) o utilizar servicios corporativos que garanticen contractualmente la privacidad y el borrado inmediato de la información compartida.
+
+## Dispositivos del hogar conectado (IoT) y el rastreo doméstico
+
+La proliferación de electrodomésticos inteligentes, televisores con conexión a internet, altavoces con asistente de voz o básculas digitales ha convertido el hogar en un entorno de recolección de datos masiva. Estos dispositivos del Internet de las Cosas (IoT) no solo interactúan con nosotros, sino que monitorizan de forma constante nuestros hábitos más íntimos: horarios de sueño, pautas de consumo, mapas del interior de la vivienda e incluso conversaciones ambientales. Para evitar que el ecosistema domótico se transforme en una herramienta de espionaje comercial y salvaguardar la privacidad del hogar, se deben adoptar las siguientes medidas:
+
+- Gestionar el historial de voz y grabaciones: En los altavoces inteligentes y pantallas conectadas, es necesario acceder a la configuración de privacidad de la cuenta (como Google, Amazon o Apple) para revisar, borrar y desactivar el almacenamiento permanente de los comandos de voz y las muestras de audio capturadas.
+
+- Limitar la telemetría y el envío de diagnósticos: Durante la configuración de cualquier aparato (especialmente Smart TVs y robots aspiradores), se deben desmarcar sistemáticamente las casillas de "compartir datos de uso", "informes de diagnóstico" o "experiencia de usuario", las cuales envían información sobre nuestros hábitos de consumo a los fabricantes.
+
+- Capar la publicidad personalizada en Smart TVs: Las televisiones actuales rastrean el contenido exacto que ves en pantalla (tecnología ACR o Reconocimiento Automático de Contenido) para enviarte anuncios dirigidos. Es imprescindible buscar y desactivar esta opción en los menús de privacidad del televisor.
+
+- Revisar los permisos de las aplicaciones de gestión: Los dispositivos IoT se controlan mediante apps móviles que a menudo exigen accesos abusivos. Se debe retirar el permiso de localización, acceso a la agenda de contactos o a la galería de fotos si la aplicación del aparato (por ejemplo, una bombilla o un purificador de aire) no los necesita para su funcionamiento básico.
+
+- Evaluar la necesidad de conexión: Antes de conectar un nuevo electrodoméstico a la red Wi-Fi, conviene valorar si esa conexión aporta un valor real. Si un dispositivo (como un frigorífico o una cafetera) funciona perfectamente sin internet, mantenerlo "desconectado" es la política de privacidad más radical y efectiva.
