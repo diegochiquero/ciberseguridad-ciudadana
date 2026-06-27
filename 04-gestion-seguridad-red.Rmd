@@ -124,7 +124,7 @@ Por otro lado, actualmente, muchos servicios ofrecen claves de acceso (passkeys)
 
 Pero ¿En qué consisten las passkeys?
 
-Las passkeys son un método de autenticación moderno basado en criptografía de clave pública, que sustituye por completo a las contraseñas. En lugar de escribir una clave que puede ser robada, filtrada o adivinada, el dispositivo del usuario genera dos claves:
+Las [passkeys](https://www.eset.com/latam/blog/cultura-y-seguridad-digital/que-es-una-passkey-y-por-que-es-mejor-que-una-contrasena-tradicional/) son un método de autenticación moderno basado en criptografía de clave pública, que sustituye por completo a las contraseñas. En lugar de escribir una clave que puede ser robada, filtrada o adivinada, el dispositivo del usuario genera dos claves:
 
 -   Una clave pública, que se guarda en el servicio.
 
@@ -180,15 +180,20 @@ Otras recomendaciones que debes tener siempre presente:
 
 -   Puedes usar el gestor de contraseñas integrado en tu navegador, siempre que tu dispositivo esté protegido con PIN, biometría o contraseña. Los navegadores modernos cifran las contraseñas y son una opción segura para la mayoría de usuarios.
 
--   Siempre que sea posible, utiliza passkeys, que son más seguras y no pueden ser robadas mediante phishing.
+- Usar Security keys o [llave de seguridad](https://es.digitaltrends.com/computadoras/las-mejores-llaves-de-seguridad-usb/). Verás que son más adelante en esta misma unidad en el apartado de MFA (Multi-Factor Authentication)
 
--   Usa la [verificación en dos pasos](https://www.osi.es/es/actualidad/blog/2019/02/27/el-factor-de-autenticacion-doble-y-multiple) también conocida como autenticación doble.
+-   Usa la [verificación en dos pasos](https://www.bbva.es/finanzas-vistazo/ciberseguridad/seguridad-en-internet/verificacion-en-dos-pasos.html) también conocida como autenticación doble y que verás en detalle más adelante en esta misma unidad.
+
+-   Usa la [autenticación de factor múltiple](https://www.osi.es/es/actualidad/blog/2019/02/27/el-factor-de-autenticacion-doble-y-multiple), que también verás con más detalle en esta misma unidad.
+
 
 La forma más segura y práctica de gestionar tus contraseñas es utilizar un gestor de contraseñas. Estos servicios generan claves robustas, las almacenan cifradas y te permiten usarlas sin tener que recordarlas todas. Además, reducen el riesgo de reutilizar contraseñas o de guardarlas en lugares inseguros.
 
 Algunos gestores recomendados son:
 
 -   [Bitwarden](https://bitwarden.com/).
+
+-   [KeePassXC](https://keepassxc.org/).
 
 -   [LastPass](https://www.lastpass.com/es/).
 
