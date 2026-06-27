@@ -202,3 +202,25 @@ Para aprovechar correctamente el cifrado:
 - Mantén actualizado el sistema operativo.
 
 En una sociedad cada vez más digitalizada, donde almacenas fotografías, documentos, conversaciones y otra información personal en múltiples dispositivos, el cifrado es una de las medidas más eficaces para proteger tu privacidad y reducir el impacto de un acceso físico no autorizado.
+
+## Dispositivos del hogar conectado (IoT) y la seguridad de la red doméstica
+
+El ecosistema físico del ciudadano ya no se limita a ordenadores y teléfonos móviles; la proliferación de la domótica e Internet de las Cosas (IoT) ha introducido en el hogar Smart TVs, cámaras de vigilancia, altavoces inteligentes o electrodomésticos conectados. Estos equipos carecen habitualmente de sistemas operativos complejos donde instalar un antivirus tradicional, convirtiéndose en el eslabón más débil de la red doméstica y en una puerta de entrada para los ciberdelincuentes. Para garantizar la seguridad física y lógica de estos dispositivos, se deben aplicar las siguientes pautas:
+
+- Cambio de credenciales por defecto: Es obligatorio modificar la contraseña que el aparato trae de fábrica (como "admin" o "1234") inmediatamente durante su configuración inicial, utilizando contraseñas robustas.
+
+- Actualización del firmware: Al igual que un ordenador, estos dispositivos sufren vulnerabilidades. Se debe revisar periódicamente la aplicación de gestión del fabricante para instalar las actualizaciones de firmware disponibles.
+
+- Segmentación de la red: Siempre que el router lo permita, se deben conectar todos los dispositivos IoT a una red Wi-Fi de invitados independiente. De este modo, si una cámara de vigilancia es hackeada, el atacante no podrá saltar a los ordenadores o discos duros principales del hogar.
+
+- Desactivación de funciones innecesarias: Capar el acceso remoto desde fuera de casa, las conexiones Bluetooth si no se utilizan, o los micrófonos integrados si el dispositivo no requiere comandos de voz para su funcionamiento diario.
+
+## Ciclo de vida final del hardware (Destrucción y desecho seguro de soportes)
+
+La seguridad de un equipo físico no termina cuando este deja de funcionar o queda obsoleto. Un disco duro viejo, una tarjeta de memoria, un teléfono móvil con la pantalla rota o un simple USB promocional que se tira a la basura o se deposita en un punto limpio siguen conteniendo gigabytes de información privada recuperable. Los ciberdelincuentes recurren a técnicas de rastreo de desechos para extraer estos soportes y restaurar fotos, documentos de identidad o contraseñas guardadas. Ante el descarte definitivo de cualquier hardware, se deben aplicar los siguientes procedimientos:
+
+- Borrado seguro por software: Si el dispositivo aún enciende, no basta con arrastrar los archivos a la papelera o formatear de forma rápida. Se deben utilizar herramientas de borrado seguro (como el formateo completo o software de sobreescritura) que llenan el disco de datos aleatorios para imposibilitar la recuperación del archivo original.
+
+- Destrucción física del soporte: En dispositivos inoperables o discos duros mecánicos (HDD) y sólidos (SSD) obsoletos, la medida más efectiva es la destrucción física. Esto implica perforar el disco con un taladro, romper las placas internas o utilizar métodos de desmagnetización antes de llevarlos al punto de reciclaje.
+
+- Restablecimiento de fábrica en dispositivos integrados: En equipos como Smart TVs o routers antes de ser desechados, se debe ejecutar obligatoriamente el "Hard Reset" o restablecimiento de fábrica desde su menú de configuración para eliminar cuentas vinculadas y contraseñas de la red Wi-Fi del hogar.

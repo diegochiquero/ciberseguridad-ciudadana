@@ -36,6 +36,8 @@ la-nube
 correo-electrónico-y-apps-de-mensajería
 cifrado-o-encriptado-de-datos
 he-decidido-vender-o-donar-mi-dispositivo
+inteligencia-artificial-y-privacidad
+dispositivos-del-hogar-conectado-iot-y-el-rastreo-doméstico
 gestión-de-la-seguridad-en-equipos-físicos
 gestionar-la-seguridad-en-los-equipos
 cuentas-de-usuario-en-equipos-locales-y-dispositivos-móviles
@@ -44,6 +46,8 @@ actualizaciones
 antivirus-antimalware-y-cortafuegos
 copias-de-seguridad
 cifrado-o-encriptado-de-unidades-de-almacenamiento
+dispositivos-del-hogar-conectado-iot-y-la-seguridad-de-la-red-doméstica
+ciclo-de-vida-final-del-hardware-destrucción-y-desecho-seguro-de-soportes
 gestión-de-la-seguridad-en-la-red
 gestionar-la-seguridad-en-la-red
 seguridad-en-las-cuentas
