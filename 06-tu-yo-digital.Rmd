@@ -2,83 +2,119 @@
 
 ##  Toma consciencia de tu yo digital
 
-En esta sociedad actual, tecnológica y digitalizada, de la que todos en mayor o menor medida formamos parte, debemos tener siempre presente que la forma en que desarrollamos nuestra personalidad, creamos nuestras relaciones sociales o gestionamos nuestra economía, nos lleva a definir nuestra imagen de marca y reputación digital.
+Vivimos en una sociedad cada vez más conectada, en la que una parte importante de nuestra vida personal, social, educativa y profesional se desarrolla a través de Internet y de los servicios digitales. Cada acción que realizas en el entorno digital contribuye a construir tu identidad digital, es decir, la imagen y la información que otras personas, organizaciones y sistemas pueden asociar contigo.
 
-En la esfera digital todas y cada una de nuestras acciones tendrá una repercusión directa en lo que el resto va a percibir sobre nosotros y por ende a definir quiénes somos, tanto desde una perspectiva personal, profesional como social creando constantemente y a veces casi de manera imperceptible nuestra identidad digital. Es por ello que no debes perder el foco y entender que esto va a contribuir y afectar a todas las capas de tu yo analógico.
+Tu identidad digital no depende únicamente de lo que decides publicar. También la conforman las fotografías o comentarios que otras personas comparten sobre ti, la información que recopilan las aplicaciones y plataformas que utilizas, los datos que generan tus interacciones y la información que puede encontrarse mediante buscadores o sistemas de inteligencia artificial.
 
-Por lo tanto, en este nuevo escenario hacia la web 3.0 en la que ha aumentado la exposición a la superficie digital, y en el que el incremento exponencial de la ciberdelincuencia parece no tener freno, debes aprender y mejorar la experiencia digital y hacerla compatible con un uso responsable, respetuoso, crítico y creativo de la tecnología. Y a su vez desarrollar capacidades digitales que propicien un progreso inclusivo, seguro, privado y sostenibles que garantice el bienestar social.
+Además, la inteligencia artificial ha cambiado la forma en que se crea, difunde y utiliza la información. Hoy es posible generar imágenes, vídeos o audios muy realistas, crear perfiles falsos convincentes o difundir contenidos manipulados que pueden afectar a tu reputación o utilizarse para suplantar tu identidad. Por ello, resulta cada vez más importante desarrollar una actitud crítica ante la información que encuentras y proteger los datos personales que compartes.
 
-## Metadatos
+En la esfera digital gestionar tu identidad digital implica actuar de forma consciente y responsable. Antes de publicar información, conviene valorar quién podrá acceder a ella, cuánto tiempo permanecerá disponible y qué impacto podría tener en el futuro. También es recomendable revisar periódicamente la configuración de privacidad de los servicios que utilizas, buscar de vez en cuando qué información pública existe sobre ti y comunicar o solicitar la retirada de contenidos falsos o que vulneren tus derechos cuando sea posible.
 
-Los metadatos pueden ser descritos de varias formas posibles, pero de forma resumida son un conjunto de datos que proporciona información de un recurso. Datos como pueden ser un archivo de imagen o un documento de texto, siendo algunos de estos metadatos la fecha de creación, la de última modificación o la resolución en el caso de una imagen [@WIKI-meta].
+Desarrollar competencias digitales y un uso responsable, respetuoso, crítico y creativo de la tecnología te permitirá aprovechar las oportunidades que ofrece el entorno digital, reducir los riesgos asociados a la ciberdelincuencia y a la desinformación, y contribuir a un espacio digital más seguro, inclusivo, privado y sostenible para todas las personas.
 
-La función principal de los metadatos es la de ampliar con información adicional la contenida en el recurso del que forman parte con el fin de mejorar la calidad y efectividad de las búsquedas realizadas, no solo a la hora de realizar una búsqueda de un archivo perdido en nuestro sistema operativo, sino que esto afecta incluso al posicionamiento web.
+Por lo tanto, en este nuevo escenario hacia lo que algunos apuntan como la web 4.0, web inteligente o internet cognitiva en la que ha aumentado la exposición a la superficie digital, y en el que el incremento exponencial de la ciberdelincuencia parece no tener freno, debes aprender y mejorar la experiencia digital y hacerla compatible con un uso responsable, respetuoso, crítico y creativo de la tecnología. Y a su vez desarrollar capacidades digitales que propicien un progreso inclusivo, seguro, privado y sostenibles que garantice el bienestar social.
 
-En ciertas ocasiones estos datos pueden provocar problemas, algunos de ellos de seguridad y privacidad como puede ocurrir por ejemplo por alguno de los dos motivos siguientes:
+## Los metadatos: la información oculta de tus archivos
 
-- Suele ocurrir que algunas cámaras fotográficas incluyan las coordenadas geográficas desde las que se realiza la fotografía entre los metadatos en los archivos de imágenes, pudiéndose localizar la posición en la que la imagen fue tomada. Esto es lo que se conoce como [Geoetiquetado](https://es.wikipedia.org/wiki/Geoetiquetado).
+Los metadatos son datos que describen o aportan información adicional sobre un recurso digital, como una fotografía, un vídeo, un documento, un archivo de audio o un correo electrónico. Aunque normalmente no son visibles durante el uso habitual del archivo, contienen información que facilita su organización, búsqueda y gestión.
 
-- Puede determinarse la versión del software con la que fue guardado un archivo, por lo que si trabajas en una empresa y no tienes la licencia de dicho programa, los metadatos pueden generarte problemas.
+Dependiendo del tipo de archivo, los metadatos pueden incluir información como la fecha y la hora de creación o modificación, el autor, el dispositivo utilizado, la versión del programa con el que se creó, el tamaño del archivo, el idioma, la resolución de una imagen o incluso la ubicación geográfica desde la que fue tomada una fotografía.
 
-- La longitud de los mensajes, el autor, la localización, las fechas, la hora, etc. identifican patrones de comportamientos, hábitos, relaciones y detalles personales. Todos estos datos son denominados el petróleo del siglo XXI [@OSI-petroleo-S-XXI].
+Su finalidad es mejorar la organización y el tratamiento de la información, permitiendo localizar archivos con mayor facilidad y facilitando el funcionamiento de numerosas aplicaciones y servicios digitales. Sin embargo, también pueden revelar información personal o profesional que pase desapercibida para quien comparte el archivo.
 
-Para que puedas hacer una valoración de por que a todos los datos personales se les denominan el petróleo del siglo XXI, visita la siguiente infografía de [cuál es el valor de tus datos en la red](https://www.osi.es/sites/default/files/images/concienciacion/c15-pdf-infografia-ciberdelincuentes_reyes.pdf).
+Uno de los ejemplos más conocidos es el [geoetiquetado](https://es.wikipedia.org/wiki/Geoetiquetado).. Muchos teléfonos móviles y cámaras digitales pueden almacenar automáticamente las coordenadas geográficas donde se tomó una fotografía. Si compartes esa imagen sin eliminar dicha información, otras personas podrían conocer el lugar exacto donde fue realizada.
 
-## Huella digital o reputación online
+Los metadatos también pueden revelar información sobre tus hábitos, los dispositivos que utilizas, los horarios en los que trabajas o creas documentos, las aplicaciones empleadas o la evolución de un archivo. Aunque cada dato, por separado, pueda parecer poco relevante, la combinación de muchos metadatos permite elaborar perfiles muy detallados sobre una persona.
 
-Eres lo que publicas, lo que compartes, con quién te relacionas e incluso lo que visitas desde tus dispositivos y todo este rastro es lo que compone la huella digital. 
+La inteligencia artificial ha incrementado el valor de estos datos. Los sistemas actuales son capaces de analizar grandes volúmenes de metadatos procedentes de distintas fuentes para identificar patrones de comportamiento, establecer relaciones entre personas o inferir información que nunca se ha compartido de forma explícita. Por este motivo, los metadatos tienen un importante valor económico y estratégico, tanto para ciberdelicuentes como para empresas, acuñándose años atrás como el petróleo del siglo XXI [@OSI-petroleo-S-XXI].
 
-En otras palabras, la huella digital o reputación online es la fama o prestigio que una persona o una empresa tiene en el mundo digital. Realmente la reputación digital no difiere mucho de la reputación tradicional, ya que en cierto modo ambas están conectadas, por lo que deben ser coherente la una con la otra.
+## Identidad digital
 
-También se puede denominar la identidad digitad como el conjunto formado por:
+La identidad digital es el conjunto de datos, información y características que permiten identificarte en el entorno digital. Se construye a partir de la información que compartes voluntariamente, de la que otras personas publican sobre ti y de los datos que generan los servicios digitales que utilizas.
 
-- Información que nosotros mismos publicamos.
+En la actualidad, tu identidad digital no depende únicamente de lo que decides publicar. También la conforman las fotografías o comentarios que otras personas comparten sobre ti, la información que recopilan las aplicaciones y plataformas que utilizas, los datos que generan tus interacciones y la información que puede encontrarse mediante buscadores o sistemas de inteligencia artificial.
 
-- Información que compartimos de otros usuarios.
+La inteligencia artificial ha cambiado la forma en que se crea, analiza y difunde la información. Los sistemas actuales pueden localizar, relacionar y resumir datos procedentes de múltiples fuentes públicas para elaborar perfiles muy precisos. Además, existen herramientas capaces de generar imágenes, vídeos o audios falsos de gran realismo que pueden utilizarse para suplantar una identidad o dañar la imagen de una persona.
 
-- Aquella información que existe en Internet sobre nosotros.
+Por ello, gestionar adecuadamente tu identidad digital implica actuar de forma consciente y responsable. Antes de publicar información, conviene valorar quién podrá acceder a ella, cuánto tiempo permanecerá disponible y qué impacto podría tener en el futuro. También es recomendable revisar periódicamente la configuración de privacidad de los servicios que utilizas y comprobar qué información pública existe sobre ti.
 
-Cabe destacar que la variante digital ha tomado gran importancia, ya que cuando una persona o compañía quiere saber de ti, uno de los mecanismos que va a utilizar es buscarte en internet, y es, en este punto donde radica la importancia de contar con una buena reputación online [@huella-digital].
+En definitiva, tu identidad digital constituye una extensión de tu identidad fuera de Internet y puede influir en ámbitos personales, académicos, profesionales y sociales. Por ello, protegerla y gestionarla de forma activa es una parte esencial de tu seguridad digital.
 
-En este sentido es importante en un primer momento, conocer si tu huella digital goza de una buena salud y para ello lo más recomendable es que hagas un ejercicio de búsqueda, para ver si los resultados que obtienes son buenos. Puedes usar algunas de las siguientes herramientas para este propósito:
+## Huella digital
 
-- Buscar directamente en Google o otros buscadores. Puedes apoyarte en las [búsquedas avanzadas de Google](https://support.google.com/websearch/answer/2466433?hl=es). Esto es lo que se conoce como Egosurfing.
+Cada vez que utilizas Internet dejas un rastro de información. Lo que publicas, comentas o compartes, las personas con las que interactúas, las páginas que visitas o los servicios digitales que utilizas contribuyen a construir tu huella digital.
 
-- También tienes plataformas que te ayudan a descubrir dónde están tus datos personales y poder gestionar tu huella digital. En los siguientes enlaces puedes encontrar dos de ellas [Say mine](https://saymine.com/) y [Jumbo privacy](https://www.jumboprivacy.com/).
+La huella digital es el conjunto de rastros que generas durante tu actividad en Internet. Parte de esta información la proporcionas de forma consciente, por ejemplo cuando publicas una fotografía o escribes un comentario, mientras que otra se genera automáticamente durante el uso de dispositivos y servicios digitales.
 
-- Crear alertas de [Google alert](https://www.google.es/alerts). Este recurso también te servira para estar al día de lo que se publica sobre ti.
+Tu huella digital puede estar formada por:
 
-- [Hootsuite](https://www.hootsuite.com/). Esta herramienta te buscará entre las principales redes sociales, como Facebook, Twitter, etc. es usada en su mayoría en el mundo corporativo.
+* La información que publicas voluntariamente.
 
-- [Google resultados sobre ti](https://myactivity.google.com/results-about-you). Hace búsquedas y revisa los resultados sobre ti.
+* Los comentarios, fotografías o publicaciones que otras personas comparten sobre ti.
 
-- Haz una búsqueda de imágenes inversa. Con esta búsqueda puedes ver si una imagen tuya, está siendo utilizada en otros sitios web y con qué fin. En el siguiente enlace, tienes la información para llevarla a cabo. [Cómo hacer una búsqueda de imágenes inversa](https://www.incibe.es/ciudadania/formacion/recursosdescargables/como-hacer-busqueda-imagenes-inversa).
+* Los datos que generan las aplicaciones y servicios digitales durante su utilización.
 
-Si los resultados obtenidos no son de tu agrado, algunas plataformas te permiten solicita la eliminación de dicho contenido o simplemente puedes gestionar tú, esa información desde la propia plataforma. En el caso de Google puedes hacerlo a través de [Mi Actividad](https://myactivity.google.com/myactivity).
+* Los metadatos asociados a documentos, fotografías o vídeos.
 
-Crear una buena huella digital requiere de tiempo y debes ser cuidadoso con la manera en que interactúas en la red. Existen decálogos que te guían para crear una excelente reputación online, así como videos tutoriales y herramientas para llevarlo a cabo. Nos obstante aquí tienes las mejores recomendaciones para cuando quieras compartir, comentar, valorar o opinar en cualquiera de los medios sociales como Facebook, Instagram o cualquier otra, hacer una reseña en Google o participar en algún foro [@decalogo-digital].
+* La información pública que puede localizarse mediante buscadores.
 
-- Presencia y actualización sistemática.
+Aunque cada dato pueda parecer poco relevante por separado, la combinación de todos ellos permite conocer hábitos, intereses, relaciones personales o profesionales e incluso elaborar perfiles muy detallados.
 
-- Cuidar la imagen mostrando transparencia.
+La inteligencia artificial ha incrementado el valor de la huella digital. Gracias a su capacidad para analizar grandes cantidades de información, puede identificar patrones de comportamiento, establecer relaciones entre datos procedentes de distintas fuentes e inferir información que nunca se ha compartido de forma explícita.
 
-- Aportar contenido de calidad.
+Conocer tu huella digital es el primer paso para proteger tu privacidad. Una forma sencilla de hacerlo consiste en realizar búsquedas periódicas sobre ti mismo utilizando distintos buscadores y revisar la configuración de privacidad de las plataformas y servicios que utilizas.
 
-- Respetar siempre la opinión ajena.
+## Reputación online
 
-- Identificar los canales apropiados con los que interactuar.
+La reputación online es la percepción que otras personas tienen de ti a partir de la información disponible en Internet. Aunque está estrechamente relacionada con tu identidad y tu huella digital, no depende únicamente de lo que publicas, sino también de cómo otras personas interpretan esa información y de los contenidos que terceros puedan generar sobre ti.
 
-- Tener en cuenta las reglas de urbanidad digital, esto consiste en una redacción cuidada y usos de negritas o enlaces de interés.
+Hoy en día es habitual que una persona, una empresa o una organización busque información sobre alguien antes de establecer una relación profesional, comercial o incluso personal. Por ello, mantener una buena reputación online resulta cada vez más importante.
 
-- Diferenciar entre lo público y lo privado.
+La inteligencia artificial también puede influir en tu reputación. Los sistemas actuales son capaces de localizar información pública en pocos segundos, resumirla o relacionarla con otros contenidos. Además, la aparición de imágenes, vídeos o audios generados mediante inteligencia artificial hace necesario verificar siempre la autenticidad de la información antes de compartirla o sacar conclusiones sobre una persona.
 
-Estas últimas puedes tenerlas en cuenta si quieres llevar tu huella digital a un nivel más profesional.
+Una forma sencilla de conocer el estado de tu reputación online consiste en buscar periódicamente información sobre ti en Internet. Para ello puedes:
 
-- Disponer de un blog personal.
+* Buscar tu nombre y apellidos en distintos buscadores utilizando también búsquedas avanzadas. Uno de estos servicios lo encontrarás en las [búsquedas avanzadas de Google](https://support.google.com/websearch/answer/2466433?hl=es).
 
-- Mantener una actitud en la red activa.
+* Buscar tu dirección de correo electrónico, número de teléfono o nombres de usuario habituales para comprobar si aparecen publicados.
 
-- Permanecer atento a las nuevas redes y formas de difusión.
+* Crear alertas de [Google alert](https://www.google.es/alerts). Este recurso también te servira para estar al día de lo que se publica sobre ti.
+
+* También tienes plataformas que te ayudan a descubrir dónde están tus datos personales y poder gestionar tu huella digital. En el siguiente enlace tienes una de las más populares [Say mine](https://saymine.com/).
+
+* Utilizar la función de [Google resultados sobre ti](https://myactivity.google.com/results-about-you) para localizar información personal disponible en el buscador. 
+
+* Realizar búsquedas inversas de imágenes para comprobar si alguna fotografía tuya está siendo utilizada en otros sitios web.[Cómo hacer una búsqueda de imágenes inversa](https://www.incibe.es/ciudadania/formacion/recursosdescargables/como-hacer-busqueda-imagenes-inversa).
+
+* Haz indagaciones en data brokers y web de búsqueda de personas que están exponiendo tu infomación personal, usando una de la muchas plataformas de inteligencia artificial que hoy en día se encuentran a tu disposición.
+
+* Revisar periódicamente la configuración de privacidad de tus redes sociales y de los servicios que utilizas.
+
+Todo esto es lo que se conoce como egosurfing o egobúsqueda, que no es más que la práctica de buscar tu propio nombre, apellido o datos personales en buscadores (como Google) y redes sociales. Su objetivo no es solo la curiosidad, sino controlar tu huella digital, proteger tu privacidad y evitar riesgos como la suplantación de identidad o el fraude. Tienes más información en esta publicación del Incibe titulada, [Egosurfing: ¿Qué información hay sobre mí en Internet?](https://www.incibe.es/ciudadania/blog/egosurfing-que-informacion-hay-sobre-mi-en-internet)
+
+Si encuentras información incorrecta, desactualizada, que vulnera tu privacidad, o si los resultados obtenidos no son de tu agrado, algunas plataformas te permiten solicita la eliminación de dicho contenido o simplemente puedes gestionar tú, esa información desde la propia plataforma. En el caso de Google puedes hacerlo a través de [Mi Actividad](https://myactivity.google.com/myactivity).
+
+Otro concepto estrechamente relacionado con la construcción de una buena reputación online es la netiqueta. Este término, que surge de la unión de las palabras inglesas «network» (red) y «etiquette» (etiqueta), hace referencia al conjunto de normas de comportamiento y buenas prácticas que favorecen una comunicación respetuosa, responsable y adecuada en Internet. Aplicar la netiqueta no solo mejora la convivencia en los entornos digitales, sino que también contribuye a proyectar una imagen coherente y positiva [@netiqueta].
+
+Construir una buena reputación online requiere tiempo, coherencia y constancia. Algunas recomendaciones que pueden ayudarte son:
+
+* Piensa antes de publicar cualquier contenido.
+
+* Comparte información veraz y de calidad.
+
+* Respeta la privacidad y la opinión de otras personas.
+
+* Aplica las normas de netiqueta en todas tus interacciones digitales.
+
+* Diferencia claramente qué información deseas mantener privada y cuál quieres hacer pública.
+
+* Mantén una actitud respetuosa y responsable en todos los entornos digitales.
+
+* Revisa periódicamente la información pública que existe sobre ti.
+
+* Desconfía de contenidos que puedan haber sido manipulados o generados mediante inteligencia artificial.
+
+* Si utilizas Internet con fines profesionales, procura mantener actualizados tus perfiles públicos y participar en aquellos espacios que aporten valor a tu actividad.
 
 ## Sombra digital
 

@@ -103,8 +103,10 @@ voice-hacking
 sustracción-o-perdida-de-tu-dispositivo
 tu-yo-digital
 toma-consciencia-de-tu-yo-digital
-metadatos
-huella-digital-o-reputación-online
+los-metadatos-la-información-oculta-de-tus-archivos
+identidad-digital
+huella-digital
+reputación-online
 sombra-digital
 eliminar-el-historial-de-busquedas
 derecho-al-olvido
