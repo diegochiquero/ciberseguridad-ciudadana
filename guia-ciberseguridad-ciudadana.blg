@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/Debian)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: guia-ciberseguridad-ciudadana.aux
+The style file: apalike.bst
+Database file #1: book.bib
+Database file #2: article.bib
+Database file #3: manual.bib
+Warning--empty journal in RGPD
+You've used 88 entries,
+            1935 wiz_defined-function locations,
+            801 strings with 10043 characters,
+and the built_in function-call counts, 23590 in all, are:
+= -- 2274
+> -- 616
+< -- 88
++ -- 211
+- -- 176
+* -- 1490
+:= -- 4524
+add.period$ -- 258
+call.type$ -- 88
+change.case$ -- 524
+chr.to.int$ -- 53
+cite$ -- 89
+duplicate$ -- 1130
+empty$ -- 1739
+format.name$ -- 264
+if$ -- 4445
+int.to.chr$ -- 36
+int.to.str$ -- 0
+missing$ -- 80
+newline$ -- 437
+num.names$ -- 264
+pop$ -- 438
+preamble$ -- 1
+purify$ -- 528
+quote$ -- 0
+skip$ -- 944
+stack$ -- 0
+substring$ -- 1056
+swap$ -- 86
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 526
+warning$ -- 1
+while$ -- 176
+width$ -- 0
+write$ -- 1048
+(There was 1 warning)
