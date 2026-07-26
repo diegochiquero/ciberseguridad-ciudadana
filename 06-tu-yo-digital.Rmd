@@ -40,6 +40,46 @@ Por ello, gestionar adecuadamente tu identidad digital implica actuar de forma c
 
 En definitiva, tu identidad digital constituye una extensión de tu identidad fuera de Internet y puede influir en ámbitos personales, académicos, profesionales y sociales. Por ello, protegerla y gestionarla de forma activa es una parte esencial de tu seguridad digital.
 
+## Identidad Sintética: Avatares de IA y Gemelos Digitales
+
+El avance vertiginoso de la Inteligencia Artificial generativa ha transformado la noción del yo digital, llevando la identidad más allá del rastro que dejamos de forma pasiva o interactiva. Hoy en día, la tecnología permite la creación de identidades sintéticas: recreaciones automatizadas e hiperrealistas de personas físicas (vivas o fallecidas) mediante algoritmos de clonación y simulación.
+
+Comprender cómo se construyen estos elementos y los riesgos asociados a su proliferación resulta indispensable para proteger los derechos a la propia imagen, la voz y la intimidad.
+
+¿Qué son los gemelos digitales y la identidad sintética?
+
+- Clonación de voz (Voice Cloning): A partir de apenas unos segundos o minutos de audio de una persona, los modelos de IA pueden aprender sus patrones biométricos de entonación, timbre y acento para generar cualquier discurso escrito con una fidelidad casi indistinguible del original.
+
+- Avatares hiperrealistas y Deepfakes: Son réplicas en vídeo o gráficos 3D generadas por ordenador que imitan los rasgos faciales, expresiones y gestos de una persona. Se utilizan tanto en aplicaciones legítimas (asistentes virtuales personalizados, doblaje de contenidos) como en usos malintencionados (suplantación de identidad, estafas o difamación).
+
+- Gemelos digitales de personalidad: Modelos de lenguaje (LLM) entrenados específicamente con el historial de escritos, mensajes o publicaciones de un individuo para replicar su forma de pensar, expresarse o responder a preguntas, dando lugar incluso a necrobots (réplicas conversacionales de personas fallecidas).
+
+Riesgos y amenazas para la ciudadanía:
+
+- La capacidad de replicar a un individuo plantea importantes desafíos de seguridad y privacidad:
+
+- Ingeniería social y estafas avanzadas: Ataques de suplantación (vishing o llamadas fraudulentas) utilizando la voz clonada de familiares o directivos para solicitar dinero o claves de acceso.
+
+- Daño reputacional e íntimo: La fabricación de contenidos audiovisuales falsos (deepfakes) orientados al acoso, la extorsión o la desinformación.
+
+- Pérdida de control del bioma digital: La recolección no autorizada de vídeos, audios y fotos públicas publicadas en redes sociales para entrenar modelos de IA sin el conocimiento ni consentimiento del afectado.
+
+Marco legal de protección y transparencia:
+
+- Frente a estos riesgos, tanto la legislación europea como la española establecen límites estrictos:
+
+- Reglamento Europeo de Inteligencia Artificial (AI Act): Impone la obligación explícita de transparencia. Cualquier contenido generado o manipulado artificialmente (deepfakes) debe ser etiquetado claramente como sintético por quienes lo desplieguen, permitiendo que el público identifique su naturaleza artificial.
+
+- Derecho a la propia imagen y la voz: La voz y los rasgos faciales están protegidos como datos biométricos y derechos fundamentales. La legislación sobre protección del honor y la propia imagen sanciona como intromisión ilegítima la recreación o uso de la voz y apariencia de una persona mediante IA sin su autorización expresa, garantizando vías de cese, indemnización y retirada del contenido.
+
+Recomendaciones para proteger la identidad física frente a la IA
+
+- Estar alerta ante la verificación de identidad: Ante llamadas o audios sospechosos de familiares pidiendo ayuda económica, establecer un canal alternativo o una palabra clave familiar para verificar su autenticidad.
+
+- Proteger los archivos biométricos: Evitar publicar en redes abiertas audios de alta calidad o vídeos continuados en primer plano que puedan ser fácilmente raspados (scraped) para entrenar modelos de clonación.
+
+- Exigir consentimiento y derechos de autor: En entornos profesionales, asegurarse de que los contratos de cesión de imagen o voz especifiquen expresamente si se autoriza o no el uso de los archivos para el entrenamiento de sistemas de IA generativa.
+
 ## Huella digital
 
 Cada vez que utilizas Internet dejas un rastro de información. Lo que publicas, comentas o compartes, las personas con las que interactúas, las páginas que visitas o los servicios digitales que utilizas contribuyen a construir tu huella digital.
@@ -118,23 +158,22 @@ Construir una buena reputación online requiere tiempo, coherencia y constancia.
 
 ## Sombra digital
 
-Cada foto que subes a Facebook, Instagram, cada mail que mandas, cada comentario o reseña que vas dejando en la web está generando lo ya conoces como huella digital. Hasta aquí todo bien, pero además de este rastro que es más o menos voluntario, también vas dejando otro rastro del que quizá no seas tan consciente, y a este rastro es al que se le conoce como sombra digital.
+Cada fotografía que publicas en una red social, cada correo electrónico que envías o cada comentario que dejas en Internet forma parte de tu huella digital, es decir, del rastro que generas de manera consciente al utilizar la tecnología. Esto es lo que se conoce como huella digital.
 
-Ya en 2008 existían métricas que aseguran que la cantidad de información que se tiene de un individuo era mayor a la información creada por el mismo. 
+Sin embargo, existe otro rastro mucho menos visible: la sombra digital. Se trata de toda la información que diferentes organizaciones recopilan sobre ti de forma directa o indirecta mientras utilizas dispositivos y servicios digitales, incluso cuando no eres plenamente consciente de ello. 
 
-Partiendo de estos preceptos, la sombra digital es la información que queda de nosotros en los diferentes sistemas ya sean públicos o privados. Estos datos nos identifican y saben de nuestros gustos y preferencias. En la mayoría de los casos sin que nosotros mismos seamos conscientes de ello.
+En este punto es cuando te estas preguntando como se crea la sombra digital. Pues bien, la sombra digital está formada por datos procedentes de muy diversas fuentes: el uso de tu teléfono móvil, tu ordenador, las aplicaciones que utilizas, tu ubicación, los dispositivos inteligentes de tu hogar, las cámaras conectadas, los relojes inteligentes o los vehículos conectados, entre otros. También contribuyen los datos técnicos que generan automáticamente los sistemas, como la telemetría, los identificadores de los dispositivos o determinadas tecnologías de seguimiento empleadas para mejorar servicios, realizar análisis o personalizar contenidos.
 
-En este punto es cuando te estas preguntando como se crea la sombra digital. Pues bien, la sombra digital se va creando con el uso que haces de tus dispositivos, de la cámara en lugares públicos o privados, con el uso de la domótica como en el caso de las bombillas inteligentes y de otras múltiples maneras cuando interactúas con la tecnología. Los fabricantes introducen cookies y software específico para este fin dentro de los sistemas operativos, para saber cuándo los usas, el tiempo que empleas, si usas hardware externo del tipo que sea e incluso para hacer un mapa de tu casa mientras usas tu aspiradora inteligente. Como verás la sombra digital se va construyendo por si sola.
+Actualmente, la inteligencia artificial ha aumentado enormemente el valor de esta información. Los sistemas de IA son capaces de analizar millones de datos procedentes de distintas fuentes y encontrar relaciones que permiten elaborar perfiles muy detallados sobre una persona. En muchos casos pueden deducir aspectos como tus hábitos, horarios, intereses o preferencias sin que hayas facilitado esa información de forma explícita.
 
-Este concepto podría considerarse como una vulnerabilidad más de tu privacidad, pero también puede ser de mucha utilidad, como por ejemplo, cuando Google maps analiza tu movilidad para gestionar mejor tu trayecto, mostrarte cuánto vas a tardar, que ruta puedes tomar y todo en tiempo real, algo que no sería posible sin la gestión de la sombra digital [@XATAKA-sombra-digital].
+Esta capacidad tiene ventajas evidentes. Gracias al análisis de grandes volúmenes de datos es posible ofrecer servicios más útiles, como calcular la mejor ruta en una aplicación de navegación como es el caso de Google maps, detectar actividades fraudulentas en una cuenta bancaria o personalizar determinadas funciones de un servicio digital.
 
-Si quieres ser más consciente de todo lo que Google recopila del uso que haces de sus servicios, lee la siguiente entrada donde podrás ver toda la traza de tu actividad digital [He mirado todos los datos que Google tiene sobre mí, y confirmo que es el Gran Hermano definitivo](https://www.xataka.com/privacidad/he-mirado-todos-datos-que-google-tiene-mi-confirmo-que-gran-hermano-definitivo-2). Además tienes el servicio de [takeout.google.com](https://takeout.google.com) desde podrás descargar todo lo que la Compañía de Mountain View tiene de ti.
 
-## Eliminar el historial de busquedas
+No obstante, la misma información también puede utilizarse para crear perfiles comerciales muy precisos, personalizar publicidad, influir en las decisiones de consumo o incrementar el impacto de ataques de ingeniería social si esos datos llegan a manos de ciberdelincuentes.
 
-Cualquier navegador, salvo que usemos una navegación privada, almacena un registro de las páginas que hemos visitado, una información que podemos borrar si queremos o conservar en el caso de querer localizar más tarde alguna página que no recordemos. Es muy útil en este segundo caso, pero puede llegar a ser embarazoso si no queremos que nadie pueda ver las webs que hemos visitado.
+Por ello, resulta recomendable revisar periódicamente la configuración de privacidad de los servicios que utilizas, limitar los permisos innecesarios, conocer qué datos recopilan tus dispositivos y descargar, cuando sea posible, una copia de la información que las plataformas almacenan sobre ti. Ser consciente de tu sombra digital es el primer paso para gestionarla de forma responsable.
 
-Cada navegador ofrece la posibilidad de borrar toda esta información y para ello puedes acceder desde los menús del propio navegador. Cada navegador tiene una forma diferente de realizar este borrado, aunque normalmente suele estar en la opción/pestaña herramientas. No obstante, el siguiente enlace te llevará a la web del antivirus [AVG](https://www.avg.com/es/signal/how-to-clear-your-browsing-and-search-history), desde donde te enlazará a los diferentes tutoriales de cómo borrar el historial de navegación y de búsquedas de los navegadores más populares, como Google Chrome, Firefox o Microsoft Edge entre otros.
+Si quieres más detalles sobre los datos recopilados por la sombra digital lee este articulo [Qué es la sombra digital y por qué pone en riesgo mis datos confidenciales](https://www.infobae.com/tecno/2024/03/30/que-es-la-sombra-digital-y-por-que-pone-en-riesgo-mis-datos-confidenciales/).
 
 ## Derecho al olvido
 
@@ -142,7 +181,9 @@ El Reglamento General de Protección de Datos recoge una norma que permite a los
 
 Cabe aclarar que la eliminación de un enlace de un buscador no implica la desaparición de toda la información de carácter personal publicada en Internet. Este borrado sólo afecta a los motores de búsqueda que enlazan a dicho contenido [@OSI-derecho-al-olvido].
 
-Los siguientes enlaces te llevarán a los formularios de las plataformas detalladas donde podrás solicitar tu derecho al olvido:
+Existen servicios de terceros que te permiten realizar este trámite de manera más ágil. Herramientas como [Incogni](https://incogni.com/) o [Deleteme](https://joindeleteme.com/), hacen el trabajo por ti, incluso más allá de solicitar el derecho al olvido de la principales plataformas, también se encargan de hacer un tamizado digital, para encontrar datos personales que pudiesen estar incluidos en data brokers o registros públicos. Y si prefieres hacerlo por ti mismo, puedes pedirle un rastreo profundo a la inteligencia artificial e ir solicitándole los pasos a seguir,   para de este modo eliminar todo o parte de la información personal tuya que exista en la red.
+
+Los siguientes enlaces te llevarán a los formularios de las principales plataformas donde podrás solicitar tu derecho al olvido:
 
 -[Solicitud de derecho al olvido de Google](https://support.google.com/websearch/troubleshooter/3111061?hl=es)  
 
@@ -156,4 +197,38 @@ Como podrás imaginar estas son las plataformas más relevantes, no obstante, to
 
 Este derecho se puede gestionar al amparo de la [agencia española de protección de datos](https://www.aepd.es/es/areas-de-actuacion/internet-y-redes-sociales/derecho-al-olvido) y en caso de fallar esta primera vía administrativa siempre nos quedaría la vía judicial.
 
-Esto es parte de lo que se conoce como derecho al olvido. Si quieres más información visita el enlace [¿Sabes cómo ejercer el derecho al olvido?](https://www.osi.es/es/actualidad/blog/2018/09/19/sabes-como-ejercer-el-derecho-al-olvido).
+## Herencia digital, testamento digital o legado post-mortem
+
+En la era digital, la muerte o la incapacidad de una persona no detiene su presencia en Internet. Cuentas de correo electrónico, perfiles en redes sociales, archivos en la nube, blogs, monederos digitales o suscripciones activas continúan almacenados en los servidores de las grandes plataformas. La gestión de este conjunto de bienes y datos tras el fallecimiento conforma lo que se conoce como herencia digital o legado post-mortem.
+
+Planificar qué ocurrirá con nuestro "yo digital" es un ejercicio de responsabilidad para evitar situaciones de indefensión de la privacidad, suplantación de identidad o la pérdida irrecuperable de recuerdos y activos de valor.
+
+El derecho al legado digital dentro del marco legal:
+
+En España, el artículo 3 de la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD) reconoce explícitamente el derecho de acceso, rectificación y supresión de los datos de personas fallecidas. Conforme a esta regulación:
+
+- Familiares y herederos: Las personas vinculadas al fallecido por razones familiares, cónyuges o parejas de hecho, así como sus herederos, pueden dirigirse a los prestadores de servicios de la sociedad de la información (plataformas, redes sociales, servicios de correo) para acceder a los contenidos o solicitar su eliminación.
+
+- Excepciones: Las plataformas no facilitarán el acceso si la persona fallecida lo hubiera prohibido expresamente en vida o si lo impide una ley estatal.
+
+Formas de gestionar el legado post-mortem
+
+- El Testamento Digital: Es un documento legal (que puede formalizarse ante notario o incluirse en un testamento tradicional) en el que una persona designa a un albacea digital. Esta persona será la encargada de ejecutar las voluntades del difunto respecto a su presencia en la red, indicando qué hacer con sus cuentas: si deben ser cerradas, convertidas en perfiles conmemorativos o si determinados archivos deben transferirse a los herederos.
+
+- Mecanismos de las propias plataformas (Contactos de legado): Las principales compañías tecnológicas cuentan con herramientas específicas para gestionar la inactividad o el fallecimiento de la cuenta:
+
+    - Google (Administrador de cuentas inactivas): Permite configurar un periodo de inactividad tras el cual la plataforma notificará a los contactos de confianza elegidos y, si se desea, les dará acceso a determinados datos antes de cerrar la cuenta.
+
+    * Meta (Facebook e Instagram): Permite designar en vida a un contacto de legado para que gestione la cuenta tras el fallecimiento, pudiendo transformarla en una cuenta conmemorativa (donde se guarda el contenido pero nadie puede iniciar sesión) o solicitar su eliminación definitiva.
+
+    * Apple (Contacto de legado): Genera un código de acceso único que el contacto designado podrá presentar junto al certificado de defunción para acceder a las fotos, mensajes y copias de seguridad en iCloud del fallecido.
+
+Recomendaciones prácticas para la ciudadanía
+
+- Nombrar contactos de legado en las aplicaciones: Revisar los ajustes de seguridad y privacidad en Google, Meta, Apple y otras plataformas habituales para configurar proactivamente esta opción.
+
+- Crear un inventario de activos digitales: Mantener un registro (en un gestor de contraseñas o documento seguro) de las plataformas donde se tiene presencia, cuentas bancarias, redes sociales y servicios activos.
+
+- Nunca dejar contraseñas por escrito en un testamento público: El testamento es un documento al que pueden tener acceso diversas personas. Las claves deben gestionarse a través de albaceas digitales o herramientas de custodia segura de contraseñas.
+
+- Instruir claramente sobre los bienes con valor económico: Activos digitales como criptomonedas, dominios web, tiendas online o canales monetizados deben contar con instrucciones específicas de traspaso para evitar su bloqueo o pérdida definitiva.

@@ -105,11 +105,12 @@ tu-yo-digital
 toma-consciencia-de-tu-yo-digital
 los-metadatos-la-información-oculta-de-tus-archivos
 identidad-digital
+identidad-sintética-avatares-de-ia-y-gemelos-digitales
 huella-digital
 reputación-online
 sombra-digital
-eliminar-el-historial-de-busquedas
 derecho-al-olvido
+herencia-digital-testamento-digital-o-legado-post-mortem
 contenido-en-la-red
 el-contenido-digital
 contrastar-la-información

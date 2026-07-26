@@ -2,21 +2,27 @@
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 \PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
-%
 \documentclass[
+  spanish,
   a4paper,
   openany]{book}
+\usepackage{xcolor}
+\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
 \usepackage{amsmath,amssymb}
-\usepackage[]{bookman}
+\setcounter{secnumdepth}{5}
 \usepackage{iftex}
 \ifPDFTeX
   \usepackage[T1]{fontenc}
   \usepackage[utf8]{inputenc}
   \usepackage{textcomp} % provide euro and other symbols
 \else % if luatex or xetex
-  \usepackage{unicode-math}
+  \usepackage{unicode-math} % this also loads fontspec
   \defaultfontfeatures{Scale=MatchLowercase}
   \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage[]{bookman}
+\ifPDFTeX\else
+  % xetex/luatex font selection
 \fi
 % Use upquote if available, for straight quotes in verbatim environments
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
@@ -34,9 +40,8 @@
 }{% if KOMA class
   \KOMAoptions{parskip=half}}
 \makeatother
-\usepackage{xcolor}
-\usepackage[top=1in,bottom=1in,right=1in,left=1in]{geometry}
 \usepackage{longtable,booktabs,array}
+\newcounter{none} % for unnumbered tables
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
 \usepackage{etoolbox}
@@ -48,44 +53,41 @@
 \makesavenoteenv{longtable}
 \usepackage{graphicx}
 \makeatletter
-\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
-\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
-\makeatother
-% Scale images if necessary, so that they will not overflow the page
-% margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
-\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+\newsavebox\pandoc@box
+\newcommand*\pandocbounded[1]{% scales image to fit in text height/width
+  \sbox\pandoc@box{#1}%
+  \Gscale@div\@tempa{\textheight}{\dimexpr\ht\pandoc@box+\dp\pandoc@box\relax}%
+  \Gscale@div\@tempb{\linewidth}{\wd\pandoc@box}%
+  \ifdim\@tempb\p@<\@tempa\p@\let\@tempa\@tempb\fi% select the smaller of both
+  \ifdim\@tempa\p@<\p@\scalebox{\@tempa}{\usebox\pandoc@box}%
+  \else\usebox{\pandoc@box}%
+  \fi%
+}
 % Set default figure placement to htbp
-\makeatletter
 \def\fps@figure{htbp}
 \makeatother
+\ifLuaTeX
+\usepackage[bidi=basic,shorthands=off]{babel}
+\else
+\usepackage[bidi=default,shorthands=off]{babel}
+\fi
+\ifLuaTeX
+  \usepackage{selnolig} % disable illegal ligatures
+\fi
 \setlength{\emergencystretch}{3em} % prevent overfull lines
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
-\setcounter{secnumdepth}{5}
-\ifLuaTeX
-\usepackage[bidi=basic]{babel}
-\else
-\usepackage[bidi=default]{babel}
-\fi
-\babelprovide[main,import]{spanish}
-% get rid of language-specific shorthands (see #6817):
-\let\LanguageShortHands\languageshorthands
-\def\languageshorthands#1{}
+\usepackage[]{natbib}
+\bibliographystyle{apalike}
 \usepackage{graphicx}
 \usepackage{fancyhdr}
 \pagestyle{plain}
 \renewcommand{\headrulewidth}{0.2pt}
 \usepackage{floatpag}
 \floatpagestyle{empty}
-\ifLuaTeX
-  \usepackage{selnolig}  % disable illegal ligatures
-\fi
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
-\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\usepackage{bookmark}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
-\urlstyle{same} % disable monospaced font for URLs
+\urlstyle{same}
 \hypersetup{
   pdftitle={Ciberseguridad ciudadana},
   pdfauthor={Diego Chiquero Mena},
@@ -100,7 +102,7 @@
 
 \title{Ciberseguridad ciudadana}
 \author{Diego Chiquero Mena}
-\date{19 julio 2026}
+\date{26 July 2026}
 
 \begin{document}
 \maketitle
@@ -119,12 +121,10 @@
 
 
 {
-\hypersetup{linkcolor=}
 \setcounter{tocdepth}{3}
 \tableofcontents
 }
-\hypertarget{pruxf3logo}{%
-\chapter*{Prólogo}\label{pruxf3logo}}
+\chapter*{Prólogo}\label{pruxf3logo}
 \addcontentsline{toc}{chapter}{Prólogo}
 
 Esta guía aglutina de manera filtrada y tamizada una amplia y detallada parte del conocimiento e información de relevancia que puedes encontrar en la web sobre privacidad y seguridad en internet, de forma ordenada y estructurada. Además, encontrarás en la bibliografía todas las fuentes que han hecho posible la elaboración y documentación de esta guía, para que puedas contrastar por ti mismo dichas fuentes.
@@ -149,8 +149,7 @@ Esta obra está bajo la \href{https://creativecommons.org/licenses/by-nc-sa/4.0/
 
 \begin{flushleft}\includegraphics{images/by-nc-sa-88x31} \end{flushleft}
 
-\hypertarget{autor}{%
-\chapter*{Sobre el autor}\label{autor}}
+\chapter*{Sobre el autor}\label{autor}
 \addcontentsline{toc}{chapter}{Sobre el autor}
 
 \begin{flushleft}\includegraphics[width=0.25\linewidth]{images/diego-chiquero-m-2023-profile} \end{flushleft}
@@ -173,11 +172,9 @@ Puedes contactar conmigo en \href{mailto:hola@diegochiquero.com}{\nolinkurl{hola
 
 Más sobre mí \href{https://diegochiquero.com}{Diego Chiquero Mena}
 
-\hypertarget{privacidad-y-seguridad-en-internet}{%
-\chapter{Privacidad y Seguridad en Internet}\label{privacidad-y-seguridad-en-internet}}
+\chapter{Privacidad y Seguridad en Internet}\label{privacidad-y-seguridad-en-internet}
 
-\hypertarget{introducciuxf3n}{%
-\section{Introducción}\label{introducciuxf3n}}
+\section{Introducción}\label{introducciuxf3n}
 
 En las últimas décadas, la evolución de las tecnologías digitales ha transformado profundamente nuestra forma de comunicarnos, informarnos, trabajar, comprar y relacionarnos. Esta transformación puede entenderse como un proceso progresivo en varias etapas.
 
@@ -199,8 +196,7 @@ Por lo tanto, a lo largo de ella, irás comprendiendo la importancia de velar de
 
 La ciberseguridad ciudadana se centra en protegerte, cuidando tu información y tu privacidad, en informarte para entender los riesgos del entorno digital, para que actúes con pensamiento crítico, capacidad analítica y toma de decisiones y en actuar de manera segura adoptando hábitos digitales responsables y prudentes.
 
-\hypertarget{privacidad}{%
-\section{Privacidad}\label{privacidad}}
+\section{Privacidad}\label{privacidad}
 
 Antes de abordar la privacidad en el ámbito digital, vamos a conceptualizarla en el mundo analógico, para ponernos en contexto; por lo tanto la privacidad es aquello que se lleva a cabo en un ámbito reservado.
 
@@ -218,21 +214,19 @@ Para finalizar este apartado, no debes olvidar que la privacidad en internet ha 
 
 La inteligencia artificial ofrece múltiples beneficios y herramientas útiles para la sociedad, pero también plantea nuevos desafíos relacionados con la privacidad y el control de la información personal. Por ello, resulta fundamental desarrollar hábitos digitales responsables y mantener una actitud preventiva frente a la exposición de datos en entornos digitales.
 
-Verás como hacer una buena gestión de tu privacidad en la unidad \protect\hyperlink{gestiuxf3n-de-la-privacidad}{2 Gestión de la privacidad}.
+Verás como hacer una buena gestión de tu privacidad en la unidad \hyperref[gestiuxf3n-de-la-privacidad]{2 Gestión de la privacidad}.
 
-\hypertarget{seguridad}{%
-\section{Seguridad}\label{seguridad}}
+\section{Seguridad}\label{seguridad}
 
 Del mismo modo que hemos hecho con el concepto de privacidad, antes de aterrizar la seguridad en el ámbito digital, conviene entender primero qué significa en el mundo físico. La seguridad en el mundo físico es el conjunto de medidas, hábitos y precauciones que utilizamos para proteger aquello que nos importa, pudiendo ser estas, propiedades, objetos o incluso nuestra integridad física.
 
 Trasladado al entorno digital, la seguridad en internet engloba un conjunto de medidas, hábitos y precauciones tomadas para proteger los dispositivos informáticos, así como la red de internet, que pueden ser afectados por delincuentes cibernéticos. Siendo estos, dispositivos, cuentas, datos, comunicaciones frente a accesos no autorizados, fraudes, robos de información o ataques realizados a través de la red. La seguridad en el ámbito digital se encarga precisamente de identificar, prevenir y reducir este tipo de amenazas mediante herramientas tecnológicas y buenas prácticas de uso.
 
-Por lo tanto, hoy en día la seguridad depende de factores tan importantes, como mantener los dispositivos actualizados, utilizar contraseñas seguras, activar la verificación en dos pasos y aprender a reconocer intentos de engaño o manipulación, entre otras muchas más. Medidas y precauciones que verás en la unidad \protect\hyperlink{gestiuxf3n-de-la-seguridad-en-equipos-fuxedsicos}{3 Gestión de la seguridad en equipos físicos} y en la unidad \protect\hyperlink{gestiuxf3n-de-la-seguridad-en-la-red}{4 Gestión de la seguridad en la red}.
+Por lo tanto, hoy en día la seguridad depende de factores tan importantes, como mantener los dispositivos actualizados, utilizar contraseñas seguras, activar la verificación en dos pasos y aprender a reconocer intentos de engaño o manipulación, entre otras muchas más. Medidas y precauciones que verás en la unidad \hyperref[gestiuxf3n-de-la-seguridad-en-equipos-fuxedsicos]{3 Gestión de la seguridad en equipos físicos} y en la unidad \hyperref[gestiuxf3n-de-la-seguridad-en-la-red]{4 Gestión de la seguridad en la red}.
 
 Entre los riesgos más habituales se encuentran el robo de datos personales o bancarios, los virus informáticos, el phishing, el spam o la suplantación de identidad. Además, el uso de inteligencia artificial por parte de ciberdelincuentes ha hecho que muchas estafas sean más creíbles y difíciles de detectar, por ejemplo mediante mensajes personalizados, voces sintéticas o vídeos manipulados. Como verás más adelante, los riesgos en internet evolucionan constantemente y requieren una actitud crítica y preventiva.
 
-\hypertarget{rgpd-reglamento-general-de-protecciuxf3n-de-datos}{%
-\section{RGPD (Reglamento general de protección de datos)}\label{rgpd-reglamento-general-de-protecciuxf3n-de-datos}}
+\section{RGPD (Reglamento general de protección de datos)}\label{rgpd-reglamento-general-de-protecciuxf3n-de-datos}
 
 El Reglamento General de Protección de Datos (RGPD) es la normativa de la Unión Europea destinada a proteger los datos personales y la privacidad de las personas. Establece las reglas que deben cumplir empresas, organizaciones, administraciones públicas y otras entidades cuando recopilan, almacenan o utilizan información que permite identificarte directa o indirectamente \citep{WIKI-rgpd}.
 
@@ -250,8 +244,7 @@ Además, desde 2024 y 2025 ha comenzado la aplicación progresiva del Reglamento
 
 Antes de proporcionar información personal a una aplicación o servicio basado en IA, conviene revisar qué datos recopila, para qué finalidad los utiliza y si ofrece mecanismos claros para ejercer tus derechos de privacidad.
 
-\hypertarget{aviso-legal-poluxedtica-de-privacidad-y-poluxedtica-de-cookies}{%
-\section{Aviso legal, política de privacidad y política de cookies}\label{aviso-legal-poluxedtica-de-privacidad-y-poluxedtica-de-cookies}}
+\section{Aviso legal, política de privacidad y política de cookies}\label{aviso-legal-poluxedtica-de-privacidad-y-poluxedtica-de-cookies}
 
 Si una página web realiza actividades comerciales, gestiona datos personales de usuarios o utiliza cookies y tecnologías similares, debe poner a disposición de los usuarios una serie de documentos informativos que expliquen de forma clara sus obligaciones legales y el tratamiento de la información personal. Estas obligaciones derivan principalmente del Reglamento General de Protección de Datos (RGPD) \citep{RGPD}, la Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD) \citep{LOPDGDD} y la Ley de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE).
 
@@ -278,8 +271,7 @@ Para facilitar su comprensión, en este apartado se utilizan conceptos y termino
   Aunque la normativa europea ha reforzado los derechos de los usuarios en este ámbito, todavía es posible encontrar sitios web que utilizan diseños confusos o interfaces que dificultan el rechazo de determinadas cookies. Por ello, conviene revisar las opciones de configuración disponibles antes de aceptar tecnologías de seguimiento \citep{AEPD-cookies}.
 \end{itemize}
 
-\hypertarget{derechos-de-protecciuxf3n-de-datos---arsopol}{%
-\section{Derechos de protección de datos - ARSOPOL}\label{derechos-de-protecciuxf3n-de-datos---arsopol}}
+\section{Derechos de protección de datos - ARSOPOL}\label{derechos-de-protecciuxf3n-de-datos---arsopol}
 
 La normativa europea de protección de datos, compuesta principalmente por el Reglamento General de Protección de Datos (RGPD) \citep{RGPD} y la Ley Orgánica de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD) \citep{LOPDGDD}, reconoce una serie de derechos que te permiten mantener el control sobre tu información personal y decidir cómo puede ser utilizada por empresas, organizaciones y administraciones públicas \citep{AEPD-derechos}.
 
@@ -308,11 +300,9 @@ Estos derechos adquieren una importancia especial en el contexto actual, donde c
 
 Para ejercer cualquiera de estos derechos debes dirigirte al responsable del tratamiento de los datos utilizando los canales habilitados para ello. La entidad podrá solicitar información que permita verificar tu identidad con el fin de evitar accesos, modificaciones o eliminaciones no autorizadas de datos personales. Si consideras que tu solicitud no ha sido atendida adecuadamente, puedes presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD) \citep{AEPD}.
 
-\hypertarget{gestiuxf3n-de-la-privacidad}{%
-\chapter{Gestión de la privacidad}\label{gestiuxf3n-de-la-privacidad}}
+\chapter{Gestión de la privacidad}\label{gestiuxf3n-de-la-privacidad}
 
-\hypertarget{gestionar-la-privacidad}{%
-\section{Gestionar la privacidad}\label{gestionar-la-privacidad}}
+\section{Gestionar la privacidad}\label{gestionar-la-privacidad}
 
 La privacidad en Internet se refiere a tu capacidad para controlar la información personal que compartes y la forma en que esta es recopilada, utilizada, almacenada y difundida por servicios digitales, empresas, organizaciones y otras personas. Cada vez que navegas por Internet, utilizas una aplicación, participas en una red social o interactúas con un servicio en línea, generas información que puede revelar aspectos de tu identidad, hábitos, intereses o comportamiento \citep{WIKI-privacidad}.
 
@@ -322,8 +312,7 @@ La expansión de la inteligencia artificial ha incrementado la importancia de un
 
 En esta unidad aprenderás a gestionar tu privacidad de forma más consciente y segura, reduciendo la exposición innecesaria de información personal y fortaleciendo tu capacidad para tomar decisiones informadas sobre tu presencia digital.
 
-\hypertarget{datos-personales-sensibles}{%
-\section{Datos personales sensibles}\label{datos-personales-sensibles}}
+\section{Datos personales sensibles}\label{datos-personales-sensibles}
 
 Cuando se habla de datos personales sensibles en la red, se refiere a aquellos datos que están revelando información privada, como por ejemplo, el domicilio o cualquier otra información de carácter privado, costumbres o hábitos. Así como acciones que ubican o determinan a una persona en posibles situaciones futuras que pudiesen abrir una brecha de vulnerabilidad en la vida privada de ésta. Un ejemplo sería subir a la red que te vas de vacaciones, de manera que estás diciendo a los ciberdelincuentes que tu casa estará vacía.
 
@@ -354,8 +343,7 @@ La expansión de la inteligencia artificial añade nuevos desafíos a la privaci
 
 Por ello, comparte únicamente la información necesaria, revisa cuidadosamente la configuración de privacidad de los servicios que utilizas y reflexiona antes de publicar información personal que pueda ser utilizada para identificarte, localizarte o elaborar perfiles sobre ti.
 
-\hypertarget{oversharing-o-sobreexposiciuxf3n}{%
-\section{Oversharing o sobreexposición}\label{oversharing-o-sobreexposiciuxf3n}}
+\section{Oversharing o sobreexposición}\label{oversharing-o-sobreexposiciuxf3n}
 
 El Oversharing es la sobreexposición de información personal en Internet y, en su mayoría, en los medios sociales a través de tus perfiles sociales. Actualmente también puede producirse al compartir de forma excesiva información personal con aplicaciones, asistentes virtuales o herramientas basadas en inteligencia artificial, especialmente cuando se introducen datos privados, documentos, fotografías o conversaciones que no son necesarios para obtener el servicio solicitado.
 
@@ -367,8 +355,7 @@ La expansión de la inteligencia artificial ha incrementado algunos de estos rie
 
 Una sobre exposición excesiva, puede dar lugar al ciberchantaje, ciberextorsión, ciberacoso o robo de información personal a través de algún tipo de técnica. Además, de exponerte al riesgo de un posible robo y/o suplantación de identidad \citep{AEPD-oversharing}.
 
-\hypertarget{privacidad-en-tus-cuentas}{%
-\section{Privacidad en tus cuentas}\label{privacidad-en-tus-cuentas}}
+\section{Privacidad en tus cuentas}\label{privacidad-en-tus-cuentas}
 
 La mayoría de las personas dispone de cuentas de usuario en numerosos servicios digitales, como correo electrónico, redes sociales, plataformas de vídeo, aplicaciones de mensajería, servicios de almacenamiento en la nube o tiendas en línea. Cada una de estas cuentas recopila y gestiona información personal que conviene proteger adecuadamente.
 
@@ -376,7 +363,7 @@ Servicios como \href{https://myaccount.google.com/data-and-personalization}{Goog
 
 Actualmente, muchas plataformas utilizan sistemas de inteligencia artificial para personalizar contenidos, mostrar publicidad, realizar recomendaciones o mejorar sus servicios. En algunos casos, la información que compartes puede utilizarse para entrenar o perfeccionar estos sistemas. Por ello, es aconsejable consultar las opciones relacionadas con el uso de tus datos y seleccionar aquellas que mejor se adapten a tus preferencias.
 
-En las redes sociales, como \href{https://es-la.facebook.com/help/325807937506242}{Facebook}, \href{https://help.x.com/es/safety-and-security\#ads-and-data-privacy}{X}, \href{https://es-es.facebook.com/help/instagram/196883487377501/?helpref=hc_fnav\&bc\%5B0\%5D=Ayuda\%20de\%20Instagram\&bc\%5B1\%5D=Administrar\%20tu\%20cuenta}{Instagram}, \href{https://support.tiktok.com/es/account-and-privacy}{TikTok} o similares, se comparte una gran cantidad de información personal. Siempre que sea posible, es recomendable configurar la cuenta con un nivel de privacidad elevado y limitar la visibilidad de tus publicaciones únicamente a las personas que tú decidas.
+En las redes sociales, como \href{https://es-la.facebook.com/help/325807937506242}{Facebook}, \href{https://help.x.com/es/safety-and-security\#ads-and-data-privacy}{X}, \href{https://es-es.facebook.com/help/instagram/196883487377501/?helpref=hc_fnav&bc\%5B0\%5D=Ayuda\%20de\%20Instagram&bc\%5B1\%5D=Administrar\%20tu\%20cuenta}{Instagram}, \href{https://support.tiktok.com/es/account-and-privacy}{TikTok} o similares, se comparte una gran cantidad de información personal. Siempre que sea posible, es recomendable configurar la cuenta con un nivel de privacidad elevado y limitar la visibilidad de tus publicaciones únicamente a las personas que tú decidas.
 
 Entre los principales ajustes que conviene revisar se encuentran:
 
@@ -401,8 +388,7 @@ Recuerda que la configuración predeterminada de una plataforma no siempre es la
 
 Tienes más información en el siguiente enlace: \href{https://www.incibe.es/ciudadania/tematicas/privacidad/configuraciones-redes-sociales}{Configuración de privacidad en redes sociales}
 
-\hypertarget{navegaciuxf3n-privada}{%
-\section{Navegación privada}\label{navegaciuxf3n-privada}}
+\section{Navegación privada}\label{navegaciuxf3n-privada}
 
 La navegación privada, también conocida como modo incógnito o modo privado, es una función disponible en la mayoría de los navegadores web que evita que determinada información de tu sesión se almacene en el dispositivo una vez que cierras las ventanas de navegación privada \citep{navegacion-privada}.
 
@@ -442,8 +428,7 @@ Por otra parte, algunos navegadores y buscadores incorporan funciones de protecc
 
 Recuerda que la navegación privada es una herramienta útil para proteger tu privacidad local, pero no debe considerarse una solución completa para preservar tu anonimato o impedir toda recopilación de datos en Internet.
 
-\hypertarget{vpn-red-privada-virtual}{%
-\section{VPN (Red privada virtual)}\label{vpn-red-privada-virtual}}
+\section{VPN (Red privada virtual)}\label{vpn-red-privada-virtual}
 
 Otra forma de reforzar tu privacidad en Internet es utilizar una VPN (siglas de Virtual Private Network o red privada virtual) \citep{XATAKA-vpn}.
 
@@ -457,8 +442,7 @@ Las VPN suelen ofrecerse mediante aplicaciones específicas para ordenadores y d
 
 Recuerda que una VPN es un herramienta más como medida de privacidad, pero no sustituye las buenas prácticas de ciberseguridad. Aunque utilices una VPN, debes seguir prestando atención a posibles fraudes, correos electrónicos sospechosos, páginas web falsas, aplicaciones maliciosas o contenidos manipulados mediante inteligencia artificial, como mensajes automatizados o deepfakes utilizados para engañar a las personas.
 
-\hypertarget{cookies}{%
-\section{Cookies}\label{cookies}}
+\section{Cookies}\label{cookies}
 
 Una cookie es un fichero que guarda nuestro navegador, donde se almacenan pequeñas cantidades de datos, de manera que el sitio web puede consultar la actividad previa del navegador.
 
@@ -540,8 +524,7 @@ Relacionado con las cookies también exite el ciberataque conocido como el secue
 
 Además actualmente, muchas plataformas utilizan sistemas de inteligencia artificial para analizar la información obtenida mediante cookies, datos de navegación y otras técnicas de seguimiento. Esto les permite identificar patrones de comportamiento, predecir intereses y personalizar contenidos, recomendaciones o publicidad de forma cada vez más precisa. Por ello, es importante revisar periódicamente la configuración de privacidad de los servicios que utilizas y limitar, cuando sea posible, la recopilación de datos innecesarios.
 
-\hypertarget{permisos-cuxe1mara-micruxf3fono-y-localizaciuxf3n.}{%
-\section{Permisos cámara, micrófono y localización.}\label{permisos-cuxe1mara-micruxf3fono-y-localizaciuxf3n.}}
+\section{Permisos cámara, micrófono y localización.}\label{permisos-cuxe1mara-micruxf3fono-y-localizaciuxf3n.}
 
 Una práctica muy saludable en el uso de la cámara o webCam e incluso el micrófono, es tenerla tapada cuando no la estés usando y si no fíjate en la foto que se muestra a continuación que le tomaron a Mark Zuckerberg.
 
@@ -586,8 +569,7 @@ Tampoco debes olvidar que con las aplicaciones móviles sucede lo mismo, y que p
 
 En la actualidad, muchas aplicaciones incorporan funciones basadas en inteligencia artificial que pueden requerir acceso a la cámara, el micrófono, las fotografías, los vídeos o la ubicación. Antes de conceder estos permisos, revisa si son realmente necesarios para el funcionamiento de la aplicación y evita otorgar acceso permanente cuando no sea imprescindible.
 
-\hypertarget{la-nube}{%
-\section{La nube}\label{la-nube}}
+\section{La nube}\label{la-nube}
 
 El almacenamiento en la nube consiste en guardar información en servidores gestionados generalmente por terceros. Gracias a ello, puedes acceder a tus archivos desde distintos dispositivos y ubicaciones, siempre que dispongas de conexión a Internet y acceso al servicio donde se encuentran almacenados. De esta forma, ya no es necesario transportar físicamente los dispositivos donde guardas tu información. Algunos de estos servicios más conocidos son \href{https://www.google.com/intl/en_in/drive/}{Google drive}, \href{https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage}{One drive} o \href{https://www.dropbox.com/}{Dropbox} entre otros.
 
@@ -616,8 +598,7 @@ A la hora de compartir archivos o carpetas alojados en la nube, procura hacerlo 
 
 Recuerda que la seguridad de tus archivos no depende únicamente del proveedor del servicio. Revisar regularmente la configuración de privacidad son medidas fundamentales para proteger tu información.
 
-\hypertarget{correo-electruxf3nico-y-apps-de-mensajeruxeda}{%
-\section{Correo electrónico y apps de mensajería}\label{correo-electruxf3nico-y-apps-de-mensajeruxeda}}
+\section{Correo electrónico y apps de mensajería}\label{correo-electruxf3nico-y-apps-de-mensajeruxeda}
 
 El correo electrónico sigue siendo una de las herramientas de comunicación digital más utilizadas. Sin embargo, no todos los proveedores ofrecen el mismo nivel de privacidad, seguridad o control sobre los datos. Dependiendo del servicio utilizado, parte de la información asociada a tus comunicaciones puede ser analizada para prestar determinadas funcionalidades o mejorar sus servicios.
 
@@ -625,7 +606,7 @@ Esto no tiene por qué ser un inconveniente si no envías información sensible,
 
 Otra opción consiste en cifrar los mensajes antes de enviarlos mediante herramientas específicas de cifrado de correo electrónico. De esta forma, incluso si el mensaje fuera interceptado, su contenido no podría ser leído sin la clave correspondiente. Tienes otras herramientas para llevar a cabo este propósito en este artículo de \href{https://www.osi.es/es/actualidad/blog/2019/07/31/como-encriptar-y-proteger-tu-correo-electronico}{cómo encriptar y proteger tu correo electrónico}.
 
-Otra alternativa de envío de correos cifrados, es el uso de la opción de correos confidenciales de Gmail. De esta manera el receptor necesitará un código para desbloquear el contenido del email que, recibirá a través de SMS en su smartphone. Más información en el siguiente enlace \href{https://support.google.com/mail/answer/7674059?hl=es\&co=GENIE.Platform\%3DDesktop}{Enviar y abrir correos confidenciales}.
+Otra alternativa de envío de correos cifrados, es el uso de la opción de correos confidenciales de Gmail. De esta manera el receptor necesitará un código para desbloquear el contenido del email que, recibirá a través de SMS en su smartphone. Más información en el siguiente enlace \href{https://support.google.com/mail/answer/7674059?hl=es&co=GENIE.Platform\%3DDesktop}{Enviar y abrir correos confidenciales}.
 
 Si además quieres saber si tu cuenta de correo o tu número de teléfono han sido comprometidos, puedes saberlo a través de la siguiente plataforma \href{https://haveibeenpwned.com/}{haveibeenpwned}.
 
@@ -648,8 +629,7 @@ Antes de elegir una aplicación de mensajería, es recomendable informarte sobre
 
 Asimismo, algunas plataformas incorporan asistentes basados en inteligencia artificial capaces de resumir mensajes, redactar respuestas o buscar información en tus conversaciones. Aunque estas funciones pueden resultar útiles, conviene revisar las opciones de privacidad disponibles y comprender cómo se procesan los datos antes de utilizarlas con información sensible.
 
-\hypertarget{cifrado-o-encriptado-de-datos}{%
-\section{Cifrado o encriptado de datos}\label{cifrado-o-encriptado-de-datos}}
+\section{Cifrado o encriptado de datos}\label{cifrado-o-encriptado-de-datos}
 
 Mantener tus documentos simplemente organizados en carpetas no siempre es suficiente para proteger la información, especialmente cuando se trata de datos personales, financieros, laborales o cualquier otro contenido sensible. Si alguien obtiene acceso físico o remoto a tu dispositivo, podría intentar acceder a esa información. Por ello, una de las medidas más eficaces consiste en utilizar herramientas de cifrado o encriptado de datos.
 
@@ -661,7 +641,7 @@ Con Cryptomator puedes crear diferentes bóvedas cifradas, protegidas mediante u
 
 Es importante que utilices una contraseña robusta y que la conserves de forma segura. Si la olvidas, recuperar el acceso a la información puede resultar imposible.
 
-Además del cifrado de archivos concretos, muchos sistemas operativos actuales incorporan opciones para cifrar completamente el dispositivo, lo que añade una capa adicional de protección frente a pérdidas, robos o accesos no autorizados. Pero esto es algo que veraś más adelante en la unidad \protect\hyperlink{gestiuxf3n-de-la-seguridad-en-equipos-fuxedsicos}{3 Gestión de la seguridad en equipos físicos}.
+Además del cifrado de archivos concretos, muchos sistemas operativos actuales incorporan opciones para cifrar completamente el dispositivo, lo que añade una capa adicional de protección frente a pérdidas, robos o accesos no autorizados. Pero esto es algo que veraś más adelante en la unidad \hyperref[gestiuxf3n-de-la-seguridad-en-equipos-fuxedsicos]{3 Gestión de la seguridad en equipos físicos}.
 
 Otra práctica especialmente recomendable consiste en cifrar los archivos antes de almacenarlos en servicios de nube. De esta forma, aunque los datos se encuentren alojados en servidores de terceros, solo podrán ser leídos por quienes dispongan de la contraseña de descifrado.
 
@@ -669,8 +649,7 @@ La creciente utilización de herramientas basadas en inteligencia artificial hac
 
 Recuerda que ninguna medida de privacidad es absoluta. El cifrado es una herramienta muy eficaz, pero no sustituye el resto de medidas para aportar robustez a tu privacidad.
 
-\hypertarget{he-decidido-vender-o-donar-mi-dispositivo}{%
-\section{He decidido vender o donar mi dispositivo}\label{he-decidido-vender-o-donar-mi-dispositivo}}
+\section{He decidido vender o donar mi dispositivo}\label{he-decidido-vender-o-donar-mi-dispositivo}
 
 Si estás pensando en vender, regalar o donar un dispositivo que haya almacenado información personal, como un ordenador, un teléfono móvil, una tableta, un disco duro externo o una memoria USB, es importante que elimines correctamente todos los datos antes de entregarlo a otra persona.
 
@@ -714,8 +693,7 @@ En casos en los que el dispositivo haya almacenado información extremadamente s
 
 Si quieres más recomendaciones sobre como actuar en este supuesto, te recomiendo que leas la siguiente entrada \href{https://www.osi.es/es/actualidad/blog/2019/10/09/sabias-que-2-de-cada-5-dispositivos-vendidos-contienen-informacion}{¿Sabías que 2 de cada 5 dispositivos vendidos contienen información personal?}.
 
-\hypertarget{inteligencia-artificial-y-privacidad}{%
-\section{Inteligencia Artificial y privacidad}\label{inteligencia-artificial-y-privacidad}}
+\section{Inteligencia Artificial y privacidad}\label{inteligencia-artificial-y-privacidad}
 
 La irrupción de las herramientas de Inteligencia Artificial (IA) generativa, como los chats inteligentes, asistentes de búsqueda o creadores de contenido, ha cambiado las reglas de juego de la privacidad. A diferencia del software tradicional, estos sistemas se ``alimentan'' y entrenan continuamente con la información que introducimos en ellos mediante prompts. Esto significa que cualquier dato personal, documento laboral o fotografía que compartamos con una IA puede pasar a formar parte de su base de conocimiento global, con el riesgo de ser expuesto a terceros en futuras respuestas.
 
@@ -732,8 +710,7 @@ Para interactuar con estas tecnologías de forma responsable y proteger nuestra 
   Alternativas locales: Siempre que sea posible, se debe priorizar el uso de modelos de IA que se ejecuten de manera local en el propio dispositivo (sin enviar datos a la nube) o utilizar servicios corporativos que garanticen contractualmente la privacidad y el borrado inmediato de la información compartida.
 \end{itemize}
 
-\hypertarget{dispositivos-del-hogar-conectado-iot-y-el-rastreo-domuxe9stico}{%
-\section{Dispositivos del hogar conectado (IoT) y el rastreo doméstico}\label{dispositivos-del-hogar-conectado-iot-y-el-rastreo-domuxe9stico}}
+\section{Dispositivos del hogar conectado (IoT) y el rastreo doméstico}\label{dispositivos-del-hogar-conectado-iot-y-el-rastreo-domuxe9stico}
 
 La proliferación de electrodomésticos inteligentes, televisores con conexión a internet, altavoces con asistente de voz o básculas digitales ha convertido el hogar en un entorno de recolección de datos masiva. Estos dispositivos del Internet de las Cosas (IoT) no solo interactúan con nosotros, sino que monitorizan de forma constante nuestros hábitos más íntimos: horarios de sueño, pautas de consumo, mapas del interior de la vivienda e incluso conversaciones ambientales. Para evitar que el ecosistema domótico se transforme en una herramienta de espionaje comercial y salvaguardar la privacidad del hogar, se deben adoptar las siguientes medidas:
 
@@ -750,11 +727,9 @@ La proliferación de electrodomésticos inteligentes, televisores con conexión 
   Evaluar la necesidad de conexión: Antes de conectar un nuevo electrodoméstico a la red Wi-Fi, conviene valorar si esa conexión aporta un valor real. Si un dispositivo (como un frigorífico o una cafetera) funciona perfectamente sin internet, mantenerlo ``desconectado'' es la política de privacidad más radical y efectiva.
 \end{itemize}
 
-\hypertarget{gestiuxf3n-de-la-seguridad-en-equipos-fuxedsicos}{%
-\chapter{Gestión de la seguridad en equipos físicos}\label{gestiuxf3n-de-la-seguridad-en-equipos-fuxedsicos}}
+\chapter{Gestión de la seguridad en equipos físicos}\label{gestiuxf3n-de-la-seguridad-en-equipos-fuxedsicos}
 
-\hypertarget{gestionar-la-seguridad-en-los-equipos}{%
-\section{Gestionar la seguridad en los equipos}\label{gestionar-la-seguridad-en-los-equipos}}
+\section{Gestionar la seguridad en los equipos}\label{gestionar-la-seguridad-en-los-equipos}
 
 Para proteger tus dispositivos, como el ordenador, la tablet, el smartphone o el router, es fundamental mantener unas medidas de seguridad adecuadas. Estas medidas te ayudarán a prevenir accesos no autorizados, infecciones por programas maliciosos, pérdidas de información y otros incidentes que pueden afectar tanto a tus datos como a tu privacidad.
 
@@ -762,8 +737,7 @@ En la actualidad, además de las amenazas tradicionales, han surgido nuevos ries
 
 A lo largo de esta unidad conocerás las principales medidas y precauciones que debes aplicar para mantener tus equipos y tu información protegidos frente a los ciberataques y otros riesgos digitales.
 
-\hypertarget{cuentas-de-usuario-en-equipos-locales-y-dispositivos-muxf3viles}{%
-\section{Cuentas de usuario en equipos locales y dispositivos móviles}\label{cuentas-de-usuario-en-equipos-locales-y-dispositivos-muxf3viles}}
+\section{Cuentas de usuario en equipos locales y dispositivos móviles}\label{cuentas-de-usuario-en-equipos-locales-y-dispositivos-muxf3viles}
 
 Una cuenta de usuario es el conjunto de información perteneciente a un usuario concreto. De esta forma indica al sistema operativo los archivos y carpetas a los que dicho usuario tiene acceso, así como la posibilidad de realizar cambios y configuraciones personales.
 
@@ -810,8 +784,7 @@ Existen diferentes tipos de cuentas de usuario:
 
 Es también, recomendable bloquear la pantalla cuando te ausentes del equipo y configurar el bloqueo automático tras un periodo de inactividad.
 
-\hypertarget{router}{%
-\section{Router}\label{router}}
+\section{Router}\label{router}
 
 El router es el dispositivo que proporciona conectividad entre tu red doméstica e Internet. Su función principal consiste en dirigir el tráfico de datos entre diferentes redes y, habitualmente, ofrecer acceso a la red inalámbrica (Wi-Fi) para tus dispositivos.
 
@@ -833,7 +806,7 @@ Los principales estándares de seguridad Wi-Fi son:
 
 Si tu router lo permite, configura la red con WPA3. En caso contrario, utiliza WPA2 con una contraseña larga, única y difícil de adivinar.
 
-Es importante cambiar la contraseña Wi-Fi que viene configurada por defecto y utilizar una clave robusta. Cuanto más larga sea la contraseña, mayor será la dificultad para que pueda ser descubierta mediante ataques automatizados. Para una contraseña robusta pásate por la unidad \protect\hyperlink{gestiuxf3n-de-la-seguridad-en-la-red}{4 Gestión de la seguridad en la red}.
+Es importante cambiar la contraseña Wi-Fi que viene configurada por defecto y utilizar una clave robusta. Cuanto más larga sea la contraseña, mayor será la dificultad para que pueda ser descubierta mediante ataques automatizados. Para una contraseña robusta pásate por la unidad \hyperref[gestiuxf3n-de-la-seguridad-en-la-red]{4 Gestión de la seguridad en la red}.
 
 También es recomendable modificar el nombre de la red Wi-Fi (SSID) que trae el router de fábrica. Evita utilizar datos personales o información que pueda revelar el operador, el modelo del equipo o la identidad del propietario de la red.
 
@@ -853,8 +826,7 @@ Para realizar cualquiera de estas configuraciones necesitarás acceder al panel 
 
 Visita el siguiente enlace para conocer las \href{https://www.incibe.es/ciudadania/formacion/infografias/principales-configuraciones-del-router}{principales configuraciones del router}.
 
-\hypertarget{actualizaciones}{%
-\section{Actualizaciones}\label{actualizaciones}}
+\section{Actualizaciones}\label{actualizaciones}
 
 Las actualizaciones son modificaciones que los fabricantes y desarrolladores publican para corregir errores, solucionar vulnerabilidades de seguridad, mejorar el funcionamiento de los dispositivos o incorporar nuevas características. Estas actualizaciones pueden afectar tanto al sistema operativo como a las aplicaciones, navegadores, antivirus o al firmware de determinados dispositivos.
 
@@ -874,8 +846,7 @@ La evolución de la inteligencia artificial está permitiendo a los fabricantes 
 
 La principal función de las actualizaciones es mejorar la seguridad, la estabilidad y la funcionalidad de los sistemas y aplicaciones, contribuyendo a reducir los riesgos asociados al uso de las tecnologías digitales.
 
-\hypertarget{antivirus-antimalware-y-cortafuegos}{%
-\section{Antivirus, antimalware y cortafuegos}\label{antivirus-antimalware-y-cortafuegos}}
+\section{Antivirus, antimalware y cortafuegos}\label{antivirus-antimalware-y-cortafuegos}
 
 Existen diferentes herramientas de seguridad diseñadas para proteger tus dispositivos frente a amenazas informáticas. Aunque a menudo se utilizan como sinónimos, cumplen funciones distintas y complementarias. Actualmente muchas soluciones de seguridad integran varias de estas funciones en un único producto.
 
@@ -898,8 +869,7 @@ Cabe destacar que Windows incorpora de forma nativa Microsoft Defender Antivirus
 
 Además de las soluciones de seguridad instaladas en el dispositivo, existen herramientas online como \href{https://www.virustotal.com/gui/}{Virus Total} que permiten analizar archivos y enlaces sospechosos antes de abrirlos.
 
-\hypertarget{copias-de-seguridad}{%
-\section{Copias de seguridad}\label{copias-de-seguridad}}
+\section{Copias de seguridad}\label{copias-de-seguridad}
 
 Una copia de seguridad o backup en informática es una copia de los datos originales que se realiza con el fin de disponer de un medio para recuperarlos en caso de su pérdida. Las copias de seguridad son útiles ante distintos eventos y usos, como por ejemplo, recuperar los sistemas informáticos o datos de una posible catástrofe informática, natural o intencionada, restaurar una pequeña cantidad de archivos que pueden haberse eliminado accidentalmente, corrompido o infectado por un virus informático u otras posibles causas \citep{WIKI-copias-seguridad}.
 
@@ -940,7 +910,7 @@ Una práctica muy recomendable a la hora de hacer copias de seguridad es seguir 
   Mantener 1 copia de seguridad en un lugar diferente a los demás.
 \end{itemize}
 
-Las copias de seguridad no son solo exclusivas de los PCs o portátiles, sino que también debes contemplarlas en tus dispositivos móviles. Android pone a tu disposición el recurso de cómo \href{https://support.google.com/android/answer/2819582?hl=es\&visit_id=637514255756661953-3969236140\&rd=1}{crear copias de seguridad o restaurar datos de un dispositivo Android} y Apple el de \href{https://support.apple.com/es-es/HT203977}{cómo hacer una copia de seguridad del iPhone, iPad y iPod touch}.
+Las copias de seguridad no son solo exclusivas de los PCs o portátiles, sino que también debes contemplarlas en tus dispositivos móviles. Android pone a tu disposición el recurso de cómo \href{https://support.google.com/android/answer/2819582?hl=es&visit_id=637514255756661953-3969236140&rd=1}{crear copias de seguridad o restaurar datos de un dispositivo Android} y Apple el de \href{https://support.apple.com/es-es/HT203977}{cómo hacer una copia de seguridad del iPhone, iPad y iPod touch}.
 
 Es muy importante que dispongas de copias de seguridad, pero igualmente de importante es que conozcas la salud de los dispositivos de almacenamientos que usas. Para ello existe software específico que realiza diagnósticos e incluso algunos tienen sistemas de reparación. De esta forma podrás saber si debes cambiar el dispositivo o no, antes de quedar en la estacada.
 
@@ -967,11 +937,10 @@ Para recuperar tu información dispones de software como:
 \item
   \href{https://www.wisecleaner.com/wise-data-recovery.html}{Wise Cleaner}: PC.
 \item
-  \href{https://play.google.com/store/apps/details?id=com.baloota.dumpster\&hl=es}{Dumpster}: Smartphone.
+  \href{https://play.google.com/store/apps/details?id=com.baloota.dumpster&hl=es}{Dumpster}: Smartphone.
 \end{itemize}
 
-\hypertarget{cifrado-o-encriptado-de-unidades-de-almacenamiento}{%
-\section{Cifrado o encriptado de unidades de almacenamiento}\label{cifrado-o-encriptado-de-unidades-de-almacenamiento}}
+\section{Cifrado o encriptado de unidades de almacenamiento}\label{cifrado-o-encriptado-de-unidades-de-almacenamiento}
 
 Cifrar o encriptar tus discos duros ya sean externos o internos del ordenador o el encriptado de un simple Pendrive o USB es cada día más necesario para protegernos contra los amigos de lo ajeno, ya que aunque te sustrajesen el ordenador o cualquier otro dispositivo, no podrían acceder a la información puesto que se encuentra bajo esta capa de seguridad robusta que es la encriptación.
 
@@ -1005,8 +974,7 @@ Para aprovechar correctamente el cifrado:
 
 En una sociedad cada vez más digitalizada, donde almacenas fotografías, documentos, conversaciones y otra información personal en múltiples dispositivos, el cifrado es una de las medidas más eficaces para proteger tu privacidad y reducir el impacto de un acceso físico no autorizado.
 
-\hypertarget{dispositivos-del-hogar-conectado-iot-y-la-seguridad-de-la-red-domuxe9stica}{%
-\section{Dispositivos del hogar conectado (IoT) y la seguridad de la red doméstica}\label{dispositivos-del-hogar-conectado-iot-y-la-seguridad-de-la-red-domuxe9stica}}
+\section{Dispositivos del hogar conectado (IoT) y la seguridad de la red doméstica}\label{dispositivos-del-hogar-conectado-iot-y-la-seguridad-de-la-red-domuxe9stica}
 
 El ecosistema físico del ciudadano ya no se limita a ordenadores y teléfonos móviles; la proliferación de la domótica e Internet de las Cosas (IoT) ha introducido en el hogar Smart TVs, cámaras de vigilancia, altavoces inteligentes o electrodomésticos conectados. Estos equipos carecen habitualmente de sistemas operativos complejos donde instalar un antivirus tradicional, convirtiéndose en el eslabón más débil de la red doméstica y en una puerta de entrada para los ciberdelincuentes. Para garantizar la seguridad física y lógica de estos dispositivos, se deben aplicar las siguientes pautas:
 
@@ -1021,8 +989,7 @@ El ecosistema físico del ciudadano ya no se limita a ordenadores y teléfonos m
   Desactivación de funciones innecesarias: Capar el acceso remoto desde fuera de casa, las conexiones Bluetooth si no se utilizan, o los micrófonos integrados si el dispositivo no requiere comandos de voz para su funcionamiento diario.
 \end{itemize}
 
-\hypertarget{ciclo-de-vida-final-del-hardware-destrucciuxf3n-y-desecho-seguro-de-soportes}{%
-\section{Ciclo de vida final del hardware (Destrucción y desecho seguro de soportes)}\label{ciclo-de-vida-final-del-hardware-destrucciuxf3n-y-desecho-seguro-de-soportes}}
+\section{Ciclo de vida final del hardware (Destrucción y desecho seguro de soportes)}\label{ciclo-de-vida-final-del-hardware-destrucciuxf3n-y-desecho-seguro-de-soportes}
 
 La seguridad de un equipo físico no termina cuando este deja de funcionar o queda obsoleto. Un disco duro viejo, una tarjeta de memoria, un teléfono móvil con la pantalla rota o un simple USB promocional que se tira a la basura o se deposita en un punto limpio siguen conteniendo gigabytes de información privada recuperable. Los ciberdelincuentes recurren a técnicas de rastreo de desechos para extraer estos soportes y restaurar fotos, documentos de identidad o contraseñas guardadas. Ante el descarte definitivo de cualquier hardware, se deben aplicar los siguientes procedimientos:
 
@@ -1035,11 +1002,9 @@ La seguridad de un equipo físico no termina cuando este deja de funcionar o que
   Restablecimiento de fábrica en dispositivos integrados: En equipos como Smart TVs o routers antes de ser desechados, se debe ejecutar obligatoriamente el ``Hard Reset'' o restablecimiento de fábrica desde su menú de configuración para eliminar cuentas vinculadas y contraseñas de la red Wi-Fi del hogar.
 \end{itemize}
 
-\hypertarget{gestiuxf3n-de-la-seguridad-en-la-red}{%
-\chapter{Gestión de la seguridad en la red}\label{gestiuxf3n-de-la-seguridad-en-la-red}}
+\chapter{Gestión de la seguridad en la red}\label{gestiuxf3n-de-la-seguridad-en-la-red}
 
-\hypertarget{gestionar-la-seguridad-en-la-red}{%
-\section{Gestionar la seguridad en la red}\label{gestionar-la-seguridad-en-la-red}}
+\section{Gestionar la seguridad en la red}\label{gestionar-la-seguridad-en-la-red}
 
 Como ya viste en la unidad de privacidad y seguridad, la seguridad en Internet engloba todas las medidas destinadas a proteger tus dispositivos, tus datos y tus comunicaciones frente a accesos no autorizados, fraudes, malware y otras amenazas digitales. También podría describirse como~todas aquellas medidas y precauciones que deben ser tomadas para proteger todos los dispositivos informáticos, así como la red de internet que pueden ser afectados por delincuentes cibernéticos.
 
@@ -1064,8 +1029,7 @@ Actualmente, además de ordenadores y teléfonos móviles, muchas viviendas cuen
 
 En los próximos apartados conocerás las principales amenazas que pueden afectar a una red y las medidas que puedes adoptar para proteger tus dispositivos, tu información y tu privacidad.
 
-\hypertarget{seguridad-en-las-cuentas}{%
-\section{Seguridad en las cuentas}\label{seguridad-en-las-cuentas}}
+\section{Seguridad en las cuentas}\label{seguridad-en-las-cuentas}
 
 Prácticamente todo el mundo en menor o mayor medida dispone de cuentas de usuarios en todas sus aplicaciones o servicios en la red. De entre las más conocidas están la cuenta de \href{https://myaccount.google.com/security}{Google} y la de \href{https://account.microsoft.com/security}{Microsoft}. En estos dos enlaces podrás ajustar la seguridad necesaria para poder hacer uso de ellas con más garantías.
 
@@ -1080,8 +1044,7 @@ Prácticamente todo el mundo en menor o mayor medida dispone de cuentas de usuar
 
 Además, recuerda que el resto de plataformas como Facebook, Linkedin, Instagram, X, Tiktok, etc. también ofrecen este tipo servicio para que puedas configurar tu seguridad y para sentirte más seguro.
 
-\hypertarget{contraseuxf1as}{%
-\section{Contraseñas}\label{contraseuxf1as}}
+\section{Contraseñas}\label{contraseuxf1as}
 
 Una contraseña, clave o password es un mecanismo de autenticación que permite verificar tu identidad para acceder a un servicio, aplicación o dispositivo. Su seguridad depende de que únicamente tú conozcas esa información. \citep{WIKI-password}.
 
@@ -1335,8 +1298,7 @@ A modo de conclusión, y para terminar, si tuviésemos que simplificar todo lo a
   Deben ser únicas: usa una contraseña distinta para cada servicio. Nunca reutilices la misma clave en varias cuentas.
 \end{itemize}
 
-\hypertarget{protocolo-https}{%
-\section{Protocolo https}\label{protocolo-https}}
+\section{Protocolo https}\label{protocolo-https}
 
 El Protocolo Seguro de Transferencia de Hipertexto (en inglés, Hypertext Transfer Protocol Secure o HTTPS) es la versión segura del protocolo HTTP y se utiliza para proteger la comunicación entre el navegador y los sitios web \citep{WIKI-https}.
 
@@ -1354,8 +1316,7 @@ Además algunos navegadores eliminaron el icono del candado porque el protocolo 
 
 En el enlace del Incibe \href{https://www.incibe.es/ciudadania/blog/que-hacer-si-el-navegador-nos-dice-que-estamos-intentando-acceder-un-sitio-no}{Qué hacer si el navegador nos dice que estamos intentando acceder a un sitio no seguro} explican el aviso del navegador cuando nos advierte que se trata de un sitio no seguro, o lo que es lo mismo, que cuando el navegador se está refiriendo a que el sitio web tiene un protocolo ``http: //'' sin la ``S'' en lugar de ``https: //'' con la ``S''.
 
-\hypertarget{compras-y-transacciones}{%
-\section{Compras y transacciones}\label{compras-y-transacciones}}
+\section{Compras y transacciones}\label{compras-y-transacciones}
 
 Para comprar por Internet debes tomar cuantas más precauciones mejor para evitar cualquier tipo de fraude. Los factores a tener en cuenta son los siguientes:
 
@@ -1393,7 +1354,7 @@ Para comprar por Internet debes tomar cuantas más precauciones mejor para evita
   \item
     Asegúrate que disponen de certificados de autenticidad de la web y seguridad de las transacciones como los que ofrece \href{https://es.norton.com/internet-security}{Norton secured} o \href{https://www.comodo.com/home/internet-security/secure-shopping.php}{Comodo secure}.
   \item
-    También existen plugins como \href{https://chrome.google.com/webstore/detail/historial-de-precios/fdeopiliemdomncemeibjpmccgmnkfig?hl=es-419\&authuser=0}{Historial de precios} o \href{https://chrome.google.com/webstore/detail/alitools-shopping-assista/eenflijjbchafephdplkdmeenekabdfb?hl=es-419\&authuser=0}{Alitools shopping assistan} que verifican si el precio del producto o servicio que deseas adquirir ha sido inflando por algún tipo de campaña publicitaria, como es el caso del Black Friday en los que suelen subir los precios para justificar su descuento.
+    También existen plugins como \href{https://chrome.google.com/webstore/detail/historial-de-precios/fdeopiliemdomncemeibjpmccgmnkfig?hl=es-419&authuser=0}{Historial de precios} o \href{https://chrome.google.com/webstore/detail/alitools-shopping-assista/eenflijjbchafephdplkdmeenekabdfb?hl=es-419&authuser=0}{Alitools shopping assistan} que verifican si el precio del producto o servicio que deseas adquirir ha sido inflando por algún tipo de campaña publicitaria, como es el caso del Black Friday en los que suelen subir los precios para justificar su descuento.
   \item
     En primera instancia desconfía de los productos o servicios a precios muy inferiores al real o con suculentos descuentos.
   \item
@@ -1416,8 +1377,7 @@ Tienes disponible más información sobre compras online en \href{https://www.ae
 
 Por último ten siempre presente que, la inteligencia artificial ha facilitado la creación de tiendas fraudulentas con diseños muy profesionales, fotografías realistas, textos sin errores ortográficos e incluso asistentes virtuales capaces de responder automáticamente a tus preguntas. Por ello, no bases tu confianza únicamente en el aspecto visual de la página; verifica siempre la identidad del comercio mediante varios indicadores antes de realizar cualquier pago.
 
-\hypertarget{wi-fi}{%
-\section{Wi-Fi}\label{wi-fi}}
+\section{Wi-Fi}\label{wi-fi}
 
 Con respecto a la Wi-Fi nos encontramos ante dos escenarios: Wi-Fi propia y Wi-Fi ajena.
 
@@ -1431,8 +1391,7 @@ Es de suponer que si estas en casa con Wi-Fi propia, estas recomendaciones no so
 
 Lo más recomendable es que siempre que puedas navegues con cable en lugar de Wi-Fi.
 
-\hypertarget{plugins-o-extensiones}{%
-\section{Plugins o extensiones}\label{plugins-o-extensiones}}
+\section{Plugins o extensiones}\label{plugins-o-extensiones}
 
 Las extensiones, también conocidas como extensiones o plugins, son pequeños programas que amplían las funcionalidades de una aplicación. En el caso de los navegadores web, permiten añadir nuevas características como bloquear publicidad, traducir páginas, gestionar contraseñas, comprobar la ortografía o mejorar la privacidad durante la navegación. Un ejemplo de estos es el archiconocido \href{https://getadblock.com/}{adBlock}, cuya función es la eliminar esos molestos anuncios de algunos portales webs.
 
@@ -1470,8 +1429,7 @@ Algunos ejemplos de extensiones ampliamente utilizadas son los bloqueadores de p
 
 Si quieres ampliar tus conocimientos sobre las extensiones o plugins de los navegadores, puedes consultar la web de Incibe y su publicación \href{https://www.osi.es/es/actualidad/blog/2019/11/20/extensiones-superpoderes-para-los-navegadores}{extensiones: Superpoderes para los navegadores}.
 
-\hypertarget{descarga-segura-de-aplicaciones-y-programas}{%
-\section{Descarga segura de aplicaciones y programas}\label{descarga-segura-de-aplicaciones-y-programas}}
+\section{Descarga segura de aplicaciones y programas}\label{descarga-segura-de-aplicaciones-y-programas}
 
 Siempre que necesites instalar una aplicación o un programa, descárgalo desde la página web oficial del desarrollador o desde la tienda oficial de tu sistema operativo (como Microsoft Store, App Store o Google Play, según el dispositivo que utilices). Evita descargar software desde páginas de terceros, ya que pueden distribuir versiones modificadas, desactualizadas o que incorporen programas no deseados e incluso código malicioso.
 
@@ -1498,8 +1456,7 @@ La inteligencia artificial también está siendo utilizada para crear páginas d
 
 Como norma general, si tienes dudas sobre el origen de un programa, es preferible no instalarlo hasta haber verificado su autenticidad. Unos minutos de comprobación pueden evitar la instalación de malware y la pérdida de información personal.
 
-\hypertarget{cierre-de-sesiones-y-uso-de-dispositivos-ajenos}{%
-\section{Cierre de sesiones y uso de dispositivos ajenos}\label{cierre-de-sesiones-y-uso-de-dispositivos-ajenos}}
+\section{Cierre de sesiones y uso de dispositivos ajenos}\label{cierre-de-sesiones-y-uso-de-dispositivos-ajenos}
 
 Cuando utilizas cualquier servicio en internet, como tu correo electrónico, redes sociales o plataformas bancarias, el primer paso para proteger tu información es iniciar sesión con tus credenciales.
 
@@ -1516,12 +1473,11 @@ Para evitar riesgos innecesarios, adopta estos dos hábitos esenciales de seguri
 
 Recuerda: Tu privacidad digital depende de dónde dejas tus llaves. No dejes nunca tus cuentas abiertas en territorio desconocido.
 
-\hypertarget{sv-two-step-verification-o-verificaciuxf3n-en-dos-pasos}{%
-\section{2SV (Two Step Verification) o Verificación en Dos Pasos}\label{sv-two-step-verification-o-verificaciuxf3n-en-dos-pasos}}
+\section{2SV (Two Step Verification) o Verificación en Dos Pasos}\label{sv-two-step-verification-o-verificaciuxf3n-en-dos-pasos}
 
 La mayoría de cuentas a día de hoy están configuradas para soportar lo que se conoce como SFA (Single Factor Authetication) o Factor de autenticación Simple, tamibén conocido como autenticación de un solo factor. Se trata del acceso a cuentas o servicios con el solo uso del usuario y una contraseña, algo que todo el mundo viene haciendo desde hace tiempo. Esto se ha vuelto en gran medida un gran riesgo, ya que si un tercero consigue hacerse con tu contraseña no tendrá ninguna dificultad para tomar el control.
 
-Es por este motivo que cada vez más servicios están implementando lo que se conoce como 2SV (Two Step Verification) o Verificación en Dos Pasos. Este sistema funciona de la siguiente manera, justo después de introducir tu contraseña, se te envía una notificación de forma segura al dispositivo en el que hayas iniciado sesión, de manera que solo tienes que aprobar la notificación para realizar el inicio sesión. Algunos servicios como la \href{https://support.google.com/accounts/answer/185839?co=GENIE.Platform\%3DDesktop\&hl=es}{verificación en dos pasos de Google} viene de manera nativa y tan solo tienes que activarla.
+Es por este motivo que cada vez más servicios están implementando lo que se conoce como 2SV (Two Step Verification) o Verificación en Dos Pasos. Este sistema funciona de la siguiente manera, justo después de introducir tu contraseña, se te envía una notificación de forma segura al dispositivo en el que hayas iniciado sesión, de manera que solo tienes que aprobar la notificación para realizar el inicio sesión. Algunos servicios como la \href{https://support.google.com/accounts/answer/185839?co=GENIE.Platform\%3DDesktop&hl=es}{verificación en dos pasos de Google} viene de manera nativa y tan solo tienes que activarla.
 
 Como puedes ver, los dos pasos son:
 
@@ -1547,8 +1503,7 @@ Según la fuente que uses para informarte puede ser que termines sin comprenderl
 
 Es extremadamente recomendable que uses este sistema de verificación en la medida que puedas. Recuerda que de un modo u otro la mayoría de servicios y plataformas disponen de esta capa de seguridad. Normalmente las encontrarás en Ajustes y Seguridad.
 
-\hypertarget{mfa-multi-factor-authentication-o-autenticaciuxf3n-de-factores-muxfaltiples}{%
-\section{MFA (Multi-Factor Authentication) o Autenticación de Factores Múltiples}\label{mfa-multi-factor-authentication-o-autenticaciuxf3n-de-factores-muxfaltiples}}
+\section{MFA (Multi-Factor Authentication) o Autenticación de Factores Múltiples}\label{mfa-multi-factor-authentication-o-autenticaciuxf3n-de-factores-muxfaltiples}
 
 La autenticación de factor múltiple es una forma eficaz de aumentar la protección de las cuentas de usuario contra las amenazas más comunes, como los ataques de phishing, apropiación de cuentas, etc. Y se trata un método de control de acceso informático, en el que a un usuario, se le concede acceso al sistema solo después de que presente dos o más pruebas o factores diferentes de que es quien dice ser. Estas pruebas pueden ser diversas, como una contraseña, clave secundaria rotativa, un certificado digital instalado en el equipo, un token físico, etc. entre otros y son éstos lo que se conocen como factores de autenticación \citep{WIKI-multiple-factor}.
 
@@ -1565,7 +1520,7 @@ Son tres los tipos de factores de autenticación:
 
 Uno de los ejemplos de autenticación en dos factores más común es la acción que realizas cuando vas a sacar dinero de un cajero. Por un lado, metes la tarjeta (algo que tienes) y luego pones el PIN (algo que sabes). Esto es lo que se conoce como la autenticación en dos pasos o 2FA (segundo factor de autenticación), que es uno de los tipos más comunes de MFA y que a veces tiende a confundirse con la verificación en dos pasos 2SV (Two Step Verification) que puedes verla en esta misma unidad.
 
-Otro ejemplo son los inicios de sesión en los que se necesita un código adicional que es gestionado a través de correo electrónico, SMS o llamadas telefónicas, como es el caso de algunas entidades bancarias, esto es lo que se conoce como OTP por sus siglas en inglés ``One-Time Password'' y en castellano ``contraseña de uso único''. Y en otros supuestos, aunque la plataforma disponga de dicho servicio necesitarás una aplicación externa como \href{https://support.google.com/accounts/answer/1066447?co=GENIE.Platform\%3DAndroid\&hl=es-419}{Google Authenticator} o \href{https://www.microsoft.com/es-es/account/authenticator}{Microsoft authenticator} entre otras y que se trata de una App de autenticación en dos pasos, que te genera el código adicional, que ha de ser utilizado inmediatamente ya que éste expira con el tiemplo.
+Otro ejemplo son los inicios de sesión en los que se necesita un código adicional que es gestionado a través de correo electrónico, SMS o llamadas telefónicas, como es el caso de algunas entidades bancarias, esto es lo que se conoce como OTP por sus siglas en inglés ``One-Time Password'' y en castellano ``contraseña de uso único''. Y en otros supuestos, aunque la plataforma disponga de dicho servicio necesitarás una aplicación externa como \href{https://support.google.com/accounts/answer/1066447?co=GENIE.Platform\%3DAndroid&hl=es-419}{Google Authenticator} o \href{https://www.microsoft.com/es-es/account/authenticator}{Microsoft authenticator} entre otras y que se trata de una App de autenticación en dos pasos, que te genera el código adicional, que ha de ser utilizado inmediatamente ya que éste expira con el tiemplo.
 
 También puedes hacer uso de autenticación de factores múltiples con lo que se conoce como Security Key o llave de seguridad. Se trata de un dispositivo hardware generalmente con conexión USB y necesitarás usar como segundo factor de autenticación una vez hayas introducido tu usuario y contraseña. En la publicación \href{https://es.digitaltrends.com/computadoras/las-mejores-llaves-de-seguridad-usb/}{las mejores llaves de seguridad usb} encontrarás algunos de los más utilizados y recuerda siempre comprar en las plataformas oficiales o de confianza.
 
@@ -1580,8 +1535,7 @@ También puedes hacer uso de autenticación de factores múltiples con lo que se
 
 En la mayoría de los casos solo se combinan dos de estos tres factores, aunque existe la posibilidad de implementar los tres si se viene necesario. Más información en \href{https://www.santander.com/es/stories/pon-una-capa-extra-de-seguridad-online-con-la-autenticacion-multifactor}{Banco Santander stories} y \href{https://protegermipc.net/2016/03/18/autenticacion-en-dos-factores-vs-autenticacion-en-dos-pasos/}{Autenticación en dos factores vs autenticación en dos pasos}.
 
-\hypertarget{antibotnet}{%
-\section{AntiBotnet}\label{antibotnet}}
+\section{AntiBotnet}\label{antibotnet}
 
 Una botnet es una red de dispositivos infectados con un programa malicioso (malware) que permite a un ciberdelincuente controlarlos de forma remota sin que sus propietarios sean conscientes de ello. Cada uno de estos dispositivos se conoce como ``bot'' o ``equipo zombi''.No existe un número mínimo de equipos para crear un botnet. Los botnets pequeños pueden incluir cientos de PCs infectados, mientras que los mayores utilizan millones de equipos \citep{INCI-botnet}.
 
@@ -1610,8 +1564,7 @@ La inteligencia artificial está facilitando la automatización de campañas de 
 
 Si sospechas que alguno de tus dispositivos puede estar comprometido, puedes utilizar el \href{https://www.incibe.es/ciudadania/herramientas/servicio-antibotnet/}{servicios antibotnet} que identifican si desde tu conexión a internet se ha detectado algún incidente de seguridad relacionado u otras amenazas. Además en el siguiente enlace obtendrás una suite de rastreo y eliminación de Botnet \href{https://www.incibe.es/ciudadania/servicio-antibotnet/cleaners}{Servicio Antibotnet: Cleaners}.
 
-\hypertarget{bluetooth}{%
-\section{Bluetooth}\label{bluetooth}}
+\section{Bluetooth}\label{bluetooth}
 
 Bluetooth es una tecnología de comunicación inalámbrica que permite conectar dispositivos cercanos, como auriculares, relojes inteligentes, teclados, altavoces o sistemas de manos libres del automóvil, etc. \citep{IONOS-bluetooh}.
 
@@ -1654,8 +1607,7 @@ Recuerda que la mayoría de los ataques mediante Bluetooth requieren que el atac
 El riesgo que corres cuando tienes este servicio activado es que el dispositivo de un tercero acabe sincronizándose con el tuyo, con los riesgos expuestos.
 Si quieres más información visita el siguiente enlace \href{https://computerhoy.com/noticias/tecnologia/diferencias-principales-ataques-bluetooth-bluesnarfing-bluejacking-bluebugging-1087867}{Diferencias entre los principales ataques por bluetooth: Bluesnarfing, Bluejacking y Bluebugging}.
 
-\hypertarget{nfc-near-field-communication}{%
-\section{NFC (Near field communication)}\label{nfc-near-field-communication}}
+\section{NFC (Near field communication)}\label{nfc-near-field-communication}
 
 NFC (Near Field Communication) es una tecnología inalámbrica de muy corto alcance que permite intercambiar información entre dispositivos cercanos. Se utiliza habitualmente para realizar pagos sin contacto, identificarte mediante tarjetas o teléfonos móviles, acceder a edificios, validar billetes de transporte o leer etiquetas inteligentes \citep{IONOS-nfc}.
 
@@ -1695,11 +1647,9 @@ Para utilizar NFC de forma segura:
 
 Si utilizas tarjetas con pago sin contacto y te preocupa una posible lectura accidental, puedes emplear fundas con protección RFID/NFC. No obstante, para la mayoría de las personas, el riesgo es reducido y mantener la tarjeta bajo tu control sigue siendo la medida de protección más importante.
 
-\hypertarget{amenazas}{%
-\chapter{Amenazas}\label{amenazas}}
+\chapter{Amenazas}\label{amenazas}
 
-\hypertarget{principales-amenazas}{%
-\section{Principales amenazas}\label{principales-amenazas}}
+\section{Principales amenazas}\label{principales-amenazas}
 
 En lo referente a la seguridad de tus dispositivos debes tener en cuenta la diversidad de amenazas que existen, tales como virus, spywares, troyanos, gusanos y que pueden comprometer tus dispositivos y toda la información que en ellos contengas.
 
@@ -1783,8 +1733,7 @@ Dispones de más información en \href{https://www.incibe.es/aprendecibersegurid
   Infecciones por malware que pretenden borrar datos, alterar las funciones básicas del equipo, espiar y/o robar datos.
 \end{enumerate}
 
-\hypertarget{virus}{%
-\section{Virus}\label{virus}}
+\section{Virus}\label{virus}
 
 Un virus es un programa informático diseñado para infectar archivos u ocasionar efectos molestos, destructivos e incluso irreparables en tu ordenador, dañando hardware, software y archivos \citep{PANDA-virus}.
 
@@ -1801,8 +1750,7 @@ Los virus tienen diferentes vías de entrada a tus equipos, como por ejemplo:
   Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
 \end{itemize}
 
-\hypertarget{gusanos-informuxe1ticos}{%
-\section{Gusanos informáticos}\label{gusanos-informuxe1ticos}}
+\section{Gusanos informáticos}\label{gusanos-informuxe1ticos}
 
 Los gusanos son en realidad una subclase de virus, por lo que comparten características similares \citep{PANDA-gusano}.
 
@@ -1823,8 +1771,7 @@ Los gusanos tienen diferentes vías de entrada a los equipos, como, por ejemplo:
   Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
 \end{itemize}
 
-\hypertarget{troyanos}{%
-\section{Troyanos}\label{troyanos}}
+\section{Troyanos}\label{troyanos}
 
 Un Troyano o también llamado Caballo de Troya es una clase de malware que normalmente se camufla como software legítimo. Los ciberladrones utilizan este software malicioso para acceder en tus equipos y una vez dentro campar a sus anchas \citep{KASPER-troyano}.
 
@@ -1855,8 +1802,7 @@ Algunos de los troyanos con más incidencias son el \href{https://www.welivesecu
 
 Existen herramientas que analizan y limpian los troyanos que se esconden en tu dispositivo y a su vez previene futuros ataques troyanos. Una de estas herramientas es el \href{https://www.avast.com/c-trojan-remover-tool}{Trojan remover}.
 
-\hypertarget{ransomware-o-programa-rescate}{%
-\section{Ransomware o programa rescate}\label{ransomware-o-programa-rescate}}
+\section{Ransomware o programa rescate}\label{ransomware-o-programa-rescate}
 
 El Programa rescate o ransomware, está dentro del conjunto de software malicioso que también se conoce como malware y que impiden utilizar el equipo mientras el usuario no pague una cierta cantidad de dinero. El virus bloquea o cifra la información o datos del equipo \citep{WIKI-ransomware}.
 
@@ -1892,8 +1838,7 @@ Además, en el caso del sistema operativo de Windows 10 en su última versión d
 
 Algunos de los ransomware más mediáticos son \href{https://es.wikipedia.org/wiki/CryptoLocker}{CryptoLocker}, \href{https://es.wikipedia.org/wiki/Ransomware\#CryptoWall}{CryptoWall} y \href{https://es.wikipedia.org/wiki/WannaCry}{WannaCry}, pero no son los únicos, además de estar siempre en constante evolución y lo que es peor aún, éstos últimos irán dejando paso a otros mucho más nuevos y peligrosos.
 
-\hypertarget{spyware-o-software-espuxeda}{%
-\section{Spyware o software espía}\label{spyware-o-software-espuxeda}}
+\section{Spyware o software espía}\label{spyware-o-software-espuxeda}
 
 El spyware es otro tipo de malware que se mantiene oculto mientras recopila información en secreto, que después transmite a una entidad externa, sin el conocimiento o el consentimiento del propietario del dispositivo \citep{AVAST-spyware}.
 
@@ -1914,8 +1859,7 @@ El spyware tiene diferentes vías de entrada a los equipos, muy parecidas a los 
   Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
 \end{itemize}
 
-\hypertarget{adware}{%
-\section{Adware}\label{adware}}
+\section{Adware}\label{adware}
 
 El Adware también un tipo de software malicioso que te muestra publicidad constante y molesta, bien instalando otro programa o con ventanas emergentes \citep{AVAST-adware}.
 
@@ -1936,8 +1880,7 @@ Otro software muy útil contra la lucha de la publicidad no deseada es \href{htt
 
 También es importante saber que prácticamente todos los medios sociales, como Facebook, Instagram, Google y demás disponen en sus menús de configuración de opciones para gestionar la publicidad que llega a tus dispositivos.
 
-\hypertarget{malvertising}{%
-\section{Malvertising}\label{malvertising}}
+\section{Malvertising}\label{malvertising}
 
 Malvertising es el acrónimo de las palabras Malicious y Advertising, que en español sería Publicidad Maliciosa. Esta amenaza lo que hace es esconder malware para infectar los dispositivos en los espacios de publicidad de otras páginas webs, como son los banners de publicidad en las cabeceras o laterales tanto izquierdos como derecho de muchas de la web que a diario te encuentras en internet.
 
@@ -1945,8 +1888,7 @@ La diferencia principal con el adware es que este primero necesita que el malwar
 
 La vía de contagio por la que podemos caer víctimas de este ciberdelito, es como habrás podido ver, haciendo click en los anuncios en páginas webs.
 
-\hypertarget{scareware-o-rogueware}{%
-\section{Scareware o rogueware}\label{scareware-o-rogueware}}
+\section{Scareware o rogueware}\label{scareware-o-rogueware}
 
 Esta variante de malware conocido como Scareware o Rogueware es otro software malicioso más que trata de engañar a los usuarios para que visiten sitios infestados de malware. Normalmente suele darse en forma de ventanas emergentes, que además, aparecen como advertencias legítimas de compañías de software en su mayoría de antivirus y que afirman que el sistema operativo ha sido vulnerado o que los archivos del PC han sido infectado \citep{KASPER-scareware}.
 
@@ -1961,8 +1903,7 @@ Las vías de contagio son las mismas que has visto en malwares anteriores:
   Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
 \end{itemize}
 
-\hypertarget{quishing}{%
-\section{Quishing}\label{quishing}}
+\section{Quishing}\label{quishing}
 
 Los Quick Response (QR) son códigos de barra de dos dimensiones diseñados para ser leídos e interpretados rápidamente. Actualmente y sumado a la gran proliferación de smartphones en el mercado, son muy utilizados en publicidad y campañas de marketing. Esto es debido a su gran facilidad de manejo, ya que solo basta con apuntar con la cámara y el smartphone se encarga del resto.
 
@@ -1970,8 +1911,7 @@ Lamentablemente los códigos QR también pueden ser utilizados con fines malicio
 
 La vía de contagio como te habrás podido dar cuenta queda implícita.
 
-\hypertarget{phishing}{%
-\section{Phishing}\label{phishing}}
+\section{Phishing}\label{phishing}
 
 El término Phishing es utilizado para referirse a uno de los métodos más utilizados por delincuentes cibernéticos para estafar y obtener información confidencial de forma fraudulenta como puede ser una contraseña o información detallada sobre tarjetas de crédito u otra información bancaria de la víctima \citep{INFOSPY-phishing}.
 
@@ -2086,8 +2026,7 @@ Otros tipos de fraudes que pueden llegar a través de técnicas de phishing o sm
 
 Para que puedas hacerte una idea de la magnitud de esta técnica de ingeniería social, en la siguiente entrada del blog oficial de Google llamado \href{https://espana.googleblog.com/2021/09/cocreacion-para-una-web-mas-segura.html}{Cocreación para una web más segura: Google y Euroconsumers lanzan Space Shelter en vísperas del Mes Europeo de la Ciberseguridad}, podrás encontrar que con sus algoritmos de detección Google bloquea más de 100 millones diarios de intentos de phishing.
 
-\hypertarget{vishing}{%
-\section{Vishing}\label{vishing}}
+\section{Vishing}\label{vishing}
 
 El Vishing es una estafa que consiste en una llamada de teléfono en la que ciberdelicuente suplanta la identidad de una persona, empresa o institución para conseguir que le proporciones información privada y sensible. Esta información normalmente va a ser datos personales, contraseñas o peor aún los datos bancarios. Se trata de técnicas de ingeniería social con la que el estafador se va ganando la confianza de la víctima de manera que ésta termina proporcionándole cualquier tipo de datos. Si quieres saber más sobre ingeniería social visita este enlace \href{https://www.osi.es/es/actualidad/blog/2019/12/04/sabias-que-los-ataques-de-ingenieria-social-suponen-el-93-de-las-brechas}{¿Sabías que los ataques de ingeniería social suponen el 93\% de las brechas de seguridad?}.
 
@@ -2100,8 +2039,7 @@ Por lo tanto, debes tener muy en cuenta, que cualquier petición de tus contrase
 
 La vía de contagio como se ha señalado al principio es a través de una llamada de teléfono.
 
-\hypertarget{smishing}{%
-\section{Smishing}\label{smishing}}
+\section{Smishing}\label{smishing}
 
 El Smishing es un acrónimo formado por las palabras SMS y phishing, debido a su parecido con este ataque tan popular. La diferencia entre el Smishing y el Phishing, es que mientras este último lleva a cabo la estafa utilizando el correo electrónico como medio, en el Smishing se utilizan mensajes de texto enviados a través de SMS al smartphone o a través de las distintas aplicaciones de mensajería instantánea. Al igual que el phishing y el vishing, también se trata de una técnica de ingeniería social.
 
@@ -2131,8 +2069,7 @@ Como se ha destacado en líneas anteriores la vía de entrada de esta amenaza a 
 \caption{Reemplazo app de mensajería.}\label{fig:unnamed-chunk-19}
 \end{figure}
 
-\hypertarget{spam-o-correo-malicioso}{%
-\section{Spam o correo malicioso}\label{spam-o-correo-malicioso}}
+\section{Spam o correo malicioso}\label{spam-o-correo-malicioso}
 
 Los términos spam o correo malicioso hacen referencia a los mensajes no solicitados, no deseados o con remitente no conocido (correo anónimo), habitualmente de tipo publicitario, generalmente son enviados en grandes cantidades (incluso masivas) que perjudican de alguna o varias maneras al receptor \citep{WIKI-spam}.
 
@@ -2155,8 +2092,7 @@ En este caso no hace falta destacar que este molesto malware llega por medio de 
 
 En torno a este concepto también aparece el SPIM (SPam over Instant Messaging), en castellano viniendo a ser como spam a través de mensajería instantánea, puedes leer más en el siguiente artículo \href{https://www.iniseg.es/blog/ciberseguridad/hablemos-de-ciberseguridad-iii-spam-spim-y-spit/}{Hablemos de ciberseguridad -- III -- Spam, SPIM y SPIT}.
 
-\hypertarget{toolbars}{%
-\section{Toolbars}\label{toolbars}}
+\section{Toolbars}\label{toolbars}
 
 Las Toolbars son barras de herramientas que aparecen en la parte superior de los navegadores. Generalmente sirven para tener enlaces más rápidos a servicios, por ejemplo, Windows Live Toolbars da acceso al correo y búsqueda entre otras funcionalidades. Regularmente los navegadores tienen las suyas propias.
 
@@ -2177,8 +2113,7 @@ En el caso de haber instalado alguna toolbars por descuido existen algunas herra
 
 Como se ha señalada más arriba la vía de contagio suele ser la instalación de software normalmente gratuito.
 
-\hypertarget{usurpaciuxf3n-o-robo-de-identidad}{%
-\section{Usurpación o robo de identidad}\label{usurpaciuxf3n-o-robo-de-identidad}}
+\section{Usurpación o robo de identidad}\label{usurpaciuxf3n-o-robo-de-identidad}
 
 El robo de identidad, usurpación de identidad es la apropiación de la identidad de una persona: hacerse pasar por esa persona, asumir su identidad ante otras personas en público o en privado, en general para acceder a ciertos recursos o la obtención de créditos y otros beneficios en nombre de esa persona. Esto que sucede en el mundo analógico también ocurre en el mundo digital \citep{WIKI-usurpacion}.
 
@@ -2225,11 +2160,10 @@ Algunas de las formas en que lo ciberdelicuentes se hacen con nuestras cuentas:
 \item
   \href{https://www.incibe.es/linea-de-ayuda-en-ciberseguridad/casos-reales/como-evitar-ser-victima-del-fraude-del-si-y-la-suscripcion-servicios-premium}{Cómo evitar ser víctima del fraude del sí y la suscripción a servicios premium}
 \item
-  \href{https://twitter.com/RavePrivacy/status/1754584579002830975?t=FD4dA9kbzOCHB39-6-86Eg\&s=09}{Robo de cuenta de Whatsapp}
+  \href{https://twitter.com/RavePrivacy/status/1754584579002830975?t=FD4dA9kbzOCHB39-6-86Eg&s=09}{Robo de cuenta de Whatsapp}
 \end{itemize}
 
-\hypertarget{suplantaciuxf3n-de-identidad-o-spoofing}{%
-\section{Suplantación de identidad o Spoofing}\label{suplantaciuxf3n-de-identidad-o-spoofing}}
+\section{Suplantación de identidad o Spoofing}\label{suplantaciuxf3n-de-identidad-o-spoofing}
 
 Normalmente cuando un ciberdelincuente usurpa o roba una cuenta, ya sea particular o corporativa, la principal intención es hacer uso del spoofing o también conocido como suplantación de identidad. Estos términos pueden confundirse con el Phishing, pero no son lo mismo. Podría decirse que el Phishing es el término o palabra que se utiliza para describir la manera con la que los estafadores se hacen con tus datos y el spoofing son las herramientas, procedimientos o técnicas con los que lo lleva a cabo. Ejemplo: Un ciberestafador suplanta la web o el correo que recibes de tu entidad bancaria para que facilites tus datos, esta es la herramienta o herramientas y el término o nombre que recibe este acto es el Phishing. No obstante, en el siguiente enlace puedes obtener más información sobre las \href{https://techlandia.com/diferencia-phishing-spoofing-info_241711/}{diferencias entre Phishing y Spoofing}.
 
@@ -2241,8 +2175,7 @@ Existe otra suplantación de identidad llamada email spoofing y que resulta de r
 
 Otra actividad relacionada con la usurpación de identidad es el Brushing. Este delito es el que realizan algunos vendedores de Internet, que envían paquetes con objetos muy pequeños a diferentes usuarios para hacerse pasar por ellos y después poder valorar sus propios productos. Aunque en cierto modo esto no te pone en un serio riesgo, conviene conocerlo por si te sucede saber que se trata de una suplantación de la identidad y que es aconsejable interponer una denuncia \citep{brushing}.
 
-\hypertarget{ciberestafas-en-compras-online-y-otros-engauxf1os}{%
-\section{Ciberestafas en compras online y otros engaños}\label{ciberestafas-en-compras-online-y-otros-engauxf1os}}
+\section{Ciberestafas en compras online y otros engaños}\label{ciberestafas-en-compras-online-y-otros-engauxf1os}
 
 Llegados hasta aquí, recordarte que todas las precauciones que se detallan en este manual en el apartado de Compras y transacciones de la unidad de Gestión de la seguridad en la red, son altamente recomendables en este punto. Además de ser fuertemente aconsejable seguir todas esas indicaciones, también se trata de tener en cuenta el conjunto de requisitos que veras a continuación, ya que cada uno de ellos por independiente te va a garantizar una capa más de seguridad y te irán indicando si puede o no puede ser una estafa.
 
@@ -2329,13 +2262,11 @@ En esta \href{https://www.osi.es/es/guia-fraudes-online}{Guía de fraudes online
 
 Por último, pero no por ello menos importante, si en algún momento te encontrases ante una posible estafa debes reportarlo a través desde este enlace para \href{https://www.incibe.es/protege-tu-empresa/reporte-fraude}{reportar webs fraudulentas en el Incibe}.
 
-\hypertarget{warshipping}{%
-\section{Warshipping}\label{warshipping}}
+\section{Warshipping}\label{warshipping}
 
 El warshipping es un tipo de ataque que los ciberdelicuentes llevan a cabo mediante el envío de paquetería, y en cuyo interior se encuentra un dispositivo electrónico, pudiendo ser de diferente naturaleza. Estos pueden contener cámara, micrófono o simplemente ser un dispositivo, que al ser conectado instale un software fraudulento de manera que permita a los ciberdelicuentes remotamente vulnerar la privacidad y la seguridad de la víctima. Aun que suele estar destinados a empresas que continuamente reciben paquetería, usuarios de compras online también pueden ser blanco de este ciberdelito \citep{INCI-warshipping}.
 
-\hypertarget{vulnerabilidades}{%
-\section{Vulnerabilidades}\label{vulnerabilidades}}
+\section{Vulnerabilidades}\label{vulnerabilidades}
 
 Una vulnerabilidad en términos de informática es una debilidad o fallo en un sistema de información, que pone en riesgo la seguridad de la información pudiendo permitir que un atacante pueda comprometer la integridad, disponibilidad o confidencialidad de la misma. Estas vulnerabilidades pueden tener distintos orígenes como por ejemplo: fallos de diseño, errores de configuración o carencias de procedimientos \citep{INCI-vulnerabilidad}.
 
@@ -2347,8 +2278,7 @@ Las vulnerabilidades son también una puerta de entrada para lo que se conocen c
 
 Amplía la información en el artículo del centro de recursos de los servicios de antivirus Kaspersky \href{https://www.kaspersky.es/resource-center/definitions/what-is-zero-click-malware}{¿Qué es el malware de clic cero y cómo funcionan los ataques de clic cero?}.
 
-\hypertarget{cryptojacking}{%
-\section{Cryptojacking}\label{cryptojacking}}
+\section{Cryptojacking}\label{cryptojacking}
 
 El cryptojacking, también llamado minería de criptomonedas malicioso, consiste en un tipo de software fraudulento que se oculta en un ordenador o en un dispositivo móvil, y utiliza los recursos de estos para extraer diversas formas de monedas digitales conocidas como \href{https://es.wikipedia.org/wiki/Criptomoneda}{criptomonedas}. Hay que aclarar que no está tan focalizado en el robo directo de estas, sino, que se centra en el robo o secuestro de dispositivos de terceros con el fin de utilizarlos para minar estas criptomonedas, y a los que se le conocen también como dispositivos zombies \citep{cryptojacking}.
 
@@ -2386,8 +2316,7 @@ Señalar que \href{https://www.microsoft.com/es-es/windows/comprehensive-securit
 
 Por otro lado, ya son algunos navegadores los que implementan herramientas nativas para paliar el cryptocjacking como es el caso del navegador \href{https://www.mozilla.org/es-ES/firefox/browsers/}{Firefox}. Puedes obtener más información en este enlace \href{https://www.genbeta.com/navegadores/firefox-anadira-proteccion-minado-criptomonedas-fingerprinting}{Firefox añadirá protección contra el minado de criptomonedas y el fingerprinting}.
 
-\hypertarget{plugins-maliciosos}{%
-\section{Plugins maliciosos}\label{plugins-maliciosos}}
+\section{Plugins maliciosos}\label{plugins-maliciosos}
 
 En primer lugar, es importante tener claro qué es un plugin. Así pues, se trata de un software o aplicación que actúa como complemento para ampliar las funcionalidades del programa principal al que complementa. Dicho esto, algunos ciberdelicuentes usan esta funcionalidad para sus actividades delictivas, como espiar o recopilar datos sensibles e incluso el robo de criptomonedas. \citep{IONOS-plugin}.
 
@@ -2408,8 +2337,7 @@ El contagio de estos plugins maliciosos normalmente es a través de las Webs Sto
   Utiliza preferiblemente aquellos plugins de referencia, con fama y garantía reconocidas.
 \end{itemize}
 
-\hypertarget{sim-swapping}{%
-\section{SIM Swapping}\label{sim-swapping}}
+\section{SIM Swapping}\label{sim-swapping}
 
 El SIM Swapping, es la técnica que usan últimamente los ladrones digitales que se basa en duplicar la tarjeta SIM del móvil de sus víctimas. Así, pueden acceder a toda su información personal y, sobre todo, pueden usarlas en la verificación a través de un SMS por medio del móvil que suelen pedir los bancos cuando se opera a través de Internet y algunas otras plataformas online.
 
@@ -2423,7 +2351,7 @@ Por lo tanto, es importante que sigas estas recomendaciones para no ser víctima
 
 \begin{itemize}
 \item
-  Utiliza una contraseña adicional o \href{https://www.osi.es/es/actualidad/blog/2019/02/27/el-factor-de-autenticacion-doble-y-multiple}{doble autentificación}: reconocimiento facial, por voz, PIN adicional, \href{https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2\&hl=es\&gl=US}{Google authenticator}, etc.
+  Utiliza una contraseña adicional o \href{https://www.osi.es/es/actualidad/blog/2019/02/27/el-factor-de-autenticacion-doble-y-multiple}{doble autentificación}: reconocimiento facial, por voz, PIN adicional, \href{https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2&hl=es&gl=US}{Google authenticator}, etc.
 \item
   No compartas demasiada información en Internet. Cuantos más datos haya sobre ti en la web, más fácil será para los malos chantajearte, timarte o conseguir otras cosas tuyas, como contraseñas, cuentas bancarias, etc.
 \item
@@ -2442,15 +2370,13 @@ Por lo tanto, es importante que sigas estas recomendaciones para no ser víctima
 
 Desde el \href{https://www.incibe.es/}{Instituto nacional de Ciberseguridad} y a través de este \href{https://www.youtube.com/watch?v=fIaodow_nxw}{video} podrás obtener más información sobre que es el SIM Swaping.
 
-\hypertarget{shoulder-surfing-o-visual-hackins}{%
-\section{Shoulder surfing o visual hackins}\label{shoulder-surfing-o-visual-hackins}}
+\section{Shoulder surfing o visual hackins}\label{shoulder-surfing-o-visual-hackins}
 
 El shoulder surfing o también conocido como visual hackins es una técnica en apariencia muy sencilla empleada por los ciberatacantes con el objetivo de conseguir información de un usuario en concreto. Esta técnica consiste en mirar literalmente por encima del hombro y que suele llevarse a cabo mientras viajamos en metro, en autobús o en cualquier sitio público donde los cibervándalos puedan estar atento al uso que haces de tu dispositivo sin que puedas percatarte de ello \citep{OSI-shoulder-surfing}.
 
 Como has podido leer, evitar el uso de datos sensibles en espacios públicos es la mejor fórmula para evitar caer en este tipo de amenazas.
 
-\hypertarget{ciberacoso}{%
-\section{Ciberacoso}\label{ciberacoso}}
+\section{Ciberacoso}\label{ciberacoso}
 
 El ciberacoso es una forma de acoso o intimidación por medio de las tecnologías digitales. Su modus operandi se realiza en las redes sociales, las plataformas de mensajería, las plataformas de juegos, smartphones y cualquier otro dispositivo, plataforma o medio que disponga de conexión a internet. Es un comportamiento que se repite y que busca atemorizar, enfadar, humillar o maltratar a otras personas.
 
@@ -2467,8 +2393,7 @@ Ejemplos de ciberacoso son:
 
 El acoso cara a cara y el ciberacoso ocurren juntos a menudo. Pero el ciberacoso deja una huella digital, lo cual quiere decir, que queda un registro que puede servir de prueba para ayudar a detener el abuso \citep{ciberacoso}.
 
-\hypertarget{ciberextorsiuxf3n}{%
-\section{Ciberextorsión}\label{ciberextorsiuxf3n}}
+\section{Ciberextorsión}\label{ciberextorsiuxf3n}
 
 La ciberextorsión es una forma de chantaje que sufre la víctima a través de los medios digitales, mediante el cual se le fuerza u obliga a pagar o a realizar algún acto o actividad delictiva o no lícita, para evitar los términos del chantaje. Un caso muy común es el del malware Ransomware que te obliga a pagar una cantidad de dinero si quieres recuperar tus archivos.
 
@@ -2476,27 +2401,23 @@ La plataforma de antivirus Panda Security pone a tu disposición una \href{https
 
 Dentro de la ciberextorsión se encuentra lo que se conoce como sextorsión. Este ciberdelito es también una forma de extorsión en el plano digital, pero en este caso con contenido sexual. En la sextorsión la víctima es amenazada con la supuesta publicación y difusión de contenido sexual.
 
-\hypertarget{ciberchantaje}{%
-\section{Ciberchantaje}\label{ciberchantaje}}
+\section{Ciberchantaje}\label{ciberchantaje}
 
 El ciberchantaje es una forma de extorsión que se realiza a través de medios digitales. Consiste en que una persona (el chantajista) amenaza a otra con divulgar información sensible, comprometedora o falsa ---o con causar algún tipo de daño digital--- si no se cumplen sus exigencias, que suelen ser económicas, aunque también pueden ser de otro tipo (como obtener imágenes íntimas, acceso a cuentas, etc.).
 
-\hypertarget{sextorsiuxf3n}{%
-\section{Sextorsión}\label{sextorsiuxf3n}}
+\section{Sextorsión}\label{sextorsiuxf3n}
 
 La sextorsión, o extorsión sexual, consiste en la amenaza de revelar información íntima sobre una víctima a no ser que esta pague al extorsionista. En esta era digital conectada, dicha información podría incluir mensajes de texto sexuales (en inglés conocidos como sexts), fotos íntimas e, incluso, vídeos. Los delincuentes suelen pedir dinero, pero a veces buscan material más comprometedor (envía más o divulgaremos tus secretos)\citep{KASPER-sextorsión}.
 
 Si quieres leer un correo real de sextorsión echa un vistazo al siguiente enlace \href{https://www.welivesecurity.com/la-es/2023/06/09/ciberdelincuentes-falsas-imagenes-videos-sexuales-mediante-inteligencia-artificial-sextorsion/}{Ciberdelincuentes están creando falsas imágenes y videos sexuales mediante IA para sextorsión} se trata de una publicación del antivirus ESET.
 
-\hypertarget{doxing}{%
-\section{Doxing}\label{doxing}}
+\section{Doxing}\label{doxing}
 
 El término ``doxing'' es la abreviación de ``exponer dox'', siendo ``dox'' un término coloquial para referirse a los documentos. Por lo general, el doxing es una acción maliciosa que un hacker realiza contra personas con las que está en desacuerdo o que considera desagradables.
 
 El doxing (a veces escrito como doxxing) consiste en revelar información identificadora de una persona en línea, como su nombre real, dirección particular, lugar de trabajo, teléfono, datos financieros y otra información personal. Luego, esta información se divulga al público sin el permiso de la víctima \citep{KASPER-doxing}.
 
-\hypertarget{baiting}{%
-\section{Baiting}\label{baiting}}
+\section{Baiting}\label{baiting}
 
 Para llevar a cabo el baiting los ciberdelincuentes suelen utilizar dispositivos de almacenamiento extraíbles, normalmente memorias USB o incluso CDs y DVDs infectados con un software malicioso para posteriormente dejarlos en un lugar en el cual sea fácil de encontrar por la víctima como por ejemplo, baños públicos, ascensores, aceras, etc. Cuando la víctima encuentre dicho dispositivo y lo introduzca en su ordenador, el software malicioso se ejecutará de manera inadvertida y posibilitará que el hacker pueda acceder a los datos del usuario o usuaria \citep{baiting}.
 
@@ -2504,13 +2425,11 @@ La vía de contagio como te habrás podido dar cuenta queda implícita.
 
 Si quieres saber cómo minimizar el riesgo por contagio a través de USBs lee el siguiente artículo \href{https://www.redeszone.net/tutoriales/seguridad/que-hacer-pendrive-virus/}{Cómo conectar con seguridad un pendrive que puede tener virus}.
 
-\hypertarget{clickjacking}{%
-\section{Clickjacking}\label{clickjacking}}
+\section{Clickjacking}\label{clickjacking}
 
 El clickjacking busca usuarios desprevenidos que hagan clic en algún botón, pestaña o accedan a un enlace mientras navegan por internet, haciéndoles creer que están ante algo legítimo y positivo para ellos. Suelen ser ganchos tales como, una oferta muy ventajosa o algo que provoque en la víctima la necesidad de entrar e informarse y de esta modo quedar infectado \citep{WIKI-clickjacking}.
 
-\hypertarget{dumpster-diving-o-scavening}{%
-\section{Dumpster diving o scavening}\label{dumpster-diving-o-scavening}}
+\section{Dumpster diving o scavening}\label{dumpster-diving-o-scavening}
 
 Este ciberdelito se conoce como el proceso de buscar en tu basura para obtener información útil sobre ti o tu empresa que luego pueda ser utilizada en tu contra. Aunque este tipo de ataques está más bien dirigido a empresas, debes tener cuidado con la información que desechas por el método de tirarlo a la basura. Nunca se sabe lo que los cibercacos están dispuestos a hacer \citep{WIKI-dumpster-diving}.
 
@@ -2527,15 +2446,13 @@ Algunas herramientas de borrado definitivo son:
 
 Para evitar este tipo de amenaza ya sabes, ten cuidado con lo que tiras a la basura.
 
-\hypertarget{quid-pro-quo}{%
-\section{Quid pro quo}\label{quid-pro-quo}}
+\section{Quid pro quo}\label{quid-pro-quo}
 
 Según el diccionario de la lengua española el término ``quid pro quo'' es una locución latina que significa, cosa que sustituye a algo equivalente o que se recibe como compensación por ello. Sabiendo esto, el ciberdelincuente que emplea esta técnica, promete a su víctima un beneficio a cambio de información personal. Este beneficio suele ser compensaciones en formato regalo, como pueda ser merchandising, dinero, acceso gratuito a programas de pago, ayuda en servicio técnico, etc. Normalmente este ciberdelito te llegará a través de llamadas telefónicas o mensajes de supuestos expertos que ofrecen este tipo de compensaciones sin coste alguno \citep{quid-pro-quo}.
 
 Las vías de contagio se han señalado más arriba y son las llamadas de teléfono o los mensajes con independencia de la naturaleza de estos.
 
-\hypertarget{formjacking}{%
-\section{Formjacking}\label{formjacking}}
+\section{Formjacking}\label{formjacking}
 
 El formjacking es la técnica que utilizan los ciberdelincuentes para interceptar la información que pones al comprar por Internet. Cuando entras en una página y realizas un pago, tienes que introducir los datos de tu tarjeta bancaria y esa es la información que busca el ciberestafador.
 
@@ -2543,8 +2460,7 @@ Esto lo llevan a cabo secuestrando los sitios webs donde habitualmente compran l
 
 Es por ello que es muy recomendable evitar las páginas que puedan ser vistas como vulnerables, ya que éstas van a ser la vía de contagio. Aunque esto pueda parecer difícil de detectar, si ves una web con una estética un tanto antigua es posible que el resto de la web también este algo obsoleta y sea el objetivo de este ciberdelito \citep{RZ-formjacking}.
 
-\hypertarget{juice-jacking}{%
-\section{Juice jacking}\label{juice-jacking}}
+\section{Juice jacking}\label{juice-jacking}
 
 Prácticamente todo el mundo en algún momento se ha quedado sin carga en algunos de sus dispositivos, pero gracias a que existen multitud de cargadores de USB públicos, esto ya no es un problema. Pero detrás de los beneficios que esta práctica nos aporta, se esconde una amenaza que va proliferando cada vez más llamada juice jacking. El juice jacking consiste en alterar con fines maliciosos la fuente de carga de los USBs por parte de los diberdelincuentes y que a través de esta técnica pueden aprovecharse tanto para el robo datos como para la inyección de archivos \citep{ESET-juice-jacking}.
 
@@ -2574,8 +2490,7 @@ De verte en la necesidad de hacer uso de ellos:
 
 La vía de contagio de esta ciberamenaza queda evidente en lo anteriormente expuesto, por lo que intenta evitar en la medida de lo posible usar cargadores públicos.
 
-\hypertarget{voice-hacking}{%
-\section{Voice hacking}\label{voice-hacking}}
+\section{Voice hacking}\label{voice-hacking}
 
 El voice hacking hace referencia a las técnicas utilizadas para manipular la voz de las personas mediante tecnologías avanzadas. Esto incluye la clonación de voz, que emplea inteligencia artificial para imitar la voz de una persona específica y generar grabaciones que parecen reales. También se denomina deepfake de voz o deep voice, ya que produce mensajes falsos que aparentan provenir de alguien auténtico.
 
@@ -2583,8 +2498,7 @@ Los estafadores pueden captar la voz de una persona sin su permiso y emplear ese
 
 Puedes leer el artículo completo en \href{https://www.incibe.es/ciudadania/blog/que-es-el-voice-hacking}{¿Qué es el voice hacking?}.
 
-\hypertarget{sustracciuxf3n-o-perdida-de-tu-dispositivo}{%
-\section{Sustracción o perdida de tu dispositivo}\label{sustracciuxf3n-o-perdida-de-tu-dispositivo}}
+\section{Sustracción o perdida de tu dispositivo}\label{sustracciuxf3n-o-perdida-de-tu-dispositivo}
 
 Otra contingencia con la que te puedes encontrar es el robo o perdida de tu dispositivo. Si te encontrases ante esta posibilidad, a continuación, tienes esta lista de todo lo que debes hacer para minimizar males mayores.
 
@@ -2611,13 +2525,11 @@ Qué hacer en caso de que hayas extraviado o te hayan robado tu dispositivo móv
   Comprueba tu cuenta bancaria y ponte en contacto con tu banco.
 \end{itemize}
 
-Lo mismo ocurre para el caso de ordenadores portátiles ya que Microsoft también dispone de servicio de \href{https://support.microsoft.com/es-es/account-billing/encontrar-y-bloquear-un-dispositivo-windows-perdido-890bf25e-b8ba-d3fe-8253-e98a12f26316\#:~:text=Activa\%20Encontrar\%20mi\%20dispositivo\&text=Windows\%2011\%3A\%20selecciona\%20InicioConfiguraci\%C3\%B3n,privacidad\%20\%26\%20\%3E\%20Encuentra\%20mi\%20dispositivo.}{Encontrar y bloquear un dispositivo Windows perdido}. Del igual modo también en el caso de portátiles de Apple en \href{https://support.apple.com/es-es/guide/findmy-mac/fmmc6c7ef383/mac}{Localizar un dispositivo en Buscar en el Mac}
+Lo mismo ocurre para el caso de ordenadores portátiles ya que Microsoft también dispone de servicio de \href{https://support.microsoft.com/es-es/account-billing/encontrar-y-bloquear-un-dispositivo-windows-perdido-890bf25e-b8ba-d3fe-8253-e98a12f26316\#:~:text=Activa\%20Encontrar\%20mi\%20dispositivo&text=Windows\%2011\%3A\%20selecciona\%20InicioConfiguraci\%C3\%B3n,privacidad\%20\%26\%20\%3E\%20Encuentra\%20mi\%20dispositivo.}{Encontrar y bloquear un dispositivo Windows perdido}. Del igual modo también en el caso de portátiles de Apple en \href{https://support.apple.com/es-es/guide/findmy-mac/fmmc6c7ef383/mac}{Localizar un dispositivo en Buscar en el Mac}
 
-\hypertarget{tu-yo-digital}{%
-\chapter{Tu yo digital}\label{tu-yo-digital}}
+\chapter{Tu yo digital}\label{tu-yo-digital}
 
-\hypertarget{toma-consciencia-de-tu-yo-digital}{%
-\section{Toma consciencia de tu yo digital}\label{toma-consciencia-de-tu-yo-digital}}
+\section{Toma consciencia de tu yo digital}\label{toma-consciencia-de-tu-yo-digital}
 
 Vivimos en una sociedad cada vez más conectada, en la que una parte importante de nuestra vida personal, social, educativa y profesional se desarrolla a través de Internet y de los servicios digitales. Cada acción que realizas en el entorno digital contribuye a construir tu identidad digital, es decir, la imagen y la información que otras personas, organizaciones y sistemas pueden asociar contigo.
 
@@ -2631,8 +2543,7 @@ Desarrollar competencias digitales y un uso responsable, respetuoso, crítico y 
 
 Por lo tanto, en este nuevo escenario hacia lo que algunos apuntan como la web 4.0, web inteligente o internet cognitiva en la que ha aumentado la exposición a la superficie digital, y en el que el incremento exponencial de la ciberdelincuencia parece no tener freno, debes aprender y mejorar la experiencia digital y hacerla compatible con un uso responsable, respetuoso, crítico y creativo de la tecnología. Y a su vez desarrollar capacidades digitales que propicien un progreso inclusivo, seguro, privado y sostenibles que garantice el bienestar social.
 
-\hypertarget{los-metadatos-la-informaciuxf3n-oculta-de-tus-archivos}{%
-\section{Los metadatos: la información oculta de tus archivos}\label{los-metadatos-la-informaciuxf3n-oculta-de-tus-archivos}}
+\section{Los metadatos: la información oculta de tus archivos}\label{los-metadatos-la-informaciuxf3n-oculta-de-tus-archivos}
 
 Los metadatos son datos que describen o aportan información adicional sobre un recurso digital, como una fotografía, un vídeo, un documento, un archivo de audio o un correo electrónico. Aunque normalmente no son visibles durante el uso habitual del archivo, contienen información que facilita su organización, búsqueda y gestión.
 
@@ -2646,8 +2557,7 @@ Los metadatos también pueden revelar información sobre tus hábitos, los dispo
 
 La inteligencia artificial ha incrementado el valor de estos datos. Los sistemas actuales son capaces de analizar grandes volúmenes de metadatos procedentes de distintas fuentes para identificar patrones de comportamiento, establecer relaciones entre personas o inferir información que nunca se ha compartido de forma explícita. Por este motivo, los metadatos tienen un importante valor económico y estratégico, tanto para ciberdelicuentes como para empresas, acuñándose años atrás como el petróleo del siglo XXI \citep{OSI-petroleo-S-XXI}.
 
-\hypertarget{identidad-digital}{%
-\section{Identidad digital}\label{identidad-digital}}
+\section{Identidad digital}\label{identidad-digital}
 
 La identidad digital es el conjunto de datos, información y características que permiten identificarte en el entorno digital. Se construye a partir de la información que compartes voluntariamente, de la que otras personas publican sobre ti y de los datos que generan los servicios digitales que utilizas.
 
@@ -2659,8 +2569,59 @@ Por ello, gestionar adecuadamente tu identidad digital implica actuar de forma c
 
 En definitiva, tu identidad digital constituye una extensión de tu identidad fuera de Internet y puede influir en ámbitos personales, académicos, profesionales y sociales. Por ello, protegerla y gestionarla de forma activa es una parte esencial de tu seguridad digital.
 
-\hypertarget{huella-digital}{%
-\section{Huella digital}\label{huella-digital}}
+\section{Identidad Sintética: Avatares de IA y Gemelos Digitales}\label{identidad-sintuxe9tica-avatares-de-ia-y-gemelos-digitales}
+
+El avance vertiginoso de la Inteligencia Artificial generativa ha transformado la noción del yo digital, llevando la identidad más allá del rastro que dejamos de forma pasiva o interactiva. Hoy en día, la tecnología permite la creación de identidades sintéticas: recreaciones automatizadas e hiperrealistas de personas físicas (vivas o fallecidas) mediante algoritmos de clonación y simulación.
+
+Comprender cómo se construyen estos elementos y los riesgos asociados a su proliferación resulta indispensable para proteger los derechos a la propia imagen, la voz y la intimidad.
+
+¿Qué son los gemelos digitales y la identidad sintética?
+
+\begin{itemize}
+\item
+  Clonación de voz (Voice Cloning): A partir de apenas unos segundos o minutos de audio de una persona, los modelos de IA pueden aprender sus patrones biométricos de entonación, timbre y acento para generar cualquier discurso escrito con una fidelidad casi indistinguible del original.
+\item
+  Avatares hiperrealistas y Deepfakes: Son réplicas en vídeo o gráficos 3D generadas por ordenador que imitan los rasgos faciales, expresiones y gestos de una persona. Se utilizan tanto en aplicaciones legítimas (asistentes virtuales personalizados, doblaje de contenidos) como en usos malintencionados (suplantación de identidad, estafas o difamación).
+\item
+  Gemelos digitales de personalidad: Modelos de lenguaje (LLM) entrenados específicamente con el historial de escritos, mensajes o publicaciones de un individuo para replicar su forma de pensar, expresarse o responder a preguntas, dando lugar incluso a necrobots (réplicas conversacionales de personas fallecidas).
+\end{itemize}
+
+Riesgos y amenazas para la ciudadanía:
+
+\begin{itemize}
+\item
+  La capacidad de replicar a un individuo plantea importantes desafíos de seguridad y privacidad:
+\item
+  Ingeniería social y estafas avanzadas: Ataques de suplantación (vishing o llamadas fraudulentas) utilizando la voz clonada de familiares o directivos para solicitar dinero o claves de acceso.
+\item
+  Daño reputacional e íntimo: La fabricación de contenidos audiovisuales falsos (deepfakes) orientados al acoso, la extorsión o la desinformación.
+\item
+  Pérdida de control del bioma digital: La recolección no autorizada de vídeos, audios y fotos públicas publicadas en redes sociales para entrenar modelos de IA sin el conocimiento ni consentimiento del afectado.
+\end{itemize}
+
+Marco legal de protección y transparencia:
+
+\begin{itemize}
+\item
+  Frente a estos riesgos, tanto la legislación europea como la española establecen límites estrictos:
+\item
+  Reglamento Europeo de Inteligencia Artificial (AI Act): Impone la obligación explícita de transparencia. Cualquier contenido generado o manipulado artificialmente (deepfakes) debe ser etiquetado claramente como sintético por quienes lo desplieguen, permitiendo que el público identifique su naturaleza artificial.
+\item
+  Derecho a la propia imagen y la voz: La voz y los rasgos faciales están protegidos como datos biométricos y derechos fundamentales. La legislación sobre protección del honor y la propia imagen sanciona como intromisión ilegítima la recreación o uso de la voz y apariencia de una persona mediante IA sin su autorización expresa, garantizando vías de cese, indemnización y retirada del contenido.
+\end{itemize}
+
+Recomendaciones para proteger la identidad física frente a la IA
+
+\begin{itemize}
+\item
+  Estar alerta ante la verificación de identidad: Ante llamadas o audios sospechosos de familiares pidiendo ayuda económica, establecer un canal alternativo o una palabra clave familiar para verificar su autenticidad.
+\item
+  Proteger los archivos biométricos: Evitar publicar en redes abiertas audios de alta calidad o vídeos continuados en primer plano que puedan ser fácilmente raspados (scraped) para entrenar modelos de clonación.
+\item
+  Exigir consentimiento y derechos de autor: En entornos profesionales, asegurarse de que los contratos de cesión de imagen o voz especifiquen expresamente si se autoriza o no el uso de los archivos para el entrenamiento de sistemas de IA generativa.
+\end{itemize}
+
+\section{Huella digital}\label{huella-digital}
 
 Cada vez que utilizas Internet dejas un rastro de información. Lo que publicas, comentas o compartes, las personas con las que interactúas, las páginas que visitas o los servicios digitales que utilizas contribuyen a construir tu huella digital.
 
@@ -2687,8 +2648,7 @@ La inteligencia artificial ha incrementado el valor de la huella digital. Gracia
 
 Conocer tu huella digital es el primer paso para proteger tu privacidad. Una forma sencilla de hacerlo consiste en realizar búsquedas periódicas sobre ti mismo utilizando distintos buscadores y revisar la configuración de privacidad de las plataformas y servicios que utilizas.
 
-\hypertarget{reputaciuxf3n-online}{%
-\section{Reputación online}\label{reputaciuxf3n-online}}
+\section{Reputación online}\label{reputaciuxf3n-online}
 
 La reputación online es la percepción que otras personas tienen de ti a partir de la información disponible en Internet. Aunque está estrechamente relacionada con tu identidad y tu huella digital, no depende únicamente de lo que publicas, sino también de cómo otras personas interpretan esa información y de los contenidos que terceros puedan generar sobre ti.
 
@@ -2746,36 +2706,33 @@ Construir una buena reputación online requiere tiempo, coherencia y constancia.
   Si utilizas Internet con fines profesionales, procura mantener actualizados tus perfiles públicos y participar en aquellos espacios que aporten valor a tu actividad.
 \end{itemize}
 
-\hypertarget{sombra-digital}{%
-\section{Sombra digital}\label{sombra-digital}}
+\section{Sombra digital}\label{sombra-digital}
 
-Cada foto que subes a Facebook, Instagram, cada mail que mandas, cada comentario o reseña que vas dejando en la web está generando lo ya conoces como huella digital. Hasta aquí todo bien, pero además de este rastro que es más o menos voluntario, también vas dejando otro rastro del que quizá no seas tan consciente, y a este rastro es al que se le conoce como sombra digital.
+Cada fotografía que publicas en una red social, cada correo electrónico que envías o cada comentario que dejas en Internet forma parte de tu huella digital, es decir, del rastro que generas de manera consciente al utilizar la tecnología. Esto es lo que se conoce como huella digital.
 
-Ya en 2008 existían métricas que aseguran que la cantidad de información que se tiene de un individuo era mayor a la información creada por el mismo.
+Sin embargo, existe otro rastro mucho menos visible: la sombra digital. Se trata de toda la información que diferentes organizaciones recopilan sobre ti de forma directa o indirecta mientras utilizas dispositivos y servicios digitales, incluso cuando no eres plenamente consciente de ello.
 
-Partiendo de estos preceptos, la sombra digital es la información que queda de nosotros en los diferentes sistemas ya sean públicos o privados. Estos datos nos identifican y saben de nuestros gustos y preferencias. En la mayoría de los casos sin que nosotros mismos seamos conscientes de ello.
+En este punto es cuando te estas preguntando como se crea la sombra digital. Pues bien, la sombra digital está formada por datos procedentes de muy diversas fuentes: el uso de tu teléfono móvil, tu ordenador, las aplicaciones que utilizas, tu ubicación, los dispositivos inteligentes de tu hogar, las cámaras conectadas, los relojes inteligentes o los vehículos conectados, entre otros. También contribuyen los datos técnicos que generan automáticamente los sistemas, como la telemetría, los identificadores de los dispositivos o determinadas tecnologías de seguimiento empleadas para mejorar servicios, realizar análisis o personalizar contenidos.
 
-En este punto es cuando te estas preguntando como se crea la sombra digital. Pues bien, la sombra digital se va creando con el uso que haces de tus dispositivos, de la cámara en lugares públicos o privados, con el uso de la domótica como en el caso de las bombillas inteligentes y de otras múltiples maneras cuando interactúas con la tecnología. Los fabricantes introducen cookies y software específico para este fin dentro de los sistemas operativos, para saber cuándo los usas, el tiempo que empleas, si usas hardware externo del tipo que sea e incluso para hacer un mapa de tu casa mientras usas tu aspiradora inteligente. Como verás la sombra digital se va construyendo por si sola.
+Actualmente, la inteligencia artificial ha aumentado enormemente el valor de esta información. Los sistemas de IA son capaces de analizar millones de datos procedentes de distintas fuentes y encontrar relaciones que permiten elaborar perfiles muy detallados sobre una persona. En muchos casos pueden deducir aspectos como tus hábitos, horarios, intereses o preferencias sin que hayas facilitado esa información de forma explícita.
 
-Este concepto podría considerarse como una vulnerabilidad más de tu privacidad, pero también puede ser de mucha utilidad, como por ejemplo, cuando Google maps analiza tu movilidad para gestionar mejor tu trayecto, mostrarte cuánto vas a tardar, que ruta puedes tomar y todo en tiempo real, algo que no sería posible sin la gestión de la sombra digital \citep{XATAKA-sombra-digital}.
+Esta capacidad tiene ventajas evidentes. Gracias al análisis de grandes volúmenes de datos es posible ofrecer servicios más útiles, como calcular la mejor ruta en una aplicación de navegación como es el caso de Google maps, detectar actividades fraudulentas en una cuenta bancaria o personalizar determinadas funciones de un servicio digital.
 
-Si quieres ser más consciente de todo lo que Google recopila del uso que haces de sus servicios, lee la siguiente entrada donde podrás ver toda la traza de tu actividad digital \href{https://www.xataka.com/privacidad/he-mirado-todos-datos-que-google-tiene-mi-confirmo-que-gran-hermano-definitivo-2}{He mirado todos los datos que Google tiene sobre mí, y confirmo que es el Gran Hermano definitivo}. Además tienes el servicio de \href{https://takeout.google.com}{takeout.google.com} desde podrás descargar todo lo que la Compañía de Mountain View tiene de ti.
+No obstante, la misma información también puede utilizarse para crear perfiles comerciales muy precisos, personalizar publicidad, influir en las decisiones de consumo o incrementar el impacto de ataques de ingeniería social si esos datos llegan a manos de ciberdelincuentes.
 
-\hypertarget{eliminar-el-historial-de-busquedas}{%
-\section{Eliminar el historial de busquedas}\label{eliminar-el-historial-de-busquedas}}
+Por ello, resulta recomendable revisar periódicamente la configuración de privacidad de los servicios que utilizas, limitar los permisos innecesarios, conocer qué datos recopilan tus dispositivos y descargar, cuando sea posible, una copia de la información que las plataformas almacenan sobre ti. Ser consciente de tu sombra digital es el primer paso para gestionarla de forma responsable.
 
-Cualquier navegador, salvo que usemos una navegación privada, almacena un registro de las páginas que hemos visitado, una información que podemos borrar si queremos o conservar en el caso de querer localizar más tarde alguna página que no recordemos. Es muy útil en este segundo caso, pero puede llegar a ser embarazoso si no queremos que nadie pueda ver las webs que hemos visitado.
+Si quieres más detalles sobre los datos recopilados por la sombra digital lee este articulo \href{https://www.infobae.com/tecno/2024/03/30/que-es-la-sombra-digital-y-por-que-pone-en-riesgo-mis-datos-confidenciales/}{Qué es la sombra digital y por qué pone en riesgo mis datos confidenciales}.
 
-Cada navegador ofrece la posibilidad de borrar toda esta información y para ello puedes acceder desde los menús del propio navegador. Cada navegador tiene una forma diferente de realizar este borrado, aunque normalmente suele estar en la opción/pestaña herramientas. No obstante, el siguiente enlace te llevará a la web del antivirus \href{https://www.avg.com/es/signal/how-to-clear-your-browsing-and-search-history}{AVG}, desde donde te enlazará a los diferentes tutoriales de cómo borrar el historial de navegación y de búsquedas de los navegadores más populares, como Google Chrome, Firefox o Microsoft Edge entre otros.
-
-\hypertarget{derecho-al-olvido}{%
-\section{Derecho al olvido}\label{derecho-al-olvido}}
+\section{Derecho al olvido}\label{derecho-al-olvido}
 
 El Reglamento General de Protección de Datos recoge una norma que permite a los usuarios poder ejercer su derecho al olvido. Esto quiere decir que todas las personas tienen el derecho de solicitar a los buscadores, webs o plataformas que eliminen todos sus datos personales que aparecen en los resultados de búsqueda al introducir un nombre o cualquier otro dato personal. Dicho de otro modo, el derecho al olvido es aquel que tienen todos los ciudadanos a impedir la difusión de información personal a través de Internet.
 
 Cabe aclarar que la eliminación de un enlace de un buscador no implica la desaparición de toda la información de carácter personal publicada en Internet. Este borrado sólo afecta a los motores de búsqueda que enlazan a dicho contenido \citep{OSI-derecho-al-olvido}.
 
-Los siguientes enlaces te llevarán a los formularios de las plataformas detalladas donde podrás solicitar tu derecho al olvido:
+Existen servicios de terceros que te permiten realizar este trámite de manera más ágil. Herramientas como \href{https://incogni.com/}{Incogni} o \href{https://joindeleteme.com/}{Deleteme}, hacen el trabajo por ti, incluso más allá de solicitar el derecho al olvido de la principales plataformas, también se encargan de hacer un tamizado digital, para encontrar datos personales que pudiesen estar incluidos en data brokers o registros públicos. Y si prefieres hacerlo por ti mismo, puedes pedirle un rastreo profundo a la inteligencia artificial e ir solicitándole los pasos a seguir, para de este modo eliminar todo o parte de la información personal tuya que exista en la red.
+
+Los siguientes enlaces te llevarán a los formularios de las principales plataformas donde podrás solicitar tu derecho al olvido:
 
 -\href{https://support.google.com/websearch/troubleshooter/3111061?hl=es}{Solicitud de derecho al olvido de Google}
 
@@ -2789,20 +2746,63 @@ Como podrás imaginar estas son las plataformas más relevantes, no obstante, to
 
 Este derecho se puede gestionar al amparo de la \href{https://www.aepd.es/es/areas-de-actuacion/internet-y-redes-sociales/derecho-al-olvido}{agencia española de protección de datos} y en caso de fallar esta primera vía administrativa siempre nos quedaría la vía judicial.
 
-Esto es parte de lo que se conoce como derecho al olvido. Si quieres más información visita el enlace \href{https://www.osi.es/es/actualidad/blog/2018/09/19/sabes-como-ejercer-el-derecho-al-olvido}{¿Sabes cómo ejercer el derecho al olvido?}.
+\section{Herencia digital, testamento digital o legado post-mortem}\label{herencia-digital-testamento-digital-o-legado-post-mortem}
 
-\hypertarget{contenido-en-la-red}{%
-\chapter{Contenido en la red}\label{contenido-en-la-red}}
+En la era digital, la muerte o la incapacidad de una persona no detiene su presencia en Internet. Cuentas de correo electrónico, perfiles en redes sociales, archivos en la nube, blogs, monederos digitales o suscripciones activas continúan almacenados en los servidores de las grandes plataformas. La gestión de este conjunto de bienes y datos tras el fallecimiento conforma lo que se conoce como herencia digital o legado post-mortem.
 
-\hypertarget{el-contenido-digital}{%
-\section{El contenido digital}\label{el-contenido-digital}}
+Planificar qué ocurrirá con nuestro ``yo digital'' es un ejercicio de responsabilidad para evitar situaciones de indefensión de la privacidad, suplantación de identidad o la pérdida irrecuperable de recuerdos y activos de valor.
+
+El derecho al legado digital dentro del marco legal:
+
+En España, el artículo 3 de la Ley Orgánica de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD) reconoce explícitamente el derecho de acceso, rectificación y supresión de los datos de personas fallecidas. Conforme a esta regulación:
+
+\begin{itemize}
+\item
+  Familiares y herederos: Las personas vinculadas al fallecido por razones familiares, cónyuges o parejas de hecho, así como sus herederos, pueden dirigirse a los prestadores de servicios de la sociedad de la información (plataformas, redes sociales, servicios de correo) para acceder a los contenidos o solicitar su eliminación.
+\item
+  Excepciones: Las plataformas no facilitarán el acceso si la persona fallecida lo hubiera prohibido expresamente en vida o si lo impide una ley estatal.
+\end{itemize}
+
+Formas de gestionar el legado post-mortem
+
+\begin{itemize}
+\item
+  El Testamento Digital: Es un documento legal (que puede formalizarse ante notario o incluirse en un testamento tradicional) en el que una persona designa a un albacea digital. Esta persona será la encargada de ejecutar las voluntades del difunto respecto a su presencia en la red, indicando qué hacer con sus cuentas: si deben ser cerradas, convertidas en perfiles conmemorativos o si determinados archivos deben transferirse a los herederos.
+\item
+  Mecanismos de las propias plataformas (Contactos de legado): Las principales compañías tecnológicas cuentan con herramientas específicas para gestionar la inactividad o el fallecimiento de la cuenta:
+
+  \begin{itemize}
+  \item
+    Google (Administrador de cuentas inactivas): Permite configurar un periodo de inactividad tras el cual la plataforma notificará a los contactos de confianza elegidos y, si se desea, les dará acceso a determinados datos antes de cerrar la cuenta.
+  \item
+    Meta (Facebook e Instagram): Permite designar en vida a un contacto de legado para que gestione la cuenta tras el fallecimiento, pudiendo transformarla en una cuenta conmemorativa (donde se guarda el contenido pero nadie puede iniciar sesión) o solicitar su eliminación definitiva.
+  \item
+    Apple (Contacto de legado): Genera un código de acceso único que el contacto designado podrá presentar junto al certificado de defunción para acceder a las fotos, mensajes y copias de seguridad en iCloud del fallecido.
+  \end{itemize}
+\end{itemize}
+
+Recomendaciones prácticas para la ciudadanía
+
+\begin{itemize}
+\item
+  Nombrar contactos de legado en las aplicaciones: Revisar los ajustes de seguridad y privacidad en Google, Meta, Apple y otras plataformas habituales para configurar proactivamente esta opción.
+\item
+  Crear un inventario de activos digitales: Mantener un registro (en un gestor de contraseñas o documento seguro) de las plataformas donde se tiene presencia, cuentas bancarias, redes sociales y servicios activos.
+\item
+  Nunca dejar contraseñas por escrito en un testamento público: El testamento es un documento al que pueden tener acceso diversas personas. Las claves deben gestionarse a través de albaceas digitales o herramientas de custodia segura de contraseñas.
+\item
+  Instruir claramente sobre los bienes con valor económico: Activos digitales como criptomonedas, dominios web, tiendas online o canales monetizados deben contar con instrucciones específicas de traspaso para evitar su bloqueo o pérdida definitiva.
+\end{itemize}
+
+\chapter{Contenido en la red}\label{contenido-en-la-red}
+
+\section{El contenido digital}\label{el-contenido-digital}
 
 Cada vez más el contenido digital es mayor, a su vez va creciendo de manera exponencial y además está disponible en multitud de formatos, como textos, imágenes, audio, vídeos. Llega a todos los públicos por diferentes canales y an tratándose del mismo contenido, la manera en que este es mapeado o modelado, también es otra variante más de como la información llega al receptor final. Un ejemplo de como mapear o modelar una misma información en un mismo formato sería el uso de la representación visual o también conocido como Visual Thinking y una infografía, ambos dos están representados en formato imagen.
 
 La lectura que debes hacer en este punto, es que no toda la información vale y no todo el contenido es de calidad, por ello, tener claro los siguientes puntos pueden ser de mucha ayuda.
 
-\hypertarget{contrastar-la-informaciuxf3n}{%
-\section{Contrastar la información}\label{contrastar-la-informaciuxf3n}}
+\section{Contrastar la información}\label{contrastar-la-informaciuxf3n}
 
 Según el diccionario de la Real Academia Española, la palabra contrastar en una de sus acepciones consiste en comprobar la exactitud o autenticidad de algo. Hoy en día la información en más rápida de encontrar y abundante en lo que se conoce como infoxicación. La \href{https://es.godaddy.com/blog/infoxicacion-causas-consecuencias/}{infoxicación} no es más que la sobrecarga de información a la que las personas se ven sometidas en su día a día, por lo que es importante saberla escoger, y saber que en muchos casos se trata de información irrelevante que algunas personas comparten simplemente por falta de conocimiento o criterio y en el peor de los casos para confundir.
 
@@ -2810,8 +2810,7 @@ Al contrastar información debes hacer un análisis de todas aquellas fuentes qu
 
 No debes conformarte con dar por buena la primera versión de una información en Internet, empobrece tu experiencia como usuario y te perjudica como lector. Por ello debes tener presente el compromiso ético, por mucho que las prisas sean las que mandes en algunas ocasiones, siempre debes cuidar tu ética al trabajar y contrastar muy bien toda información y fuente \citep{contrastar-informacion}.
 
-\hypertarget{fake-news-y-deepfake}{%
-\section{Fake news y Deepfake}\label{fake-news-y-deepfake}}
+\section{Fake news y Deepfake}\label{fake-news-y-deepfake}
 
 Las fake news o también llamados bulos o hoax son noticias sobre temas de interés social o de actualidad para crear una alarma o atraer la atención del mayor número de usuarios posibles y su objetivo principal es la desinformación. Suelen compartirse por redes sociales, correo electrónico o aplicaciones de mensajería instantánea como WhatsApp que aun contando con una \href{https://www.osi.es/es/actualidad/blog/2020/04/27/whatsapp-y-su-funcion-antibulos-descubrela}{función antibulos} no queda exenta \citep{OSI-bulos-buenas-practicas}.
 
@@ -2908,8 +2907,7 @@ En la plataforma Maldita, una de las actividades que realizan son la de desenmas
 
 Una ciberestafa basada en la deepfake es la de la suplantación de un personaje público con el fin de ir creando un ambiente de confianza para finalmente pedir dinero. Si quieres más detalles sobre este fraude online lee el siguiente artículo del Incibe \href{https://www.incibe.es/linea-de-ayuda-en-ciberseguridad/casos-reales/intento-de-fraude-amoroso-utilizando-tecnicas-de-deepfake-para-suplantar-un-personaje-publico}{Intento de fraude amoroso utilizando técnicas de deepfake para suplantar a un personaje público}.
 
-\hypertarget{deep-web}{%
-\section{Deep web}\label{deep-web}}
+\section{Deep web}\label{deep-web}
 
 El tema de la Deep Web es quizá un tema polémico y estigmatizado, pero al tratarse de una pieza más en este inmenso puzle que es internet, es de recibo conocer al menos de que trata esto de la Web Profunda (Deep Web).
 
@@ -2917,21 +2915,17 @@ Existe una serie de contenido que por diversos motivos no está indexado en los 
 
 De otro lado, está el controvertido tema de las ilegalidades y otros asuntos turbios en lo que se conoce como la Dark Web y de los que no se va a tratar en este manual. Pero si quieres indagar por tu cuenta visita el siguiente enlace \href{https://www.xataka.com/analisis/una-semana-en-la-deep-web-esto-es-lo-que-me-he-encontrado}{Una semana en la Deep Web y esto es lo que me encontrado}.
 
-\hypertarget{otras-particularidades-importantes}{%
-\chapter{Otras particularidades importantes}\label{otras-particularidades-importantes}}
+\chapter{Otras particularidades importantes}\label{otras-particularidades-importantes}
 
-\hypertarget{otros-conceptos-relevantes}{%
-\section{Otros conceptos relevantes}\label{otros-conceptos-relevantes}}
+\section{Otros conceptos relevantes}\label{otros-conceptos-relevantes}
 
 Existen otras muchas particularidades y conceptos que al no encajar de manera directa en unidades anteriores van a ser vistas en esta unidad. Aquí podrás ver otros aspectos relacionados con la privacidad y seguridad en internet que también te pueden ayudar a abordar todos estos temas.
 
-\hypertarget{desinfecta-tu-dispositivo}{%
-\section{Desinfecta tu dispositivo}\label{desinfecta-tu-dispositivo}}
+\section{Desinfecta tu dispositivo}\label{desinfecta-tu-dispositivo}
 
 Si crees que tu dispositivo puede estar infectado, aquí tienes una entrada de la Oficina de Seguridad de Internauta llamada \href{https://www.osi.es/es/desinfecta-tu-ordenador}{desinfecta tu dispositivo}, encabezada con los principales signos que pueden ponerte sobre aviso, así como las 3 fases de las que consta para solucionar este contratiempo y que son, una primera fase de primeros auxilios, una segunda fase de soluciones avanzadas y una tercera y última fase de solución definitiva.
 
-\hypertarget{analizadores-de-virus-online}{%
-\section{Analizadores de virus online}\label{analizadores-de-virus-online}}
+\section{Analizadores de virus online}\label{analizadores-de-virus-online}
 
 En este punto tienes una lista de plataformas online que escanean y analizan cualquier tipo de fichero, url entre otras con la intensión de encontrar malware en ellos:
 
@@ -2950,8 +2944,7 @@ En este punto tienes una lista de plataformas online que escanean y analizan cua
   \href{https://www.f-secure.com}{F-secure}.
 \end{itemize}
 
-\hypertarget{menores-en-el-uso-de-la-red}{%
-\section{Menores en el uso de la red}\label{menores-en-el-uso-de-la-red}}
+\section{Menores en el uso de la red}\label{menores-en-el-uso-de-la-red}
 
 En lo que concierne a menores, la cuestión se torna más delicada, ya que se trata de grupo más inexperto y vulnerable, siendo 1 de cada 3 usuarios de internet un niño. En este manual no se va a tratar en profundidad este tema, ya que por si solo podría tratarse de otro manual completo, pero si cabe destacar algunos conceptos bastantes relevantes como la educación, la concienciación y el seguimiento que tú, como padre, madre o tutor debes hacer del uso que hacen los menores de internet.
 
@@ -3075,8 +3068,7 @@ Para ampliar la información dispones de dos exhaustivas guías de la Junta de A
 
 Y en estos dos enlaces encontrarás dos prácticos recursos \href{https://families.google.com/familylink/}{Family Link by Google} y \href{https://securekids.es/}{Secure Kids}.
 
-\hypertarget{utilidades-interesantes}{%
-\section{Utilidades interesantes}\label{utilidades-interesantes}}
+\section{Utilidades interesantes}\label{utilidades-interesantes}
 
 Aparte de todo lo visto en el manual existen muchas otras herramientas para ayudarte a salvaguardar tu privacidad y seguridad en internet, algunas de estas son:
 
@@ -3131,8 +3123,7 @@ Aparte de todo lo visto en el manual existen muchas otras herramientas para ayud
   Testigos online: Los \href{https://www.osi.es/es/actualidad/blog/2022/01/26/testigos-online-y-obtencion-de-pruebas-te-explicamos-su-utilidad}{testigos online} te permiten certificar evidencias digitales en una fecha y hora determinada, o lo que es lo mismo, el contenido de una web concreta en un momento determinado, o el envío de un correo electrónico a una persona específica.
 \end{itemize}
 
-\hypertarget{ataques-en-tiempo-real}{%
-\section{Ataques en tiempo real}\label{ataques-en-tiempo-real}}
+\section{Ataques en tiempo real}\label{ataques-en-tiempo-real}
 
 En los siguientes enlaces tienes diferentes servicios en los que puedes ver en tiempo real los ataques a nivel global:
 
@@ -3149,8 +3140,7 @@ En los siguientes enlaces tienes diferentes servicios en los que puedes ver en t
   \href{https://threatmap.fortiguard.com/}{Threatmap fortiguard}
 \end{itemize}
 
-\hypertarget{eventos-internacionales}{%
-\section{Eventos internacionales}\label{eventos-internacionales}}
+\section{Eventos internacionales}\label{eventos-internacionales}
 
 Durante el año, países e instituciones como la Comisión europea promueven iniciativas entorno al ecosistema tecnológico. Son organizadas a nivel internacional y donde pueden llegar a participar hasta más de 100 países. En la siguiente lista se muestran las de más repercusión mediática:
 
@@ -3167,8 +3157,7 @@ Durante el año, países e instituciones como la Comisión europea promueven ini
   \href{https://www.santanderconsumer.es/simplefinance/blog/tu-futuro/ciberseguridad/post/30-de-noviembre-dia-mundial-de-la-ciberseguridad}{Día mundial de la ciberseguridad} (30 de noviembre)
 \end{itemize}
 
-\hypertarget{colabora}{%
-\section{Colabora}\label{colabora}}
+\section{Colabora}\label{colabora}
 
 Si eres una persona participativa y te gusta colaborar y aportar a los demás. Más abajo encontrarás una lista de actividades que podrás realizar, en las que no solo estarás ayudando a divulgar contenido y ayudar a otros, sino que además, repercutirá de manera positiva en tu vida.
 
@@ -3185,16 +3174,13 @@ Si eres una persona participativa y te gusta colaborar y aportar a los demás. M
 
 ANÍMATE!!! 😉
 
-\hypertarget{formaciuxf3n-y-conocimientos}{%
-\chapter{Formación y conocimientos}\label{formaciuxf3n-y-conocimientos}}
+\chapter{Formación y conocimientos}\label{formaciuxf3n-y-conocimientos}
 
-\hypertarget{aprendizaje-y-reciclado-continuo}{%
-\section{Aprendizaje y reciclado continuo}\label{aprendizaje-y-reciclado-continuo}}
+\section{Aprendizaje y reciclado continuo}\label{aprendizaje-y-reciclado-continuo}
 
 El aprendizaje y el reciclado continuo son dos de los pilares más importantes donde sustentar la educación. Por lo tanto, sabrás que una buena educación abre puertas, facilita una mejor toma de decisiones y ayuda a evitar posibles escenarios futuros no deseados. Por ello, es solo deber tuyo no descuidar la formación en conocimientos si quieres que sea tu mejor aliada para tu yo presente y futuro.
 
-\hypertarget{formaciuxf3n-como-medida-preventiva}{%
-\section{Formación como medida preventiva}\label{formaciuxf3n-como-medida-preventiva}}
+\section{Formación como medida preventiva}\label{formaciuxf3n-como-medida-preventiva}
 
 En estos tiempos en los que de manera sutil nos vamos acercando a la cuarta revolución, marcada principalmente por la evolución de las tecnologías, la comunicación y la información entre otras. En los que estamos empezando a coquetear con los nuevos cambios de paradigma económico, con la aparición de las criptomonedas, en lo social con la multitud de plataformas y medios digitales de repercusión mediática, con la descentralización de la nueva web 3.0, la tecnología Blockchain y el protocolo IPFS (InterPlanetary File System), solo nos puede llevar a pensar, que no mantener una formación activa y estar actualizados, puede repercutir de manera desfavorable o negativa en la esfera social, profesional y personal en la que todos nos movemos.
 
@@ -3215,8 +3201,7 @@ No obstante, si estás pensando dedicarte a esto de la ciberseguridad dentro del
   \href{https://www.incibe.es/academiahacker/retosdescargables}{Retos descargables}.
 \end{itemize}
 
-\hypertarget{desarrolla-tu-ciberinteligencia}{%
-\section{Desarrolla tu ciberinteligencia}\label{desarrolla-tu-ciberinteligencia}}
+\section{Desarrolla tu ciberinteligencia}\label{desarrolla-tu-ciberinteligencia}
 
 El término ciberinteligencia no es nuevo como tal, pero sí, que cada día cobra más vigencia y relevancia tanto en el mundo de los negocios como en el uso que hacen todos los usuarios del ciberespacio \citep{ciberinteligencia}.
 
@@ -3239,8 +3224,7 @@ Esta definición encaja muy bien en términos empresariales. Pero, ¿cómo podr�
 
 En definitiva, la ciberinteligencia entendida desde el punto de vista de las personas podría entenderse como: Las competencias en conocimientos de las ciberamenazas existentes, la gestión de la privacidad y seguridad en los dispositivos y la red, apoyado en el uso de plataformas y software destinados a tal cometido. Siendo todo lo anterior lo que va a permitir desarrollar las capacidades necesarias para la prevención, detección y reacción adecuada ante posibles ciberataques.
 
-\hypertarget{pon-a-prueba-tus-conocimientos}{%
-\section{Pon a prueba tus conocimientos}\label{pon-a-prueba-tus-conocimientos}}
+\section{Pon a prueba tus conocimientos}\label{pon-a-prueba-tus-conocimientos}
 
 Una manera de saber que conocimientos tienes sobre privacidad y seguridad en internet es poniéndote a prueba. Es por ello, que a continuación tienes los siguientes recursos donde podrás calibrar cuanto sabes sobre tema. Porque recuerda, a mayor conocimiento, mayor protección.
 
@@ -3255,8 +3239,7 @@ Una manera de saber que conocimientos tienes sobre privacidad y seguridad en int
   \href{https://www.proyectoescapefake.org/haz-el-test/}{¿Sabes escapar de los fakes?}: Un sencillo test de autoevaluación para saber cómo de inmune eres a los bulos.
 \end{itemize}
 
-\hypertarget{canales-de-avisos-y-alertas}{%
-\section{Canales de avisos y alertas}\label{canales-de-avisos-y-alertas}}
+\section{Canales de avisos y alertas}\label{canales-de-avisos-y-alertas}
 
 Una buena manera de estar al tanto, es poder estar al día en sentido literal, de gran parte de lo que esta aconteciendo en lo referente a ciberdelitos, para ello a continuación, tienes dos recursos para que nada o poco de la actualidad ciber criminal no llegue a tu conocimiento.
 
@@ -3269,16 +3252,13 @@ Una buena manera de estar al tanto, es poder estar al día en sentido literal, d
 
 Ambas dos disponen de newsletter a las que suscribirte para que las noticias lleguen a ti y no necesitas visitar las plataformas para estar al tanto. Además también están presentes en la mayoría de redes sociales.
 
-\hypertarget{entidades-y-plataformas-de-ayuda}{%
-\chapter{Entidades y plataformas de ayuda}\label{entidades-y-plataformas-de-ayuda}}
+\chapter{Entidades y plataformas de ayuda}\label{entidades-y-plataformas-de-ayuda}
 
-\hypertarget{ayuda-y-soporte-desde-instituciones}{%
-\section{Ayuda y soporte desde instituciones}\label{ayuda-y-soporte-desde-instituciones}}
+\section{Ayuda y soporte desde instituciones}\label{ayuda-y-soporte-desde-instituciones}
 
 En internet existen multitud de plataformas y webs que te brindan la oportunidad de formarte y estar informado sobre ciberdelitos, ciberamenazas, privacidad y seguridad en internet y otro montón de conocimientos más. Además, si sabes como abordar la plataforma verás que muchas de ellas son de autoridad reconocida. Aun así, no deja de ser importante saber que desde nuestras instituciones existen proyectos específicos y gestionados por verdaderos expertos en la materia. Y es en esta unidad donde vas a ver con que entidades y plataformas puedes contar.
 
-\hypertarget{instituto-nacional-de-ciberseguridad}{%
-\section{Instituto nacional de ciberseguridad}\label{instituto-nacional-de-ciberseguridad}}
+\section{Instituto nacional de ciberseguridad}\label{instituto-nacional-de-ciberseguridad}
 
 El Instituto Nacional de Ciberseguridad de España \href{https://www.incibe.es/}{INCIBE}, es una sociedad dependiente del Ministerio de Economía y Empresa a través de la Secretaría de Estado para el Avance Digital y consolidada como entidad de referencia para el desarrollo de la ciberseguridad y de la confianza digital de ciudadanos, red académica y de investigación, profesionales, empresas y especialmente para sectores estratégicos.
 
@@ -3329,8 +3309,7 @@ El Incibe tiene a disposición del ciudadano varios canales de comunicación:
   Formulario web: \textbf{\url{http://incibe.es/linea-de-ayuda-en-ciberseguridad\#formulario}}.
 \end{itemize}
 
-\hypertarget{oficina-de-seguridad-del-internauta}{%
-\section{Oficina de seguridad del internauta}\label{oficina-de-seguridad-del-internauta}}
+\section{Oficina de seguridad del internauta}\label{oficina-de-seguridad-del-internauta}
 
 La Oficina de Seguridad del Internauta \href{https://www.osi.es/}{OSI} es una plataforma que proporciona información y soporte necesarios para evitar y resolver los problemas de seguridad a los que pueda enfrentarse el ciudadano en el uso de Internet.
 
@@ -3364,8 +3343,7 @@ Además de llevar a cabo todas estas líneas de actuación, a través de este po
 
 Y esto no es todo, en esta plataforma encontrarás multitud de recursos y herramientas para gestionar o solventar cualquier incidencia en matería de privacidad y seguridad en internet.
 
-\hypertarget{agencia-espauxf1ola-de-protecciuxf3n-de-datos}{%
-\section{Agencia española de protección de datos}\label{agencia-espauxf1ola-de-protecciuxf3n-de-datos}}
+\section{Agencia española de protección de datos}\label{agencia-espauxf1ola-de-protecciuxf3n-de-datos}
 
 La Agencia Española de Protección de Datos \href{https://www.aepd.es/es}{AEPD} es una entidad de ayuda a la ciudadanía más orientada a la privacidad en lo concerniente a tus datos personales. Actúan para proteger tus derechos de acceso, rectificación, limitación, oposición, supresión (derecho al olvido), portabilidad y oposición al tratamiento de decisiones automatizadas.
 
@@ -3382,8 +3360,7 @@ Entre los recursos que encontrarás en la plataforma están los siguientes:
   Guías y herramientas.
 \end{itemize}
 
-\hypertarget{observaciber}{%
-\section{ObservaCIBER}\label{observaciber}}
+\section{ObservaCIBER}\label{observaciber}
 
 Plataforma especializada en aportar información sobre ciberseguridad a la ciudadanía y a empresas, con el propósito de aumentar la cultura de la ciberseguridad. Siendo los principales objetivos del \href{https://observaciber.es/}{ObservaCIBER}:
 
@@ -3398,8 +3375,7 @@ Plataforma especializada en aportar información sobre ciberseguridad a la ciuda
 
 Aportando estudios, informes, infografías, métricas y más, sobre la ciberseguridad en nuestro ecosistema. Gestionada por el \href{https://www.incibe.es/}{INCIBE} (Instituto Nacional de Ciberseguridad) y el \href{https://www.ontsi.es/es}{ONTSI} (Observatorio Nacional de Tecnología y Sociedad). Ambos dos pertenecientes al Ministerio de Asuntos Económicos y Transformación Digital.
 
-\hypertarget{internet-segura-para-niuxf1os}{%
-\section{Internet segura para niños}\label{internet-segura-para-niuxf1os}}
+\section{Internet segura para niños}\label{internet-segura-para-niuxf1os}
 
 Internet Segura for Kids \href{https://www.is4k.es/}{IS4K} es el Centro de Seguridad en Internet para menores de edad en España y tiene por objetivo la promoción del uso seguro y responsable de Internet y las nuevas tecnologías entre los niños y adolescentes. Las principales tareas que tiene encomendadas son:
 
@@ -3427,8 +3403,7 @@ Algunos de los medios que ponen a disposición de las familias son:
   Un espacio de \href{https://www.is4k.es/campanas}{campañas} para divulgación mediática.
 \end{itemize}
 
-\hypertarget{pantallas-amigas}{%
-\section{Pantallas amigas}\label{pantallas-amigas}}
+\section{Pantallas amigas}\label{pantallas-amigas}
 
 \href{https://www.pantallasamigas.net/}{Pantallas amigas} es una plataforma cuyo propósito es la promoción del uso seguro y saludable de Internet y otras TICs, así como el fomento responsable en la infancia y la adolescencia del uso de las tecnologías y la digitalización. Desarrollando proyectos y recursos educativos para la capacitación de niños, niñas y adolescentes de forma que puedan desenvolverse de manera autónoma en Internet, siendo el objetivo final que desarrollen las habilidades y competencias digitales que les permitan participar de forma activa, positiva y saludable en la Red.
 
@@ -3451,8 +3426,7 @@ Y por supuesto cuentan con innumerables recursos, herramientas, servicios, canal
 
 Pantallas amigas desarrolla su actividad con el \href{https://www.pantallasamigas.net/confian-en-pantallasamigas/}{apoyo de entidades e instituciones comprometidas} con este objetivo.
 
-\hypertarget{foro-info-spyware}{%
-\section{Foro Info Spyware}\label{foro-info-spyware}}
+\section{Foro Info Spyware}\label{foro-info-spyware}
 
 El \href{https://forospyware.com/}{Foro Info Spayware} es una plataforma que lleva operando en internet desde el año 2005 y se trata de la mayor comunidad en español de ayuda e información sobre virus, spyware, adware, ransomware y malwares.
 
@@ -3473,8 +3447,7 @@ En este foro encontrarás toda la información por categorías:
   Guías, manuales, tutoriales y más: Categoría en la que encontrarás guías de eliminación de malware para troyanos, adware, ransomware y otros tipos de códigos maliciosos de Windows. También encontrara manuales de antivirus, trucos, y otras recomendaciones de seguridad informática.
 \end{itemize}
 
-\hypertarget{fuerzas-y-cuerpos-de-seguridad-del-estado}{%
-\section{Fuerzas y cuerpos de seguridad del estado}\label{fuerzas-y-cuerpos-de-seguridad-del-estado}}
+\section{Fuerzas y cuerpos de seguridad del estado}\label{fuerzas-y-cuerpos-de-seguridad-del-estado}
 
 En otras líneas de actuación con el propósito de velar por la ciudadanía en general, existen departamentos específicos contra los delitos informáticos de las fuerzas y cuerpos de seguridad del estado, como lo son:
 
@@ -3489,6 +3462,6 @@ Y en esta última, es donde debes interponer una denuncia en caso de ser víctim
 
 Además, es importante que puedas adjuntar la denuncia con pruebas, para ello, toma capturas de pantallas o cualquier prueba que pudiese ser relevante. Ten en cuenta, que si se trata de una prueba que pueda ser borrada por la persona que ha realizado el delito, necesitarás un testigo online o garante. Se trata de una entidad que certifica que ese delito fue cometido aun cuando ya no esté disponible en la red. En el siguiente enlace tienes una es estas entidades \href{https://www.egarante.com/}{eGarante - testigo online}
 
-  \bibliography{book.bib,article.bib,manual.bib}
+\bibliography{book.bib,article.bib,manual.bib}
 
 \end{document}
