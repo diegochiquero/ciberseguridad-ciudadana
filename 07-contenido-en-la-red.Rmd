@@ -2,9 +2,15 @@
 
 ## El contenido digital
 
-Cada vez más el contenido digital es mayor, a su vez va creciendo de manera exponencial y además está disponible en multitud de formatos, como textos, imágenes, audio, vídeos. Llega a todos los públicos por diferentes canales y an tratándose del mismo contenido, la manera en que este es mapeado o modelado,  también es otra variante más de como la información llega al receptor final. Un ejemplo de como mapear o modelar una misma información en un mismo formato sería el uso de la representación visual o también conocido como Visual Thinking y una infografía, ambos dos están representados en formato imagen.
+La cantidad de contenido digital disponible en Internet crece de forma constante y a un ritmo cada vez mayor. Puedes encontrar información en múltiples formatos, como texto, imágenes, audio, vídeos o contenidos interactivos, distribuida a través de páginas web, redes sociales, aplicaciones de mensajería, plataformas de vídeo y asistentes basados en inteligencia artificial.
 
-La lectura que debes hacer en este punto, es que no toda la información vale y no todo el contenido es de calidad, por ello, tener claro los siguientes puntos pueden ser de mucha ayuda.
+Además, una misma información puede presentarse de distintas maneras para facilitar su comprensión o captar mejor tu atención. Por ejemplo, un mismo contenido puede explicarse mediante un texto, una infografía, un esquema visual (Visual Thinking), un vídeo o una animación.
+
+En la actualidad, también es habitual que parte de ese contenido haya sido generado o modificado mediante inteligencia artificial. Estas herramientas permiten crear textos, imágenes, audios y vídeos con gran rapidez y un elevado nivel de realismo. Aunque ofrecen numerosas oportunidades para la creatividad y la comunicación, también facilitan la difusión de información errónea, contenido manipulado o incluso falsificaciones muy convincentes.
+
+Por ello, no toda la información que encuentras en Internet es fiable ni todo el contenido tiene la misma calidad o ha sido elaborado con el mismo rigor. Antes de confiar en una información o compartirla, conviene adoptar una actitud crítica, comprobar quién la publica, contrastarla con otras fuentes y valorar si existen indicios de manipulación o desinformación.
+
+Los siguientes apartados te ayudarán a identificar qué aspectos debes tener en cuenta para evaluar la calidad y la fiabilidad del contenido digital.
 
 ## Contrastar la información
 
