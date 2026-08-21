@@ -108,7 +108,7 @@ Compartir una información falsa, incluso sin intención de engañar, contribuye
 
 Recuerda que la inteligencia artificial hace cada vez menos fiable la pregunta «¿parece verdadero?». Sustitúyela por otras más útiles: «¿de dónde procede?», «¿puedo encontrar la fuente original?», «¿qué pruebas aporta?» y «¿otras fuentes fiables e independientes lo confirman?».
 
-## Deep web
+## Deep web y Dark web
 
 Cuando navegas por Internet mediante un buscador, solo accedes a una parte de la información disponible en la red. Para comprender mejor este inmenso puzle que es internet y cómo se organiza este contenido, conviene diferenciar entre Web superficial, Deep Web y Dark Web, términos que en ocasiones se utilizan incorrectamente como si fueran equivalentes.
 
