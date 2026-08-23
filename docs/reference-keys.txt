@@ -118,7 +118,7 @@ deep-web-y-dark-web
 algoritmos-de-recomendación-burbujas-de-filtro-y-cámaras-de-eco
 otras-particularidades-importantes
 otros-conceptos-relevantes
-desinfecta-tu-dispositivo
+qué-hacer-si-sufres-un-incidente-de-ciberseguridad
 analizadores-de-virus-online
 menores-en-el-uso-de-la-red
 utilidades-interesantes

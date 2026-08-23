@@ -4,9 +4,73 @@
 
 Existen otras muchas particularidades y conceptos que al no encajar de  manera directa en unidades anteriores van a ser vistas en esta unidad. Aquí podrás ver otros aspectos relacionados con la privacidad y seguridad en internet que también te pueden ayudar a abordar todos estos temas.
 
-## Desinfecta tu dispositivo
+## Qué hacer si sufres un incidente de ciberseguridad
 
-Si crees que tu dispositivo puede estar infectado, aquí tienes una entrada de la Oficina de Seguridad de Internauta llamada [desinfecta tu dispositivo](https://www.osi.es/es/desinfecta-tu-ordenador), encabezada con los principales signos que pueden ponerte sobre aviso, así como las 3 fases de las que consta para solucionar este contratiempo y que son, una primera fase de primeros auxilios, una segunda fase de soluciones avanzadas y una tercera y última fase de solución definitiva.
+Aunque adoptes buenas medidas de privacidad y seguridad, ninguna protección puede garantizar que nunca vayas a sufrir un incidente. Puedes caer en un fraude, descubrir que alguien ha accedido a una de tus cuentas, perder un dispositivo, instalar una aplicación maliciosa, facilitar tus credenciales mediante phishing o detectar que alguien está utilizando tu identidad. Recuerda que la privacidad y la seguridad 0 no existen.
+
+Cuando ocurre algo así, reaccionar correctamente y con rapidez puede ayudarte a limitar las consecuencias. No todos los incidentes requieren las mismas medidas, pero existen una serie de pasos generales que pueden servirte como orientación.
+
+En primer lugar, intenta identificar qué ha ocurrido y qué puede haberse visto comprometido. Pregúntate qué acción realizaste antes de detectar el problema, qué dispositivo, cuenta o servicio está afectado y qué información podría haber quedado expuesta. No es lo mismo haber introducido una contraseña en una página fraudulenta que haber instalado un programa malicioso o haber realizado una transferencia bancaria como consecuencia de una estafa.
+
+A partir de ese momento, trata de evitar que el incidente continúe propagándose. Dependiendo de lo ocurrido, algunas de las siguientes actuaciones pueden ayudarte:
+
+* Si sospechas que un dispositivo está infectado o siendo controlado de forma remota, desconéctalo temporalmente de Internet. En esta entradad del Incibe tienes una guía para llevarlo a cabo [Desinfecta tus dispositivos](https://www.incibe.es/ciudadania/ayuda/desinfeccion)
+
+* Si has facilitado una contraseña o sospechas que alguien ha accedido a una cuenta, cambia la contraseña cuanto antes desde un dispositivo que consideres seguro. Si utilizabas esa misma contraseña en otros servicios, cámbiala también en ellos.
+
+* Revisa las sesiones abiertas y los dispositivos vinculados a tus cuentas y cierra o elimina aquellos que no reconozcas.
+
+* Comprueba si se han modificado datos importantes de recuperación, como tu dirección de correo electrónico o número de teléfono.
+
+* Activa la verificación en dos pasos o la autenticación de múltiples factores siempre que el servicio lo permita.
+
+* Si el incidente afecta a tu correo electrónico principal, préstale especial atención, ya que suele utilizarse para recuperar el acceso a muchas de tus otras cuentas.
+
+* Si has instalado una aplicación, programa o extensión sospechosa, deja de utilizarla y elimínala cuando sea seguro hacerlo.
+
+* Si has proporcionado información bancaria, datos de una tarjeta o has realizado una operación económica como consecuencia de un engaño, contacta cuanto antes con tu entidad bancaria o proveedor de pagos para informar de lo sucedido y conocer las medidas que puedes adoptar.
+
+* Si has perdido o te han sustraído un dispositivo, utiliza, cuando estén disponibles, las funciones de localización, bloqueo o borrado remoto asociadas al dispositivo y protege las cuentas a las que pudiera dar acceso.
+
+* Si una de tus cuentas está siendo utilizada para enviar mensajes fraudulentos o suplantarte, avisa a tus contactos para evitar que otras personas puedan convertirse también en víctimas.
+
+No elimines precipitadamente las pruebas. Ante un incidente es habitual querer borrar inmediatamente mensajes, correos electrónicos, conversaciones o cualquier otro rastro relacionado con lo sucedido. Sin embargo, parte de esa información puede resultar útil posteriormente para analizar el incidente, reclamar una operación o presentar una denuncia.
+
+Siempre que sea posible y no implique seguir interactuando con el atacante, conserva información como:
+
+* Correos electrónicos y mensajes recibidos.
+
+* Capturas de pantalla.
+
+* Direcciones web o URL.
+
+* Números de teléfono y direcciones de correo electrónico utilizados.
+
+* Perfiles o nombres de usuario.
+
+* Justificantes y referencias de operaciones económicas.
+
+* Fechas y horas aproximadas de lo sucedido.
+
+* Cualquier otra información que pueda ayudar a reconstruir el incidente.
+
+Conservar estas evidencias no significa que debas mantener abierto un archivo malicioso, visitar nuevamente una página fraudulenta o continuar una conversación con quien intenta engañarte. La prioridad sigue siendo evitar aumentar tu exposición.
+
+Ten cuidado con los segundos engaños. Después de sufrir un incidente puedes encontrarte en una situación de mayor vulnerabilidad. Los ciberdelincuentes pueden intentar volver a contactar contigo haciéndose pasar, por ejemplo, por servicios de soporte, entidades bancarias, profesionales de recuperación de cuentas o personas que aseguran poder recuperar el dinero perdido.
+
+La inteligencia artificial facilita además la creación de comunicaciones convincentes, voces sintéticas, imágenes manipuladas y mensajes personalizados a partir de información obtenida previamente sobre ti. Por ello, que alguien conozca detalles del incidente, tus datos personales o incluso determinada información privada no demuestra que esa persona sea quien afirma ser.
+
+Desconfía especialmente de quien contacte contigo inesperadamente y te solicite contraseñas, códigos de verificación, nuevos pagos, instalación de programas de acceso remoto o cualquier otra información sensible. Si necesitas contactar con una empresa, banco, plataforma o institución, utiliza sus canales oficiales y no los enlaces, teléfonos o datos de contacto proporcionados en un mensaje sospechoso.
+
+Después del incidente y de resolver el problema inmediato no siempre significa que el riesgo haya desaparecido. Durante los días posteriores conviene revisar tus cuentas y dispositivos para comprobar que no existe actividad que no reconozcas.
+
+Comprueba especialmente los accesos recientes a tus cuentas, cambios de contraseña, dispositivos vinculados, reglas o reenvíos desconocidos en el correo electrónico y movimientos bancarios. También puedes revisar qué aplicaciones y servicios tienen acceso a tus cuentas y retirar aquellos que no reconozcas o ya no necesites.
+
+Una vez controlado el incidente, intenta averiguar cómo se produjo. Saber si el origen fue una contraseña reutilizada, un mensaje fraudulento, una aplicación maliciosa, una configuración insegura o cualquier otra causa te permitirá corregir el problema y reducir la posibilidad de que vuelva a suceder.
+
+Por último, recuerda que no tienes por qué resolver todos los incidentes por tus propios medios. Dependiendo de su naturaleza y gravedad, puede ser necesario solicitar ayuda especializada, contactar con la plataforma afectada, comunicarte con tu entidad bancaria, reportar el incidente o presentar una denuncia. En la unidad 10 Entidades y plataformas de ayuda encontrarás diferentes recursos a los que puedes acudir.
+
+En ciberseguridad no solo es importante prevenir. También debes saber detectar que algo puede estar ocurriendo, reaccionar de forma ordenada, limitar los posibles daños y aprender de lo sucedido para reforzar tu seguridad en el futuro.
 
 ## Analizadores de virus online
 
@@ -224,4 +288,4 @@ Si eres una persona participativa y te gusta colaborar y aportar a los demás. M
 - [Voluntariado digital](https://twitter.com/Clicka_CRE) (Click_A).
 
 ANÍMATE!!! 😉
-
+  
