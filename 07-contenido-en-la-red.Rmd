@@ -18,7 +18,7 @@ Según el Diccionario de la lengua española, una de las acepciones de contrasta
 
 Esta abundancia puede producir lo que se conoce como infoxicación: una sobrecarga de información que dificulta distinguir qué contenidos son relevantes, fiables o verdaderos. Además, no toda la información incorrecta se difunde de forma intencionada. Algunas personas comparten contenidos equivocados sin comprobarlos, mientras que otros pueden crearse deliberadamente para engañar, manipular o cometer fraudes.
 
-Para desenvolverte en este entorno es fundamental desarrollar tu [alfabetización mediática e informacional](https://www.unesco.org/es/media-information-literacy). La UNESCO promueve estas competencias para que puedas acceder a la información, analizarla y evaluarla de forma crítica, comprender cómo se produce y difunde y tomar decisiones informadas. En un contexto en el que la inteligencia artificial también participa en la creación y distribución de contenidos, estas capacidades son cada vez más necesarias para distinguir entre fuentes fiables, información incorrecta y contenidos manipulados.
+Para desenvolverte en este entorno es fundamental desarrollar tu alfabetización mediática e informacional. La UNESCO promueve estas competencias para que puedas acceder a la información, analizarla y evaluarla de forma crítica, comprender cómo se produce y difunde y tomar decisiones informadas. En un contexto en el que la inteligencia artificial también participa en la creación y distribución de contenidos, estas capacidades son cada vez más necesarias para distinguir entre fuentes fiables, información incorrecta y contenidos manipulados [@UNESCO-alfabetizacion-mediatica].
 
 La inteligencia artificial ha aumentado este desafío. Actualmente es posible generar textos, imágenes, audios y vídeos muy convincentes, incluidos deepfakes y clonaciones de voz. Por ello, no debes considerar auténtico un contenido únicamente porque parezca real, esté bien redactado o reproduzca aparentemente la imagen o la voz de una persona conocida.
 
@@ -141,3 +141,78 @@ Debes tener especialmente presente que:
 * Determinados contenidos o actividades pueden ser ilegales independientemente de la tecnología utilizada para acceder a ellos.
 
 Las tecnologías de privacidad pueden tener usos legítimos y beneficiosos, pero también pueden ser utilizadas por ciberdelincuentes. Por ello, lo importante no es considerar la Deep Web o la Dark Web como lugares necesariamente «buenos» o «malos», sino comprender qué son, cómo se diferencian y qué riesgos pueden existir.
+
+##  Algoritmos de recomendación, burbujas de filtro y cámaras de eco
+
+Cuando utilizas Internet, no siempre ves el contenido siguiendo únicamente un orden cronológico ni recibes necesariamente la misma información que otras personas. Muchas plataformas digitales utilizan algoritmos o sistemas de recomendación para seleccionar, ordenar y personalizar el contenido que muestran a cada usuario.
+
+Estos sistemas están presentes en redes sociales, plataformas de vídeo, servicios de música, tiendas en línea, buscadores y numerosas aplicaciones digitales. Su objetivo suele ser mostrarte contenido que pueda resultar relevante o interesante para ti.
+
+Para realizar estas recomendaciones pueden utilizar diferentes señales relacionadas con tu actividad, como por ejemplo:
+
+* Las publicaciones, vídeos o enlaces con los que interactúas.
+
+* Las cuentas o perfiles que sigues.
+
+* Las búsquedas que realizas.
+
+* Los contenidos que marcas como favoritos o compartes.
+
+* El tiempo que dedicas a visualizar determinadas publicaciones o vídeos.
+
+* Tu historial de navegación o consumo dentro de la plataforma.
+
+* Determinados datos sobre el dispositivo, idioma, ubicación aproximada o preferencias que hayas configurado.
+
+A partir de estas señales, los sistemas intentan predecir qué contenido podría interesarte y priorizan unas publicaciones frente a otras.
+
+Esta personalización tiene ventajas evidentes. Permite localizar contenidos relacionados con tus intereses, descubrir información nueva, recibir recomendaciones útiles o evitar tener que revisar manualmente enormes cantidades de información.
+
+Sin embargo, también debes conocer algunas de sus limitaciones y efectos.
+
+Uno de los conceptos relacionados con estos sistemas es la burbuja de filtro (filter bubble). Se produce cuando la personalización favorece repetidamente contenidos similares a aquellos con los que ya has mostrado interés, reduciendo potencialmente tu exposición a otras perspectivas, temas o fuentes.
+
+Esto no significa que todas las personas estén necesariamente encerradas en una burbuja informativa ni que los algoritmos eliminen siempre cualquier contenido diferente. La exposición depende de numerosos factores, entre ellos la plataforma utilizada, las personas que sigues, tus hábitos y las decisiones que tomas durante la navegación. Sin embargo, conviene ser consciente de que la personalización puede influir significativamente en la información que recibes.
+
+Relacionado con ello se encuentra el concepto de cámara de eco (echo chamber). En este caso, determinadas ideas, opiniones o interpretaciones se repiten y refuerzan dentro de una comunidad o grupo de personas, haciendo que puedan percibirse como más extendidas, evidentes o mayoritarias de lo que realmente son.
+
+Aunque ambos conceptos están relacionados, no significan exactamente lo mismo.
+
+En una burbuja de filtro, la selección automatizada del contenido puede limitar o reducir la diversidad de información que recibes. En una cámara de eco, en cambio, son las propias dinámicas sociales y comunicativas de un grupo las que refuerzan repetidamente determinadas ideas. Ambas situaciones pueden coincidir y reforzarse mutuamente.
+
+También interviene otro fenómeno humano denominado sesgo de confirmación, que consiste en nuestra tendencia a prestar mayor atención o dar más credibilidad a aquella información que coincide con nuestras propias creencias, expectativas u opiniones, mientras cuestionamos con mayor facilidad aquella que las contradice.
+
+Los sistemas de recomendación pueden interactuar con este comportamiento. Si una persona consume repetidamente determinado tipo de contenido, la plataforma puede interpretar esas interacciones como una señal de interés y recomendarle contenidos similares. A su vez, la persona vuelve a interactuar con ellos, generándose un ciclo de retroalimentación.
+
+Otro aspecto importante es que muchas plataformas utilizan la interacción de los usuarios como una señal para determinar qué contenidos resultan relevantes. Publicaciones que provocan sorpresa, indignación, miedo, curiosidad o polémica pueden generar numerosos comentarios, reacciones o comparticiones y, como consecuencia, alcanzar una mayor difusión.
+
+Esto no significa que un algoritmo pretenda necesariamente manipularte ni que todo contenido muy difundido sea falso. Pero sí debes evitar interpretar la popularidad de una publicación como una prueba de su calidad o veracidad.
+
+Muchas visualizaciones, comentarios o comparticiones no convierten una información en verdadera.
+
+Por ello, además de contrastar la información como has visto en apartados anteriores, es recomendable adoptar algunas prácticas que aumenten la diversidad de los contenidos que consultas:
+
+* No utilices únicamente el contenido que aparece automáticamente en tu feed como fuente de información.
+
+* Busca activamente información utilizando diferentes fuentes y medios.
+
+* Consulta directamente las páginas de organismos, instituciones o fuentes originales cuando el tema lo requiera.
+
+* Sigue fuentes con distintos enfoques y perspectivas.
+
+* Diferencia entre contenidos recomendados por la plataforma y aquellos que has buscado deliberadamente.
+
+* Revisa periódicamente las cuentas y temas que sigues.
+
+* Utiliza, cuando la plataforma lo permita, feeds cronológicos o sistemas de recomendación menos personalizados.
+
+* Antes de compartir un contenido muy viral, comprueba primero su procedencia, contexto y fuente original.
+
+La legislación europea también ha comenzado a prestar atención a estos sistemas. El Reglamento de Servicios Digitales establece obligaciones relacionadas con la transparencia de los sistemas de recomendación y permite que las personas usuarias de determinadas grandes plataformas puedan disponer de opciones de contenido que no estén basadas en perfiles personalizados [@CE-servicios-digitales].
+
+Por ello, comprender cómo funcionan los sistemas de recomendación forma parte de tu alfabetización mediática e informacional. La UNESCO también advierte de la relación que puede existir entre el diseño algorítmico, las burbujas de filtro y las cámaras de eco, aunque señala que la realidad puede ser más compleja que la idea de que cada persona vive completamente aislada dentro de una burbuja informativa [@UNESCO-alfabetizacion-mediatica].
+
+Recuerda que el contenido que aparece en tu pantalla no representa necesariamente una muestra neutral de todo lo que existe en Internet. Con frecuencia es el resultado de una combinación entre tus propias decisiones, las personas con las que interactúas y los sistemas automatizados utilizados por las plataformas.
+
+Ser consciente de ello te ayudará a consumir información de una manera más crítica, diversa y autónoma.
+
