@@ -22,9 +22,7 @@ A partir de ese momento, trata de evitar que el incidente continúe propagándos
 
 * Comprueba si se han modificado datos importantes de recuperación, como tu dirección de correo electrónico o número de teléfono.
 
-* Activa la verificación en dos pasos o la autenticación de múltiples factores siempre que el servicio lo permita.
-
-* Si el incidente afecta a tu correo electrónico principal, préstale especial atención, ya que suele utilizarse para recuperar el acceso a muchas de tus otras cuentas.
+* Activa la verificación en dos pasos o la autenticación de múltiples factores siempre que el servicio lo permita [MFA (Multi-Factor Authentication) o Autenticación de Factores Múltiples](#mfa-multi-factor-authentication-o-autenticación-de-factores-múltiples)
 
 * Si has instalado una aplicación, programa o extensión sospechosa, deja de utilizarla y elimínala cuando sea seguro hacerlo.
 
