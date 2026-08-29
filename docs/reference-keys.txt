@@ -119,10 +119,10 @@ algoritmos-de-recomendación-burbujas-de-filtro-y-cámaras-de-eco
 otras-particularidades-importantes
 otros-conceptos-relevantes
 qué-hacer-si-sufres-un-incidente-de-ciberseguridad
-analizadores-de-virus-online
+analizadores-de-archivos-online
 menores-en-el-uso-de-la-red
 utilidades-interesantes
-ataques-en-tiempo-real
+mapas-de-ciberataques
 campañas-de-sensibilización-internacionales
 colabora
 formación-y-conocimientos

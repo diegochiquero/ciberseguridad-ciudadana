@@ -276,7 +276,6 @@ Aparte de todo lo visto en el manual existen muchas otras herramientas para ayud
 
 Recuerda que la calidad de los contenidos sintéticos evoluciona rápidamente. La ausencia de errores visibles no demuestra que un contenido sea auténtico.
 
-
 ## Mapas de ciberataques
 
 Existen diferentes mapas interactivos que permiten visualizar parte de la actividad maliciosa detectada en Internet. Mediante líneas, puntos, gráficos y estadísticas muestran de forma dinámica eventos relacionados con malware, intentos de intrusión y otras amenazas detectadas por las infraestructuras de diferentes empresas de ciberseguridad.
