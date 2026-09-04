@@ -70,6 +70,8 @@ Por último, recuerda que no tienes por qué resolver todos los incidentes por t
 
 En ciberseguridad no solo es importante prevenir. También debes saber detectar que algo puede estar ocurriendo, reaccionar de forma ordenada, limitar los posibles daños y aprender de lo sucedido para reforzar tu seguridad en el futuro.
 
+Y por supuesto, no olvides que siempre tienes al [INCIBE](#instituto-nacional-de-ciberseguridad) desde donde te atiende por diferentes canales 365 días al año.
+
 ## Analizadores de archivos online
 
 Analizadores de archivos y direcciones web online
