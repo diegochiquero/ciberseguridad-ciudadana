@@ -2,25 +2,29 @@
 
 ## Aprendizaje y reciclado continuo
 
-El aprendizaje y el reciclado continuo son dos de los pilares más importantes donde sustentar la educación. Por lo tanto, sabrás que una buena educación abre puertas, facilita una mejor toma de decisiones y ayuda a evitar posibles escenarios futuros no deseados. Por ello, es solo deber tuyo no descuidar la formación en conocimientos si quieres que sea tu mejor aliada para tu yo presente y futuro.
+La tecnología evoluciona constantemente y, con ella, también cambian las amenazas, las formas de engaño y las medidas que puedes utilizar para protegerte. Por este motivo, los conocimientos que hoy resultan suficientes pueden necesitar actualizarse con el paso del tiempo.
+
+El aprendizaje y el reciclado continuo son dos pilares fundamentales de la ciberseguridad ciudadana. No necesitas convertirte en especialista en ciberseguridad, pero sí mantener unos conocimientos básicos que te permitan desenvolverte de forma segura y consciente en un entorno digital que cambia rápidamente.
+
+La expansión de la inteligencia artificial hace todavía más importante esta actualización. Las herramientas basadas en IA ofrecen nuevas posibilidades, pero también permiten generar textos, imágenes, vídeos o voces sintéticas cada vez más convincentes, automatizar determinados procesos y analizar grandes cantidades de información. Como consecuencia, algunas formas de fraude, suplantación o manipulación pueden resultar más difíciles de reconocer utilizando únicamente señales que antes considerábamos evidentes.
+
+Mantenerte actualizado no significa conocer cada nueva amenaza o tecnología que aparece. Lo importante es comprender los principios fundamentales de seguridad y privacidad, conocer los cambios que puedan afectarte y adquirir hábitos que puedas adaptar a nuevas situaciones.
+
+Para conseguirlo puedes consultar periódicamente fuentes fiables, participar en actividades formativas, revisar las recomendaciones de organismos especializados y prestar atención a los cambios que se produzcan en los servicios y dispositivos que utilizas habitualmente.
+
+Por lo tanto, no olvides que el aprendizaje y el reciclado continuo deben formar parte de tu hoja de ruta. Como también sabrás, que una buena educación abre puertas, facilita una mejor toma de decisiones y ayuda a evitar posibles escenarios futuros no deseados. De manera que, es solo responsabilidad tuya y solo tuya, no descuidar la formación en conocimientos, si quieres que esta, sea tu mejor aliada para tú yo presente y futuro.
 
 ## Formación como medida preventiva
 
-En estos tiempos en los que de manera sutil nos vamos acercando a la cuarta revolución, marcada principalmente por la evolución de las tecnologías, la comunicación y la información entre otras. En los que estamos empezando a coquetear con los nuevos cambios de paradigma económico, con la aparición de las criptomonedas,  en lo social con la multitud de plataformas y medios digitales de repercusión mediática, con la descentralización de la nueva web 3.0, la tecnología Blockchain y el protocolo IPFS (InterPlanetary File System), solo nos puede llevar a pensar, que no mantener una formación activa y estar actualizados, puede repercutir de manera desfavorable o negativa en la esfera social, profesional y personal en la que todos nos movemos.
+La formación es una de las medidas preventivas más eficaces frente a los riesgos del entorno digital. Muchas amenazas no aprovechan únicamente vulnerabilidades técnicas, sino también comportamientos humanos como la confianza, la curiosidad, el miedo, la urgencia o el desconocimiento.
+
+Por ello, conocer las amenazas y comprender cómo funcionan te ayuda a reconocer situaciones potencialmente peligrosas antes de actuar.
+
+Actualmente la inteligencia artificial, presente en buscadores, asistentes, redes sociales, aplicaciones, sistemas de recomendación y numerosos servicios digitales. Con además, la capacidad de replicar la cognición humana tanto para lo bueno como para lo malo, hacen más importante si cabe el concepto de formación como medida preventiva.
 
 Pon lo tanto, piensa que formarte para protegerte y sentirte seguro en el uso de las tecnologías es una inversión en bienestar y tranquilidad y que a mayor conocimiento, mayor protección y mejor gestión resolutiva.
 
 En todo el grueso de esta manual tienes a tu disposición multitud de plataformas, recursos y herramientas con las que poder aprender y seguir instruyéndote en todo lo concerniente a privacidad y seguridad en internet, por lo tanto, te animo a ir ampliando tus conocimientos cuando quieras y a tu propio ritmo. Porque ya sabes lo que dicen "más vale prevenir que curar". 
-
-No obstante, si estás pensando dedicarte a esto de la ciberseguridad dentro del ámbito profesional, a continuación tienes un lista de formaciones más específicas y/o regladas.
- 
-- [Ciberseguridad en el Teletrabajo](https://learndigital.withgoogle.com/activate/course/cybersecurity-remote-work).
- 
-- [Seguridad en internet](https://www.cualifica2.es/cursos/Curso-Seguridad-En-Internet).
-
-- [Catálogos de formación en ciberseguridad](https://www.incibe.es/catalogos-formacion-ciberseguridad).
-
-- [Retos descargables](https://www.incibe.es/academiahacker/retosdescargables).
 
 ## Desarrolla tu ciberinteligencia
 
@@ -40,25 +44,95 @@ Esta definición encaja muy bien en términos empresariales. Pero, ¿cómo podr�
 
 - Toma de decisiones: Actuar en consecuencia para no llegar a ser una cibervíctima.
 
-En definitiva, la ciberinteligencia entendida desde el punto de vista de las personas podría entenderse como: Las competencias en conocimientos de las ciberamenazas existentes, la gestión de la privacidad y seguridad en los dispositivos y la red, apoyado en el uso de plataformas y software destinados a tal cometido. Siendo todo lo anterior lo que va a permitir desarrollar las capacidades necesarias para la prevención, detección y reacción adecuada ante posibles ciberataques.
+La ciberinteligencia entendida desde el punto de vista de las personas en su concepto de ciberseguridad ciudadana, podría entenderse como: Las competencias en conocimientos de las ciberamenazas existentes, la gestión de la privacidad y seguridad en los dispositivos y la red, apoyado en el uso de plataformas y software destinados a tal cometido. Siendo todo lo anterior lo que va a permitir desarrollar las capacidades necesarias para la prevención, detección y reacción adecuada ante posibles ciberataques.
+
+Por lo que, en el ámbito de esta guía, podemos entender la ciberinteligencia ciudadana como la capacidad de recopilar información, interpretarla, contrastarla y utilizarla para anticipar riesgos y tomar mejores decisiones en tu vida digital.
+
+Desarrollar tu ciberinteligencia significa, en definitiva, aprender a detener el automatismo de “ver y actuar” para sustituirlo por “observar, analizar, contrastar y decidir”.
+
+Cuanto más desarrolles esta capacidad, mejor preparado estarás no solo frente a las amenazas actuales, sino también ante aquellas que aparezcan en el futuro.
+
+Además, la inteligencia artificial hace especialmente importante esta forma de actuar. La apariencia de un contenido ya no constituye por sí sola una garantía de autenticidad. Un texto correctamente redactado, una fotografía realista, una voz conocida o incluso un vídeo aparentemente convincente pueden haber sido generados o manipulados.
  
 ## Pon a prueba tus conocimientos
 
-Una manera de saber que conocimientos tienes sobre privacidad y seguridad en internet es poniéndote a prueba. Es por ello, que a continuación tienes los siguientes recursos donde podrás calibrar cuanto sabes sobre tema. Porque recuerda, a mayor conocimiento, mayor protección.
+Una buena forma de comprobar si estás adquiriendo conocimientos sobre ciberseguridad es ponerlos en práctica.
 
-- [¿Cuánto sabes?](https://www.osi.es/es/cuanto-sabes): Batería de cuestionarios de la Oficina de Seguridad del Internauta.
+Los cuestionarios y pruebas de conocimientos pueden ayudarte a descubrir qué conceptos dominas y cuáles necesitas reforzar. Sin embargo, conocer una amenaza, per se, no significa necesariamente que seas capaz de reconocerla cuando aparece en una situación real.
+
+Por ello, intenta evaluar tres capacidades diferentes:
+
+Conocimiento: comprender qué es una determinada amenaza, cómo funciona y qué consecuencias puede tener.
+
+Reconocimiento: ser capaz de identificar señales de riesgo dentro de una situación real o simulada.
+
+Reacción: saber qué debes hacer cuando detectas una situación potencialmente peligrosa.
+
+Puedes practicar mediante cuestionarios, ejercicios interactivos, simulaciones de phishing, análisis de mensajes sospechosos, actividades de identificación de contenidos manipulados o pequeños escenarios en los que tengas que decidir cómo actuar.
+
+Por ejemplo, puedes preguntarte qué harías si recibieras un mensaje de tu banco indicando que tu cuenta será bloqueada en unos minutos, si una persona conocida te solicitara dinero mediante un mensaje inesperado o si una aplicación pidiera acceso al micrófono sin que esa función pareciera necesaria.
+
+También puedes realizar periódicamente una pequeña autoevaluación sobre tus propios hábitos:
+
+¿Utilizas contraseñas diferentes para tus cuentas más importantes? ¿Tienes activada la autenticación en dos pasos cuando está disponible? ¿Mantienes tus dispositivos actualizados? ¿Revisas los permisos de tus aplicaciones? ¿Sabes cómo actuar si sospechas que una cuenta ha sido comprometida? ¿Compruebas una solicitud sensible mediante otro canal cuando tienes dudas?
+
+No se trata de obtener una puntuación perfecta, sino de detectar aquello que todavía puedes mejorar.
+
+Cada error que descubras durante una prueba es una oportunidad para corregir un hábito antes de enfrentarte a una situación real.
+
+Por lo tanto, una manera de saber que conocimientos tienes sobre privacidad y seguridad en internet es poniéndote a prueba. Es por ello, que a continuación tienes los siguientes recursos donde podrás calibrar cuanto sabes sobre tema. Porque recuerda, a mayor conocimiento, mayor protección.
+
+- [¿Cuánto sabes?](https://www.incibe.es/ciudadania/formacion/autoevaluacion): Batería de cuestionarios de la Oficina de Seguridad del Internauta.
 
 - [¿Puedes detectar cuándo te están engañando?](https://phishingquiz.withgoogle.com/?hl=es): Prueba anti-phishing de Google. 
 
-- [Diagnóstico de competencias digitales](https://www.digcomp.andaluciaesdigital.es/): Autodiagnóstico para conocer el nivel de  competencias digitales.
+## Aprende de tu experiencia digital
 
-- [¿Sabes escapar de los fakes?](https://www.proyectoescapefake.org/haz-el-test/): Un sencillo test de autoevaluación para saber cómo de inmune eres a los bulos.
+No todo el aprendizaje procede de cursos, guías o cuestionarios. Tu propia experiencia utilizando Internet también puede convertirse en una importante fuente de conocimiento.
+
+Es posible que alguna vez hayas pulsado un enlace que después te haya parecido sospechoso, concedido demasiados permisos a una aplicación, reutilizado una contraseña, confiado en una información que resultó ser falsa o recibido un intento de fraude que inicialmente parecía legítimo.
+
+Cuando ocurra algo así, además de solucionar el problema, intenta comprender cómo se produjo.
+
+Puedes hacerte cuatro preguntas:
+
+- ¿Qué ocurrió?
+
+- ¿Qué señales podían haberme advertido?
+
+- ¿Qué hice correctamente y qué podría haber hecho de otra manera?
+
+- ¿Qué puedo cambiar para reducir la posibilidad de que vuelva a ocurrir?
+
+Por ejemplo, si recibes un mensaje de phishing y detectas que conocía tu nombre, no debes concluir simplemente que los mensajes personalizados son fiables. Esa experiencia puede enseñarte que determinados datos personales pueden obtenerse de redes sociales, filtraciones de información u otras fuentes y utilizarse para construir engaños más convincentes.
+
+Del mismo modo, si detectas que una aplicación tenía acceso permanente a tu ubicación sin necesitarlo, puedes utilizar esa experiencia para incorporar el hábito de revisar periódicamente los permisos de todas tus aplicaciones.
+
+También puedes aprender de situaciones que les ocurran a otras personas. Compartir experiencias sobre fraudes, suplantaciones o problemas de seguridad puede ayudar a familiares y personas de confianza a reconocer situaciones similares. Hazlo evitando difundir innecesariamente datos personales, credenciales, documentos u otra información sensible relacionada con el incidente.
+
+La finalidad no es buscar culpables después de cometer un error, sino comprender qué ha ocurrido y transformar esa experiencia en una medida preventiva.
+
+De esta manera se crea un ciclo de mejora continua:
+
+Aprendes → aplicas → experimentas → analizas → corriges → vuelves a aprender.
+
+Tu experiencia digital también forma parte de tu ciberinteligencia.
 
 ## Canales de avisos y alertas
 
-Una buena manera de estar al tanto, es poder estar al día en sentido literal, de gran parte de lo que esta aconteciendo en lo referente a ciberdelitos, para ello a continuación, tienes dos recursos para que nada o poco de la actualidad ciber criminal no llegue a tu conocimiento.
+Las amenazas digitales evolucionan continuamente. Aparecen nuevas campañas de phishing, aplicaciones maliciosas, fraudes, vulnerabilidades y técnicas de suplantación que pueden afectar a los servicios que utilizas.
 
-- [Canal de avisos de seguridad de la Oficina de seguridad del internauta](https://www.osi.es/es/actualidad/avisos).
+Por este motivo, además de adquirir conocimientos generales, resulta recomendable disponer de algunas fuentes fiables que te permitan conocer amenazas relevantes cuando aparezcan.
+
+Puedes utilizar canales de avisos y alertas de organismos públicos, entidades especializadas en ciberseguridad y otras fuentes de reconocido prestigio. Estos recursos suelen informar sobre campañas fraudulentas detectadas, vulnerabilidades relevantes, suplantaciones de entidades, aplicaciones maliciosas y recomendaciones para protegerte.
+
+Las alertas son una herramienta complementaria a tu formación. Su finalidad no es mantenerte en un estado permanente de preocupación, sino proporcionarte información útil para anticiparte cuando exista una amenaza que pueda afectarte.
+
+Mantenerte informado, seleccionar fuentes fiables y saber verificar una alerta son también formas de desarrollar tu ciberinteligencia.
+
+Por ello, una buena manera de estar al tanto, es poder estar al día en sentido literal, de gran parte de lo que esta aconteciendo en lo referente a ciberdelitos, para ello a continuación, tienes dos recursos para que nada o poco de la actualidad ciber criminal no llegue a tu conocimiento.
+
+- [Canal de avisos de avisos a la ciudadanía del Incibe](https://www.incibe.es/ciudadania).
 
 - [Blog HispaSec una al día](https://unaaldia.hispasec.com/).
 
