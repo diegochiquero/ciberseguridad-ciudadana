@@ -2,11 +2,31 @@
 
 ## Ayuda y soporte desde instituciones
 
-En internet existen multitud de plataformas y webs que te brindan la oportunidad de formarte y estar informado sobre ciberdelitos, ciberamenazas, privacidad y seguridad en internet y otro montón de conocimientos más. Además, si sabes como abordar la plataforma verás que muchas de ellas son de autoridad reconocida. Aun así, no deja de ser importante saber que desde nuestras instituciones existen proyectos específicos y gestionados por verdaderos expertos en la materia. Y es en esta unidad donde vas a ver con que entidades y plataformas puedes contar.
+A lo largo de esta guía has conocido diferentes riesgos relacionados con la privacidad, la seguridad, los fraudes, la identidad digital y el uso cotidiano de Internet. Sin embargo, incluso aplicando buenas prácticas, puedes encontrarte ante una situación en la que necesites ayuda especializada.
+
+En España existen organismos públicos, entidades y plataformas especializadas que pueden orientarte, ayudarte a proteger tus derechos o intervenir ante determinados incidentes. Conocerlas es importante, pero también lo es saber qué función cumple cada una.
+
+No todas las situaciones requieren la misma actuación. Dependiendo de lo ocurrido, puedes necesitar:
+
+- Asesoramiento: cuando necesitas saber cómo actuar ante una situación o incidente.
+
+- Asistencia técnica: cuando necesitas recuperar el control de una cuenta, eliminar software malicioso, proteger un dispositivo o reducir las consecuencias de un incidente.
+
+- Reclamación: cuando consideras que una organización ha vulnerado alguno de tus derechos.
+
+- Reporte: cuando quieres comunicar un fraude, contenido o incidente para contribuir a su detección y prevención.
+
+- Denuncia: cuando has sido víctima o tienes conocimiento de hechos que podrían constituir un delito.
+
+Estas actuaciones no son necesariamente excluyentes. Por ejemplo, ante una estafa puedes solicitar asesoramiento para saber cómo actuar y, al mismo tiempo, conservar las evidencias y presentar una denuncia cuando corresponda.
+
+La inteligencia artificial tampoco modifica este principio. Si el incidente incluye una voz clonada, una imagen manipulada, un deepfake, un fraude automatizado o cualquier otro uso de IA, debes acudir a la entidad competente según el problema que se haya producido y no únicamente por la tecnología utilizada.
+
+En los siguientes apartados conocerás algunos de los principales organismos y recursos que pueden ayudarte.
 
 ## Instituto nacional de ciberseguridad
 
-El Instituto Nacional de Ciberseguridad de España [INCIBE](https://www.incibe.es/), es una sociedad dependiente del Ministerio de Economía y Empresa a través de la Secretaría de Estado para el Avance Digital y consolidada como entidad de referencia para el desarrollo de la ciberseguridad y de la confianza digital de ciudadanos, red académica y de investigación, profesionales, empresas y especialmente para sectores estratégicos.
+El Instituto Nacional de Ciberseguridad de España [INCIBE](https://www.incibe.es/), es una sociedad depende del Ministerio para la Transformación Digital y de la Función Pública a través de la Secretaría de Estado de Telecomunicaciones e Infraestructuras Digitales y consolidada como entidad de referencia para el desarrollo de la ciberseguridad y de la confianza digital de ciudadanos, red académica y de investigación, profesionales, empresas y especialmente para sectores estratégicos.
 
 La misión de INCIBE es por tanto reforzar la ciberseguridad, la confianza y la protección de la información y privacidad en los servicios de la Sociedad de la Información, aportando valor a ciudadanos, empresas, Administración, red académica y de investigación española, sector de las tecnologías de la información y las comunicaciones. Aunándolo en estas tres siguientes líneas de actuación:
 
@@ -26,7 +46,7 @@ Informan entre otros sobre:
 
 - Seguridad en las conexiones y redes wifi.
 
--  Configuración de la privacidad en dispositivos y servicios de internet.
+- Configuración de la privacidad en dispositivos y servicios de internet.
 
 - Situaciones de infección por virus.
 
@@ -36,7 +56,7 @@ Informan entre otros sobre:
 
 - Controles parentales.
 
-El Incibe tiene a disposición del ciudadano varios canales de comunicación:
+El Incibe tiene a disposición del ciudadano varios canales de comunicación operando de 8:00 a 23:00 los 365 días del año:
 
 - Teléfono gratuito **017**.  
 
@@ -44,53 +64,67 @@ El Incibe tiene a disposición del ciudadano varios canales de comunicación:
 
 - Telegram: **\@INCIBE017**.
 
-- Formulario web: **http://incibe.es/linea-de-ayuda-en-ciberseguridad#formulario**. 
+- Formulario web: [Formulario de ayuda](http://incibe.es/linea-de-ayuda-en-ciberseguridad#formulario). 
 
-## Oficina de seguridad del internauta
+El servicio ofrece orientación en cuestiones técnicas, legales y psicosociales relacionadas con la ciberseguridad. No obstante, debes tener presente que solicitar ayuda a INCIBE no equivale a presentar una denuncia ante las Fuerzas y Cuerpos de Seguridad ni una reclamación ante otra autoridad competente.
 
-La Oficina de Seguridad del Internauta [OSI](https://www.osi.es/) es una plataforma que proporciona información y soporte necesarios para evitar y resolver los problemas de seguridad a los que pueda enfrentarse el ciudadano en el uso de Internet.
+Si tienes dudas sobre cómo actuar ante un incidente, INCIBE puede ser un buen primer punto de orientación.
 
-El objetivo principal de esta entidad es reforzar la confianza en el ámbito digital a través de la formación en materia de ciberseguridad. Desde la Oficina de Seguridad del Internauta conjuntamente con el INCIBE trabajan para:
-
-- Ayudar a los usuarios a llevar a cabo un cambio positivo de comportamiento en relación con la adopción de buenos hábitos de seguridad.
-
-- Hacerles conscientes de su propia responsabilidad en relación con la ciberseguridad.
-
-- Contribuir a minimizar el número y gravedad de incidencias de seguridad experimentadas por el usuario.
-
-- En este portal encontrarás información general sobre la seguridad en Internet y herramientas que te ayudarán a navegar más seguro. 
-
-Además de llevar a cabo todas estas líneas de actuación, a través de este portal también:
-
-- Dispones de un [canal de avisos](https://www.osi.es/es/actualidad/avisos) para estar actualizado de las últimas alertas de seguridad.
-
-- Podrás hacer [reportes de fraudes](https://www.osi.es/es/reporte-de-fraude).
-
-- En el menú de navegación encontrarás una pestaña de juegos educativos donde encontrarás recursos para aprender jugando, entre ellos toda una batería de [juegos de mesa](https://www.osi.es/es/juegos-mesa).
-
-- [Campañas de concienciación](https://www.osi.es/es/campanas). 
-
-- Guía para saber [qué hacer si eres víctima de un fraude](https://www.osi.es/es/que-hacer-si-eres-victima-de-un-fraude).
-
-Y esto no es todo, en esta plataforma encontrarás multitud de recursos y herramientas para gestionar o solventar cualquier incidencia en matería de privacidad y seguridad en internet.
+También podrás hacer [reportes de fraudes](https://www.incibe.es/ciudadania/ayuda/reporte-de-fraude).
 
 ## Agencia española de protección de datos
 
-La Agencia Española de Protección de Datos [AEPD](https://www.aepd.es/es) es una entidad de ayuda a la ciudadanía más orientada a la privacidad en lo concerniente a tus datos personales. Actúan para proteger tus derechos de acceso, rectificación, limitación, oposición, supresión (derecho al olvido), portabilidad y oposición al tratamiento de decisiones automatizadas.
+La Agencia Española de Protección de Datos [AEPD](https://www.aepd.es/es) es la autoridad pública independiente encargada de velar por el cumplimiento de la normativa de protección de datos y proteger [los derechos de las personas en este ámbito](#derechos-de-protección-de-datos---arsopol).
 
-Entre los recursos que encontrarás en la plataforma están los siguientes:
+Puedes acudir a la AEPD cuando consideres que tus datos personales están siendo tratados de forma contraria a la normativa o cuando determinados derechos relacionados con tu información personal no hayan sido adecuadamente atendidos.
 
-- Derechos y deberes en el tratamiento de datos.
+Por ejemplo, puede resultarte útil cuando:
 
-- Ayuda a la ciudadanía.
+- Una organización utiliza tus datos personales de forma que consideras indebida.
 
-- Ayuda específica a menores.
+- Recibes comunicaciones comerciales no deseadas en determinadas circunstancias.
 
-- Guías y herramientas.
+- No se atiende adecuadamente una solicitud relacionada con tus derechos de protección de datos.
+
+- Tus datos personales han sido difundidos o utilizados sin una base que lo justifique.
+
+- Tienes dudas relacionadas con privacidad, tratamiento de datos personales o determinadas decisiones automatizadas.
+
+Dependiendo del procedimiento y del derecho que quieras ejercer, puede ser necesario que previamente te hayas dirigido a la organización responsable del tratamiento de tus datos.
+
+La AEPD dispone además de un Canal Prioritario para solicitar la retirada urgente de determinados contenidos sexuales o violentos difundidos ilícitamente a través de Internet cuando se produzca una situación especialmente grave que pueda poner en riesgo los derechos y libertades de la persona afectada.
+
+Este mecanismo puede adquirir especial relevancia ante la utilización de inteligencia artificial para crear o manipular imágenes, audios o vídeos. Que un contenido haya sido generado artificialmente no significa que desaparezcan tus derechos sobre privacidad y protección de datos.
+
+La AEPD también publica recomendaciones y recursos relacionados con la utilización de sistemas de inteligencia artificial y la protección de los datos personales.
+
+Si utilizas herramientas de IA, recuerda que los textos, fotografías, documentos, audios o cualquier otra información que introduzcas pueden contener datos personales tuyos o de terceras personas. Antes de proporcionarlos, valora si realmente es necesario hacerlo y consulta cómo serán tratados.
 
 ## ObservaCIBER
 
-Plataforma especializada en aportar información sobre ciberseguridad a la ciudadanía y a empresas, con el propósito de aumentar la cultura de la ciberseguridad. Siendo los principales objetivos del [ObservaCIBER](https://observaciber.es/):
+[ObservaCIBER](https://observaciber.es/) es un observatorio especializado en el análisis y seguimiento de la ciberseguridad en España.
+
+A diferencia de otros recursos de esta unidad, su principal función no es ayudarte directamente cuando sufres un incidente, sino proporcionar información que permita comprender cómo evoluciona la ciberseguridad y qué riesgos afectan a la sociedad.
+
+En esta plataforma puedes encontrar estudios, informes, indicadores, análisis, infografías y otros recursos relacionados con la ciberseguridad.
+
+Estos contenidos pueden ayudarte a conocer, entre otras cuestiones:
+
+- Los hábitos de seguridad de la ciudadanía.
+
+- La evolución de determinadas amenazas.
+
+- El nivel de conocimiento y confianza digital de las personas.
+
+- Tendencias relacionadas con fraudes y ciberriesgos.
+
+- El impacto de nuevas tecnologías en la seguridad digital.
+
+Consultar este tipo de información puede ayudarte a comprender que las amenazas no son estáticas y que determinados comportamientos o problemas pueden aumentar, disminuir o transformarse con el tiempo.
+
+También constituye un recurso útil si quieres profundizar en los conocimientos adquiridos a lo largo de esta guía y desarrollar tu ciberinteligencia basándote en estudios y datos.
+
+Siendo los principales objetivos:
 
 - Unir en un espacio común, con una identidad compartida, todos los estudios de ciberseguridad desarrollados por los organismos que participen en este proyecto.
 
@@ -98,29 +132,35 @@ Plataforma especializada en aportar información sobre ciberseguridad a la ciuda
 
 - Compartir conocimiento para facilitar un proceso de transformación digital más seguro y más fuerte.
 
-Aportando estudios, informes, infografías, métricas y más, sobre la ciberseguridad en nuestro ecosistema. Gestionada por el [INCIBE](https://www.incibe.es/) (Instituto Nacional de Ciberseguridad) y el [ONTSI](https://www.ontsi.es/es) (Observatorio Nacional de Tecnología y Sociedad). Ambos dos pertenecientes al Ministerio de Asuntos Económicos y Transformación Digital.
+Aportando estudios, informes, infografías, métricas y más, sobre la ciberseguridad en nuestro ecosistema. Gestionada por el [INCIBE](https://www.incibe.es/) (Instituto Nacional de Ciberseguridad) y el [ONTSI](https://www.ontsi.es/es) (Observatorio Nacional de Tecnología y Sociedad)
 
 ## Internet segura para niños
 
-Internet Segura for Kids [IS4K](https://www.is4k.es/)  es el Centro de Seguridad en Internet para menores de edad en España y tiene por objetivo la promoción del uso seguro y responsable de Internet y las nuevas tecnologías entre los niños y adolescentes. Las principales tareas que tiene encomendadas son:
+Internet Segura for Kids [IS4K](https://www.incibe.es/menores/) es el área de INCIBE especializada en promover un uso seguro y responsable de Internet y las tecnologías entre niños, niñas y adolescentes.
 
-- Sensibilizar y formar a menores, jóvenes, familias, educadores y profesionales del ámbito del menor, a través del desarrollo de campañas, iniciativas y programas de ámbito nacional.
+Sus recursos están dirigidos no solamente a menores, sino también a familias, educadores y profesionales que necesitan orientación sobre los riesgos que pueden aparecer durante el uso de Internet.
 
- - Ofrecer un servicio de línea de ayuda con el que asesorar y asistir a menores, familias, educadores y profesionales del ámbito del menor sobre cómo hacer frente a los riesgos de Internet: contenidos perjudiciales, contactos dañinos y conductas inapropiadas.
- 
- - Organizar el Día de la Internet Segura (Safer Internet Day) en España.
- 
-- Reducir la disponibilidad de contenido criminal en Internet, principalmente de abuso sexual infantil, dando soporte a las FFCCSE (Fuerzas y Cuerpos de Seguridad del Estado).
+Puedes encontrar información y ayuda relacionada con cuestiones como:
 
-Algunos de los medios que ponen a disposición de las familias son:
+- [El ciberacoso dentro y fuera del centro escolar](https://www.incibe.es/menores/blog/el-ciberacoso-dentro-y-fuera-del-centro-escolar).
 
-- El conocimiento de las mayores ciberamenazas a la que están expuestos los menores. Algunos ejemplos son: [sexting](https://www.is4k.es/necesitas-saber/sexting), [grooming](https://www.is4k.es/necesitas-saber/grooming), [ciberacoso escolar](https://www.is4k.es/necesitas-saber/ciberacoso-escolar), etc.
+- [Grooming](https://www.incibe.es/menores/tematicas/grooming).
 
-- Un apartado de [utilidad](https://www.is4k.es/de-utilidad) donde encontrar, herramientas, material didáctico, catálogos, juegos, test, etc.
+- [Menores y sexting](https://www.incibe.es/menores/recursos/menores-y-sexting).
 
-- Una sección de [programas](https://www.is4k.es/programas) con jornadas y eventos.
+- [Guía de seguridad en redes sociales para familias](https://www.incibe.es/menores/materiales/guia-de-seguridad-en-redes-sociales-para-familias).
 
-- Un espacio de [campañas](https://www.is4k.es/campanas) para divulgación mediática.
+- [Fraudes online dirigidos a niños, niñas y adolescentes](https://www.incibe.es/menores/tematicas/fraudes-online).
+
+- [Contenidos perjudiciales para menores](https://www.incibe.es/node/499772).
+
+- [Uso responsable de dispositivos y servicios digitales](https://www.incibe.es/menores/blog/buenas-practicas-para-un-uso-seguro-de-los-dispositivos-del-hogar).
+
+La inteligencia artificial introduce además nuevas situaciones que conviene conocer. Una imagen puede ser manipulada o generada artificialmente, una persona puede utilizar contenidos sintéticos para acosar o engañar y determinados asistentes o servicios de IA pueden recopilar información que un menor proporciona sin ser consciente de sus consecuencias.
+
+Si eres familiar, educador o una persona responsable de un menor, intenta crear un entorno en el que pueda comunicarte un problema digital sin miedo a una reacción desproporcionada. Detectar rápidamente una situación facilita la búsqueda de ayuda y puede reducir sus consecuencias.
+
+Ante un problema también puedes recurrir al servicio 017 de INCIBE para obtener orientación especializada.
 
 ## Pantallas amigas
 
@@ -144,7 +184,9 @@ Pantallas amigas desarrolla su actividad con el [apoyo de entidades e institucio
 
 ## Foro Info Spyware
 
-El [Foro Info Spayware](https://forospyware.com/) es una plataforma que lleva operando en internet desde el año 2005 y se trata de la mayor comunidad en español de ayuda e información sobre virus, spyware, adware, ransomware y malwares. 
+Las comunidades especializadas en ciberseguridad pueden constituir una fuente complementaria de ayuda cuando necesitas resolver determinados problemas técnicos.
+
+[Foro Info Spayware](https://forospyware.com/) es una plataforma que lleva operando en internet desde el año 2005 y se trata de la mayor comunidad en español de ayuda e información sobre virus, spyware, adware, ransomware y malwares. 
 
 En este foro encontrarás toda la información por categorías:
 
@@ -160,14 +202,52 @@ En este foro encontrarás toda la información por categorías:
 
 - Guías, manuales, tutoriales y más: Categoría en la que encontrarás guías de eliminación de malware para troyanos, adware, ransomware y otros tipos de códigos maliciosos de Windows. También encontrara manuales de antivirus, trucos, y otras recomendaciones de seguridad informática.
 
+Este tipo de comunidades puede resultar útil para aprender de las experiencias de otras personas y obtener orientación ante determinados problemas. Sin embargo, debes tener presente que un foro no sustituye a un servicio oficial de asistencia, una autoridad pública o las Fuerzas y Cuerpos de Seguridad cuando sea necesaria su intervención.
+
+Además, cuando solicites ayuda públicamente, protege tu información.
+
+No publiques contraseñas, códigos de autenticación, claves de recuperación, documentos de identidad, datos bancarios, direcciones particulares, números de tarjetas, conversaciones privadas ni cualquier otra información que pueda comprometer tu privacidad o seguridad.
+
+Si necesitas compartir capturas de pantalla o registros técnicos, revísalos previamente y oculta los datos personales o sensibles que no sean necesarios para comprender el problema.
+
+También debes mantener una actitud crítica ante las respuestas que recibas. No ejecutes comandos, descargues programas ni concedas acceso remoto a tu dispositivo únicamente porque una persona desconocida te lo recomiende en un foro.
+
+Una comunidad puede ayudarte a orientarte, pero tú debes seguir comprobando la fiabilidad de las instrucciones antes de aplicarlas.
+
 ## Fuerzas y cuerpos de seguridad del estado
 
-En otras líneas de actuación con el propósito de velar por la ciudadanía en general, existen departamentos específicos contra los delitos informáticos de las fuerzas y cuerpos de seguridad del estado, como lo son:
+Cuando has sido víctima de hechos que podrían constituir un delito, dedes acudir a las Fuerzas y Cuerpos de Seguridad del Estado para presentar una denuncia.
 
-- [Brigada central de Investigación Tecnológica de la Policía Nacional (BCIT)](https://www.policia.es/_es/tupolicia_conocenos_estructura_dao_cgpoliciajudicial_bcit.php).
+La Policía Nacional y la Guardia Civil disponen de unidades y recursos especializados en la investigación de delitos cometidos mediante tecnologías digitales.
 
-- [Grupo de Delitos Telemáticos de la Guardia Civil (GDT)](https://www.gdt.guardiacivil.es/webgdt/home_alerta.php).
+Entre las situaciones que pueden requerir una denuncia se encuentran determinados casos de:
 
-Y en esta última, es donde debes interponer una denuncia en caso de ser víctima de algunos de los ciberdelitos que has podido ver en las unidades anteriores, accediendo desdes este enlace [denuncia electrónica](https://www.guardiacivil.es/es/servicios/denuncias/denuncia_electronica/index.html).
+- Estafas y fraudes económicos.
+
+- Acceso ilícito a cuentas o sistemas.
+
+- Amenazas y extorsiones.
+
+- Sextorsión.
+
+- Suplantación de identidad.
+
+- Acoso.
+
+- Difusión ilícita de contenidos.
+
+- Otros posibles ciberdelitos.
+
+Cuando sufras un incidente, intenta conservar las evidencias que puedan ayudar a comprender qué ha ocurrido. Dependiendo del caso, pueden resultar útiles los mensajes recibidos, correos electrónicos, números de teléfono, nombres de usuario, perfiles, direcciones web, justificantes de pago, movimientos bancarios, archivos, fotografías, fechas y horas o capturas de pantalla.
+
+Evita modificar innecesariamente las evidencias originales y no elimines mensajes o archivos que puedan resultar relevantes antes de valorar si serán necesarios.
+
+Si se ha producido un fraude económico, además de conservar las evidencias y valorar la denuncia, contacta cuanto antes con tu entidad bancaria o proveedor de pago para comunicar lo sucedido y conocer las posibles medidas disponibles.
+
+Solicitar asesoramiento a INCIBE no sustituye una denuncia. Del mismo modo, presentar una denuncia no impide que puedas acudir a INCIBE, a la AEPD o a otra entidad competente si necesitas realizar actuaciones adicionales.
+
+La utilización de inteligencia artificial tampoco cambia este principio. Si alguien utiliza una voz clonada, un deepfake, una identidad sintética u otra tecnología para cometer un posible delito, lo relevante es la conducta realizada y sus consecuencias.
+
+Utiliza siempre los canales oficiales de las Fuerzas y Cuerpos de Seguridad para informarte sobre los procedimientos disponibles.
 
 Además, es importante que puedas adjuntar la denuncia con pruebas, para ello, toma capturas de pantallas o cualquier prueba que pudiese ser relevante. Ten en cuenta, que si se trata de una prueba que pueda ser borrada por la persona que ha realizado el delito, necesitarás un testigo online o garante. Se trata de una entidad que certifica que ese delito fue cometido aun cuando ya no esté disponible en la red. En el siguiente enlace tienes una es estas entidades [eGarante - testigo online](https://www.egarante.com/)
