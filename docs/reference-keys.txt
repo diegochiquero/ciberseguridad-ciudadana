@@ -72,6 +72,8 @@ spyware-o-software-espía
 adware
 malvertising
 scareware-o-rogueware
+cryptojacking-o-minería-maliciosa
+plugins-maliciosos
 quishing
 phishing
 vishing
@@ -83,8 +85,6 @@ suplantación-de-identidad-o-spoofing
 ciberestafas-en-compras-online-y-otros-engaños
 warshipping
 vulnerabilidades
-cryptojacking
-plugins-maliciosos
 sim-swapping
 shoulder-surfing-o-visual-hackins
 ciberacoso

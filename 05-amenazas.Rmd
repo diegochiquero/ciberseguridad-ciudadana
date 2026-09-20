@@ -278,42 +278,211 @@ Si sospechas que tu dispositivo ha sido infectado por un infostealer, no debes l
 
 
 ## Adware
+**Categoría: malware o programa malicioso**
 
-El Adware también un tipo de software malicioso que te muestra publicidad constante y molesta, bien instalando otro programa o con ventanas emergentes [@AVAST-adware].
+El adware es software diseñado para mostrarte publicidad, introducir anuncios en los contenidos que consultas o redirigirte hacia determinadas páginas. No todo programa que muestra publicidad es necesariamente malicioso, ya que existen aplicaciones y servicios legítimos que utilizan los anuncios como forma de financiación.
 
-Las vías de entrada a son las mismas prácticamente que cualquier otro tipo de malware:
+El problema aparece cuando el software muestra publicidad de forma intrusiva, realiza cambios que no esperabas, dificulta su eliminación, te redirige a otras páginas o recopila información sobre tu actividad sin ofrecerte suficiente información o control.
 
- - Descarga de contenidos mediante redes de compartición P2P u otras fuentes poco fiables.
+Algunas señales que pueden indicar la presencia de adware o de un programa potencialmente no deseado son:
 
- - Apertura de algún fichero adjunto en un correo electrónico.
+* Aparición frecuente de ventanas o anuncios inesperados.
 
- - Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
- 
-Aunque parte de toda la molesta publicidad que recibes es legítima, existe una plataforma que se llama [Lista Robinson](https://www.listarobinson.es/) a la que puedes inscribirte e indicar cuales son las  empresas publicitarias de las que no quieres recibir publicidad y por qué medios no quieres recibir dicha publicidad: teléfono, correo postal, correo electrónico o SMS/MMS. Además, se trata de un servicio gratuito.
- 
-Otro software muy útil contra la lucha de la publicidad no deseada es [Ghostery](https://www.ghostery.com/) que se encarga de bloquear anuncios, detener rastreadores y acelerar sitios web. Ghostery descubre los rastreadores que hay tras cada sitio web y te permite controlar lo que no deseas para que tu experiencia de navegación sea más limpia, rápida y segura. 
+* Anuncios en lugares donde anteriormente no aparecían.
 
-También es importante saber que prácticamente todos los medios sociales, como Facebook, Instagram, Google y demás disponen en sus menús de configuración de opciones para gestionar la publicidad que llega a tus dispositivos.
+* Redirecciones a páginas que no pretendías visitar.
+
+* Cambios en la página de inicio o en el buscador del navegador.
+
+* Aparición de extensiones, barras de herramientas o aplicaciones que no recuerdas haber instalado.
+
+* Notificaciones publicitarias constantes procedentes de páginas o aplicaciones desconocidas.
+
+El adware puede llegar a tu dispositivo incluido junto con otros programas, especialmente cuando descargas aplicaciones desde fuentes poco fiables o instalas programas sin revisar las opciones que aparecen durante el proceso de instalación. También puede presentarse como una aplicación o extensión aparentemente útil.
+
+Antes de instalar un programa o una extensión del navegador, comprueba su procedencia, revisa los permisos que solicita y evita instalar componentes adicionales que no necesitas. Descarga las aplicaciones desde sus páginas oficiales o desde tiendas y repositorios de confianza.
+
+Si comienzas a recibir publicidad inesperada, comprueba las aplicaciones y extensiones instaladas y revisa qué páginas tienen permiso para enviarte notificaciones. Mantén actualizado el navegador y utiliza las funciones de seguridad y protección frente a sitios maliciosos disponibles en él.
+
+No debes confundir el adware con toda la publicidad que encuentras en Internet ni con las comunicaciones comerciales que recibes por teléfono, correo electrónico o SMS. Que un anuncio te resulte molesto no significa que tu dispositivo esté infectado.
+
+En España, si quieres reducir determinadas comunicaciones publicitarias de empresas a las que no hayas dado tu consentimiento, puedes utilizar servicios de exclusión publicitaria como la [Lista Robinson](https://www.listarobinson.es/) . Este tipo de servicio no detecta ni elimina adware de tus dispositivos.
+
+Los navegadores y algunos servicios digitales también ofrecen opciones para limitar determinadas formas de seguimiento o personalización publicitaria. Existen además extensiones destinadas a bloquear contenidos y rastreadores como el es caso de  [Ghostery](https://www.ghostery.com/), aunque debes instalarlas únicamente desde fuentes fiables y revisar los permisos que solicitan.
 
 ## Malvertising     
+**Categoría: malware o programa malicioso**
 
-Malvertising es el acrónimo de las palabras Malicious y Advertising, que en español sería Publicidad Maliciosa. Esta amenaza lo que hace es esconder malware para infectar los dispositivos en los espacios de publicidad de otras páginas webs, como son los banners de publicidad en las cabeceras o laterales tanto izquierdos como derecho de muchas de la web que a diario te encuentras en internet.
+El término malvertising procede de la combinación de las palabras inglesas malicious y advertising y puede traducirse como publicidad maliciosa. Consiste en utilizar anuncios o mecanismos relacionados con la publicidad digital para dirigirte hacia contenidos o acciones maliciosas. 
 
-La diferencia principal con el adware es que este primero necesita que el malware se instale en el dispositivo y en el caso del malvertising no es necesaria ninguna instalación por parte del usuario para resultar infectado [@OSI-malvertising].
+Esta amenaza lo que hace es esconder malware para infectar los dispositivos en los espacios de publicidad de otras páginas webs, como son los banners de publicidad en las cabeceras o laterales tanto izquierdos como derecho de muchas de la web que a diario te encuentras en internet
+
+A diferencia del adware, el malvertising no implica necesariamente que tengas instalado un programa que muestra publicidad en tu dispositivo. En este caso, el propio anuncio o el destino al que te conduce forma parte del engaño o del ataque [@INCIBE-malvertising].
+
+Un anuncio malicioso puede intentar:
+
+* Llevarte a una página web fraudulenta.
+
+* Conseguir que descargues malware.
+
+* Mostrarte falsas alertas de seguridad para convencerte de que instales un programa.
+
+* Dirigirte a una página de phishing para obtener tus contraseñas u otros datos.
+
+* Suplantar la página de descarga de un programa o servicio legítimo.
+
+* Redirigirte a otros contenidos maliciosos o fraudulentos.
+
+Una característica que debes tener en cuenta es que un anuncio malicioso puede aparecer incluso mientras visitas una página web legítima. Muchos sitios utilizan plataformas externas para gestionar sus espacios publicitarios, por lo que no debes considerar seguro un anuncio únicamente porque aparezca en una página que conoces y en la que confías.
+
+En algunos ataques tendrás que pulsar sobre el anuncio para llegar al contenido malicioso. En otros casos pueden producirse redirecciones o intentos de aprovechar vulnerabilidades del navegador o de otros componentes del dispositivo. Por ello, es importante que mantengas actualizado el navegador, el sistema operativo y las aplicaciones.
+
+Presta especial atención a los anuncios que te ofrecen descargar programas, supuestas actualizaciones, herramientas gratuitas o servicios populares. Los ciberdelincuentes pueden crear anuncios que imitan a empresas y servicios legítimos para dirigirte hacia páginas fraudulentas. También pueden aprovechar el interés por nuevas aplicaciones o servicios de inteligencia artificial para promocionar falsas herramientas o descargas que en realidad contienen malware.
+
+Si un anuncio te ofrece un programa o servicio que te interesa, evita utilizar el propio anuncio como única referencia. Comprueba la dirección de la página y, cuando sea posible, accede directamente al sitio web oficial o utiliza una tienda de aplicaciones de confianza.
+
+Las herramientas de bloqueo de anuncios y determinadas protecciones del navegador pueden reducir tu exposición a algunos de estos contenidos, pero no garantizan que estés protegido frente a todas las formas de publicidad maliciosa.
 
 La vía de contagio por la que podemos caer víctimas de este ciberdelito, es como habrás podido ver, haciendo click en los anuncios en páginas webs.
 
 ## Scareware o rogueware
+**Categoría: malware o programa malicioso**
 
-Esta variante de malware conocido como Scareware o Rogueware es otro software malicioso más que trata de engañar a los usuarios para que visiten sitios infestados de malware. Normalmente suele darse en forma de ventanas emergentes, que además, aparecen como advertencias legítimas de compañías de software en su mayoría de antivirus y que afirman que el sistema operativo ha sido vulnerado o que los archivos del PC han sido infectado [@KASPER-scareware].
+El scareware y el rogueware son conceptos diferentes, aunque pueden aparecer relacionados dentro de un mismo engaño [@KASPER-scareware].
 
-Las vías de contagio son las mismas que has visto en malwares anteriores:
+El scareware utiliza falsas alertas o advertencias, normalmente relacionadas con la seguridad, privacidad o funcionamiento de tu dispositivo, para hacerte creer que existe un problema que debes solucionar de forma inmediata. Por ejemplo, puede mostrar mensajes indicando que tu dispositivo está infectado por varios virus, que alguien está accediendo a tu información o que se han detectado graves problemas de seguridad.
 
-- Descarga de contenidos mediante redes de compartición P2P u otras fuentes poco fiables.
+Estas falsas advertencias pueden aparecer mientras navegas por Internet mediante páginas web, ventanas emergentes, anuncios o notificaciones del navegador. Para resultar más convincentes pueden imitar la apariencia de los avisos del sistema operativo, de un antivirus, del navegador o de una empresa conocida.
 
-- Apertura de algún fichero adjunto en un correo electrónico.
+El scareware intenta que reacciones ante el supuesto problema y realices alguna acción, como:
 
-- Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
+* Descargar o instalar un programa.
+
+* Comprar una supuesta herramienta de seguridad.
+
+* Llamar a un falso servicio de soporte técnico.
+
+* Acceder a una página fraudulenta.
+
+* Conceder permisos a una aplicación o página web.
+
+* Facilitar contraseñas, datos personales o información bancaria.
+
+Una de las posibles consecuencias de este engaño es que termines instalando rogueware. Se denomina así al software engañoso que se presenta como una aplicación legítima o útil, frecuentemente como un antivirus, limpiador, optimizador u otra herramienta de seguridad.
+
+Por ejemplo, una página puede mostrarte una falsa advertencia indicando que tu dispositivo tiene numerosos virus y ofrecerte inmediatamente un supuesto antivirus para eliminarlos. La falsa advertencia constituye el scareware, mientras que el falso programa de seguridad o falso antivirus que intenta que instales es el rogueware.
+
+El rogueware puede inventar o exagerar problemas en tu dispositivo y posteriormente exigirte un pago para solucionarlos. También puede intentar recopilar información, modificar la configuración del dispositivo, mostrar publicidad no deseada o facilitar la instalación de otro malware.
+
+Sin embargo, un ataque de scareware no tiene por qué terminar necesariamente con la instalación de rogueware. La falsa alerta también puede conducirte a una página de phishing, intentar que facilites datos bancarios, conseguir que realices un pago o hacer que contactes con un falso servicio de soporte técnico.
+
+Debes desconfiar especialmente de las páginas que muestran mensajes como “Tu dispositivo está infectado” o que aparentan realizar un análisis antivirus y encontrar numerosas amenazas. Una página web no puede determinar mediante un supuesto análisis mostrado en pantalla que tienes una determinada cantidad de virus en tu dispositivo.
+
+También debes prestar atención a las notificaciones del navegador. Algunas páginas intentan conseguir tu permiso para enviarte notificaciones y posteriormente lo utilizan para mostrar falsas alertas de seguridad. Aunque estos avisos aparezcan fuera de la página que estás visitando, no significa que procedan del sistema operativo o de tu antivirus.
+
+**Para reducir el riesgo:**
+
+* No instales una aplicación simplemente porque una página web te indique que tu dispositivo está infectado o tiene problemas.
+
+* No llames a números de teléfono ni accedas a enlaces proporcionados por una alerta sospechosa.
+
+* Descarga las herramientas de seguridad desde sus páginas oficiales o desde tiendas y repositorios de confianza.
+
+* Revisa qué páginas tienen permiso para enviarte notificaciones.
+
+* Comprueba quién desarrolla una aplicación y los permisos que solicita antes de instalarla.
+
+* Mantén actualizado el sistema operativo, el navegador y las herramientas de seguridad.
+
+Si encuentras una advertencia de este tipo, evita interactuar con ella. Cierra la página o el navegador y comprueba el estado del dispositivo utilizando las herramientas de seguridad que ya tengas instaladas o las funciones de protección del propio sistema operativo.
+
+Si ya has instalado un programa sospechoso, evita realizar pagos o introducir información personal en él y comprueba el dispositivo con una herramienta de seguridad de confianza. Si además has facilitado contraseñas o datos bancarios, adopta las medidas necesarias para proteger las cuentas afectadas.
+
+## Cryptojacking o minería maliciosa
+**Categoría: malware o programa malicioso**
+
+El cryptojacking o minería maliciosa de [criptomonedas](https://es.wikipedia.org/wiki/Criptomoneda) consiste en utilizar sin tu autorización los recursos de un ordenador, teléfono móvil u otro dispositivo para realizar operaciones relacionadas con la minería de criptomonedas.
+
+A diferencia de otros ataques relacionados con criptomonedas, el objetivo del cryptojacking no es necesariamente robar las criptomonedas que puedas tener. El atacante intenta aprovechar la capacidad de procesamiento de tus dispositivos y la energía que consumen para obtener un beneficio económico. Por lo que es necesario aclarar, que no está tan focalizado en el robo directo de estas, sino, que se centra en el robo o secuestro de dispositivos de terceros con el fin de utilizarlos para minar estas criptomonedas, y a los que se le conocen también como dispositivos zombies [@cryptojacking].
+
+Para conseguirlo puede utilizar malware que se instala o ejecuta en el dispositivo comprometido. También han existido ataques mediante código ejecutado desde páginas web y otras técnicas destinadas a utilizar los recursos del dispositivo sin que seas consciente de ello.
+
+El cryptojacking puede afectar al rendimiento del dispositivo y provocar un mayor consumo de recursos y energía. Dependiendo del dispositivo y de la intensidad de la actividad, algunos indicios pueden ser:
+
+* Una reducción del rendimiento difícil de explicar.
+
+* Un uso elevado y prolongado del procesador o de la tarjeta gráfica sin que estés realizando tareas que lo justifiquen.
+
+* Un aumento inusual de la temperatura del dispositivo.
+
+* Ventiladores funcionando con mayor intensidad o durante más tiempo de lo habitual.
+
+* Un consumo de batería superior al esperado en dispositivos portátiles.
+
+Debes tener en cuenta que ninguno de estos síntomas demuestra por sí solo que estés siendo víctima de cryptojacking. Muchas aplicaciones legítimas, como videojuegos, programas de edición de vídeo, videollamadas o incluso determinadas páginas web, pueden utilizar temporalmente una gran cantidad de recursos.
+
+Si observas un consumo elevado de recursos que no puedes explicar, puedes utilizar las herramientas del propio sistema operativo, como el Administrador de tareas de Windows o el Monitor de Actividad de macOS, para comprobar qué aplicaciones y procesos están utilizando el procesador, la memoria u otros recursos. No debes considerar malicioso un proceso únicamente porque tenga un consumo elevado; comprueba primero a qué aplicación pertenece.
+
+**Para reducir el riesgo:**
+
+* Mantén actualizado el sistema operativo, el navegador y las aplicaciones.
+
+* Utiliza las funciones de protección frente a malware disponibles en tu dispositivo.
+
+* Descarga programas y aplicaciones únicamente desde fuentes fiables.
+
+* Evita instalar programas pirateados, cracks o aplicaciones cuya procedencia no puedas comprobar.
+
+* Revisa las extensiones instaladas en el navegador y elimina aquellas que no reconozcas o que ya no necesites.
+
+* Desconfía de archivos, aplicaciones o enlaces inesperados que intenten convencerte de que instales software.
+
+Si detectas un programa o proceso sospechoso que podría estar realizando minería sin tu autorización, analiza el dispositivo con una herramienta de seguridad actualizada y comprueba las aplicaciones y extensiones instaladas. A continuación, tienes una lista para que puedas elegir la que mejor se adapte a tus necesidades:
+
+- [NoMiner](https://chrome.google.com/webstore/detail/nominer-block-coin-miners/jfnangjojcioomickmmnfmiadkfhcdmd)
+
+- [Adblock nocoin list](https://github.com/hoshsadiq/adblock-nocoin-list)
+
+Señalar que [Microsoft Defender](https://www.microsoft.com/es-es/windows/comprehensive-security), que como ya sabréis es el antivirus que Windows trae por defecto ya incluye [protección contra el cryptojacking](https://www.microsoft.com/security/blog/2021/04/26/defending-against-cryptojacking-with-microsoft-defender-for-endpoint-and-intel-tdt/), aunque de momento solo está presente en la versión empresarial, es de suponer que con el paso del tiempo lo terminen incluyendo en las versiones de Windows Home.
+
+El cryptojacking puede pasar desapercibido porque su objetivo suele ser aprovechar tus recursos durante el mayor tiempo posible. Por ello, un funcionamiento aparentemente normal del dispositivo no garantiza necesariamente que no exista actividad maliciosa.
+    
+## Plugins maliciosos
+**Categoría: malware o programa malicioso**
+
+Los plugins, complementos y extensiones son pequeños programas que añaden nuevas funciones a una aplicación o servicio. Puedes encontrarlos, por ejemplo, en navegadores web, gestores de contenidos y otras aplicaciones.
+
+Para entender mejor qué son, piensa en las extensiones que puedes añadir a navegadores como Chrome, Firefox o Edge. Por ejemplo, existen extensiones para bloquear publicidad, traducir páginas web, gestionar contraseñas, comprobar la ortografía, guardar contenido, realizar capturas de pantalla, comparar precios o modificar la apariencia de las páginas. [Adblock](https://getadblock.com/), por ejemplo, es una extensión destinada al bloqueo de publicidad. 
+
+Normalmente puedes consultar las extensiones que tienes instaladas desde el menú de configuración de tu navegador. En muchos navegadores también aparecen identificadas mediante un icono situado junto a la barra de direcciones. Pero las extensiones y los plugins no son exclusivos de los navegadores. Muchos programas los utilizan para añadir nuevas funciones. Por ejemplo, un programa de edición de imagen o vídeo puede incorporar plugins para añadir nuevos efectos y filtros; WordPress los utiliza para añadir funciones como formularios, tiendas en línea o herramientas de seguridad; y algunos videojuegos permiten instalar complementos para ampliar o modificar determinadas características del juego.
+
+Aunque la mayoría tienen finalidades legítimas, un complemento malicioso puede aprovechar los permisos que le concedas para realizar acciones no deseadas. Dependiendo de sus características y permisos, podría recopilar información sobre tu navegación, acceder a determinados datos, modificar el contenido de las páginas que visitas, redirigirte a sitios fraudulentos, mostrar publicidad no deseada o facilitar otras actividades maliciosas.
+
+En el caso de las extensiones del navegador debes prestar especial atención a los permisos que solicitan. Algunas necesitan acceder al contenido de las páginas web para poder realizar su función, pero debes preguntarte si los permisos solicitados son coherentes con lo que la extensión dice hacer. Por ejemplo, una herramienta con una función muy sencilla que solicita acceso a todas las páginas que visitas merece una revisión más cuidadosa.
+
+El hecho de que una extensión o complemento se encuentre en una tienda oficial tampoco garantiza de forma absoluta que sea seguro. Las plataformas aplican mecanismos de revisión y pueden retirar software cuando detectan comportamientos maliciosos o incumplimientos, pero algunas amenazas pueden eludir inicialmente estos controles.
+
+Además, una extensión que era legítima cuando la instalaste puede cambiar con el tiempo. Una actualización puede modificar sus funciones o los permisos que necesita y también puede producirse un cambio en el responsable de su desarrollo. Por ello, no debes valorar su seguridad únicamente en el momento de instalarla.
+
+**Para reducir el riesgo:**
+
+* Instala únicamente los complementos y extensiones que realmente necesites.
+
+* Utiliza preferentemente las tiendas oficiales o fuentes de confianza, evitando descargar extensiones desde enlaces o páginas desconocidas.
+
+* Comprueba quién desarrolla el complemento, cuál es su finalidad y si dispone de información suficiente sobre su funcionamiento antes de instalarlo.
+
+* Revisa los permisos que solicita y valora si son razonables para las funciones que ofrece.
+
+* Presta atención si una actualización solicita nuevos permisos que antes no eran necesarios.
+
+* Revisa periódicamente las extensiones y complementos instalados y elimina aquellos que ya no utilices o que no reconozcas.
+
+* Mantén actualizado el navegador, las aplicaciones y el sistema operativo.
+
+Si una extensión comienza a producir comportamientos inesperados, como redirecciones, cambios en las páginas que visitas, publicidad inusual o modificaciones que no has realizado, revisa las extensiones instaladas y deshabilita o elimina las que resulten sospechosas.
+
+Recuerda que instalar muchas extensiones innecesarias aumenta la cantidad de software que puede acceder a tu navegador y a tus datos. Una buena práctica es mantener únicamente aquellas que realmente utilizas y cuyos permisos comprendes.
 
 ## Quishing
 
@@ -625,56 +794,6 @@ Un ejemplo de vulnerabilidad muy conocido fuero el [Meltdown](https://es.wikiped
 Las vulnerabilidades son también una puerta de entrada para lo que se conocen como ataques de click cero. Un pirateo de clic cero explota los fallos de tu dispositivo y utiliza una deficiencia en la verificación de datos para acceder a tu sistema. Y no necesita la intervención de la propia víctima. También pueden ser explotadas por lo que se conoce como "exploit". Un exploit es un programa informático, una parte de un software o una secuencia de comandos que se aprovecha de un error o vulnerabilidad para provocar un comportamiento no intencionado o imprevisto en un software, hardware o en cualquier dispositivo electrónico.
     
 Amplía la información en el artículo del centro de recursos de los servicios de antivirus Kaspersky [¿Qué es el malware de clic cero y cómo funcionan los ataques de clic cero?](https://www.kaspersky.es/resource-center/definitions/what-is-zero-click-malware).
-
-## Cryptojacking
-
-El cryptojacking, también llamado minería de criptomonedas malicioso, consiste en un tipo de software fraudulento que se oculta en un ordenador o en un dispositivo móvil, y utiliza los recursos de estos para extraer diversas formas de monedas digitales conocidas como [criptomonedas](https://es.wikipedia.org/wiki/Criptomoneda). Hay que aclarar que no está tan focalizado en el robo directo de estas, sino, que se centra en el robo o secuestro de dispositivos de terceros con el fin de utilizarlos para minar estas criptomonedas, y a los que se le conocen también como dispositivos zombies [@cryptojacking].
-
-Se trata de una amenaza reciente que se hace con el control del navegador web, y de este modo, comprometen todo tipo de dispositivos, desde ordenadores de escritorio y portátiles hasta teléfonos inteligentes e incluso servidores de red.
-
-Existen recursos y herramientas para saber si estamos siendo víctimas de cryptojacking [@GEN-guia-cryptojacking]:
-
-- Te puede pasar que el ordenador se recaliente, que empiecen a sonar los ventiladores de pronto y se mantengan encendidos por más tiempo de lo que consideras normal.
-
-- El sistema operativo se pondrá lento, incluso se puede llegar a colgar el navegador o todo el sistema constantemente.
-
-- Comprueba el administrador de tareas en Windows, o el Monitor de actividad en MacOS. Fíjate en los procesos que estén ocupando el mayor porcentaje de CPU. En circunstancias normales un solo proceso no debe pasar de 10%, rara vez sobrepasan el 20% al menos que se trate de software muy complejo como el de edición de vídeo, juegos, o el mismo sistema actualizando. Pero que te aparezca el navegador en números absurdos como 70-90 y hasta 100% es una alarma clara.
-
-Las vías de contagios son las mismas que la mayoría de malware tales como los virus, gusanos, troyanos, spyware y demás. Por lo que puedes verlo en dichos apartados de esta misma unidad. Además, existen webs y plugin que comprueban si estas siendo víctima de este ciberdelito e incluso alguna de estas herramientas previenen y bloquean estos ataques. A continuación, tienes una lista para que puedas elegir la que mejor se adapte a tus necesidades:
-
-- [CoinEater](https://github.com/fhstp/CoinEater) 
-
-- [Minerblock](https://github.com/xd4rker/MinerBlock)
-
-- [Not mining](https://notmining.es)
-
-- [NoCoin](https://github.com/keraf/NoCoin)
-
-- [NoMiner](https://chrome.google.com/webstore/detail/nominer-block-coin-miners/jfnangjojcioomickmmnfmiadkfhcdmd)
-
-- [Adblock nocoin list](https://github.com/hoshsadiq/adblock-nocoin-list)
-
-Señalar que [Microsoft Defender](https://www.microsoft.com/es-es/windows/comprehensive-security), que como ya sabréis es el antivirus que Windows trae por defecto ya incluye [protección contra el cryptojacking](https://www.microsoft.com/security/blog/2021/04/26/defending-against-cryptojacking-with-microsoft-defender-for-endpoint-and-intel-tdt/), aunque de momento solo está presente en la versión empresarial, es de suponer que con el paso del tiempo lo terminen incluyendo en las versiones de Windows Home.
-
-Por otro lado, ya son algunos navegadores los que implementan herramientas nativas para paliar el cryptocjacking como es el caso del navegador [Firefox](https://www.mozilla.org/es-ES/firefox/browsers/). Puedes obtener más información en este enlace [Firefox añadirá protección contra el minado de criptomonedas y el fingerprinting](https://www.genbeta.com/navegadores/firefox-anadira-proteccion-minado-criptomonedas-fingerprinting).
-
-## Plugins maliciosos
-
-En primer lugar, es importante tener claro qué es un plugin. Así pues, se trata de un software o aplicación que actúa como complemento para ampliar las funcionalidades del programa principal al que complementa. Dicho esto, algunos ciberdelicuentes usan esta funcionalidad para sus actividades delictivas, como espiar o recopilar datos sensibles e incluso el robo de criptomonedas. [@IONOS-plugin].
-
-Instalar un plugin suele ser una acción muy sencilla, y te puede servir para finalidades muy diversas, un claro ejemplo ello, es el plugin de [Google drive](https://drive.googleblog.com/2012/12/introducing-save-to-drive-extension.html) o [Adblock](https://getadblock.com/) para el bloqueo de publicidad, etc. Es por esto que debes tener siempre algunas consideraciones, como verás a continuación.
-
-Sin embargo, a pesar de ser programas muy útiles que la inmensa mayoría utiliza, no todos son conscientes del riesgo que conlleva el simple hecho de instalar un plugin. El problema suele venir por no tener actualizado un buen sistema de seguridad.
-
-A veces, el simple hecho de que el plugin esté disponible no significa garantía ninguna. Tanto es así que aquí podemos ver uno de los que recientemente ha sido retirado de WordPress hasta en cuatro ocasiones. Un programa capaz de recopilar datos de los navegantes con el correspondiente riesgo a nivel de Reglamento General de Protección de Datos que esto conlleva, así como de publicar entradas no deseadas y prácticas de spam. De otro lado, Google está continuamente retirando plugins maliciosos de su plataforma.
-
-El contagio de estos plugins maliciosos normalmente es a través de las Webs Store de las diferentes plataformas. Por lo que los puntos más importantes a tener en cuenta a la hora de protegernos son:
-
-- Infórmate del desarrollo del plugin así como posibles variaciones.
-
-- No descargues plugins sospechosos.
-
-- Utiliza preferiblemente aquellos plugins de referencia, con fama y garantía reconocidas.
 
 ## SIM Swapping
 
