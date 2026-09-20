@@ -102,7 +102,7 @@
 
 \title{Ciberseguridad ciudadana}
 \author{Diego Chiquero Mena}
-\date{06 September 2026}
+\date{20 September 2026}
 
 \begin{document}
 \maketitle
@@ -1651,66 +1651,69 @@ Si utilizas tarjetas con pago sin contacto y te preocupa una posible lectura acc
 
 \section{Principales amenazas}\label{principales-amenazas}
 
-En lo referente a la seguridad de tus dispositivos debes tener en cuenta la diversidad de amenazas que existen, tales como virus, spywares, troyanos, gusanos y que pueden comprometer tus dispositivos y toda la información que en ellos contengas.
+Cuando utilizas un ordenador, teléfono móvil, tableta u otro dispositivo conectado a Internet estás expuesto a diferentes amenazas que pueden afectar al funcionamiento del dispositivo, acceder a tus cuentas, obtener información personal o económica, espiarte, engañarte o utilizar tus recursos sin tu autorización.
 
-La mayoría de éstos están catalogado como Malware. Un Malware es un tipo de software malicioso con un primer objetivo inicial de infiltrarse en un equipo o sistema informático sin el consentimiento del usuario, para posteriormente actuar sobre él \citep{WIKI-malware}.
+Algunas de estas amenazas utilizan malware, término que engloba diferentes tipos de programas maliciosos, como virus, troyanos, gusanos, programas espía (spyware) o ransomware, entre otros \citep{WIKI-malware}. Sin embargo, no todos los ataques necesitan instalar un programa malicioso en tu dispositivo. Un atacante también puede intentar engañarte para que reveles una contraseña, autorices una operación, accedas a una página fraudulenta o le proporciones determinada información.
 
 En este punto es importante que sepas cuáles son todas y cada una de las amenazas a las que estas expuesto, si no tienes las herramientas y no adoptas una actitud prudente en el uso de los dispositivos y la red.
 
-En unidades anteriores viste que precauciones y herramientas debes adoptar para no correr riesgos. En esta unidad verás cuáles son estas amenazas y como llegan a tus dispositivos.
+Por este motivo, conocer las amenazas no consiste únicamente en aprender sus nombres. Es más importante que entiendas cómo actúan, cómo pueden llegar hasta ti, qué señales pueden ayudarte a detectarlas y qué medidas puedes adoptar para reducir el riesgo.
 
-Las amenazas vienen de la mano de perfiles a los que conoces como hacker, ciberdelicuente, pirata informático, etc. Pero cabe destacar que estos conceptos no son lo mismo \citep{OSPI-ciberseguridad-espana}. Por lo tanto:
+Además, las amenazas evolucionan constantemente. Los ciberdelincuentes aprovechan nuevas tecnologías y servicios legítimos para mejorar sus ataques. La inteligencia artificial, por ejemplo, puede utilizarse para crear mensajes fraudulentos más convincentes, automatizar intentos de engaño, generar imágenes, voces o vídeos falsos y facilitar determinadas tareas relacionadas con un ataque. Esto no convierte a la inteligencia artificial en una amenaza por sí misma, pero sí puede hacer que algunos engaños sean más fáciles de producir, personalizar y escalar.
 
-\begin{itemize}
-\item
-  Ciberdelincuentes: Sus ataques se dirigen a objetivos concretos como escuelas, hospitales, instituciones, grandes empresas o bancos, entre muchos otros.
-\item
-  Ciberterroristas y ciberyihadistas: Organizaciones terroristas que han desarrollado sus propias divisiones informáticas, aunque todavía no parecen ser capaces de desarrollar ciberataques sofisticados.
-\item
-  Hackivistas: Grupos reivindicativos que actúan por razones ideológicas.
-\item
-  Cibervándalos: Simplemente responden al deseo de armar revuelo y suelen ser ciberdelincuentes amateurs y poco cualificados.
-\end{itemize}
+Un concepto importante a tener siempre presente, que comenzo con el exdirector de FBI Robert Mueller, cuando popularizó durante su mandato que, ``solo hay dos tipos de empresas: las que han sido hackeadas y las que lo serán''.Y que después, asimismo, fue parafraseado por expertos de la industria, como John Chambers (antiguo CEO de Cisco), quien afirmó que ``existen dos tipos de empresas: las que han sido hackeadas y las que no saben que han sido hackeadas''. Para posteriormente terminar acuñandose en la literatura técnica y en las conferencias sobre ciberseguridad, como principio fundamental, que se resume comúnmente con el enfoque de que la seguridad ya no busca la prevención absoluta (imposible de garantizar), sino la resiliencia, asumiendo que el incidente es inevitable y enfocando los esfuerzos en la detección temprana y la capacidad de respuesta y recuperación. Cristalizando finalmente la popular frase de que, «La cuestión no es si vas a ser atacado, sino cuándo vas a ser atacado», un recordatorio constante en la divulgación tecnológica de que nadie es completamente invulnerable en la red.
 
-Dispones de más información en \href{https://www.incibe.es/aprendeciberseguridad/hacker-vs-ciberdelincuente}{hacker vs ciberdelincuente} y \href{https://www.osi.es/es/campanas/los-ciberdelincuentes-quienes-son/quienes-son-los-ciberdelincuentes-y-que-buscan}{¿Quiénes son los ciberdelincuentes y qué buscan?}.
+También debes tener presente que detrás de un ataque pueden existir actores con conocimientos, recursos y motivaciones muy diferentes. Pueden buscar obtener dinero, robar información, conseguir acceso a cuentas o dispositivos, espiar, causar daños o interrupciones, o perseguir otros objetivos. Para protegerte, generalmente es más útil comprender qué intentan hacer y cómo puedes reconocerlo que determinar qué tipo de atacante se encuentra detrás.
 
-\textbf{¿Cómo detectar si estás infectado?}
+\textbf{¿Cómo puedes detectar un posible problema?}
+
+No siempre es fácil saber si un dispositivo o una cuenta han sido comprometidos. Algunas señales que deberían llamar tu atención son:
 
 \begin{itemize}
 \item
-  Cambios en el navegador, página de inicio distinta, nuevos favoritos o barras de herramientas.
+  Una ralentización o un consumo de batería, datos o recursos difícil de explicar.
 \item
-  Ordenador ralentizado.
+  Aplicaciones, extensiones o programas que no recuerdas haber instalado.
 \item
-  Ventanas emergentes inesperadas.
+  Cambios inesperados en el navegador o en la configuración del dispositivo.
 \item
-  Perdida de espacio en la memoria ram o disco duro.
+  Ventanas, anuncios, avisos o redirecciones que aparecen de forma inusual.
 \item
-  Apagón del equipo de manera inesperada.
+  Archivos que desaparecen, cambian de nombre o dejan de estar accesibles.
 \item
-  Mensajes anormales a la hora de encender el equipo.
+  Alertas de seguridad o intentos de inicio de sesión que no reconoces.
 \item
-  Mensajes de alertas inesperados.
+  Mensajes o publicaciones enviados desde tus cuentas sin tu intervención.
 \item
-  Ficheros cambiados de nombre o desaparecidos.
+  Cambios de contraseña o de datos de recuperación que tú no has realizado.
 \end{itemize}
 
-\textbf{Una buena práctica para minimizar los riesgos es disponer de una suite de seguridad que estaría básicamente formada por:}
+Una de estas situaciones por sí sola no demuestra necesariamente que hayas sufrido un ataque, pero sí puede ser una señal para realizar comprobaciones.
+
+\textbf{Reduce el riesgo}
+
+No existe una herramienta capaz de protegerte frente a todas las amenazas. La protección depende de combinar las medidas de seguridad de tus dispositivos con unos hábitos adecuados.
 
 \begin{itemize}
 \item
-  Antivirus.
+  Mantén actualizados el sistema operativo, las aplicaciones y el navegador.
 \item
-  Anti-Spyware.
+  Ten instalado un antivirus que mantenlo actulizado.
 \item
-  Firewall o corta fuegos.
+  Utiliza las funciones de seguridad y protección frente a malware disponibles en tus dispositivos.
 \item
-  Copia de seguridad.
+  Descarga aplicaciones y archivos desde fuentes fiables.
 \item
-  Discos de arranque.
+  Utiliza contraseñas robustas y diferentes.
 \item
-  Anti-phishing. El phishing lo verás en esta misma unidad más adelante.
+  Activa la autenticación en dos pasos siempre que sea posible.
+\item
+  Realiza copias de seguridad periódicas de la información importante.
+\item
+  Desconfía de mensajes, enlaces, archivos o solicitudes inesperadas, aunque aparentemente procedan de una persona o entidad conocida.
 \end{itemize}
+
+La inteligencia artificial hace todavía más importante esta última precaución: un mensaje bien escrito, una fotografía convincente o incluso una voz o un vídeo aparentemente reales ya no constituyen por sí solos una prueba de que quien está detrás sea realmente quien dice ser.
 
 \textbf{Si hay menores en casa:}
 
@@ -1723,92 +1726,142 @@ Dispones de más información en \href{https://www.incibe.es/aprendecibersegurid
 
 \textbf{Los tres ciberataques que encabezan el ranking son:}
 
-\begin{enumerate}
-\def\labelenumi{\arabic{enumi}.}
+\begin{itemize}
 \item
   Fraude de ventas.
 \item
   Vulnerabilidad de los equipos.
 \item
   Infecciones por malware que pretenden borrar datos, alterar las funciones básicas del equipo, espiar y/o robar datos.
-\end{enumerate}
+\end{itemize}
+
+Por último y a título informativo, las ciberamenazas vienen de la mano de perfiles a los que conoces como hacker, ciberdelicuente, pirata informático, etc. Pero cabe destacar que estos conceptos no son lo mismo. Por lo tanto:
+
+\begin{itemize}
+\item
+  Ciberdelincuentes: Sus ataques se dirigen a objetivos concretos como escuelas, hospitales, instituciones, grandes empresas o bancos, entre muchos otros.
+\item
+  Ciberterroristas y ciberyihadistas: Organizaciones terroristas que han desarrollado sus propias divisiones informáticas, aunque todavía no parecen ser capaces de desarrollar ciberataques sofisticados.
+\item
+  Hackivistas: Grupos reivindicativos que actúan por razones ideológicas.
+\item
+  Cibervándalos: Simplemente responden al deseo de armar revuelo y suelen ser ciberdelincuentes amateurs y poco cualificados.
+\item
+  Hackers: son aquellas persona que tratan de solventar, paliar o informar sobre los problemas de seguridad encontrados en programas, servicios, plataformas o herramientas, pero sin ningún ánimo fraudulento si no todo lo contrario, con el ánimo de reducir la posibilidades de ataques por parte de ciberdelicuentes o cibervándalos. Dispones de más información en \href{https://www.incibe.es/aprendeciberseguridad/hacker-vs-ciberdelincuente}{hacker vs ciberdelincuente}
+\end{itemize}
+
+En los siguientes apartados conocerás con más detalle algunas de las principales amenazas, cómo funcionan, cómo pueden afectarte y qué puedes hacer para prevenirlas o reaccionar ante ellas.
 
 \section{Virus}\label{virus}
 
-Un virus es un programa informático diseñado para infectar archivos u ocasionar efectos molestos, destructivos e incluso irreparables en tu ordenador, dañando hardware, software y archivos \citep{PANDA-virus}.
+\textbf{Categoría: malware o programa malicioso}
 
-Los virus tienen diferentes vías de entrada a tus equipos, como por ejemplo:
+Un virus informático es un tipo de malware diseñado para infectar archivos o programas. Dependiendo del virus, sus efectos pueden ir desde provocar alteraciones en el funcionamiento del dispositivo hasta modificar, eliminar o comprometer archivos e información \citep{WIKI-virus}.
+
+Aunque habitualmente se utiliza la palabra ``virus'' para referirse a cualquier programa malicioso, no todo el malware es un virus. Existen otros tipos de malware, como troyanos, gusanos, programas espía o ransomware, que conocerás más adelante.
+
+Un virus puede llegar a tu dispositivo de diferentes formas. Algunas de las más habituales son:
 
 \begin{itemize}
 \item
-  Utilización de una memoria USB previamente infectada.
+  Abrir o ejecutar un archivo malicioso recibido por correo electrónico, mensajería instantánea u otros medios.
 \item
-  Descarga de contenidos mediante redes de compartición P2P, u otras fuentes poco fiables.
+  Descargar programas, juegos, documentos u otros contenidos desde páginas o fuentes poco fiables.
 \item
-  Apertura de algún fichero adjunto en un correo electrónico.
+  Instalar programas pirateados, modificados o procedentes de fuentes cuya legitimidad no puedes comprobar.
 \item
-  Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
+  Utilizar una memoria USB u otro dispositivo de almacenamiento previamente infectado.
+\item
+  Descargar y ejecutar un archivo desde una página web maliciosa o después de pulsar un enlace engañoso.
+\item
+  Aprovechar vulnerabilidades del sistema operativo o de aplicaciones que no se encuentran actualizadas.
 \end{itemize}
+
+Debes prestar especial atención a los archivos que te pidan ejecutar o instalar algo, incluso cuando aparentemente procedan de una persona o entidad conocida. Que un archivo tenga un nombre familiar, utilice un icono conocido o llegue acompañado de un mensaje convincente no garantiza que sea seguro.
+
+Mantener actualizado tu dispositivo y sus aplicaciones, utilizar las protecciones de seguridad disponibles y evitar ejecutar archivos de procedencia dudosa reduce considerablemente el riesgo de infección.
 
 \section{Gusanos informáticos}\label{gusanos-informuxe1ticos}
 
-Los gusanos son en realidad una subclase de virus, por lo que comparten características similares \citep{PANDA-gusano}.
+\textbf{Categoría: malware o programa malicioso}
 
-El principal objetivo de los gusanos es propagarse y afectar al mayor número de dispositivos posible, colapsar los ordenadores y las redes informáticas e impidiendo así el trabajo a los usuarios.
+Un gusano informático es un tipo de malware capaz de autorreplicarse y propagarse de un dispositivo a otro. Aunque comparte algunas características con los virus, existe una diferencia importante: un gusano puede propagarse automáticamente sin necesidad de infectar previamente otros archivos o programas \citep{PANDA-gusano}.
 
-A diferencia de un virus, un gusano no necesita realizar cambios en los archivos de programas, sino que se aloja en diferentes ubicaciones del ordenador, principalmente la memoria RAM, para seguidamente clonarse a sí mismo y usar tus contactos y otros recursos del dispositivo para auto enviarse, a través del correo electrónico o programas P2P entre otros. Por lo que tienen la capacidad de propagarse sin la ayuda de una persona.
+Esta capacidad permite que algunos gusanos se extiendan rápidamente entre dispositivos conectados a una misma red o incluso a través de Internet. Para conseguirlo pueden aprovechar vulnerabilidades de los sistemas o servicios de red, configuraciones inseguras u otros mecanismos de propagación.
 
-Los gusanos tienen diferentes vías de entrada a los equipos, como, por ejemplo:
+Una vez que un gusano consigue acceder a un dispositivo, puede buscar otros sistemas a los que propagarse y repetir automáticamente el proceso. Esta actividad puede consumir recursos y afectar al funcionamiento de dispositivos y redes, pero sus consecuencias no se limitan a ello. Dependiendo del malware, también puede instalar otros programas maliciosos, modificar el sistema o facilitar otras acciones del atacante.
 
-\begin{itemize}
-\item
-  Utilización de una memoria USB previamente infectada.
-\item
-  Descarga de contenidos mediante redes de compartición P2P u otras fuentes poco fiables.
-\item
-  Apertura de algún fichero adjunto en un correo electrónico.
-\item
-  Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
-\end{itemize}
+Para reducir el riesgo es especialmente importante que mantengas actualizado el sistema operativo y las aplicaciones, ya que las actualizaciones de seguridad corrigen vulnerabilidades que determinados gusanos pueden aprovechar para propagarse. También debes evitar abrir o ejecutar archivos de procedencia dudosa y mantener activadas las medidas de seguridad y protección de red disponibles en tus dispositivos.
+
+Comparte vías de entradas con el virus visto justo en el punto anterior.
 
 \section{Troyanos}\label{troyanos}
 
-Un Troyano o también llamado Caballo de Troya es una clase de malware que normalmente se camufla como software legítimo. Los ciberladrones utilizan este software malicioso para acceder en tus equipos y una vez dentro campar a sus anchas \citep{KASPER-troyano}.
+\textbf{Categoría: malware o programa malicioso}
 
-Uno de los más peligrosos son los keylogger es un tipo de software o un dispositivo hardware específico que se encarga de registrar las pulsaciones que realizas a través de tu teclado. Posteriormente son guardadas en un fichero y remitido a través de la red a los ciberdelincuentes.
+Un troyano o caballo de Troya es un tipo de malware que intenta engañarte presentándose como un programa, archivo o contenido legítimo para conseguir que lo descargues o ejecutes.
 
-Pudiendo llegar también como virus o gusanos, una vez activados, los troyanos pueden permitir a los cibercriminales espiarte, robar tus datos confidenciales y obtener acceso por una puerta trasera a tu sistema.
+Su nombre procede precisamente de esta característica: aparentemente recibes o instalas algo inofensivo, pero en su interior se oculta software malicioso.
 
-Los métodos más comunes de infección de un troyano suelen ser:
+A diferencia de los gusanos, los troyanos no se caracterizan por propagarse automáticamente. Habitualmente necesitan que realices alguna acción, como instalar una aplicación, ejecutar un archivo o aceptar una falsa actualización.
+
+Una vez ejecutado, las acciones que puede realizar dependen de cómo haya sido diseñado. Un troyano puede, entre otras cosas:
 
 \begin{itemize}
 \item
-  La descarga de programas piratas o \href{https://es.wikipedia.org/wiki/Cracking_(software)}{crackeados}.
+  Robar contraseñas, datos personales u otra información almacenada en tu dispositivo.
 \item
-  Descarga de programas gratuitos desconocidos (juegos, salvapantallas y aplicaciones sencillas relacionadas con el entretenimiento).
+  Descargar e instalar otros programas maliciosos.
 \item
-  Abrir archivos adjuntos infectados.
+  Espiar determinadas actividades que realizas.
 \item
-  Abrir una imagen o cualquier otro tipo de archivo que sea en realidad un ejecutable con extensión modificada.
+  Facilitar a un atacante el acceso remoto a tu dispositivo.
 \item
-  Visitar sitios web trampa, es decir, sitios en los que para poder ver los vídeos sea necesario descargar un códec que en realidad es el troyano.
+  Capturar información que introduces en determinadas aplicaciones o servicios.
 \item
-  Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
-\item
-  Descarga de contenidos mediante redes de compartición P2P u otras fuentes poco fiables.
+  Utilizar tu dispositivo para realizar otras actividades maliciosas.
 \end{itemize}
 
-Algunos de los troyanos con más incidencias son el \href{https://www.welivesecurity.com/la-es/2021/12/29/que-es-dropper-cual-es-funcion-esta-amenaza/}{Dropper} o los que usan \href{https://blogs.protegerse.com/2023/04/20/cuidado-con-las-falsas-facturas-varias-familias-de-troyanos-usan-archivos-pdf-para-propagarse/}{archivos PDF} para propagarse, pero recuerda que no son los únicos y que siempre están en constante evolución.
+\textbf{¿Cómo puede llegar un troyano a tu dispositivo?}
+
+El engaño es una parte fundamental de muchos ataques con troyanos. Algunas situaciones a las que debes prestar atención son:
+
+\begin{itemize}
+\item
+  Archivos adjuntos o enlaces recibidos mediante correo electrónico, mensajería instantánea o redes sociales.
+\item
+  Programas pirateados, \href{https://es.wikipedia.org/wiki/Cracking_(software)}{cracks}. o herramientas que prometen activar gratuitamente software de pago.
+\item
+  Aplicaciones descargadas desde páginas o fuentes cuya legitimidad no puedes comprobar.
+\item
+  Falsas actualizaciones de programas o del navegador.
+\item
+  Archivos que aparentan ser documentos, imágenes u otros contenidos pero que intentan ejecutar o instalar software.
+\item
+  Páginas que te indican que necesitas instalar una aplicación, extensión o complemento para acceder a determinado contenido.
+\item
+  Versiones falsas de programas y servicios populares.
+\end{itemize}
+
+Los ciberdelincuentes suelen aprovechar el interés por aplicaciones y servicios de actualidad para distribuir este tipo de malware. Esto también ocurre con la inteligencia artificial: puedes encontrar páginas, aplicaciones o extensiones que aparentan ofrecer acceso a herramientas de IA conocidas o nuevas funcionalidades, pero cuyo verdadero objetivo es conseguir que instales software malicioso.
+
+Por ello, no confíes en un programa únicamente porque su página, nombre, logotipo o apariencia parezcan profesionales. Antes de instalarlo, comprueba que procede de la página oficial, de una tienda de aplicaciones de confianza o de otra fuente cuya legitimidad puedas verificar.
+
+Mantén actualizado tu dispositivo y las herramientas de protección frente a malware. Si sospechas que has instalado un troyano, evita introducir contraseñas o información sensible hasta comprobar el dispositivo y, si existe la posibilidad de que tus credenciales hayan sido comprometidas, cambia las contraseñas desde otro dispositivo que consideres seguro.
 
 Existen herramientas que analizan y limpian los troyanos que se esconden en tu dispositivo y a su vez previene futuros ataques troyanos. Una de estas herramientas es el \href{https://www.avast.com/c-trojan-remover-tool}{Trojan remover}.
 
 \section{Ransomware o programa rescate}\label{ransomware-o-programa-rescate}
 
-El Programa rescate o ransomware, está dentro del conjunto de software malicioso que también se conoce como malware y que impiden utilizar el equipo mientras el usuario no pague una cierta cantidad de dinero. El virus bloquea o cifra la información o datos del equipo \citep{WIKI-ransomware}.
+\textbf{Categoría: malware o programa malicioso}
 
-Para intimidar y engañar a las víctimas les hacen creer que han incurrido en algún tipo de actividad delictiva, como incitación al odio, terrorismo o pederastia, entre otros.
+El ransomware es un tipo de malware utilizado para impedirte acceder a tus archivos o sistemas y exigirte posteriormente el pago de un rescate. Una de sus formas más habituales cifra los archivos para que no puedas utilizarlos sin disponer de la clave necesaria para recuperarlos.
 
-En la actualidad estos son unos de los ataques más virulentos. Según un estudio realizado por la compañía \href{https://www.pandasecurity.com/es/mediacenter/seguridad/2019-tsunami-del-ransomware/}{Panda Security} en el 2019 este delitito tuvo un incremento con respecto al año 2018 del 500\%. Y según un estudio del \href{https://www.ospi.es/es/}{Observatorio del Sector Público de Inetum} solo en 2018, el número de afectados por estos ataques fue de más de 1.000 millones en todo el planeta.
+En las primeros estadios de este malware, para intimidar y engañar a las víctimas les hacian creer que habían incurrido en algún tipo de actividad delictiva, como incitación al odio, terrorismo o pederastia, entre otros.
+
+Sin embargo, el ransomware ha evolucionado y el cifrado ya no es la única forma de extorsión. En algunos ataques, los ciberdelincuentes también roban información antes de cifrarla y amenazan con publicarla o utilizarla si no reciben el pago solicitado. Incluso pueden producirse casos de extorsión basados únicamente en el robo de información, sin necesidad de cifrar los archivos.
+
+Por ello, una copia de seguridad puede ayudarte a recuperar información después de un ataque, pero no evita las consecuencias derivadas de que tus datos hayan sido robados.
 
 \begin{figure}
 
@@ -1819,45 +1872,100 @@ En la actualidad estos son unos de los ataques más virulentos. Según un estudi
 \caption{Ransomware (Malware).}\label{fig:unnamed-chunk-15}
 \end{figure}
 
-Las diferentes vías de entrada de ransomware a tu equipo son:
+\textbf{¿Cómo puede llegar a tu dispositivo?}
+
+Un ataque de ransomware puede comenzar de diferentes formas, entre ellas:
 
 \begin{itemize}
 \item
-  Utilización de una memoria USB previamente infectada.
+  Un archivo o enlace malicioso recibido por correo electrónico, mensajería instantánea u otros medios.
 \item
-  Descarga de contenidos mediante redes de compartición P2P, u otras fuentes poco fiables.
+  La instalación de programas o archivos procedentes de fuentes poco fiables.
 \item
-  Apertura de algún fichero adjunto en un correo electrónico.
+  El aprovechamiento de vulnerabilidades en sistemas o aplicaciones que no están actualizados.
 \item
-  Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
+  El uso de contraseñas o credenciales que previamente han sido robadas.
+\item
+  Otro malware que ya se encuentre en el dispositivo y descargue posteriormente el ransomware.
 \end{itemize}
 
-En este punto cabe destacar que hay firmas de antivirus como AVG que pone a disposición del usuario una suite de herramientas gratuitas para \href{https://www.avg.com/es-es/ransomware-decryption-tools}{deshacer el cifrado del ransomware}, de igual modo tienes a tu disposición los \href{https://noransom.kaspersky.com/es/}{Descifradores de Ransomware Gratuitos} de Kaspersky y la oficina de seguridad del internauta también pone a disposición otros recursos para combatir el ransomware en el siguiente artículo \href{https://www.osi.es/es/actualidad/blog/2022/11/17/no-pagues-ningun-rescate-si-un-ransomware-ha-cifrado-tu-informacion}{¡No pagues ningún rescate si un ransomware ha cifrado tu información!}.
+Para reducir el riesgo, mantén actualizado el sistema operativo y las aplicaciones, utiliza las medidas de seguridad disponibles en tus dispositivos, desconfía de archivos y enlaces inesperados y realiza copias de seguridad periódicas de la información que consideres importante.
 
-Además, en el caso del sistema operativo de Windows 10 en su última versión dispone de una protección de forma nativa contra ransomware, aunque esto no te garantiza estar inmunizado.
+Procura que al menos una de esas copias no permanezca permanentemente accesible desde el dispositivo que estás protegiendo. Si un ransomware puede acceder a la copia de seguridad, también podría cifrarla o eliminarla.
+
+\textbf{¿Qué debes hacer si sufres un ataque?}
+
+Si descubres que tus archivos han sido cifrados o aparece una petición de rescate, desconecta el dispositivo de la red para intentar evitar que el ataque pueda extenderse a otros dispositivos o recursos conectados.
+
+No se recomienda pagar el rescate. El pago no garantiza que recuperes tus archivos ni que los ciberdelincuentes eliminen la información que hayan podido robar.
+
+Conserva la información relacionada con el ataque que pueda servir como evidencia y solicita ayuda especializada. En España puedes recurrir al servicio 017 de INCIBE y, cuando corresponda, denunciar los hechos ante las Fuerzas y Cuerpos de Seguridad.
+
+En algunos casos existen herramientas capaces de descifrar los archivos afectados por determinadas familias de ransomware. Iniciativas como \href{https://www.nomoreransom.org/}{No More Ransom} ofrecen herramientas gratuitas de descifrado y recursos de ayuda. Sin embargo, no todos los ransomware pueden descifrarse, por lo que debes comprobar si existe una herramienta específica para la variante que te ha afectado. Una de estas herramientas como los es \href{https://www.avg.com/es-es/ransomware-decryption-tools}{deshacer el cifrado del ransomware} o \href{https://noransom.kaspersky.com/es/}{Descifradores de Ransomware Gratuitos} de Kaspersky y la oficina de seguridad del internauta también pone a disposición otros recursos para combatir el ransomware en el siguiente artículo \href{https://www.osi.es/es/actualidad/blog/2022/11/17/no-pagues-ningun-rescate-si-un-ransomware-ha-cifrado-tu-informacion}{¡No pagues ningún rescate si un ransomware ha cifrado tu información!}.
 
 Algunos de los ransomware más mediáticos son \href{https://es.wikipedia.org/wiki/CryptoLocker}{CryptoLocker}, \href{https://es.wikipedia.org/wiki/Ransomware\#CryptoWall}{CryptoWall} y \href{https://es.wikipedia.org/wiki/WannaCry}{WannaCry}, pero no son los únicos, además de estar siempre en constante evolución y lo que es peor aún, éstos últimos irán dejando paso a otros mucho más nuevos y peligrosos.
 
 \section{Spyware o software espía}\label{spyware-o-software-espuxeda}
 
-El spyware es otro tipo de malware que se mantiene oculto mientras recopila información en secreto, que después transmite a una entidad externa, sin el conocimiento o el consentimiento del propietario del dispositivo \citep{AVAST-spyware}.
+\textbf{Categoría: malware o programa malicioso}
 
-Puede supervisar y copiar todo lo que escribes, cargas, descargas y almacenas. Algunas cepas de spyware también son capaces de activar cámaras y micrófonos sin que te des cuenta.
+El spyware o software espía es un tipo de malware diseñado para recopilar información sobre ti o sobre la actividad de tu dispositivo sin tu conocimiento o consentimiento y transmitirla posteriormente a un tercero \citep{AVAST-spyware}.
 
-Un spyware típico se auto instala en el sistema afectado de forma que se ejecuta cada vez que se pone en marcha el ordenador (utilizando CPU y memoria RAM, reduciendo la estabilidad del ordenador), y funciona todo el tiempo, controlando el uso que se hace de Internet e incluso algunos muestran anuncios no deseados.
-
-Sin embargo, a diferencia de los virus, no se intenta replicar en otros ordenadores, por lo que funciona como un parásito.
-
-El spyware tiene diferentes vías de entrada a los equipos, muy parecidas a los virus y gusanos:
+La información que puede obtener depende de las capacidades del programa y del acceso que haya conseguido al dispositivo. Entre otras acciones, determinados programas espía pueden:
 
 \begin{itemize}
 \item
-  Descarga de contenidos mediante redes de compartición P2P u otras fuentes poco fiables.
+  Recopilar información sobre tu navegación y actividad en Internet.
 \item
-  Apertura de algún fichero adjunto en un correo electrónico.
+  Obtener nombres de usuario, contraseñas y otros datos personales.
 \item
-  Visitar una web maliciosa o pulsar sobre alguna dirección acortada que se publican en redes sociales u otros medidos y que en realidad no sabes a qué páginas web te puede llevar.
+  Acceder a determinados archivos o comunicaciones.
+\item
+  Realizar capturas de pantalla.
+\item
+  Registrar las pulsaciones que realizas en el teclado.
+\item
+  Obtener información sobre la ubicación del dispositivo.
+\item
+  Acceder a la cámara o al micrófono si consiguen los permisos o privilegios necesarios.
 \end{itemize}
+
+Una de las técnicas que puede utilizar el software espía es el keylogging. Un keylogger permite registrar las pulsaciones realizadas en el teclado y puede utilizarse de forma maliciosa para intentar obtener contraseñas, mensajes, números de tarjetas u otra información que escribas.
+
+Los keyloggers pueden ser programas o incluso dispositivos físicos conectados al equipo. No todo keylogger tiene necesariamente una finalidad maliciosa, pero su utilización sin tu conocimiento para obtener información supone un importante riesgo para tu privacidad y seguridad.
+
+Otro tipo de malware relacionado con el robo de información son los infostealers o ladrones de información. Su objetivo es localizar y extraer información de interés almacenada en tu dispositivo y enviarla posteriormente a los ciberdelincuentes.
+
+Un infostealer puede intentar obtener información como contraseñas guardadas en el navegador, cookies y datos de sesión, información de autocompletado, datos de determinadas aplicaciones, archivos o información relacionada con cuentas y servicios que utilizas.
+
+El robo de cookies y datos de sesión resulta especialmente peligroso porque, en determinadas circunstancias, puede permitir que un ciberdelincuente acceda a una cuenta aprovechando una sesión que ya habías iniciado. Por este motivo, disponer de autenticación en dos pasos supone una protección muy importante, pero no debes considerar que te hace inmune frente a cualquier forma de robo de cuentas.
+
+Los infostealers pueden distribuirse ocultos en programas aparentemente legítimos, software pirateado, falsas actualizaciones, archivos maliciosos o descargas fraudulentas. También pueden aprovechar el interés por programas y servicios populares para convencerte de que descargues el malware.
+
+También existen aplicaciones conocidas como stalkerware que pueden utilizarse para vigilar de forma oculta la actividad de otra persona. Dependiendo de la aplicación y de los permisos obtenidos, pueden permitir conocer su ubicación, consultar comunicaciones u obtener otra información del dispositivo.
+
+El spyware puede llegar a tu dispositivo oculto en una aplicación aparentemente legítima, mediante archivos maliciosos, programas descargados desde fuentes poco fiables o aprovechando vulnerabilidades. En algunos casos también puede instalarlo una persona que haya tenido acceso físico al dispositivo.
+
+Precisamente porque su objetivo suele ser permanecer oculto, no siempre encontrarás señales evidentes de su presencia. Un consumo anormal de batería o datos, aplicaciones o permisos que no reconoces, cambios inesperados en la configuración o comportamientos extraños del dispositivo pueden justificar una comprobación, pero ninguno de estos indicios demuestra por sí solo que exista software espía.
+
+\textbf{Para reducir el riesgo:}
+
+\begin{itemize}
+\item
+  Mantén actualizado el dispositivo.
+\item
+  Instala aplicaciones únicamente desde fuentes fiables.
+\item
+  Revisa periódicamente las aplicaciones instaladas y los permisos que tienen concedidos.
+\item
+  Protege el acceso al dispositivo mediante un método de bloqueo seguro.
+\item
+  Evita instalar programas pirateados, cracks, falsas actualizaciones o aplicaciones cuya procedencia no puedas comprobar.
+\item
+  Mantén activadas las herramientas de protección frente a malware disponibles en tu dispositivo.
+\end{itemize}
+
+Si sospechas que tu dispositivo ha sido infectado por un infostealer, no debes limitarte a eliminar el malware. Debes considerar que las contraseñas, cookies de sesión y otras credenciales almacenadas en el dispositivo podrían haber sido comprometidas. Utiliza otro dispositivo que consideres seguro para cambiar las contraseñas de las cuentas afectadas, cerrar las sesiones que permanezcan abiertas y revisar su actividad en busca de accesos que no reconozcas.
 
 \section{Adware}\label{adware}
 
