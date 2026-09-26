@@ -102,7 +102,7 @@
 
 \title{Ciberseguridad ciudadana}
 \author{Diego Chiquero Mena}
-\date{20 September 2026}
+\date{26 September 2026}
 
 \begin{document}
 \maketitle
@@ -2203,58 +2203,47 @@ Si una extensión comienza a producir comportamientos inesperados, como redirecc
 
 Recuerda que instalar muchas extensiones innecesarias aumenta la cantidad de software que puede acceder a tu navegador y a tus datos. Una buena práctica es mantener únicamente aquellas que realmente utilizas y cuyos permisos comprendes.
 
-\section{Quishing}\label{quishing}
-
-Los Quick Response (QR) son códigos de barra de dos dimensiones diseñados para ser leídos e interpretados rápidamente. Actualmente y sumado a la gran proliferación de smartphones en el mercado, son muy utilizados en publicidad y campañas de marketing. Esto es debido a su gran facilidad de manejo, ya que solo basta con apuntar con la cámara y el smartphone se encarga del resto.
-
-Lamentablemente los códigos QR también pueden ser utilizados con fines maliciosos, de manera que, un ciberdelicuente podría usar el código QR para direccionar a los usuarios a páginas web phishing, descarga de malware o cualquier otra amenaza \citep{ESET-malware-qr}. Esta amenaza además de ser conocida como Quishing, también se le conoce como Malware QR.
-
-La vía de contagio como te habrás podido dar cuenta queda implícita.
-
 \section{Phishing}\label{phishing}
 
-El término Phishing es utilizado para referirse a uno de los métodos más utilizados por delincuentes cibernéticos para estafar y obtener información confidencial de forma fraudulenta como puede ser una contraseña o información detallada sobre tarjetas de crédito u otra información bancaria de la víctima \citep{INFOSPY-phishing}.
+\textbf{Categoría: engaños e ingeniería social}
 
-El estafador, conocido como phisher, se vale de técnicas de \href{https://es.wikipedia.org/wiki/Ingeniería_social_(seguridad_informática)}{ingeniería social}, haciéndose pasar por una persona o empresa de confianza en lo que se conoce como suplantación de identidad o spoofing (término que verás más adelante en esta misma unidad) a través de una aparente comunicación oficial, por lo general un correo electrónico, redes sociales, SMS, etc., a raíz de un malware o incluso utilizando también llamadas telefónicas.
+El término phishing se utiliza para referirse a una de las técnicas de \href{https://es.wikipedia.org/wiki/Ingeniería_social_(seguridad_informática)}{ingeniería social} más utilizadas por los ciberdelincuentes para engañarte y conseguir información confidencial de forma fraudulenta, como pueden ser tus contraseñas, datos personales o información bancaria. También puede utilizarse para conseguir que realices un pago, descargues un archivo malicioso o permitas, sin saberlo, el acceso a alguna de tus cuentas o dispositivos.
 
-Según el propio INCIBE, El phishing es una técnica que consiste en el envío de un correo electrónico por parte de un ciberdelincuente a un usuario simulando ser una entidad legítima (red social, banco, institución pública, etc.) con el objetivo de robarle información privada, realizarle un cargo económico o infectar el dispositivo. Para ello, adjuntan archivos infectados o enlaces a páginas fraudulentas en el correo electrónico.
+El phishing quizá sea una de las técnicas de ingeniería social más explotadas, tal como cuentan en este artículo \href{https://www.osi.es/es/actualidad/blog/2019/12/04/sabias-que-los-ataques-de-ingenieria-social-suponen-el-93-de-las-brechas}{¿Sabías que los ataques de ingeniería social suponen el 93\% de las brechas de seguridad?}.
 
-También existe una modalidad de phishing más específica llamada Spear phishing.Los ataques de Spear phishing (literalmente ``pesca con arpón''), al igual que los de phishing en general, son estafas en las que se intenta engañar al destinatario para que revele al atacante información confidencial, tales como credenciales de sus cuentas. También se pueden utilizar vínculos y archivos adjuntos para que el destinatario descargue de forma involuntaria malware que puede darle al atacante acceso al ordenador del usuario y a otra información delicada. El spear phishing se diferencia del phishing más genérico en que es de naturaleza dirigida a un objetivo determinado.
+El ciberdelincuente, conocido como phisher, se hace pasar por una persona, empresa u organización de confianza mediante lo que se conoce como \hyperref[suplantaciuxf3n-de-identidad-o-spoofing]{suplantación de identidad o spoofing}. Para ello puede utilizar una comunicación que aparenta ser legítima a través del correo electrónico, SMS, aplicaciones de mensajería, redes sociales, llamadas telefónicas o páginas web fraudulentas.
 
-Por lo general, los mensajes de spear phishing se personalizan según la información pública que el atacante haya encontrado acerca del destinatario. Eso puede incluir desde temas relacionados con el campo de especialización, la función en la organización, los intereses, la información residencial pública y también fiscal del destinatario, así como toda información que los atacantes recopilen en las redes sociales. Esos detalles específicos logran que el mensaje parezca ser más legítimo y aumentan la probabilidad de que el destinatario haga clic en algún vínculo o que descargue los archivos adjuntos.\citep{PROOFPOINT-spear-phishing}
+Según INCIBE, el phishing consiste tradicionalmente en el envío de un correo electrónico en el que un ciberdelincuente suplanta a una entidad legítima, como un banco, una red social o una institución pública, con el objetivo de conseguir información privada, provocar un perjuicio económico o infectar el dispositivo. Para ello puede utilizar enlaces que conducen a páginas fraudulentas o archivos adjuntos maliciosos \citep{INCIBE-phishing}.
 
-Los medios de phishing más usados por lo ciberdelincuentes:
+Aunque el correo electrónico continúa siendo uno de los principales medios utilizados para este tipo de engaños, el phishing ha evolucionado y puede adoptar diferentes formas dependiendo del canal empleado. Cuando el fraude se realiza mediante SMS suele denominarse smishing, mientras que las llamadas telefónicas fraudulentas reciben habitualmente el nombre de vishing. También puedes encontrarte intentos de fraude mediante aplicaciones de mensajería, redes sociales o códigos QR que te dirigen a páginas fraudulentas.
 
-\begin{itemize}
-\item
-  Correos electrónicos de carácter corporativo.
-\item
-  Mensajería instantánea.
-\item
-  Redes sociales.
-\item
-  Webs corporativas (Bancos, pasarelas de pago, tiendas online, etc.)
-\item
-  SMS.
-\end{itemize}
+\textbf{Spear phishing: ataques dirigidos específicamente a ti}
 
-Para poder detectar si estas siendo víctima de uno de estos fraudes debes estar atento a lo siguiente:
+Existe una modalidad más específica denominada spear phishing, literalmente ``pesca con arpón''. A diferencia de las campañas de phishing genéricas, en las que un mismo engaño puede enviarse masivamente a un gran número de personas, el spear phishing se dirige específicamente contra una persona, grupo u organización \citep{PROOFPOINT-spear-phishing}.
+
+Para preparar estos ataques, los ciberdelincuentes pueden recopilar información pública sobre ti: tu profesión, lugar de trabajo, responsabilidades, intereses, contactos o información publicada en redes sociales. Con esos datos pueden elaborar un mensaje que resulte mucho más creíble y aumentar así las posibilidades de que abras un enlace, descargues un archivo o facilites información confidencial.
+
+La inteligencia artificial generativa ha facilitado todavía más esta personalización. Un ciberdelincuente puede utilizar estas herramientas para redactar rápidamente mensajes convincentes, adaptarlos a diferentes idiomas y contextos o generar textos que imiten determinados estilos de comunicación. Por ello, que un mensaje esté correctamente escrito, utilice tu nombre o incluya información real sobre ti ya no es suficiente para considerarlo legítimo.
+
+\textbf{¿Cómo puedes detectar un intento de phishing?}
+
+No existe una única señal que permita identificar todos los intentos de phishing. Por ello, debes prestar atención al contexto del mensaje y a la combinación de diferentes indicios:
 
 \begin{itemize}
 \item
-  La dirección web o URL: Fíjate muy bien en la URL a la que te remite el enlace que te envían. Insistir en que hay que fijarse muy bien porque en algunas ocasiones las diferencias son inapreciables y se centran incluso en caracteres que se copian o se alteran (una l minúscula por una i mayúscula; un punto situado en un lugar poco visible y otras estrategias).
+  La dirección web o URL: comprueba cuidadosamente la dirección de la página antes de introducir información sensible. Una página fraudulenta puede reproducir con gran precisión el aspecto de una web legítima. Ante cualquier duda, evita utilizar el enlace recibido y accede al servicio desde su aplicación oficial o escribiendo tú mismo la dirección en el navegador.
 \item
-  Ortografía: Forma en la que está redactado el mensaje. Los ciberatacantes en algunos casos no tienen tu misma nacionalidad ni hablan tu misma lengua y, en muchas ocasiones traducen los textos automáticamente y contienen faltas de ortografía, errores gramaticales o un tratamiento o forma de dirigirse a ti que ninguna comunicación oficial de tu banco, organismos o empresas contendría.
+  El remitente: no te fijes únicamente en el nombre que aparece en pantalla. Comprueba la dirección completa desde la que se ha enviado el mensaje. Ten en cuenta, además, que una cuenta legítima puede haber sido comprometida, por lo que reconocer al remitente tampoco garantiza por sí solo que el mensaje sea seguro.
 \item
-  Cuidado con el remitente: Correo electrónico de tu banco, de la Agencia Tributaria, de Amazon u otra empresa. Lo primero que debes mirar es el remitente y comprobar que esa dirección es la que está vinculada a esos servicios. De la misma manera, si el correo te ha llegado a la carpeta de spam ya es un signo inequívoco de que el remitente es sospechoso. Lee la siguiente entrada pare saber donde buscar el remitente \href{https://www.xataka.com/basics/como-saber-quien-te-envia-correo-electronico-para-comprobar-que-quien-dice-ser}{Cómo saber quién te envía un correo electrónico para comprobar que es quien dice ser}. Esta parte es muy importante para saber si se trata de un phishing.
+  Lo que te solicitan: presta especial atención si recibes inesperadamente una petición para introducir una contraseña, facilitar datos bancarios, compartir un código de verificación, realizar un pago o descargar un archivo.
 \item
-  Cuidado con lo que solicitan:¿Qué te piden en el correo? Ten muy presente que los bancos y las empresas u organismos no reclaman jamás que introduzcas tus datos personales o que los reingreses en una web para reactivar tu cuenta. No lo reclaman jamás.
+  La urgencia o presión: muchos fraudes intentan que actúes rápidamente mediante mensajes como ``tu cuenta será bloqueada'', ``debes pagar inmediatamente'' o ``solo tienes unas horas''. Crear sensación de urgencia reduce el tiempo que tienes para pensar y comprobar la información.
 \item
-  Desconfía de los cupones promocionales y las encuestas: Esta modalidad de phishing ha sido una de las que más éxito ha tenido en los últimos años y ha afectado a todas las grandes marcas. Existen ejemplos de phishing a Mercadona, Ikea, a El Corte Inglés, a Zara, a Lidl\ldots{} Y todo a través de cupones promocionales en los que te prometen una compra o un vale descuento a cambio de que accedas a un enlace y rellenes tus datos personales.
+  Las ofertas demasiado atractivas: premios, cupones promocionales, sorteos, inversiones con beneficios extraordinarios o productos a precios inusualmente bajos continúan utilizándose como reclamo para conseguir que accedas a enlaces fraudulentos o facilites información personal.
 \item
-  Descarga archivos adjuntos: Salvo que hayas comprobado todos los pasos anteriores y estés completamente seguro de la identidad del remitente, así como del objeto del mensaje, no descargues documentos adjuntos sin antes pasarlos por un buen antivirus.
+  Los archivos adjuntos: si recibes inesperadamente un documento o archivo, no lo abras únicamente porque aparentemente proceda de una persona o empresa conocida. Comprueba primero que realmente esperabas recibirlo y verifica su procedencia.
 \item
-  Usa el sentido común y desconfía siempre: Este consejo es válido para detectar el phishing o cualquier otra amenaza en Internet. ¿Quién va a regalar gafas Ray-Ban o a venderlas un 75\% por debajo de su precio?.
+  Los códigos QR: un código QR puede ocultar la dirección a la que vas a acceder y dirigirte igualmente a una página fraudulenta. No debes considerar un enlace seguro simplemente porque se presente mediante un código QR.
 \end{itemize}
 
 \begin{figure}
@@ -2275,81 +2264,69 @@ Para poder detectar si estas siendo víctima de uno de estos fraudes debes estar
 \caption{Spear phishing Facebook.}\label{fig:unnamed-chunk-17}
 \end{figure}
 
-En relación a la protección contra el phishing existen diferentes herramientas y servicios que puedes implementar en tu uso diario de las tecnologías. Algunos de estos son:
+\textbf{La ortografía ya no es una señal tan fiable}
+
+Durante años, las faltas de ortografía, los errores gramaticales, las traducciones deficientes o una forma extraña de dirigirse a ti han sido indicadores habituales para detectar algunos mensajes de phishing. Estas señales todavía pueden aparecer, pero ya no debes confiar demasiado en ellas.
+
+Las herramientas de inteligencia artificial generativa permiten producir textos fluidos, correctamente escritos y adaptados a prácticamente cualquier idioma. También facilitan la creación de mensajes personalizados y permiten modificar rápidamente su tono y estilo.
+
+Por tanto, un correo perfectamente redactado también puede ser fraudulento. En lugar de confiar únicamente en cómo está escrito, presta más atención a quién te lo envía, qué acción intenta que realices, a dónde conduce el enlace y si la solicitud tiene sentido dentro del contexto habitual de tu relación con esa persona o servicio.
+
+\textbf{Herramientas en la protección contra el phishing}
 
 \begin{itemize}
 \item
-  Software anti-phishing: Software específico para la detección de phishing.
-
-  \begin{itemize}
-  \item
-    \href{https://home.sophos.com/es-es.aspx}{Sophos home}.
-  \item
-    \href{https://www.phishprotection.com/}{Phishing protection}
-  \end{itemize}
+  Software anti-phishing: Software específico para la detección de phishing. \href{https://www.phishprotection.com/}{Phishing protection}.
 \item
   Proveedores de email: Estos ofrecen protección contra el phishing a través de filtros y configuraciones con el objetivo detectar y frenar este tipo de fraude llevado a cabo por medio del correo electrónico. Para ello analizan de forma automatizada todos los emails, con el fin detectar links fraudulentos o dominios falsificados que tienen la intención de robar tus datos, protegiendo así a los usuarios de estos tipos de fraudes o estafas online. Esta protección puedes encontrarla prácticamente implementada en la mayoría de gestores de correos actuales.
 \item
-  Nativo del sistema operativo Windows: \href{https://docs.microsoft.com/es-es/office365/servicedescriptions/office-365-advanced-threat-protection-service-description}{Anti-phishing defender}.
-\item
-  Antivirus: Algunos antivirus traen implementado estándares contra el phishing como el \href{https://support.eset.com/es/kb6380-activar-anti-phishing-en-productos-para-android-de-eset\#enable}{ESET anti-phising}.
-\item
-  Plugins: Extensiones para el navegador como lo son \href{https://www.zonealarm.com/es/software/web-secure-free}{ZoneAlarm Web Secure Free} y \href{https://metacertprotocol.com/cryptonite}{Metacertprotocol}.
+  Antivirus: Algunos antivirus traen implementado estándares contra el phishing como el \href{https://support.eset.com/es/kb6380-activar-anti-phishing-en-productos-para-android-de-eset}{ESET anti-phising}.
 \item
   Código anti-phishing: Existen plataformas webs que ofrecen este servicio. Consiste en un código o palabra clave que tú facilitas la primera vez a la web y que esta incluye en sus futuros email, verificando así la legitimidad del mismo. Un ejemplo de ello lo encontrarás en la plataforma de intercambio de criptomonedas \href{https://academy.binance.com/es/articles/anti-phishing-code}{Binance código anti-phishing}.
-\item
-  Navegadores:
-
-  \begin{itemize}
-  \item
-    \href{https://www.mozilla.org/es-ES/firefox/}{Firefox} es uno de los navegadores que implementan grandes capas de seguridad siendo una de ellas la protección anti-phishing y que además, cuenta con \href{https://support.mozilla.org/es/}{Mozilla support} y \href{https://support.mozilla.org/es/kb/como-protegerse-del-phishing-y-del-malware-con-esta-herramienta-firefox}{Cómo protegerse del Phishing y del Malware con esta herramienta de Firefox}.
-  \item
-    \href{https://www.google.com/intl/es/chrome/}{Google Chrome} a su vez cuenta con los recursos ofrecidos por \href{https://safebrowsing.google.com/}{Google safe browsing}.
-  \end{itemize}
 \end{itemize}
 
-Si quieres saber más sobre los diferentes formatos de phishing, visita el siguiente enlace de la plataforma INCIBE, \href{https://www.incibe.es/empresas/blog/principales-formas-de-estafa-traves-del-email-phishing-mas-comunes}{Principales formas de estafa a través del email: phishing más comunes}. Y además, si también quieres ver otros ejemplos de phishing de bancos como CaixaBank, Santander o BBVA, pásate por la siguiente publicación titulada \href{https://www.osi.es/es/actualidad/avisos/2021/06/detectadas-campanas-de-phishing-y-smishing-suplantando-diversas-entidades}{Detectadas campañas de phishing y smishing suplantando a diversas entidades bancarias} de la Oficina de Seguridad del Internauta, donde te encontrarás capturas de pantallas, detalles y soluciones que te ayudarán a salir airoso de este peligroso ciberdelito.
-
-Otra técnica muy parecida al Phishing e igualmente peligrosa es el Pharming y que consiste en la explotación de una vulnerabilidad en el software de los servidores DNS (Domain Name System) o en el de los equipos de los propios usuarios, que permite a un atacante redirigir un nombre de dominio a otra máquina distinta. De esta forma, un usuario que introduzca un determinado nombre de dominio que haya sido redirigido, accederá en su explorador de internet a la página web que el atacante haya especificado para ese nombre de dominio \citep{KASPER-pharming}.
-
-También existe otra amenaza silimiar estas, conocida como Typosquatting, URL hijacking o fake URL. Está basada en los errores tipográficos cometidos por usuarios de internet cuando introducen la dirección de un sitio web en un navegador. Cuando esto sucede la dirección puede llevarlos a un sitio alternativo propiedad de un cybersquatter \citep{WIKI-typosquatting}.
+Navegadores:
 
 \begin{itemize}
-\tightlist
 \item
-  Ejemplo: \url{https://wikiepdia.org}
+  \href{https://www.mozilla.org/es-ES/firefox/}{Firefox} es uno de los navegadores que implementan grandes capas de seguridad siendo una de ellas la protección anti-phishing y que además, cuenta con \href{https://support.mozilla.org/es/}{Mozilla support} y \href{https://support.mozilla.org/es/kb/como-protegerse-del-phishing-y-del-malware-con-esta-herramienta-firefox}{Cómo protegerse del Phishing y del Malware con esta herramienta de Firefox}.
+\item
+  \href{https://www.google.com/intl/es/chrome/}{Google Chrome} a su vez cuenta con los recursos ofrecidos por \href{https://safebrowsing.google.com/}{Google safe browsing}.
 \end{itemize}
 
-Una técnica más reciente de phishing es el ``Browser-in-the-browser'' en la cual un ciberdelincuente o phisher simula una página de un servicio online para así introducir en esta una ventana emergente de inicio de sesión única, haciendo que el usuario crea que es una ventana de inicio de sesión legítima, como las que ya estamos acostumbrados a ver en muchas webs legítimas, e introduzca así sus credenciales. Más información en el siguiente enlace \href{https://www.incibe.es/ciudadania/blog/browser-browser-una-nueva-tecnica-de-phishing-casi-indetectable}{Browser-in-the-Browser: una nueva técnica de phishing casi indetectable}.
+Si quieres saber más sobre los diferentes formatos de phishing, visita el siguiente enlace de la plataforma INCIBE, \href{https://www.incibe.es/empresas/blog/principales-formas-de-estafa-traves-del-email-phishing-mas-comunes}{Principales formas de estafa a través del email: phishing más comunes}. Y además, si también quieres ver otros ejemplos de phishing de bancos como CaixaBank, Santander o BBVA, pásate por la siguiente publicación titulada \href{https://www.incibe.es/ciudadania/avisos/detectadas-campanas-de-phishing-y-smishing-suplantando-diversas-entidades}{Detectadas campañas de phishing y smishing suplantando a diversas entidades bancarias} de la Oficina de Seguridad del Internauta, donde te encontrarás capturas de pantallas, detalles y soluciones que te ayudarán a salir airoso de este peligroso ciberdelito.
+
+Una técnica más reciente de phishing es el ``Browser-in-the-browser'' en la cual un ciberdelincuente o phisher simula una página de un servicio online para así introducir en esta una ventana emergente de inicio de sesión única, haciendo que el usuario crea que es una ventana de inicio de sesión legítima, como las que ya estamos acostumbrados a ver en muchas webs legítimas, e introduzca así sus credenciales. Más información en el siguiente enlace Browser-in-the-Browser: una nueva técnica de phishing casi indetectable.
 
 Otros tipos de fraudes que pueden llegar a través de técnicas de phishing o smishing son las conocidas como el fraude de las suscripciones a servicios premium o de tarificación especial. Este fraude consiste en conseguir que los usuarios faciliten el número de teléfono o contesten a algún mensaje para que, sin dar consentimiento explícito o ser conscientes de ello, nos suscriban a servicios de tarificación especial. Puedes leerlo en el siguiente artículo \href{https://www.incibe.es/ciudadania/blog/suscripciones-premium-por-sms-no-gracias}{¿Suscripciones premium por SMS? No, gracias}. El otro tipo es el ciberataque ``Pass-the-Cookie'' que consiste el robo de cookies de sesión con el que luego pueden acceder al servicio al que pertenece la cookie, puedes saber más en la siguiente entrada \href{https://www.20minutos.es/tecnologia/ciberseguridad/ciberataque-pass-the-cookie-que-es-como-evitarlo-5163208/}{Así es el nuevo ciberataque `Pass-the-Cookie': qué es y cómo evitarlo}
 
-Para que puedas hacerte una idea de la magnitud de esta técnica de ingeniería social, en la siguiente entrada del blog oficial de Google llamado \href{https://espana.googleblog.com/2021/09/cocreacion-para-una-web-mas-segura.html}{Cocreación para una web más segura: Google y Euroconsumers lanzan Space Shelter en vísperas del Mes Europeo de la Ciberseguridad}, podrás encontrar que con sus algoritmos de detección Google bloquea más de 100 millones diarios de intentos de phishing.
+\textbf{La magnitud del problema y la evolución de las defensas}
 
-\section{Vishing}\label{vishing}
+El enorme volumen de mensajes fraudulentos que circula por Internet hace que una parte importante de la protección contra el phishing dependa también de sistemas automatizados capaces de detectar y bloquear amenazas antes de que lleguen hasta ti.
 
-El Vishing es una estafa que consiste en una llamada de teléfono en la que ciberdelicuente suplanta la identidad de una persona, empresa o institución para conseguir que le proporciones información privada y sensible. Esta información normalmente va a ser datos personales, contraseñas o peor aún los datos bancarios. Se trata de técnicas de ingeniería social con la que el estafador se va ganando la confianza de la víctima de manera que ésta termina proporcionándole cualquier tipo de datos. Si quieres saber más sobre ingeniería social visita este enlace \href{https://www.osi.es/es/actualidad/blog/2019/12/04/sabias-que-los-ataques-de-ingenieria-social-suponen-el-93-de-las-brechas}{¿Sabías que los ataques de ingeniería social suponen el 93\% de las brechas de seguridad?}.
+Un ejemplo de esta evolución puede observarse en las cifras publicadas por Google a lo largo del tiempo. En abril de 2020, durante la pandemia de COVID-19, Google señalaba que Gmail bloqueaba cada día más de 100 millones de correos electrónicos de phishing. Solo durante una de las semanas analizadas en aquel periodo, la compañía detectó diariamente alrededor de 18 millones de correos de phishing y malware relacionados específicamente con la COVID-19, además de más de 240 millones de mensajes de spam diarios vinculados con la pandemia. Según Google, sus sistemas bloqueaban entonces más del 99,9 \% del spam, phishing y malware antes de que llegase a sus usuarios. Puedes leer el artículo en esta entrada \href{https://cloud.google.com/blog/products/identity-security/protecting-against-cyber-threats-during-covid-19-and-beyond}{Protecting businesses against cyber threats during COVID-19 and beyond}.
 
-En esta línea puedes encontrarte con lo que se conoce como pretexting o pretexto. Se trata en un ataque más de ingeniería social y que consiste en elaborar un escenario o historia ficticia, donde el atacante tratará que la víctima comparta información que, en circunstancias normales, no revelaría. Habrás podido notar que a su vez también es la base del Phishing y del Smishing, que verás más adelante \citep{RZ-pretexting}.
+Años después, la escala de los sistemas automáticos de protección es todavía mayor. En mayo de 2026, Google indicó que las defensas de Gmail, apoyadas actualmente también en inteligencia artificial, continúan evitando que más del 99,9 \% del spam, phishing y malware llegue a la bandeja de entrada y bloquean cerca de 15.000 millones de correos no deseados cada día de los cuales 602 millones son intentos de phishing. Puedes leer el artículo en esta entrada \href{https://blog.google/innovation-and-ai/technology/safety-security/scams-fraud-protection/}{Our fight against fraud: 5 ways we're keeping you safer}.
 
-En el siguiente enlace \href{https://www.genbeta.com/seguridad/guardia-civil-actua-nuevo-caso-spoofing-estafa-telefonica-auge}{La Guardia Civil actúa por un nuevo caso de `spoofing', la estafa telefónica en auge}
-te encontrarás que aun cuando el estafador te pide que introduzcas la contraseña por pulsación de teclado, como cuando hablas con un operador de telefonía y te dicen para información marca 1, para contratar marca 2, para hablar con un gestor marca 3\ldots, es otra forma más de obtener tu contraseña.
-
-Por lo tanto, debes tener muy en cuenta, que cualquier petición de tus contraseñas o información financiera es una estafa, ya que las instituciones legítimas nunca te pedirían este tipo de datos tan sensibles a través del teléfono.
-
-La vía de contagio como se ha señalado al principio es a través de una llamada de teléfono.
+También muestran algo especialmente importante para ti: aunque estas tecnologías consiguen detener una gran cantidad de amenazas, ningún filtro debe considerarse infalible. Que un mensaje haya llegado a tu bandeja de entrada sin ninguna advertencia no significa necesariamente que sea legítimo.
 
 \section{Smishing}\label{smishing}
 
-El Smishing es un acrónimo formado por las palabras SMS y phishing, debido a su parecido con este ataque tan popular. La diferencia entre el Smishing y el Phishing, es que mientras este último lleva a cabo la estafa utilizando el correo electrónico como medio, en el Smishing se utilizan mensajes de texto enviados a través de SMS al smartphone o a través de las distintas aplicaciones de mensajería instantánea. Al igual que el phishing y el vishing, también se trata de una técnica de ingeniería social.
+\textbf{Categoría: engaños e ingeniería social}
 
-El modus operandi sigue siendo muy similar a otros ataques donde el ciberdelincuente suplanta la identidad de alguna persona o entidad de confianza de la víctima, con el objetivo de engañarla y conseguir que comparta información personal, realice un pago, haga clic en un enlace malicioso o se descargue un archivo adjunto entre otras.
+El smishing es una modalidad de phishing que utiliza principalmente mensajes SMS para engañarte. El término procede de la combinación de las palabras SMS y phishing. Técnicas similares también pueden desarrollarse mediante aplicaciones de mensajería instantánea, como WhatsApp o Telegram.
 
-El mayor riesgo de este tipo de ciberataque es el desconocimiento de los usuarios, ya que no esperan ser engañados a través de un mensaje de texto \citep{INCI-smishing}.
+Al igual que ocurre con el phishing, se trata de una técnica de \href{https://es.wikipedia.org/wiki/Ingeniería_social_(seguridad_informática)}{ingeniería social}. El ciberdelincuente intenta hacerse pasar por una persona, empresa u organismo de confianza para conseguir que realices una determinada acción: facilitar información personal o bancaria, revelar contraseñas o códigos de verificación, realizar un pago, acceder a un enlace fraudulento o instalar una aplicación o archivo malicioso.
 
-Si quieres más información visita el siguiente enlace \href{https://www.incibe.es/protege-tu-empresa/avisos-seguridad/campanas-smishing-suplantando-multiples-entidades-bancarias}{Campañas de smishing suplantando a múltiples entidades bancarias}.
+Estos mensajes suelen utilizar situaciones que buscan provocar una reacción rápida. Por ejemplo, pueden avisarte de un supuesto paquete pendiente de entrega, un problema con tu cuenta bancaria, una multa, un premio o una incidencia urgente. También pueden hacerse pasar por un familiar o una persona conocida que utiliza un número de teléfono nuevo y necesita dinero urgentemente.
 
-Como se ha destacado en líneas anteriores la vía de entrada de esta amenaza a través de SMS.
+La inteligencia artificial puede hacer que estos engaños sean más convincentes. Las herramientas de IA generativa permiten crear rápidamente mensajes correctamente redactados, adaptados a distintos idiomas y contextos e incluso personalizados a partir de información disponible sobre la víctima. Por este motivo, las faltas de ortografía o una redacción extraña pueden seguir siendo señales de alerta, pero un mensaje perfectamente escrito tampoco garantiza que sea legítimo.
+
+Ante un SMS o mensaje inesperado, especialmente si te pide actuar con urgencia, facilitar información, realizar un pago o acceder a un enlace, detente y comprueba su autenticidad. Evita utilizar el enlace incluido en el propio mensaje y accede al servicio desde su aplicación oficial o escribiendo tú mismo la dirección de su página web. Si el mensaje parece proceder de una persona conocida y te solicita dinero o información sensible, verifica su identidad mediante otro canal antes de actuar.
+
+Uno de los mayores riesgos de este tipo de ciberataque es el desconocimiento de los usuarios, ya que no esperan ser engañados a través de un mensaje de texto \citep{INCIBE-smishing}.
+
+Recuerda: que un mensaje conozca tu nombre, esté bien escrito o parezca proceder de una entidad o persona conocida no demuestra que sea auténtico.
 
 \begin{figure}
 
@@ -2369,49 +2346,95 @@ Como se ha destacado en líneas anteriores la vía de entrada de esta amenaza a 
 \caption{Reemplazo app de mensajería.}\label{fig:unnamed-chunk-19}
 \end{figure}
 
-\section{Spam o correo malicioso}\label{spam-o-correo-malicioso}
+\section{Quishing}\label{quishing}
 
-Los términos spam o correo malicioso hacen referencia a los mensajes no solicitados, no deseados o con remitente no conocido (correo anónimo), habitualmente de tipo publicitario, generalmente son enviados en grandes cantidades (incluso masivas) que perjudican de alguna o varias maneras al receptor \citep{WIKI-spam}.
+\textbf{Categoría: engaños e ingeniería social}
 
-Su finalidad suele ser con motivos comerciales, pero también pueden contener enlaces peligros como el Phishing, solicitar datos sensibles o contener descargas que sean un riesgo para tu privacidad y seguridad:
+Los códigos Quick Response (QR) o en castellano \href{https://es.wikipedia.org/wiki/C\%C3\%B3digo_QR}{código QR} son códigos bidimensionales diseñados para almacenar información que puede ser interpretada rápidamente por un dispositivo. Su uso está ampliamente extendido y puedes encontrarlos en establecimientos, sistemas de pago, carteles, publicidad, entradas, documentos o comunicaciones electrónicas. Para utilizarlos normalmente basta con enfocar el código con la cámara de tu smartphone \citep{ESET-malware-qr}.
 
-\begin{itemize}
-\item
-  E-Mails Spam con fines comerciales
-\item
-  Envíos masivos / Avisos de virus
-\item
-  E-Mails con ofertas o regalos
-\item
-  Correos Phishing
-\end{itemize}
+Sin embargo, un código QR también puede utilizarse con fines maliciosos. Un ciberdelincuente puede crear o manipular un código para dirigirte a una página web fraudulenta, intentar obtener tus credenciales o datos bancarios, inducirte a realizar un pago o llevarte a descargar contenido potencialmente malicioso.
 
-Si recibes un email de carácter sospechoso, no lo abras y márcalo directamente como spam, para que así tu gestor de correos lo identifique para los sucesivos.
+Cuando se utilizan códigos QR como parte de este ataque de \href{https://es.wikipedia.org/wiki/Ingeniería_social_(seguridad_informática)}{ingeniería social}, esta técnica se conoce habitualmente como quishing, término formado a partir de QR y phishing.
 
-En este caso no hace falta destacar que este molesto malware llega por medio de gestores de correos.
+Una de sus particularidades es que el código oculta visualmente la dirección a la que te dirige. Además, el ataque puede producirse tanto en entornos digitales como físicos. Por ejemplo, puedes recibir un QR fraudulento mediante correo electrónico, SMS o mensajería instantánea, pero también encontrarte con una pegatina que contiene un código malicioso colocada encima del QR legítimo de un establecimiento, un parquímetro, un cartel o un sistema de pago.
 
-En torno a este concepto también aparece el SPIM (SPam over Instant Messaging), en castellano viniendo a ser como spam a través de mensajería instantánea, puedes leer más en el siguiente artículo \href{https://www.iniseg.es/blog/ciberseguridad/hablemos-de-ciberseguridad-iii-spam-spim-y-spit/}{Hablemos de ciberseguridad -- III -- Spam, SPIM y SPIT}.
+La inteligencia artificial generativa puede contribuir a que estos engaños resulten más convincentes. Un ciberdelincuente puede utilizarla para elaborar mensajes, imágenes, documentos o páginas web fraudulentas con una apariencia más profesional y utilizarlos como contexto para conseguir que escanees el código. No obstante, la IA no convierte por sí misma el código QR en malicioso: el riesgo reside principalmente en el destino o la acción que se oculta detrás de él y en el engaño utilizado para conseguir que interactúes.
 
-\section{Toolbars}\label{toolbars}
+Por ello, trata un código QR con las mismas precauciones que un enlace. Antes de continuar, comprueba la dirección web que muestra tu dispositivo y presta especial atención si después de escanearlo te solicitan contraseñas, datos personales o bancarios, realizar un pago o descargar una aplicación o archivo.
 
-Las Toolbars son barras de herramientas que aparecen en la parte superior de los navegadores. Generalmente sirven para tener enlaces más rápidos a servicios, por ejemplo, Windows Live Toolbars da acceso al correo y búsqueda entre otras funcionalidades. Regularmente los navegadores tienen las suyas propias.
+Si el código pertenece supuestamente a una entidad o servicio conocido y tienes dudas, evita utilizarlo y accede directamente desde su aplicación oficial o escribiendo tú mismo la dirección web. En códigos situados en lugares públicos, comprueba también que no hayan sido cubiertos o sustituidos por una pegatina.
 
-Pero puede ocurrir que, a través de una instalación de software, normalmente gratuito puedan ser instaladas. Debes tener en cuenta que algunas de estas son muy molestas y en algunos casos pueden llegar a bombardearte con publicidad no deseada y que además en ocasiones llegan a ser muy difíciles de eliminar. Aunque cada vez son menos frecuentes.
+\section{Vishing}\label{vishing}
 
-\begin{figure}
+\textbf{Categoría: engaños e ingeniería social}
 
-{\centering \includegraphics[width=0.75\linewidth]{images/toolbar} 
+El vishing es una modalidad de \href{https://es.wikipedia.org/wiki/Ingeniería_social_(seguridad_informática)}{ingeniería social} que utiliza principalmente las llamadas telefónicas para engañarte. El ciberdelincuente puede hacerse pasar por una persona, empresa u organismo de confianza con el objetivo de conseguir información personal o financiera, obtener contraseñas o códigos de verificación, inducirte a realizar una transferencia o conseguir que realices alguna otra acción que comprometa tu seguridad \citep{WIKI-vishing}.
 
-}
+Para resultar convincente, el atacante suele construir una historia que justifique tanto la llamada como lo que posteriormente te solicita. Esta técnica de ingeniería social se conoce como pretexting o pretexto. Por ejemplo, puede hacerse pasar por el departamento de seguridad de tu banco y comunicarte que ha detectado una operación sospechosa que debes cancelar inmediatamente. La sensación de urgencia busca que actúes antes de comprobar si la llamada es auténtica.
 
-\caption{Toolbar.}\label{fig:unnamed-chunk-20}
-\end{figure}
+Además, un ciberdelincuente puede utilizar técnicas de spoofing telefónico para falsificar el identificador de llamada y conseguir que en la pantalla de tu teléfono aparezca un número diferente al número real desde el que se está realizando la comunicación. Por tanto, que aparezca el nombre o número de una entidad conocida no garantiza por sí solo que realmente estés hablando con ella.
 
-Normalmente, se instalan como un añadido al instalar aplicaciones gratuitas en el ordenador. Si no tienes cuidado durante el proceso de instalación y pulsamos siempre ``Siguiente-Siguiente-Siguiente'' las toolbars acaban en tu navegador. Para evitarlo no debes instalar una aplicación dando a ``Siguiente-Siguiente-Siguiente'' sin leer lo que nos están indicando. Para evitar este supuesto, recuerda que lo mejor es descargar programas solo de las webs oficiales.
+La inteligencia artificial generativa introduce un riesgo adicional. Las tecnologías de síntesis y clonación de voz pueden generar audio que imite la voz de otra persona y utilizarse como apoyo en determinados ataques de ingeniería social. Por ello, reconocer la voz de un familiar, una persona conocida o un supuesto representante de una organización tampoco debe considerarse una prueba suficiente de identidad.
 
-En el caso de haber instalado alguna toolbars por descuido existen algunas herramientas para desinstalarlas fácilmente, entre ellas esta \href{https://es.malwarebytes.com/adwcleaner/}{Malwarebytes}.
+Imagina, por ejemplo, que recibes una llamada en la que una persona que parece tener la voz de un familiar te explica que ha sufrido una emergencia y necesita urgentemente que le envíes dinero. En una situación de este tipo, evita actuar únicamente basándote en la voz o en la información que aparece en la pantalla. Finaliza la llamada y contacta tú directamente con esa persona utilizando un número que ya conocías. También puedes comprobar la situación mediante otro familiar o un canal diferente.
 
-Como se ha señalada más arriba la vía de contagio suele ser la instalación de software normalmente gratuito.
+Mantén especial precaución cuando una llamada inesperada te solicite contraseñas completas, PIN, códigos de verificación recibidos por SMS o mediante una aplicación, datos bancarios, transferencias de dinero o la instalación de aplicaciones. Tampoco compartas un código de verificación simplemente porque la persona que te llama afirme que lo necesita para confirmar tu identidad o cancelar una operación.
+
+Si alguien afirma llamar desde tu banco, una empresa o una institución y tienes dudas, finaliza la llamada. Después, contacta tú con la organización mediante su aplicación oficial, su página web o un número de teléfono obtenido de una fuente fiable. No utilices automáticamente el número que te haya proporcionado la propia persona que te llamó.
+
+En definitiva, frente al vishing no confíes únicamente en el número que aparece en pantalla, en la voz de quien llama o en la información que esa persona conoce sobre ti. Presta atención principalmente a lo que te está pidiendo y verifica la identidad por un canal independiente antes de proporcionar información sensible, realizar pagos o seguir instrucciones que puedan comprometer tu seguridad.
+
+\section{Spam o correo no deseado}\label{spam-o-correo-no-deseado}
+
+\textbf{Categoría: engaños e ingeniería social}
+
+El spam hace referencia principalmente a mensajes no solicitados que se envían, normalmente de forma masiva, a un gran número de personas. Es habitual encontrarlo en forma de publicidad, promociones, ofertas o mensajes comerciales que no has solicitado \citep{WIKI-spam}.
+
+Sin embargo, spam y correo malicioso no significan exactamente lo mismo. Un mensaje de spam puede ser simplemente publicidad no deseada, mientras que un correo malicioso tiene como objetivo engañarte, obtener información, robar credenciales, distribuir malware o conseguir que realices alguna acción que comprometa tu seguridad, en lo que también se conoce como \hyperref[phishing]{phishing}
+
+La inteligencia artificial generativa puede facilitar la creación de mensajes fraudulentos mejor redactados y adaptados a diferentes idiomas, situaciones o destinatarios. Por este motivo, un correo sin faltas de ortografía, bien escrito o con una apariencia profesional no tiene por qué ser legítimo.
+
+Cuando recibas un mensaje inesperado, presta especial atención a lo que intenta conseguir de ti. Desconfía si te presiona para actuar inmediatamente, introducir una contraseña, facilitar un código de verificación, realizar un pago, descargar un archivo o acceder a un enlace.
+
+Antes de utilizar un enlace incluido en un correo, comprueba su destino. Si el mensaje afirma proceder de un servicio que utilizas, puedes acceder directamente mediante su aplicación oficial o escribiendo tú mismo la dirección que conoces, en lugar de utilizar el enlace recibido.
+
+Ten también precaución con los archivos adjuntos inesperados, incluso cuando aparentemente procedan de alguien conocido. Si tienes dudas sobre un mensaje, verifica su autenticidad mediante otro canal antes de realizar la acción que te solicita.
+
+Si se trata de correo no deseado, utiliza la opción para marcarlo como spam. Si tu servicio de correo dispone de una función específica para denunciar phishing o mensajes fraudulentos, utilízala cuando corresponda.
+
+Recuerda que el aspecto del mensaje, el nombre del remitente o una redacción impecable no demuestran por sí solos que un correo sea legítimo. Valora el contexto, comprueba quién te está solicitando la acción y verifica por otra vía cualquier petición sensible o inesperada.
+
+En torno a este concepto también aparece el SPIM (SPam over Instant Messaging), que en castellano viene a ser, spam a través de mensajería instantánea. Y también el SPIT (SPam over Internet Telephony) o spam de VoIP, también hablaríamos de spam pero esta vez a través de llamadas telefónicas no solicitadas. Puedes leer más en el siguiente artículo \href{https://www.iniseg.es/blog/ciberseguridad/hablemos-de-ciberseguridad-iii-spam-spim-y-spit/}{Hablemos de ciberseguridad -- III -- Spam, SPIM y SPIT}.
+
+\section{Baiting}\label{baiting}
+
+\textbf{Categoría: engaños e ingeniería social}
+
+El baiting, término procedente de la palabra inglesa bait (cebo), es una técnica de \href{https://es.wikipedia.org/wiki/Ingeniería_social_(seguridad_informática)}{ingeniería social} en la que un ciberdelincuente utiliza algo atractivo o aparentemente interesante para despertar tu curiosidad y conseguir que realices una determinada acción \citep{baiting}.
+
+Una de sus formas más conocidas consiste en utilizar dispositivos de almacenamiento extraíbles, especialmente memorias USB, que se dejan deliberadamente en lugares donde puedan ser encontrados. El dispositivo puede incluso incluir una etiqueta o referencia diseñada para aumentar tu curiosidad.
+
+Si encuentras una memoria USB desconocida y la conectas a tu dispositivo, podrías exponerte a diferentes riesgos. Por ejemplo, el dispositivo puede contener archivos o programas maliciosos preparados para que los abras o ejecutes, o aprovechar otras técnicas para comprometer el equipo. Por este motivo, no conectes a tus dispositivos memorias USB u otros dispositivos de almacenamiento de procedencia desconocida.
+
+Antes de conectar un dispositivo desconocido, descargar un archivo o instalar un programa atraído por una oferta o contenido especialmente llamativo, pregúntate de dónde procede y por qué tienes acceso a él. Si desconoces su origen o no puedes comprobar que sea fiable, evita interactuar con él.
+
+Si quieres saber cómo minimizar el riesgo por contagio a través de USBs lee el siguiente artículo \href{https://www.redeszone.net/tutoriales/seguridad/que-hacer-pendrive-virus/}{Cómo conectar con seguridad un pendrive que puede tener virus}.
+
+\section{Quid pro quo}\label{quid-pro-quo}
+
+\textbf{Categoría: engaños e ingeniería social}
+
+Quid pro quo es una locución latina que hace referencia a un intercambio en el que se recibe algo a cambio de proporcionar otra cosa. En el ámbito de la \href{https://es.wikipedia.org/wiki/Ingeniería_social_(seguridad_informática)}{ingeniería social}, un ciberdelincuente utiliza este principio para ofrecerte un supuesto beneficio o servicio a cambio de información o de que realices una determinada acción \citep{quid-pro-quo}.
+
+Por ejemplo, puede ofrecerte un regalo, dinero, acceso gratuito a un programa o servicio de pago, una promoción exclusiva o asistencia técnica. A cambio, puede solicitarte información personal, credenciales, datos bancarios o códigos de verificación, o pedirte que instales una aplicación, modifiques alguna configuración o le permitas acceder a tu dispositivo.
+
+Una modalidad especialmente relevante es el falso soporte técnico. El atacante puede hacerse pasar por un supuesto especialista que se ofrece a solucionar gratuitamente un problema de tu ordenador o smartphone. Durante el proceso puede intentar convencerte para que instales un programa de acceso remoto, le facilites información o realices determinadas acciones que terminen proporcionando acceso a tu dispositivo o a tus cuentas.
+
+Esta técnica puede utilizar diferentes canales, como llamadas telefónicas, correo electrónico, SMS, aplicaciones de mensajería instantánea, redes sociales o páginas web. Por tanto, no debes identificarla por el medio utilizado, sino por la propuesta de intercambio que plantea.
+
+La inteligencia artificial generativa puede facilitar la creación de ofertas, conversaciones o mensajes más convincentes y personalizados. Por ello, que una propuesta esté bien redactada, conozca determinados datos sobre ti o parezca profesional no demuestra que sea legítima.
+
+Desconfía especialmente de ofertas inesperadas en las que alguien te prometa gratuitamente un producto, servicio o beneficio a cambio de información sensible, códigos de verificación, la instalación de programas o acceso a tu dispositivo. Antes de aceptar, comprueba quién realiza la oferta y utiliza los canales oficiales de la organización para verificarla.
 
 \section{Usurpación o robo de identidad}\label{usurpaciuxf3n-o-robo-de-identidad}
 
@@ -2658,14 +2681,6 @@ El término ``doxing'' es la abreviación de ``exponer dox'', siendo ``dox'' un 
 
 El doxing (a veces escrito como doxxing) consiste en revelar información identificadora de una persona en línea, como su nombre real, dirección particular, lugar de trabajo, teléfono, datos financieros y otra información personal. Luego, esta información se divulga al público sin el permiso de la víctima \citep{KASPER-doxing}.
 
-\section{Baiting}\label{baiting}
-
-Para llevar a cabo el baiting los ciberdelincuentes suelen utilizar dispositivos de almacenamiento extraíbles, normalmente memorias USB o incluso CDs y DVDs infectados con un software malicioso para posteriormente dejarlos en un lugar en el cual sea fácil de encontrar por la víctima como por ejemplo, baños públicos, ascensores, aceras, etc. Cuando la víctima encuentre dicho dispositivo y lo introduzca en su ordenador, el software malicioso se ejecutará de manera inadvertida y posibilitará que el hacker pueda acceder a los datos del usuario o usuaria \citep{baiting}.
-
-La vía de contagio como te habrás podido dar cuenta queda implícita.
-
-Si quieres saber cómo minimizar el riesgo por contagio a través de USBs lee el siguiente artículo \href{https://www.redeszone.net/tutoriales/seguridad/que-hacer-pendrive-virus/}{Cómo conectar con seguridad un pendrive que puede tener virus}.
-
 \section{Clickjacking}\label{clickjacking}
 
 El clickjacking busca usuarios desprevenidos que hagan clic en algún botón, pestaña o accedan a un enlace mientras navegan por internet, haciéndoles creer que están ante algo legítimo y positivo para ellos. Suelen ser ganchos tales como, una oferta muy ventajosa o algo que provoque en la víctima la necesidad de entrar e informarse y de esta modo quedar infectado \citep{WIKI-clickjacking}.
@@ -2686,12 +2701,6 @@ Algunas herramientas de borrado definitivo son:
 \end{itemize}
 
 Para evitar este tipo de amenaza ya sabes, ten cuidado con lo que tiras a la basura.
-
-\section{Quid pro quo}\label{quid-pro-quo}
-
-Según el diccionario de la lengua española el término ``quid pro quo'' es una locución latina que significa, cosa que sustituye a algo equivalente o que se recibe como compensación por ello. Sabiendo esto, el ciberdelincuente que emplea esta técnica, promete a su víctima un beneficio a cambio de información personal. Este beneficio suele ser compensaciones en formato regalo, como pueda ser merchandising, dinero, acceso gratuito a programas de pago, ayuda en servicio técnico, etc. Normalmente este ciberdelito te llegará a través de llamadas telefónicas o mensajes de supuestos expertos que ofrecen este tipo de compensaciones sin coste alguno \citep{quid-pro-quo}.
-
-Las vías de contagio se han señalado más arriba y son las llamadas de teléfono o los mensajes con independencia de la naturaleza de estos.
 
 \section{Formjacking}\label{formjacking}
 
