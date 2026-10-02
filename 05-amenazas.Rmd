@@ -1189,7 +1189,7 @@ Por ello, si recibes una amenaza de este tipo, no des por hecho que las afirmaci
 ## Sextorsión
 **Categoría: fraudes y manipulación**
 
-La sextorsión, o extorsión sexual, consiste en la amenaza de revelar información íntima sobre una víctima a no ser que esta pague al extorsionista. En esta era digital conectada, dicha información podría incluir mensajes de texto sexuales (en inglés conocidos como sexts), fotos íntimas e, incluso, vídeos. Los delincuentes suelen pedir dinero, pero a veces buscan material más comprometedor (envía más o divulgaremos tus secretos)[@KASPER-sextorsión].
+La sextorsión, o extorsión sexual, consiste en la amenaza de revelar información íntima sobre una víctima a no ser que esta pague al extorsionista. En esta era digital conectada, dicha información podría incluir mensajes de texto sexuales (en inglés conocidos como sexts), fotos íntimas e, incluso, vídeos. Los delincuentes suelen pedir dinero, pero a veces buscan material más comprometedor (envía más o divulgaremos tus secretos)[@KASPER-sextorsion].
 
 El contenido utilizado para amenazarte puede proceder de mensajes sexuales, fotografías o vídeos que hayas compartido previamente, de material obtenido mediante el acceso no autorizado a una cuenta o dispositivo, o de contenido conseguido mediante engaño.
 
@@ -1201,8 +1201,28 @@ Si eres víctima de sextorsión, no pagues ni envíes más contenido íntimo. Ev
 
 Si quieres leer un correo real de sextorsión echa un vistazo al siguiente enlace [Ciberdelincuentes están creando falsas imágenes y videos sexuales mediante IA para sextorsión](https://www.welivesecurity.com/la-es/2023/06/09/ciberdelincuentes-falsas-imagenes-videos-sexuales-mediante-inteligencia-artificial-sextorsion/) se trata de una publicación del antivirus ESET.
 
-## Warshipping
+## Ciberacoso
 
+El ciberacoso es una forma de acoso o intimidación por medio de las tecnologías digitales. Su modus operandi se realiza en las redes sociales, las plataformas de mensajería, las plataformas de juegos, smartphones y cualquier otro dispositivo, plataforma o medio que disponga de conexión a internet. Es un comportamiento que se repite y que busca atemorizar, enfadar, humillar o maltratar a otras personas. 
+
+Ejemplos de ciberacoso son:
+
+- Difundir mentiras o publicar fotografías vergonzosas de alguien en las redes sociales.
+
+- Enviar mensajes hirientes o amenazas a través de las plataformas de mensajería.
+
+- Hacerse pasar por otra persona y enviar mensajes agresivos en nombre de dicha persona.
+
+El acoso cara a cara y el ciberacoso ocurren juntos a menudo. Pero el ciberacoso deja una huella digital, lo cual quiere decir, que queda un registro que puede servir de prueba para ayudar a detener el abuso [@UNICEF-ciberacoso].
+
+## Doxing
+
+El término “doxing” es la abreviación de “exponer dox”, siendo “dox” un término coloquial para referirse a los documentos. Por lo general, el doxing es una acción maliciosa que un hacker realiza contra personas con las que está en desacuerdo o que considera desagradables.
+
+El doxing (a veces escrito como doxxing) consiste en revelar información identificadora de una persona en línea, como su nombre real, dirección particular, lugar de trabajo, teléfono, datos financieros y otra información personal. Luego, esta información se divulga al público sin el permiso de la víctima [@KASPER-doxing].
+
+## Warshipping
+**Categoría: Acoso, exposición y daño a tu privacidad**
 El warshipping es un tipo de ataque que los ciberdelicuentes llevan a cabo mediante el envío de paquetería, y en cuyo interior se encuentra un dispositivo electrónico, pudiendo ser de diferente naturaleza. Estos pueden contener cámara, micrófono o simplemente ser un dispositivo, que al ser conectado instale un software fraudulento de manera que permita a los ciberdelicuentes remotamente vulnerar la privacidad y la seguridad de la víctima. Aun que suele estar destinados a empresas que continuamente reciben paquetería, usuarios de compras online también pueden ser blanco de este ciberdelito [@INCI-warshipping].
 
 ## Vulnerabilidades
@@ -1222,26 +1242,6 @@ Amplía la información en el artículo del centro de recursos de los servicios 
 El shoulder surfing o también conocido como visual hackins es una técnica en apariencia muy sencilla empleada por los ciberatacantes con el objetivo de conseguir información de un usuario en concreto. Esta técnica consiste en mirar literalmente por encima del hombro y que suele llevarse a cabo mientras viajamos en metro, en autobús o en cualquier sitio público donde los cibervándalos puedan estar atento al uso que haces de tu dispositivo sin que puedas percatarte de ello [@OSI-shoulder-surfing]. 
 
 Como has podido leer, evitar el uso de datos sensibles en espacios públicos es la mejor fórmula para evitar caer en este tipo de amenazas.
-
-## Ciberacoso
-
-El ciberacoso es una forma de acoso o intimidación por medio de las tecnologías digitales. Su modus operandi se realiza en las redes sociales, las plataformas de mensajería, las plataformas de juegos, smartphones y cualquier otro dispositivo, plataforma o medio que disponga de conexión a internet. Es un comportamiento que se repite y que busca atemorizar, enfadar, humillar o maltratar a otras personas. 
-
-Ejemplos de ciberacoso son:
-
-- Difundir mentiras o publicar fotografías vergonzosas de alguien en las redes sociales.
-
-- Enviar mensajes hirientes o amenazas a través de las plataformas de mensajería.
-
-- Hacerse pasar por otra persona y enviar mensajes agresivos en nombre de dicha persona.
-
-El acoso cara a cara y el ciberacoso ocurren juntos a menudo. Pero el ciberacoso deja una huella digital, lo cual quiere decir, que queda un registro que puede servir de prueba para ayudar a detener el abuso [@ciberacoso].
-
-## Doxing
-
-El término “doxing” es la abreviación de “exponer dox”, siendo “dox” un término coloquial para referirse a los documentos. Por lo general, el doxing es una acción maliciosa que un hacker realiza contra personas con las que está en desacuerdo o que considera desagradables.
-
-El doxing (a veces escrito como doxxing) consiste en revelar información identificadora de una persona en línea, como su nombre real, dirección particular, lugar de trabajo, teléfono, datos financieros y otra información personal. Luego, esta información se divulga al público sin el permiso de la víctima [@KASPER-doxing].
 
 ## Clickjacking
 
