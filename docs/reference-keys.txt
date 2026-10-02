@@ -95,12 +95,13 @@ sextorsión
 ciberacoso
 doxing
 warshipping
-vulnerabilidades
-shoulder-surfing-o-visual-hackins
 clickjacking
-dumpster-diving-o-scavening
 formjacking
+cybersquatting-y-typosquatting
+vulnerabilidades
 juice-jacking
+shoulder-surfing-o-visual-hackins
+dumpster-diving-o-scavening
 sustracción-o-perdida-de-tu-dispositivo
 tu-yo-digital
 toma-consciencia-de-tu-yo-digital

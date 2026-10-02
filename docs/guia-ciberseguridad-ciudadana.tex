@@ -3088,52 +3088,77 @@ Este tipo de ataque está dirigido principalmente contra empresas y organizacion
 
 Si recibes un paquete que no esperabas, comprueba su remitente antes de utilizar cualquier dispositivo que contenga. No conectes a tu ordenador, teléfono o red dispositivos electrónicos o memorias USB de procedencia desconocida. Si detectas componentes electrónicos ocultos o manipulaciones extrañas en un envío, evita utilizarlos y comunícalo a la organización o a las autoridades competentes cuando corresponda.
 
-\section{Vulnerabilidades}\label{vulnerabilidades}
-
-Una vulnerabilidad en términos de informática es una debilidad o fallo en un sistema de información, que pone en riesgo la seguridad de la información pudiendo permitir que un atacante pueda comprometer la integridad, disponibilidad o confidencialidad de la misma. Estas vulnerabilidades pueden tener distintos orígenes como por ejemplo: fallos de diseño, errores de configuración o carencias de procedimientos \citep{INCI-vulnerabilidad}.
-
-Los fallos de vulnerabilidad les corresponde corregirlos a las terceras partes implicadas, lo a veces con lleva la dificultad de que escapan a nuestro control. Pero para protegernos de tales, debes tener actualizados todos tus sistemas y software.
-
-Un ejemplo de vulnerabilidad muy conocido fuero el \href{https://es.wikipedia.org/wiki/Meltdown_(vulnerabilidad)}{Meltdown} y \href{https://es.wikipedia.org/wiki/Spectre_(vulnerabilidad)}{Spectre}, relacionadas con los procesadores informáticos, que existen desde mediados de los noventa, pero que han sido descubiertas ahora.
-
-Las vulnerabilidades son también una puerta de entrada para lo que se conocen como ataques de click cero. Un pirateo de clic cero explota los fallos de tu dispositivo y utiliza una deficiencia en la verificación de datos para acceder a tu sistema. Y no necesita la intervención de la propia víctima. También pueden ser explotadas por lo que se conoce como ``exploit''. Un exploit es un programa informático, una parte de un software o una secuencia de comandos que se aprovecha de un error o vulnerabilidad para provocar un comportamiento no intencionado o imprevisto en un software, hardware o en cualquier dispositivo electrónico.
-
-Amplía la información en el artículo del centro de recursos de los servicios de antivirus Kaspersky \href{https://www.kaspersky.es/resource-center/definitions/what-is-zero-click-malware}{¿Qué es el malware de clic cero y cómo funcionan los ataques de clic cero?}.
-
-\section{Shoulder surfing o visual hackins}\label{shoulder-surfing-o-visual-hackins}
-
-El shoulder surfing o también conocido como visual hackins es una técnica en apariencia muy sencilla empleada por los ciberatacantes con el objetivo de conseguir información de un usuario en concreto. Esta técnica consiste en mirar literalmente por encima del hombro y que suele llevarse a cabo mientras viajamos en metro, en autobús o en cualquier sitio público donde los cibervándalos puedan estar atento al uso que haces de tu dispositivo sin que puedas percatarte de ello \citep{OSI-shoulder-surfing}.
-
-Como has podido leer, evitar el uso de datos sensibles en espacios públicos es la mejor fórmula para evitar caer en este tipo de amenazas.
-
 \section{Clickjacking}\label{clickjacking}
+
+\textbf{Categoría: Ataques y técnicas sobre sitios web y navegación}
+
+El clickjacking, o secuestro de clics, es una técnica mediante la cual un ciberdelincuente intenta engañarte para que hagas clic en un botón, enlace u otro elemento diferente del que crees estar seleccionando.
+
+Para conseguirlo, puede manipular la apariencia de una página web colocando elementos invisibles, transparentes o superpuestos sobre otros elementos aparentemente legítimos. De este modo, cuando haces clic pensando que estás cerrando una ventana, reproduciendo un vídeo o seleccionando una determinada opción, en realidad puedes estar realizando una acción diferente.
+
+El objetivo puede ser conseguir que ejecutes una acción que no pretendías realizar, como modificar alguna configuración, interactuar con una cuenta en la que ya tienes una sesión iniciada o activar determinadas funciones.
+
+A diferencia de otras técnicas de engaño, el clickjacking no se basa necesariamente en convencerte para que accedas voluntariamente a un enlace malicioso ni implica que tu dispositivo vaya a quedar infectado. El engaño se produce principalmente en la propia interfaz: lo que ves y aquello sobre lo que realmente haces clic no coinciden.
 
 El clickjacking busca usuarios desprevenidos que hagan clic en algún botón, pestaña o accedan a un enlace mientras navegan por internet, haciéndoles creer que están ante algo legítimo y positivo para ellos. Suelen ser ganchos tales como, una oferta muy ventajosa o algo que provoque en la víctima la necesidad de entrar e informarse y de esta modo quedar infectado \citep{WIKI-clickjacking}.
 
-\section{Dumpster diving o scavening}\label{dumpster-diving-o-scavening}
-
-Este ciberdelito se conoce como el proceso de buscar en tu basura para obtener información útil sobre ti o tu empresa que luego pueda ser utilizada en tu contra. Aunque este tipo de ataques está más bien dirigido a empresas, debes tener cuidado con la información que desechas por el método de tirarlo a la basura. Nunca se sabe lo que los cibercacos están dispuestos a hacer \citep{WIKI-dumpster-diving}.
-
-Cuando te deshagas del algún dispositivo físico de almacenamiento, ya sea un disco duro externo, un PC, un USB o cualquier otro dispositivo, asegúrate primero de eliminar totalmente todo el contenido. Para ello utiliza software de borrado definitivo, ya que un simple formateado no eliminará la información. El borrado solo se completa cuando se reescribe sobre la anterior información, es por esto que un formateo solo te hace constar que el espacio está disponible, pero el contenido sigue estando ahí, aunque oculto. Esto quiere decir que con software avanzado y específico los ciberdelincuentes podrían recuperar todo el contenido \citep{XATAKA-borrado-almacenamiento}.
-
-Algunas herramientas de borrado definitivo son:
-
-\begin{itemize}
-\item
-  \href{https://eraser.heidi.ie/}{Eraser}.
-\item
-  \href{https://www.diskwipe.org/download.php}{Disk wipe}.
-\end{itemize}
-
-Para evitar este tipo de amenaza ya sabes, ten cuidado con lo que tiras a la basura.
+Para reducir el riesgo, mantén actualizado el navegador y el sistema operativo, desconfía de páginas que presenten comportamientos extraños al hacer clic y evita interactuar con sitios web de procedencia dudosa. Si una página abre ventanas inesperadas, ejecuta acciones que no has solicitado o se comporta de forma diferente a lo esperado, ciérrala y evita introducir información personal o credenciales.
 
 \section{Formjacking}\label{formjacking}
 
-El formjacking es la técnica que utilizan los ciberdelincuentes para interceptar la información que pones al comprar por Internet. Cuando entras en una página y realizas un pago, tienes que introducir los datos de tu tarjeta bancaria y esa es la información que busca el ciberestafador.
+\textbf{Categoría: Ataques y técnicas sobre sitios web y navegación}
 
-Esto lo llevan a cabo secuestrando los sitios webs donde habitualmente compran los usuarios. De esta forma la información que se introduce va a parar a un servidor controlado por ciberdelicuentes a través de lo que se conoce como la técnica de inyección de código malicioso, también conocido como e-skimming, pudiendo así, robar información de pagos, número de la tarjeta o cualquier otro tipo de datos sensibles.
+El formjacking es una técnica utilizada por los ciberdelincuentes para robar la información que introduces en los formularios de una página web legítima que ha sido comprometida. Puede afectar especialmente a tiendas en línea y páginas de pago, aunque también puede utilizarse para obtener credenciales, datos personales u otra información sensible.
 
-Es por ello que es muy recomendable evitar las páginas que puedan ser vistas como vulnerables, ya que éstas van a ser la vía de contagio. Aunque esto pueda parecer difícil de detectar, si ves una web con una estética un tanto antigua es posible que el resto de la web también este algo obsoleta y sea el objetivo de este ciberdelito \citep{RZ-formjacking}.
+Para realizar este ataque, los ciberdelincuentes pueden introducir código malicioso en la propia página web o comprometer alguno de los componentes o servicios de terceros que esta utiliza. Cuando introduces tus datos en un formulario, el código malicioso puede realizar una copia de la información y enviarla a un servidor controlado por los delincuentes, mientras la operación continúa aparentemente con normalidad.
+
+Cuando este tipo de ataque se dirige específicamente contra comercios electrónicos para robar números de tarjetas, fechas de caducidad y otros datos relacionados con los pagos, suele denominarse e-skimming o web skimming.
+
+Uno de los principales problemas de este ataque es que puede resultar difícil de detectar. A diferencia del phishing, no necesariamente estás accediendo a una página falsa: puedes encontrarte en la página auténtica de un comercio que ha sido comprometida. Su aspecto puede ser completamente normal y el proceso de compra puede finalizar correctamente aunque tus datos hayan sido interceptados.
+
+Por este motivo, una apariencia moderna o profesional no garantiza que una página sea segura, del mismo modo que una apariencia antigua no significa necesariamente que haya sido comprometida. Siempre que sea posible, utiliza comercios de confianza y métodos de pago que incorporen medidas adicionales de protección. Activa las notificaciones de operaciones de tu entidad bancaria y revisa periódicamente los movimientos de tus cuentas y tarjetas para detectar cuanto antes cargos que no reconozcas \citep{RZ-formjacking}.
+
+\section{Cybersquatting y typosquatting}\label{cybersquatting-y-typosquatting}
+
+\textbf{Categoría: Ataques y técnicas sobre sitios web y navegación}
+
+El cybersquatting o ciberocupación consiste en registrar un nombre de dominio relacionado con una marca, empresa, organización o persona con la intención de aprovecharse de su identidad o reputación. Estos dominios pueden utilizarse para intentar venderlos posteriormente a sus legítimos titulares, mostrar publicidad o, en algunos casos, realizar actividades fraudulentas.
+
+Una variante especialmente relacionada con la ciberseguridad es el typosquatting. En este caso, el ciberdelincuente registra dominios muy parecidos a los legítimos, aprovechando errores que puedes cometer al escribir una dirección web o pequeñas diferencias que pueden pasar desapercibidas. Por ejemplo, puede eliminar, añadir o sustituir una letra, intercambiar su posición o utilizar un dominio que visualmente resulte parecido al auténtico \citep{WIKI-typosquatting}.
+
+\begin{itemize}
+\tightlist
+\item
+  Ejemplo: \url{https://wikiepdia.org} (este es un ejemplo legítimo, porque te lleva directamente a wikipedia).
+\end{itemize}
+
+Si accedes por error a uno de estos dominios, puedes encontrarte con una página diseñada para parecerse a la original. El objetivo puede ser conseguir tus credenciales, datos bancarios u otra información personal, hacerte descargar software malicioso o llevarte a otros sitios fraudulentos.
+
+Otra técnica relacionada es el pharming. En este caso, el atacante manipula el proceso que permite convertir el nombre de una página web en la dirección necesaria para localizarla en Internet. Para ello puede intentar alterar la configuración DNS de un dispositivo o una red, comprometer determinados equipos o manipular otros elementos relacionados con la resolución de nombres.
+
+Una de las principales diferencias respecto al typosquatting es que, en un ataque de pharming, puedes escribir correctamente la dirección de la página web y ser redirigido a otro destino sin darte cuenta.
+
+Para reducir estos riesgos, comprueba cuidadosamente la dirección de las páginas en las que introduces información sensible y presta atención a cambios inesperados en el dominio. Evita acceder a servicios importantes desde enlaces recibidos por medios no fiables y utiliza marcadores o las aplicaciones oficiales para acceder a los servicios que utilizas habitualmente. Si una página conocida presenta cambios inesperados, solicita de nuevo tus credenciales de forma inusual o muestra advertencias relacionadas con su certificado de seguridad, no introduzcas información hasta comprobar que estás en el sitio correcto.
+
+\section{Vulnerabilidades}\label{vulnerabilidades}
+
+\textbf{Categoría: Ataques y técnicas sobre sitios web y navegación}
+
+Una vulnerabilidad informática es una debilidad o fallo presente en un programa, dispositivo, sistema o servicio que puede ser aprovechado para comprometer su seguridad. Dependiendo de sus características, podría permitir a un atacante acceder a información, ejecutar acciones no autorizadas, alterar datos, interrumpir el funcionamiento de un sistema o afectar a su confidencialidad, integridad o disponibilidad.
+
+Las vulnerabilidades pueden tener distintos orígenes, como errores de diseño o programación, configuraciones incorrectas, componentes o dependencias vulnerables y otras deficiencias de seguridad.
+
+Cuando se descubre una vulnerabilidad en un producto, su fabricante o desarrollador puede publicar una actualización o parche para corregirla. Por este motivo, una de las medidas más importantes que puedes adoptar es mantener actualizados el sistema operativo, el navegador, las aplicaciones y el resto de programas y dispositivos que utilizas. Siempre que sea posible, activa las actualizaciones automáticas y evita utilizar productos que hayan dejado de recibir actualizaciones de seguridad.
+
+Algunas vulnerabilidades pueden permanecer desconocidas durante años. Un ejemplo de vulnerabilidad de este tipo conocido fue el \href{https://es.wikipedia.org/wiki/Meltdown_(vulnerabilidad)}{Meltdown} y \href{https://es.wikipedia.org/wiki/Spectre_(vulnerabilidad)}{Spectre}, relacionadas con los procesadores informáticos, que existen desde mediados de los noventa, pero que han sido descubiertas ahora.
+
+Para aprovechar una vulnerabilidad puede utilizarse lo que se conoce como exploit. Un exploit es código, una técnica o una secuencia de acciones diseñada para aprovechar una vulnerabilidad y conseguir que un sistema se comporte de una forma no prevista. La existencia de una vulnerabilidad no significa necesariamente que esté siendo explotada, ni todos los exploits requieren que tú realices una acción.
+
+Un caso especialmente preocupante son los denominados ataques de cero clic o zero-click. En ellos, el atacante puede intentar aprovechar una vulnerabilidad sin necesidad de que pulses un enlace, abras conscientemente un archivo o realices otra acción. Esto puede ocurrir, por ejemplo, cuando una aplicación recibe y procesa automáticamente determinados datos o contenidos especialmente manipulados. Más información en este artículo \href{https://www.kaspersky.es/resource-center/definitions/what-is-zero-click-malware}{¿Qué es el malware de clic cero y cómo funcionan los ataques de clic cero?}.
+
+Este tipo de ataque demuestra por qué no basta con recomendar ``no hagas clic en enlaces sospechosos''. Aunque mantener una actitud prudente continúa siendo fundamental frente al phishing y muchas otras amenazas, algunas vulnerabilidades pueden ser explotadas sin tu intervención. Mantener tus dispositivos y aplicaciones actualizados reduce el tiempo durante el cual pueden permanecer expuestos a vulnerabilidades para las que ya existe una corrección.
+
+La inteligencia artificial también puede influir en este ámbito. Puede ayudar tanto a investigadores de seguridad a analizar código y detectar vulnerabilidades como a actores maliciosos a estudiar programas o adaptar técnicas de ataque. Sin embargo, disponer de herramientas de IA no convierte automáticamente una vulnerabilidad en explotable ni elimina la necesidad de conocimientos técnicos especializados.
 
 \section{Juice jacking}\label{juice-jacking}
 
@@ -3164,6 +3189,29 @@ De verte en la necesidad de hacer uso de ellos:
 \end{itemize}
 
 La vía de contagio de esta ciberamenaza queda evidente en lo anteriormente expuesto, por lo que intenta evitar en la medida de lo posible usar cargadores públicos.
+
+\section{Shoulder surfing o visual hackins}\label{shoulder-surfing-o-visual-hackins}
+
+El shoulder surfing o también conocido como visual hackins es una técnica en apariencia muy sencilla empleada por los ciberatacantes con el objetivo de conseguir información de un usuario en concreto. Esta técnica consiste en mirar literalmente por encima del hombro y que suele llevarse a cabo mientras viajamos en metro, en autobús o en cualquier sitio público donde los cibervándalos puedan estar atento al uso que haces de tu dispositivo sin que puedas percatarte de ello \citep{OSI-shoulder-surfing}.
+
+Como has podido leer, evitar el uso de datos sensibles en espacios públicos es la mejor fórmula para evitar caer en este tipo de amenazas.
+
+\section{Dumpster diving o scavening}\label{dumpster-diving-o-scavening}
+
+Este ciberdelito se conoce como el proceso de buscar en tu basura para obtener información útil sobre ti o tu empresa que luego pueda ser utilizada en tu contra. Aunque este tipo de ataques está más bien dirigido a empresas, debes tener cuidado con la información que desechas por el método de tirarlo a la basura. Nunca se sabe lo que los cibercacos están dispuestos a hacer \citep{WIKI-dumpster-diving}.
+
+Cuando te deshagas del algún dispositivo físico de almacenamiento, ya sea un disco duro externo, un PC, un USB o cualquier otro dispositivo, asegúrate primero de eliminar totalmente todo el contenido. Para ello utiliza software de borrado definitivo, ya que un simple formateado no eliminará la información. El borrado solo se completa cuando se reescribe sobre la anterior información, es por esto que un formateo solo te hace constar que el espacio está disponible, pero el contenido sigue estando ahí, aunque oculto. Esto quiere decir que con software avanzado y específico los ciberdelincuentes podrían recuperar todo el contenido \citep{XATAKA-borrado-almacenamiento}.
+
+Algunas herramientas de borrado definitivo son:
+
+\begin{itemize}
+\item
+  \href{https://eraser.heidi.ie/}{Eraser}.
+\item
+  \href{https://www.diskwipe.org/download.php}{Disk wipe}.
+\end{itemize}
+
+Para evitar este tipo de amenaza ya sabes, ten cuidado con lo que tiras a la basura.
 
 \section{Sustracción o perdida de tu dispositivo}\label{sustracciuxf3n-o-perdida-de-tu-dispositivo}
 
