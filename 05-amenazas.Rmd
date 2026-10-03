@@ -1321,8 +1321,11 @@ Este tipo de ataque demuestra por qué no basta con recomendar “no hagas clic 
 La inteligencia artificial también puede influir en este ámbito. Puede ayudar tanto a investigadores de seguridad a analizar código y detectar vulnerabilidades como a actores maliciosos a estudiar programas o adaptar técnicas de ataque. Sin embargo, disponer de herramientas de IA no convierte automáticamente una vulnerabilidad en explotable ni elimina la necesidad de conocimientos técnicos especializados.
 
 ## Juice jacking
+**Categoría: Amenaza física y de proximidad**
 
 Prácticamente todo el mundo en algún momento se ha quedado sin carga en algunos de sus dispositivos, pero gracias a que existen multitud de cargadores de USB públicos, esto ya no es un problema. Pero detrás de los beneficios que esta práctica nos aporta, se esconde una amenaza que va proliferando cada vez más llamada juice jacking. El juice jacking consiste en alterar con fines maliciosos la fuente de carga de los USBs por parte de los diberdelincuentes y que a través de esta técnica pueden aprovecharse tanto para el robo datos como para la inyección de archivos [@ESET-juice-jacking].
+
+No debes confundir un puerto USB público con una toma de corriente convencional. Si conectas tu propio cargador de confianza a un enchufe eléctrico, reduces este riesgo porque tu dispositivo no establece directamente una conexión USB de datos con el punto de carga.
 
 En la siguiente entrada del Incibe te cuentan cómo un puerto de carga público puede ser un vector de contagio de malware [¡SOS, batería baja! Cuidado con dónde cargas tu dispositivo](https://www.incibe.es/empresas/blog/sos-bateria-baja-cuidado-con-donde-cargas-tu-dispositivo).
 
@@ -1342,50 +1345,91 @@ De verte en la necesidad de hacer uso de ellos:
 
 - No aceptar peticiones de conexión con el dispositivo.
 
-La vía de contagio de esta ciberamenaza queda evidente en lo anteriormente expuesto, por lo que intenta evitar en la medida de lo posible usar cargadores públicos.
+**¿Cómo puedes protegerte?**
+
+Siempre que puedas elegir, utiliza tu propio cargador conectado a una toma eléctrica o una batería externa. Si únicamente necesitas energía, evita establecer innecesariamente una conexión de datos con un dispositivo o puerto USB que no controlas.
 
 ## Shoulder surfing o visual hackins
+**Categoría: Amenaza física y de proximidad**
 
-El shoulder surfing o también conocido como visual hackins es una técnica en apariencia muy sencilla empleada por los ciberatacantes con el objetivo de conseguir información de un usuario en concreto. Esta técnica consiste en mirar literalmente por encima del hombro y que suele llevarse a cabo mientras viajamos en metro, en autobús o en cualquier sitio público donde los cibervándalos puedan estar atento al uso que haces de tu dispositivo sin que puedas percatarte de ello [@OSI-shoulder-surfing]. 
+El shoulder surfing, también denominado espionaje visual o visual hacking, es una técnica utilizada para obtener información observando lo que haces, escribes o visualizas en un dispositivo [@INCIBE-shoulder-surfing].
 
-Como has podido leer, evitar el uso de datos sensibles en espacios públicos es la mejor fórmula para evitar caer en este tipo de amenazas.
+Aunque su nombre hace referencia a “mirar por encima del hombro”, no es necesario que la persona se encuentre justo detrás de ti. Puede observarte desde cierta distancia o aprovechar otros medios para intentar ver la pantalla de tu teléfono u ordenador, el teclado que utilizas o los datos que introduces.
 
-## Dumpster diving o scavening
+Esta situación puede producirse especialmente en lugares públicos o concurridos, como el transporte público, aeropuertos, cafeterías, bibliotecas, estaciones o espacios de trabajo compartidos. También puede ocurrir cuando introduces el PIN de una tarjeta en un cajero automático o terminal de pago.
 
-Este ciberdelito se conoce como el proceso de buscar en tu basura para obtener información útil sobre ti o tu empresa que luego pueda ser utilizada en tu contra. Aunque este tipo de ataques está más bien dirigido a empresas, debes tener cuidado con la información que desechas por el método de tirarlo a la basura. Nunca se sabe lo que los cibercacos están dispuestos a hacer [@WIKI-dumpster-diving].
+Mediante esta técnica pueden intentar obtener contraseñas, códigos PIN, patrones de desbloqueo, códigos de verificación, datos bancarios, información personal o cualquier otro contenido sensible que aparezca en tu pantalla.
 
-Cuando te deshagas del algún dispositivo físico de almacenamiento, ya sea un disco duro externo, un PC, un USB o cualquier otro dispositivo, asegúrate primero de eliminar totalmente todo el contenido. Para ello utiliza software de borrado definitivo, ya que un simple formateado no eliminará la información. El borrado solo se completa cuando se reescribe sobre la anterior información, es por esto que un formateo solo te hace constar que el espacio está disponible, pero el contenido sigue estando ahí, aunque oculto. Esto quiere decir que con software avanzado y específico los ciberdelincuentes podrían recuperar todo el contenido [@XATAKA-borrado-almacenamiento].
+**Para reducir el riesgo:**
 
-Algunas herramientas de borrado definitivo son:
+- Presta atención a las personas que pueden ver tu pantalla cuando consultes o introduzcas información sensible en un lugar público.
 
-- [Eraser](https://eraser.heidi.ie/).
+- Coloca el dispositivo de manera que dificultes la visión de la pantalla desde otros ángulos.
 
-- [Disk wipe](https://www.diskwipe.org/download.php).
+- Cubre el teclado cuando introduzcas un PIN en un cajero automático o terminal de pago.
 
-Para evitar este tipo de amenaza ya sabes, ten cuidado con lo que tiras a la basura.
+- Evita mostrar contraseñas en pantalla y utiliza, cuando sea posible, sistemas biométricos para desbloquear tus dispositivos.
+
+- Reduce la información que muestran las notificaciones cuando el dispositivo está bloqueado.
+
+- Si trabajas habitualmente con información sensible en espacios públicos, puedes valorar el uso de un filtro de privacidad para la pantalla.
+
+No necesitas dejar de utilizar tus dispositivos en espacios públicos. Lo importante es ser consciente de quién puede observar la pantalla o tus acciones cuando manejas información que no quieres que otras personas conozcan.
+
+## Trashing o dumpster diving
+**Categoría: Amenaza física y de proximidad**
+
+El trashing o dumpster diving, que podría traducirse como búsqueda o recuperación de información en la basura, consiste en examinar documentos, dispositivos u otros materiales que has desechado con el objetivo de encontrar información que pueda resultar útil para cometer un fraude, preparar un ataque o conocer datos personales o confidenciales [@INCIBE-dumpster-diving].
+
+Aunque esta práctica puede estar especialmente dirigida contra empresas y organizaciones, también puede afectarte como particular. Facturas, correspondencia, etiquetas de paquetes, extractos bancarios, documentación médica, tarjetas, anotaciones de contraseñas o cualquier documento que contenga datos personales puede proporcionar información útil a un delincuente.
+
+Por este motivo, no tires a la basura o al contenedor de reciclaje documentos que contengan información sensible sin destruirlos previamente de forma adecuada. Presta también atención a las etiquetas de los paquetes que recibes, ya que pueden mostrar tu nombre, dirección, teléfono u otros datos.
+
+El riesgo también existe cuando te deshaces de dispositivos electrónicos o soportes de almacenamiento. Un ordenador, teléfono, disco duro, memoria USB o tarjeta de memoria puede conservar información personal incluso después de que hayas eliminado los archivos de la forma habitual.
+
+Antes de vender, regalar, reciclar o desechar un dispositivo, asegúrate de eliminar correctamente la información que contiene. El procedimiento adecuado depende del tipo de dispositivo y de la tecnología de almacenamiento utilizada.
+
+En los dispositivos modernos no siempre es correcto asumir que basta con sobrescribir repetidamente la información. En los discos duros magnéticos pueden utilizarse procedimientos de sobrescritura, mientras que los SSD y otros dispositivos basados en memoria flash requieren métodos adecuados a su tecnología. Cuando estén disponibles, utiliza las funciones de borrado seguro, restablecimiento o eliminación de datos recomendadas por el fabricante del dispositivo.
+
+El cifrado también desempeña un papel importante. Si el dispositivo ha mantenido sus datos correctamente cifrados, determinados procedimientos de borrado pueden hacer inaccesible la información eliminando las claves necesarias para descifrarla. Si vas a desechar definitivamente un soporte que contiene información especialmente sensible y no puedes garantizar un borrado seguro, la destrucción física realizada de forma adecuada puede ser la opción más segura.
+
+Recuerda que proteger tus datos también implica decidir correctamente qué haces con ellos cuando ya no los necesitas. Un documento, dispositivo o soporte que para ti ha dejado de tener utilidad todavía puede contener información valiosa para otra persona.
 
 ## Sustracción o perdida de tu dispositivo
+**Categoría: Amenaza física y de proximidad**
 
-Otra contingencia con la que te puedes encontrar es el robo o perdida de tu dispositivo. Si te encontrases ante esta posibilidad, a continuación, tienes esta lista de todo lo que debes hacer para minimizar males mayores.
+La pérdida o el robo de un teléfono móvil, tableta u ordenador no supone únicamente la pérdida del propio dispositivo. También puede poner en riesgo la información que contiene y las cuentas y servicios a los que permite acceder.
 
-Qué hacer en caso de que hayas extraviado o te hayan robado tu dispositivo móvil:
+Si pierdes un dispositivo o te lo roban, actúa cuanto antes:
 
-- Pide a tu operadora que bloquee el IMEI de tu teléfono.
+- Intenta localizarlo utilizando el servicio oficial asociado al dispositivo, como las funciones de localización proporcionadas por Apple, Google o Microsoft. Si sospechas que ha sido robado, no intentes recuperarlo personalmente enfrentándote a quien pueda tenerlo.
 
-- Búscalo con el localizador para [Android](https://myaccount.google.com/intro/find-your-phone?hl=es-ES) o para [Apple](https://www.apple.com/es/icloud/find-my/).
+	- Localiza tu dispositivo móvil con el localizador para [Android](https://myaccount.google.com/intro/find-your-phone?hl=es-ES) o para [Apple](https://www.apple.com/es/icloud/find-my/).
+	
+	- Localiza tu ordenador con el de servicio de [Encontrar y bloquear un dispositivo Windows perdido](https://support.microsoft.com/es-es/account-billing/encontrar-y-bloquear-un-dispositivo-windows-perdido-890bf25e-b8ba-d3fe-8253-e98a12f26316#:~:text=Activa%20Encontrar%20mi%20dispositivo&text=Windows%2011%3A%20selecciona%20InicioConfiguraci%C3%B3n,privacidad%20%26%20%3E%20Encuentra%20mi%20dispositivo.). Del igual modo también en el caso de portátiles de Apple en [Localizar un dispositivo en Buscar en el Mac](https://support.apple.com/es-es/guide/findmy-mac/fmmc6c7ef383/mac)	
 
-- Anula la SIM y pide duplicado de la misma.
+- Bloquea el dispositivo de forma remota y, si la función está disponible, muestra un mensaje de contacto en la pantalla para facilitar su devolución.
 
-- Cambia todas tus contraseñas. ¡Todas!.
+- Si consideras que no vas a recuperarlo o existe riesgo de acceso a información sensible, valora borrar su contenido de forma remota. Ten en cuenta que esta decisión puede afectar posteriormente a algunas funciones de localización, dependiendo del dispositivo y del servicio utilizado.
 
-- Denúncialo a la Policía.
+- Contacta con tu operadora para bloquear la tarjeta SIM o eSIM y solicitar un duplicado. Esto ayuda a impedir que otra persona utilice tu línea para realizar llamadas, recibir determinados mensajes o intentar acceder a servicios vinculados a tu número de teléfono.
 
-- Denúncialo a tu operadora
+- Solicita a tu operadora el bloqueo del IMEI cuando corresponda. Este bloqueo puede dificultar el uso del teléfono en redes móviles, pero no borra su contenido ni sustituye al bloqueo remoto del dispositivo.
 
-- Avisa a tus contactos. Sí, a todos.
+- Protege tus cuentas más importantes. Empieza por el correo electrónico y las cuentas de Apple, Google o Microsoft asociadas al dispositivo, ya que pueden permitir recuperar contraseñas o acceder a otros servicios. Revisa las sesiones y dispositivos conectados y cierra aquellas que no reconozcas o que correspondan al dispositivo perdido cuando sea necesario.
 
-- Bloquea el dispositivo y borra el contenido que puedas de forma remota.
+- No es necesario cambiar automáticamente todas tus contraseñas. Prioriza aquellas cuentas que puedan haber quedado expuestas, especialmente si el dispositivo no estaba correctamente bloqueado, alguien podía conocer tu código de desbloqueo o mantenías contraseñas o sesiones sensibles accesibles.
 
-- Comprueba tu cuenta bancaria y ponte en contacto con tu banco.
+- Comprueba tus cuentas bancarias y medios de pago si utilizabas el dispositivo para realizar operaciones o pagos. Si detectas movimientos que no reconoces o consideras que tus datos bancarios pueden estar comprometidos, contacta inmediatamente con tu entidad financiera.
 
-Lo mismo ocurre para el caso de ordenadores portátiles ya que Microsoft también dispone de servicio de [Encontrar y bloquear un dispositivo Windows perdido](https://support.microsoft.com/es-es/account-billing/encontrar-y-bloquear-un-dispositivo-windows-perdido-890bf25e-b8ba-d3fe-8253-e98a12f26316#:~:text=Activa%20Encontrar%20mi%20dispositivo&text=Windows%2011%3A%20selecciona%20InicioConfiguraci%C3%B3n,privacidad%20%26%20%3E%20Encuentra%20mi%20dispositivo.). Del igual modo también en el caso de portátiles de Apple en [Localizar un dispositivo en Buscar en el Mac](https://support.apple.com/es-es/guide/findmy-mac/fmmc6c7ef383/mac)
+- Avisa a tus contactos si existe la posibilidad de que alguien pueda utilizar tus cuentas o tu número para hacerse pasar por ti. Adviérteles especialmente de que desconfíen de mensajes inesperados en los que supuestamente solicitas dinero, códigos de verificación, contraseñas u otra información.
+
+- Si el dispositivo ha sido robado, presenta una denuncia ante las Fuerzas y Cuerpos de Seguridad. Conserva, si dispones de ellos, la factura, el número de serie, el IMEI y cualquier otra información que permita identificarlo.
+
+Después de una pérdida o robo, presta especial atención a los intentos de phishing. Puedes recibir mensajes que afirmen que tu dispositivo ha sido localizado y que te pidan acceder a un enlace, introducir tus credenciales o realizar alguna acción para recuperarlo. No introduzcas tus contraseñas desde esos enlaces. Accede directamente a los servicios oficiales de Apple, Google, Microsoft o tu operadora.
+
+Un delincuente también puede intentar convencerte para que elimines el dispositivo de tu cuenta. No lo hagas únicamente porque recibas un mensaje que te lo solicite: retirar determinadas protecciones puede facilitar que otra persona reutilice o venda el dispositivo.
+
+Estas recomendaciones también son aplicables, con las adaptaciones necesarias, a ordenadores portátiles y tabletas. Los principales sistemas operativos disponen de funciones que permiten localizar o proteger dispositivos perdidos si las habías configurado previamente.
+
+La mejor protección comienza antes de perder el dispositivo: utiliza un método de bloqueo seguro, activa las funciones de localización, mantén tus datos importantes respaldados mediante copias de seguridad y configura adecuadamente las opciones de recuperación de tus cuentas.
