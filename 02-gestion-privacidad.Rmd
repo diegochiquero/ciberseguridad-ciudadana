@@ -301,7 +301,7 @@ Recuerda que ninguna medida de privacidad es absoluta. El cifrado es una herrami
 
 Si estás pensando en vender, regalar o donar un dispositivo que haya almacenado información personal, como un ordenador, un teléfono móvil, una tableta, un disco duro externo o una memoria USB, es importante que elimines correctamente todos los datos antes de entregarlo a otra persona.
 
-Muchas personas creen que formatear un dispositivo es suficiente para borrar su contenido. Sin embargo, dependiendo del tipo de almacenamiento y del método utilizado, parte de la información podría llegar a recuperarse mediante herramientas especializadas. Por lo que, con software avanzado y específico los ciberdelicuentes podrían recuperar todo el contenido [@XATAKA-borrado-almacenamiento].
+Muchas personas creen que formatear un dispositivo es suficiente para borrar su contenido. Sin embargo, dependiendo del tipo de almacenamiento y del método utilizado, parte de la información podría llegar a recuperarse mediante herramientas especializadas. Por lo que, con software avanzado y específico los ciberdelicuentes podrían recuperar todo el contenido [@ATICO34-borrado-seguro-de-datos].
 
 Antes de realizar cualquier proceso de borrado, asegúrate de hacer una copia de seguridad de los datos que desees conservar. Después:
 
